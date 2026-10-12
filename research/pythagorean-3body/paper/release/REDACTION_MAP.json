@@ -1,6 +1,6 @@
 {
  "format": "redaction-map-1",
- "note": "Copies differ from originals only by exact string replacement of the listed rules. Secrets are not recorded here. Seal hashes in GATE_*_SEAL.json refer to orig_sha256.",
+ "note": "Copies differ from originals only by exact string replacement of the listed rules. Secrets are not recorded here. Seal hashes in GATE_*_SEAL.json refer to orig_sha256. | 2026-10-13: A/paper/DRAFT_EN.md and the PDF updated for DOI 10.5281/zenodo.23317644 (no redaction in these files).",
  "rules": [
   {
    "id": "gcp_project",
@@ -357,15 +357,15 @@
   {
    "path": "A/paper/DRAFT_EN.md",
    "kind": "text",
-   "orig_sha256": "95a77f0b727a4862dec30e0f03782175a7ba681c4dcf73cb000b7f8332b9183d",
-   "copy_sha256": "95a77f0b727a4862dec30e0f03782175a7ba681c4dcf73cb000b7f8332b9183d",
+   "orig_sha256": "ec6825989095650ab6f445c63229bb0060b1f49f64c4983e3e094c947e4a1c56",
+   "copy_sha256": "ec6825989095650ab6f445c63229bb0060b1f49f64c4983e3e094c947e4a1c56",
    "replacements": {}
   },
   {
    "path": "A/paper/Jeomseon_2026_Pythagorean_three-body_v1.pdf",
    "kind": "binary",
-   "orig_sha256": "1e54766dcc09881e2757c5349fc5cc4cf608bfb09246fe7174911d4bfe913e9e",
-   "copy_sha256": "1e54766dcc09881e2757c5349fc5cc4cf608bfb09246fe7174911d4bfe913e9e",
+   "orig_sha256": "d7b6b7e528ee5f2a26c95c2f5087b17a1488582ba92aa5f7dc1dbbd7501cf7fa",
+   "copy_sha256": "d7b6b7e528ee5f2a26c95c2f5087b17a1488582ba92aa5f7dc1dbbd7501cf7fa",
    "replacements": {}
   },
   {

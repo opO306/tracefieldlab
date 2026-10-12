@@ -1,0 +1,28 @@
+To: tomasz.kapela@uj.edu.pl
+From: jeomseon@proton.me
+Subject: Question about prior rigorous proofs of the Pythagorean three-body outcome
+
+Dear Dr. Kapela,
+
+I am an independent researcher writing under the name Jeomseon. I am contacting you because of your computer-assisted existence proofs for N-body choreographies (with P. Zgliczyński, Nonlinearity 2003) and the stability of the figure-eight (with C. Simó, Nonlinearity 2007).
+
+I have written a draft computer-assisted proof of the final evolution of the Pythagorean (Burrau) three-body problem. The claim is that mass 3 escapes for t >= 59.73 and masses 4 and 5 stay bound. The approach has two parts:
+
+1. A rigorous enclosure for t in [0, 61]. It uses interval arithmetic on dyadic numbers with outward rounding, Taylor steps with remainder bounds, and a Lohner-QR enclosure with a width-weighted pivot, at 128 bits.
+2. A check that the enclosures for t in [59.73, 61] satisfy an escape criterion. The criterion is Yoshida's (1972), with the r(0) <= d condition from his 1973 erratum. Two independently written interval checkers did this check.
+
+I could not find a published rigorous proof of this outcome. I searched ADS, zbMATH Open, scite and general web search; I did not search MathSciNet.
+
+I would be grateful for answers to two questions:
+1. Do you know of an existing rigorous or computer-assisted proof of this result?
+2. If you have a few minutes, do you see an obvious flaw in this approach?
+
+For transparency: the code, independent checkers and reviews were produced with an AI assistant (Anthropic's Claude), working in separate sessions under sealed test plans. I made the design decisions and reviewed the results.
+
+Paper, code and data: https://doi.org/10.5281/zenodo.23322652. To keep your time short, bundle A contains REVIEWER_QUICKSTART_EN.md and a script (verify_quick.py, about 3 minutes) that re-checks the stored enclosures, both judges and the arithmetic checkers. The part where human judgment matters most is the hand proof of the escape criterion (proof_review/PROOF_STAR_FINAL_EN.md).
+
+Thank you for your time.
+
+Best regards,
+Jeomseon
+jeomseon@proton.me

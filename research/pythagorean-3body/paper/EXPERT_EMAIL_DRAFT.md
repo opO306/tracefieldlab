@@ -1,14 +1,14 @@
 # 전문가 문의 이메일 초안 (보내지 않음 — 발송은 사용자 결정)
 
-작성: 조율 세션, 2026-10-12. 상태: **초안**. 받는 사람·주소·첨부 링크는 비어 있다.
+작성: 조율 세션, 2026-10-12. 갱신 2026-10-13: 링크(Zenodo v1.1)·10분 확인 경로·요시다 정정 연도(1973) 반영. 상태: **초안**. 받는 사람·주소는 비어 있다.
 
 ## 0. 보내기 전에 정할 것 (사용자)
 | 항목 | 상태 |
 |---|---|
 | 받는 사람 | 아래 2절 후보 중 선택. **이름·소속·주소는 반드시 공식 학교/연구소 페이지에서 직접 확인** (아래 후보는 기억에 의존한 목록이며 확인하지 않았다) |
 | 보내는 주소 | jeomseon@proton.me (2026-10-12 사용자 생성) |
-| 첨부·링크 | 비공개 저장소는 남이 못 본다. 보낼 때는 (a) 논문 PDF 첨부, (b) 경로를 가린 공개 사본을 Zenodo에 올린 링크, (c) 비공개 저장소에 상대를 초대 중 하나가 필요 |
-| 시점 | [CHECK] 해소와 R4R 재실행 대조가 끝난 뒤를 권함 |
+| 첨부·링크 | Zenodo v1.1: https://doi.org/10.5281/zenodo.23322652 (공개, 2026-10-13 확인). 첨부 없이 링크만 권함 |
+| 시점 | R4R 대조 끝남, v1.1(검토자 빠른 길) 게시됨 → 보낼 준비됨 |
 
 ## 1. 원칙
 - 짧게(읽는 데 2분). 질문은 두 개만.
@@ -23,6 +23,17 @@
 | Carles Simó (바르셀로나 대학) | 삼체 주기 궤도의 컴퓨터 보조 증명 공동 연구로 알려짐 | 현재 활동 여부 |
 | Hiroshi Hirayama | 2019년 피타고라스 문제 4배 정밀도 테일러 계산 논문 저자(zbMATH 확인) | 연락처, 논문 본문 |
 
+
+### 2-1. 공식 페이지 확인 결과 (2026-10-13, 조율 세션이 웹에서 직접 확인)
+| 후보 | 확인한 소속 | 확인한 연락처 (출처 페이지에 적힌 그대로) | 관련 연구 (출처 페이지의 논문 목록) | 판단 |
+|---|---|---|---|---|
+| **Tomasz Kapela** | Institute of Computer Science and Computational Mathematics, Jagiellonian University, Kraków | `tomasz.kapela(At)uj.edu.pl` → tomasz.kapela@uj.edu.pl (개인 페이지 ww2.ii.uj.edu.pl/~kapela/) | Kapela & Zgliczyński, *The existence of simple choreographies for the N-body problem — a computer assisted proof*, Nonlinearity 16 (2003) 1899–1918; Kapela & Simó, *Computer assisted proofs for non-symmetric planar choreographies and for stability of the Eight*, Nonlinearity 20 (2007) 1241–1255. 연구 관심에 "N-BODY problem" | **1순위 추천**: 삼체 컴퓨터 보조 증명을 직접 한 사람, 공식 대학 주소 |
+| Piotr Zgliczyński | 같은 연구소, Department of Computational Mathematics (교수, apacz.matinf.uj.edu.pl/uzytkownik/103) | 개인 페이지에 `umzglicz@cyf-kr.edu.pl` (예전 도메인일 수 있음 — 현재 유효한지 미확인) | 위 2003 논문 공저 | 2순위 |
+| Daniel Wilczak | 같은 연구소 (prof. UJ, apacz.matinf.uj.edu.pl/uzytkownik/128) | 공식 페이지에 이메일 **표시 없음** | CAPD 개발자 | 연락처 미확인 |
+| Carles Simó | Universitat de Barcelona 명예교수 (bgsmath.cat 프로필) | **찾지 못함** | 위 2007 논문 공저 | 연락처 미확인 |
+| Hiroshi Hirayama | **확인 못 함** | **찾지 못함** | zbMATH의 2019 수치 계산 논문(본문 미확인), 2006 IPSJ 보고서 | 미확인 |
+- 이메일 주소는 공개 업무용 주소만 기록했다. 보내기 직전에 페이지를 한 번 더 열어 확인한다.
+
 ## 3. 영어 본문 (초안)
 
 **Subject:** Question about prior rigorous proofs of the Pythagorean three-body outcome
@@ -34,7 +45,7 @@ I am an independent researcher writing under the name Jeomseon. I am contacting 
 I have written a draft computer-assisted proof of the final evolution of the Pythagorean (Burrau) three-body problem. The claim is that mass 3 escapes for t ≥ 59.73 and masses 4 and 5 stay bound. The approach has two parts:
 
 1. A rigorous enclosure for t ∈ [0, 61]. It uses interval arithmetic on dyadic numbers with outward rounding, Taylor steps with remainder bounds, and a Lohner–QR enclosure with a width-weighted pivot, at 128 bits.
-2. A check that the enclosures for t ∈ [59.73, 61] satisfy an escape criterion. The criterion is Yoshida's (1972), with the r(0) ≤ d condition from his 1974 correction. Two independently written interval checkers did this check.
+2. A check that the enclosures for t ∈ [59.73, 61] satisfy an escape criterion. The criterion is Yoshida's (1972), with the r(0) ≤ d condition from his 1973 erratum. Two independently written interval checkers did this check.
 
 I could not find a published rigorous proof of this outcome. I searched ADS, zbMATH Open, scite and general web search; I did not search MathSciNet.
 
@@ -42,7 +53,7 @@ I would be grateful for answers to two questions:
 1. Do you know of an existing rigorous or computer-assisted proof of this result?
 2. If you have a few minutes, do you see an obvious flaw in this approach?
 
-For transparency: the code, independent checkers and reviews were produced with an AI assistant (Anthropic's Claude), working in separate sessions under sealed test plans. I made the design decisions and reviewed the results. Draft, code and data: [LINK].
+For transparency: the code, independent checkers and reviews were produced with an AI assistant (Anthropic's Claude), working in separate sessions under sealed test plans. I made the design decisions and reviewed the results. Paper, code and data: https://doi.org/10.5281/zenodo.23322652. To keep your time short, bundle A contains `REVIEWER_QUICKSTART_EN.md` and a script (`verify_quick.py`, about 3 minutes) that re-checks the stored enclosures, both judges and the arithmetic checkers; the part where human judgment matters most is the hand proof of the escape criterion (`proof_review/PROOF_STAR_FINAL_EN.md`).
 
 Thank you for your time.
 
@@ -61,7 +72,7 @@ jeomseon@proton.me
 피타고라스(Burrau) 삼체 문제의 결말에 대한 컴퓨터 보조 증명 초안을 만들었습니다. 주장은 "질량 3은 t ≥ 59.73부터 탈출하고, 질량 4·5는 묶여 있다"입니다. 방법은 두 부분입니다.
 
 1. t ∈ [0, 61] 구간의 엄밀한 포함입니다. 이진 분수 구간 산술(바깥 반올림), 나머지 상한을 포함한 테일러 단계, 폭 가중 피벗을 쓴 Lohner–QR 포함을 128비트로 사용했습니다.
-2. t ∈ [59.73, 61]의 상자들이 탈출 조건을 만족하는지 확인했습니다. 조건은 요시다(1972)의 기준에 그의 1974년 정정(r(0) ≤ d)을 더한 것입니다. 이 확인은 서로 독립적으로 작성한 구간 판정기 두 개로 했습니다.
+2. t ∈ [59.73, 61]의 상자들이 탈출 조건을 만족하는지 확인했습니다. 조건은 요시다(1972)의 기준에 그의 1973년 정오표(r(0) ≤ d)를 더한 것입니다. 이 확인은 서로 독립적으로 작성한 구간 판정기 두 개로 했습니다.
 
 이 결과의 엄밀 증명이 출판된 것은 찾지 못했습니다. ADS, zbMATH Open, scite, 일반 웹 검색으로 찾았고, MathSciNet은 보지 못했습니다.
 
@@ -69,7 +80,7 @@ jeomseon@proton.me
 1. 이 결과의 기존 엄밀 증명이나 컴퓨터 보조 증명을 알고 계신가요?
 2. 시간이 되신다면, 이 방법에서 명백한 결함이 보이시나요?
 
-투명성을 위해 말씀드립니다. 코드, 독립 검사기, 검토는 AI 도구(Anthropic Claude)를 사용해 봉인된 시험 계획 아래에서 서로 분리된 세션으로 만들었습니다. 설계 결정과 결과 검토는 제가 했습니다. 초안, 코드, 데이터: [링크]
+투명성을 위해 말씀드립니다. 코드, 독립 검사기, 검토는 AI 도구(Anthropic Claude)를 사용해 봉인된 시험 계획 아래에서 서로 분리된 세션으로 만들었습니다. 설계 결정과 결과 검토는 제가 했습니다. 논문, 코드, 데이터: https://doi.org/10.5281/zenodo.23322652 . 시간을 아끼시도록 묶음 A에 안내문(`REVIEWER_QUICKSTART_EN.md`)과 약 3분짜리 확인 스크립트(`verify_quick.py`)를 넣었습니다. 저장된 상자, 판정기 두 개, 산술 검사기를 다시 확인합니다. 사람의 판단이 가장 필요한 부분은 탈출 조건의 손 증명(`proof_review/PROOF_STAR_FINAL_EN.md`)입니다.
 
 시간 내 주셔서 감사합니다.
 
