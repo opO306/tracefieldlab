@@ -24,8 +24,9 @@
 
 **출처 표기에 관한 주의.**
 - 이 정리는 **Yoshida(1972)의 Theorem 1**에서 d=m₁m₂/K로 둔 경우다.
-- 1972년 논문의 Corollary가 r(0)≤d 조건을 빠뜨린 문제는 **Yoshida 본인이 1974년 논문(PASJ 26, p.369, Note)에서 정정했다.** 우리 발견이 아니다.
+- 1972년 논문의 Corollary가 r(0)≤d 조건을 빠뜨린 문제는 **Yoshida 본인이 먼저 1973년 Erratum(PASJ 25, 285)에서, 이어서 1974년 논문(PASJ 26, p.369, Note)에서 정정했다.** 우리 발견이 아니다.
   - 근거: `LITERATURE_RECHECK_KO.md`. 원문·문헌 재확인 세션이 1972·1974 원문 스캔을 직접 판독했다.
+  - 1973 Erratum은 조율 세션이 Crossref로 확인했고, 논문 세션이 ADS 스캔으로 판독했다. 이 세션은 Crossref 서지 정보(PASJ 25(2), 285, 1973)만 직접 확인했다.
   - 이 문서의 Yoshida 원문 쪽수·식 번호 인용은 모두 그 판독에 기댄다. 이 세션은 원문 스캔을 직접 보지 않았다.
 - 보조정리의 르장드르 전개 증명은 표준 기법이다. 새로움을 주장하지 않는다.
 
@@ -35,7 +36,7 @@
 
 여기서 증명하는 조건은 **Yoshida(1972) Theorem 1** [Y72, p.400]에서 $d=m_1m_2/K$로 둔 경우다. 또한 **Yoshida(1974) criterion A′** [Y74, p.369]에서 $d=m_1m_2/K$로 둔 경우이기도 하다(비고 A.4.2).
 
-[Y72, p.402]의 Theorem 1 Corollary는 $r(0)\le d$를 가정하지 않는다. **이 점은 Yoshida 본인이 [Y74, p.369, Note]에서 정정했다.** 그 Note는 [Y72]의 조건 (25)–(26)을 "incorrect"라고 부르고 $\rho(0)\ge ad\ge a\,r(0)$로 바꾼다. 아래 진술은 $r(t_0)<d_1$을 명시적으로 가정하므로 이 문제의 영향을 받지 않는다.
+[Y72, p.402]의 Theorem 1 Corollary는 $r(0)\le d$를 가정하지 않는다. **이 점은 Yoshida 본인이 먼저 Erratum [Y73]에서, 이어서 [Y74, p.369, Note]에서 정정했다.** Erratum [Y73]은 Corollary의 조건 (26)을 $d\ge r(0)$로 바꾸고, [Y72] p.405의 부등식 (40)도 고친다. 뒤의 Note [Y74, p.369]는 [Y72]의 조건 (25)–(26)을 "incorrect"라고 부르고 $\rho(0)\ge ad\ge a\,r(0)$로 바꾼다. 아래 진술은 $r(t_0)<d_1$을 명시적으로 가정하므로 이 문제의 영향을 받지 않는다.
 
 아래 보조정리 A·B는 [Y72] Lemma 1(p.393)의 $n=1$인 경우와 Lemma 2(p.396)에 해당한다. Yoshida는 이를 각각 $n$에 대한 귀납법과 $\theta$-미분 분석으로 증명한다. 우리는 르장드르(다중극) 전개에 기반한 다른 자기완결 증명을 쓴다. 이것은 표준 기법이며, 새로움을 주장하지 않는다.
 
@@ -294,7 +295,7 @@ $$
 
 **A.4.1 (각운동량).** 정보를 버리는 곳은 (RA) 한 곳뿐이고, 버린 항은 0 이상이다. 그래서 $L=0$(피타고라스 문제)에도 그대로 적용된다.
 
-**A.4.2 (Yoshida 진술과의 관계).** 아래 관계는 [Y72], [Y74]의 진술을 원문 스캔에서 옮긴 것(`LITERATURE_RECHECK_KO.md` §2)에 기댄다.
+**A.4.2 (Yoshida 진술과의 관계).** 아래 관계는 [Y72], [Y73], [Y74]의 진술을 원문 스캔에서 옮긴 것(`LITERATURE_RECHECK_KO.md` §2)에 기댄다.
 
 *[Y72] Theorem 1.* 가정은 다음과 같다.
 - (13) 어떤 $a>\lambda$에 대해 $\rho(0)\ge ad>a\,r(0)$
@@ -309,7 +310,7 @@ $d=d_1$로 두면 다음이 성립한다.
 
 *[Y74] criterion A′.* $d=d_1$로 두면 $\rho(0)\ge ad_1\ge a\,r(0)$를 요구하므로 경계 경우 $r(0)=d_1$을 허용한다. 그러나 이 경우는 (C2)·(C3)과 함께 일어날 수 없다. $t=t_0$에서 2단계 (c)를 적용하면 $r(t_0)<d_1$이 되기 때문이다.
 
-*[Y72] Corollary.* A.0에서 말한 빈틈이 있고, [Y74, p.369]가 이를 정정했다. 우리는 이것을 쓰지 않는다.
+*[Y72] Corollary.* A.0에서 말한 빈틈이 있고, [Y73]에서, 이어서 [Y74, p.369]에서 정정됐다. 우리는 이것을 쓰지 않는다.
 
 **A.4.3 (질량 순서).** $m_1>m_2$이면 쌍성의 이름을 바꿔 붙인다. $W$에서 $\lambda$와 $\nu$를 바꾸면 함수가 작아지고, 보조정리 A·B가 깨진다(예: $(r,c)=(d,-1)$). 순서는 본질적이다.
 
@@ -414,18 +415,20 @@ $W$에서 $5/9$는 **더 먼** 거리 $\rho+\nu d_1$에, $4/9$는 **더 가까�
 - **[Bu1913]** C. Burrau, *Numerische Berechnung eines Spezialfalles des Dreikörperproblems*, Astron. Nachr. **195** (1913) 113–118. doi:10.1002/asna.19131950602.
 - **[DLMF]** NIST Digital Library of Mathematical Functions, https://dlmf.nist.gov/, 식 18.10.5, 18.12.11 (2026-10-12 접속).
 - **[KS1965]** P. Kustaanheimo, E. Stiefel, *Perturbation theory of Kepler motion based on spinor regularization*, J. Reine Angew. Math. **218** (1965) 204–219.
-- **[LC1920]** T. Levi-Civita, *Sur la régularisation du problème des trois corps*, Acta Math. **42** (1920) 99–144. doi:10.1007/BF02418577.
+- **[LC1920]** T. Levi-Civita, *Sur la régularisation du problème des trois corps*, Acta Math. **42** (1920) 99–144. doi:10.1007/BF02404404.
 - **[P1897]** P. Painlevé, *Leçons sur la théorie analytique des équations différentielles, professées à Stockholm (1895)*, Paris, 1897.
 - **[SM1971]** C. L. Siegel, J. K. Moser, *Lectures on Celestial Mechanics*, Grundlehren der mathematischen Wissenschaften **187**, Springer, Berlin, 1971 (Classics in Mathematics 재간행, 1995).
 - **[Su1912]** K. F. Sundman, *Mémoire sur le problème des trois corps*, Acta Math. **36** (1912) 105–179. doi:10.1007/BF02422379.
 - **[SP1967]** V. Szebehely, C. F. Peters, *Complete solution of a general problem of three bodies*, Astron. J. **72** (1967) 876. doi:10.1086/110355.
 - **[Y72]** J. Yoshida, *Improved criteria for hyperbolic-elliptic motion in the general three-body problem*, Publ. Astron. Soc. Japan **24** (1972) 391–408. doi:10.1093/pasj/24.3.391.
+- **[Y73]** J. Yoshida, *Erratum: Improved criteria for hyperbolic-elliptic motion in the general three-body problem*, Publ. Astron. Soc. Japan **25** (1973) 285. doi:10.1093/pasj/25.2.285.
 - **[Y74]** J. Yoshida, *Improved criteria for hyperbolic-elliptic motion in the general three-body problem. II*, Publ. Astron. Soc. Japan **26** (1974) 367–377.
 
 **참고문헌 확인 수준.**
 - 이 세션은 웹 검색으로 서지 정보를 확인했다: 권, 쪽, DOI.
 - 원문 본문은 읽지 않았다.
-- 예외는 [Y72]와 [Y74]의 쪽·식 번호다. 이것은 원문·문헌 재확인 세션이 원문 스캔을 직접 판독한 결과(`LITERATURE_RECHECK_KO.md`)에서 옮겼다.
+- [LC1920]의 DOI는 처음에 1906년 다른 논문(Acta Math. 30, 305–327)의 것으로 잘못 적었다. 조율 세션의 지적을 받아, 이 세션이 Crossref로 10.1007/BF02404404(Acta Math. 42, 99–144, 1920)를 확인하고 고쳤다.
+- 예외는 [Y72], [Y73], [Y74]의 쪽·식 번호다. 이것은 원문·문헌 재확인 세션이 원문 스캔을 직접 판독한 결과(`LITERATURE_RECHECK_KO.md`)에서 옮겼다.
 - 불확실한 서지 항목:
   - [KS1965] 끝쪽 219는 출처 하나에서만 확인했다.
   - [Bu1913] 시작쪽은 출처에 따라 113 또는 114로 다르다. ADS 서지코드가 113이라 113으로 적었다.

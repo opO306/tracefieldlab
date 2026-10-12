@@ -138,3 +138,10 @@ ADS 인용 22건(scite에는 16건이며 지지/반박 분류된 인용문 0건�
 - 외부 도구: ADS 스캔 직접 판독(1차), ADS 검색·인용, scite, arXiv API, 웹 검색, 산술 한 번. Consensus는 이 세션의 도구 목록에 없어 쓰지 못했다(scite가 학술 검색을 대신함).
 - 대안 가설: "Corollary가 최근접 쌍에서만 의도됐다"는 읽기를 Note 1로 반박. "스캔 오독" 가능성은 1974 Note의 독립 확인으로 줄였다.
 - 증거 수준: Corollary 빈틈은 1차 문헌 직접 판독 + 저자 정정 + 손 계산(형식 증명 아님). 엄밀 증명 부재는 검색으로 못 찾은 것이지 증명이 아니다.
+
+---
+
+## 부록 (조율 세션, 2026-10-12): 이후 발견으로 바뀐 내용
+본문은 고치지 않고 여기에 덧붙인다.
+1. **Corollary의 첫 정정은 1973년 Erratum이다.** Yoshida, J. 1973, "Erratum: Improved Criteria for Hyperbolic-Elliptic Motion in the General Three-Body Problem", PASJ 25(2), 285, doi:10.1093/pasj/25.2.285 (Crossref 확인). 논문 초안 세션의 ADS 스캔 판독에 따르면, 이 Erratum이 Corollary 조건 (26)을 d ≥ r(0)으로 바꾸고 p.405 부등식 (40)도 고쳤다. 본문 §0·§3의 "저자 본인이 1974년에 정정"은 "1973년 Erratum에서 정정, 1974년 후속 논문 p.369 Note에서 다시 언급"으로 읽어야 한다.
+2. zbMATH Open 보충 검색: `LITERATURE_RECHECK_ZBMATH_KO.md` (선행 엄밀 증명 찾지 못함, Hirayama 2019 수치 계산, MathSciNet 미검색).

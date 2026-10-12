@@ -6,7 +6,7 @@
 
 The criterion proved here is the case $d = m_1m_2/K$ of **Theorem 1 of Yoshida (1972)** [Y72, p. 400]. It is also the case $d = m_1m_2/K$ of **criterion A′ of Yoshida (1974)** [Y74, p. 369]; see Remark A.4.2.
 
-The corollary to Theorem 1 in [Y72, p. 402] does not assume $r(0)\le d$. **Yoshida himself corrected this in [Y74, p. 369, Note].** There he calls conditions (25)–(26) of [Y72] "incorrect" and replaces them by $\rho(0)\ge ad\ge a\,r(0)$. The statement below assumes $r(t_0)<d_1$ explicitly, so that issue does not affect it.
+The corollary to Theorem 1 in [Y72, p. 402] does not assume $r(0)\le d$. **Yoshida himself corrected this, first in an erratum [Y73] and then in [Y74, p. 369, Note].** The erratum [Y73] replaces condition (26) of the corollary by $d\ge r(0)$; it also corrects inequality (40) on p. 405 of [Y72]. The later Note [Y74, p. 369] calls conditions (25)–(26) of [Y72] "incorrect" and replaces them by $\rho(0)\ge ad\ge a\,r(0)$. The statement below assumes $r(t_0)<d_1$ explicitly, so that issue does not affect it.
 
 Lemmas A and B below are the case $n=1$ of Lemma 1 of [Y72, p. 393] and Lemma 2 of [Y72, p. 396]. Yoshida proves them by induction on $n$ and by analysing the $\theta$-derivative, respectively. We give different, self-contained proofs based on the Legendre (multipole) expansion. This is a standard technique, and we do not claim originality for it.
 
@@ -265,7 +265,7 @@ $$
 
 **A.4.1 (angular momentum).** The only place where information is discarded is (RA), and the discarded term is nonnegative. The theorem therefore applies to $L=0$, which is the case of the Pythagorean problem.
 
-**A.4.2 (relation to Yoshida's statements).** These relations are based on the statements of [Y72] and [Y74] as transcribed from the original scans.
+**A.4.2 (relation to Yoshida's statements).** These relations are based on the statements of [Y72], [Y73] and [Y74] as transcribed from the original scans.
 
 *Theorem 1 of [Y72].* Its hypotheses are:
 - (13) $\rho(0)\ge ad>a\,r(0)$ for some $a>\lambda$;
@@ -280,7 +280,7 @@ So (★) is Theorem 1 of [Y72] with $d=m_1m_2/K$.
 
 *Criterion A′ of [Y74].* With $d=d_1$ it requires $\rho(0)\ge ad_1\ge a\,r(0)$, which allows the boundary case $r(0)=d_1$. That case cannot occur together with (C2) and (C3): Step 2(c) at $t=t_0$ would force $r(t_0)<d_1$.
 
-*Corollary of [Y72].* It has the gap described in A.0, which [Y74, p. 369] corrects. We do not use it.
+*Corollary of [Y72].* It has the gap described in A.0, which was corrected in [Y73] and again in [Y74, p. 369]. We do not use it.
 
 **A.4.3 (ordering of the masses).** If $m_1>m_2$, relabel the binary components. With $\lambda$ and $\nu$ interchanged in $W$, the function becomes smaller, and Lemmas A–B fail, for example at $(r,c)=(d,-1)$. The ordering is essential.
 
@@ -369,10 +369,11 @@ These checks look for errors in the proof above; they do not replace it.
 - **[Bu1913]** C. Burrau, *Numerische Berechnung eines Spezialfalles des Dreikörperproblems*, Astron. Nachr. **195** (1913) 113–118. doi:10.1002/asna.19131950602.
 - **[DLMF]** NIST Digital Library of Mathematical Functions, https://dlmf.nist.gov/, Eqs. 18.10.5 and 18.12.11 (accessed 2026-10-12).
 - **[KS1965]** P. Kustaanheimo, E. Stiefel, *Perturbation theory of Kepler motion based on spinor regularization*, J. Reine Angew. Math. **218** (1965) 204–219.
-- **[LC1920]** T. Levi-Civita, *Sur la régularisation du problème des trois corps*, Acta Math. **42** (1920) 99–144. doi:10.1007/BF02418577.
+- **[LC1920]** T. Levi-Civita, *Sur la régularisation du problème des trois corps*, Acta Math. **42** (1920) 99–144. doi:10.1007/BF02404404.
 - **[P1897]** P. Painlevé, *Leçons sur la théorie analytique des équations différentielles, professées à Stockholm (1895)*, Paris, 1897.
 - **[SM1971]** C. L. Siegel, J. K. Moser, *Lectures on Celestial Mechanics*, Grundlehren der mathematischen Wissenschaften **187**, Springer, Berlin, 1971 (reprinted in Classics in Mathematics, 1995).
 - **[Su1912]** K. F. Sundman, *Mémoire sur le problème des trois corps*, Acta Math. **36** (1912) 105–179. doi:10.1007/BF02422379.
 - **[SP1967]** V. Szebehely, C. F. Peters, *Complete solution of a general problem of three bodies*, Astron. J. **72** (1967) 876. doi:10.1086/110355.
 - **[Y72]** J. Yoshida, *Improved criteria for hyperbolic-elliptic motion in the general three-body problem*, Publ. Astron. Soc. Japan **24** (1972) 391–408. doi:10.1093/pasj/24.3.391.
+- **[Y73]** J. Yoshida, *Erratum: Improved criteria for hyperbolic-elliptic motion in the general three-body problem*, Publ. Astron. Soc. Japan **25** (1973) 285. doi:10.1093/pasj/25.2.285.
 - **[Y74]** J. Yoshida, *Improved criteria for hyperbolic-elliptic motion in the general three-body problem. II*, Publ. Astron. Soc. Japan **26** (1974) 367–377.

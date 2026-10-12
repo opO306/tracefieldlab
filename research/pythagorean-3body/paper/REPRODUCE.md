@@ -1,7 +1,7 @@
 # 재현 꾸러미 (Reproduction package) — 피타고라스 삼체 문제 컴퓨터 보조 증명
 
 > 작성 2026-10-12. 내부용. **외부 공개 전에 영어판이 필요하다 [TODO].**
-> **공개 전제:** 저자(Jeomseon, 필명)는 현재 arXiv 추천인이 없다. 이 꾸러미는 **DOI가 붙는 공개 보관소(예: Zenodo)** 또는 **GitHub 공개 저장소**로 내는 것을 전제로 쓴다. 두 서비스의 업로드 크기 한도·라이선스 요구·DOI 발급 조건·GitHub–Zenodo 연동 방식은 **확인하지 않았다 [CHECK]**. 7절 참고.
+> **공개 전제:** 저자(Jeomseon, 필명)는 현재 arXiv 추천인이 없다. 이 꾸러미는 **Zenodo(DOI)** 와/또는 **GitHub 공개 저장소**로 내는 것을 전제로 쓴다. 두 서비스의 규정은 2026-10-12에 공식 문서로 확인했다(7.1절).
 > 경로는 모두 `research/pythagorean-3body/` 기준이다.
 > 이 문서를 만들면서 코드는 실행하지 않았다. 한 일은 (1) 봉인 파일 `GATE_*_SEAL.json`과 보고서에서 해시를 옮겨 적기, (2) 노트북에서 실제 파일의 SHA-256을 다시 계산해 대조하기, (3) 서버 보관본 tgz의 목록 보기와 작은 요약 파일 몇 개 풀어 읽기(스크래치 폴더)뿐이다.
 
@@ -99,7 +99,7 @@
 | 항목 | 값 | 출처 |
 |---|---|---|
 | R4 실행 | Linux, Python 3.13.5 (GCC 14.2.0 빌드), 순수 파이썬(외부 라이브러리 없음), 실행당 코어 1개 | `results_r4/r3c_final_128w.json` "python" |
-| 서버 | Google Cloud n2 인스턴스, CPU 12개. 기계 형식 n2-custom-12는 메모리 기록이며 **이번에 다시 확인하지 않음 [CHECK]**. 인스턴스 이름 `instance-20260925-221723` | `GATE_R3CP_PLAN_KO.md` §4; `Y1_RESULT_KO.md` §2.4 |
+| 서버 | Google Cloud n2 인스턴스, CPU 12개. 기계 형식은 프로젝트 메모리 기록상 n2-custom-12-12288(vCPU 12, 12 GiB). GCP에 다시 조회하지 않음 **[CHECK: 공개 전 확인]**. 인스턴스 이름 `instance-20260925-221723` | `GATE_R3CP_PLAN_KO.md` §4; `Y1_RESULT_KO.md` §2.4 |
 | Y1 | Python 3.13.5, mpmath 1.3.0(순수 파이썬, 서버에 설치되어 있지 않아 폴더째 복사해 `PYTHONPATH`로 사용) | `Y1_RESULT_KO.md` §2.4 |
 | 검사기 R3c v2 | mpmath 필요. 시스템에 없으면 `mpmath/` 폴더를 `check_r3c_v2.py`·`dyad.py`와 같은 폴더에 둔다(`-I`에서는 `PYTHONPATH`가 무시됨) | 공유 노트 r3c-check-v2 |
 | 증명 점검(로컬) | Python 3.12.7, sympy 1.14.0, mpmath 1.3.0 | `PROOF_REVIEW_KO.md` §10 |
@@ -260,9 +260,25 @@ python -I -X utf8 lemma_adversarial.py 20261012
 - 공개 전 할 일:
   1. 위 파일들의 해시를 공개본에서 다시 계산해 이 문서와 대조한다.
   2. 라이선스를 정한다 **[사용자 결정]**.
-  3. 서비스별 크기 한도와 DOI 발급 방식을 공식 문서로 확인한다 **[CHECK]**.
+  3. 서비스 규정 확인(7.1절, 2026-10-12에 함). 공개 직전에 다시 한 번 본다(규정은 바뀔 수 있다).
   4. 논문 초안의 재현성 절(9절)에 DOI 또는 저장소 주소를 넣는다.
   5. mpmath 사본 포함 여부를 정한다(6절).
+
+### 7.1 서비스 규정 (공식 문서, 2026-10-12 확인)
+
+| 항목 | 내용 | 출처 |
+|---|---|---|
+| Zenodo DOI | 레코드를 공개(publish)하면 DOI를 자동 등록한다. 이미 DOI가 있는 자료는 그 DOI를 입력해야 새로 만들지 않는다 | https://help.zenodo.org/docs/deposit/about-records/ |
+| Zenodo 판(version) | 파일을 고치려면 새 판을 만든다. 판마다 메타데이터·파일·식별자가 따로라서, 특정 판을 인용한 것은 바뀌지 않는다 | 같은 페이지 |
+| Zenodo 용량 | 레코드(또는 초안)당 파일 최대 100개, 합계 50 GB. 200 GB까지는 별도 할당 요청 | https://help.zenodo.org/docs/deposit/manage-files/ |
+| Zenodo 라이선스 | 라이선스 칸은 필수. 기본값은 CC BY 4.0. 소프트웨어는 MIT 등 다른 라이선스를 함께 적을 수 있다(SPDX 목록, 직접 입력 가능) | https://help.zenodo.org/docs/deposit/describe-records/licenses/ |
+| GitHub 파일 크기 | 50 MiB 넘으면 경고, **100 MiB 넘는 파일은 막힘**(Git LFS 필요). 브라우저 업로드는 25 MiB까지. 저장소는 1 GB 미만 권장, 5 GB 미만 강력 권장 | https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github |
+| GitHub 릴리스 | 릴리스 첨부 파일의 총합은 제한 없음. 파일 하나는 요금제의 Git LFS 최대 크기 미만(그 숫자는 이 페이지에 없음) | 같은 페이지 |
+
+이 규정에서 나오는 것(추론):
+- `r4_out.tgz`(119,743,991바이트 ≈ 114 MiB)는 GitHub 저장소에 그대로 올릴 수 없다(100 MiB 초과). Zenodo 레코드에 넣거나, GitHub이면 릴리스 첨부나 Git LFS를 써야 한다. 그 안의 `r3c_steps_144w.jsonl`(64,873,813바이트 ≈ 62 MiB)도 풀어서 올리면 경고 대상이다.
+- Zenodo 한 레코드의 파일 100개 한도 때문에, 묶음 A·B는 zip/tar로 묶어서 올리는 편이 낫다. 레코드 수와 묶는 방법은 **[사용자 결정]**.
+- 학술지·출판사 규정(AI 표기, 필명 허용)은 투고처가 정해진 뒤 확인한다. 출판윤리위원회(COPE) 입장문은 AI 도구를 저자로 올릴 수 없고 사용 사실을 밝혀야 한다고 정한다. 이것은 검색 결과 요약으로만 확인했다. 공식 페이지(https://publicationethics.org/cope-position-statements/ai-author)는 자동 접근이 HTTP 403으로 막혔다 **[CHECK: 투고처 규정과 함께 확인]**.
 
 
 ---
@@ -300,7 +316,7 @@ python -I -X utf8 lemma_adversarial.py 20261012
 | 그 밖의 이진 파일(.so .pkl .tar .tgz .zip 등) | 바꾸지 않고 그대로 복사. secret이 들어 있으면(압축된 tgz는 풀어서 훑음) FLAG로 보고하고 `redact`를 거부 → 사람이 처리 |
 | 파일·폴더 **이름** | 바꾸지 않음. 이름에 secret이 있으면 FLAG |
 
-- `r4_out.tgz`, `batch1.tgz`는 먼저 원본 폴더에 풀고, 사본 폴더를 다시 묶는다. **tar 머리의 소유자 이름**(현재 목록에 사용자명이 소유자로 보임)은 다시 묶을 때 숫자 0 등으로 바꿔야 한다. GNU tar라면 `--owner=0 --group=0 --numeric-owner --sort=name`류 옵션을 쓴다 **[CHECK: 옵션 이름은 공식 문서로 확인]**.
+- `r4_out.tgz`, `batch1.tgz`는 먼저 원본 폴더에 풀고, 사본 폴더를 다시 묶는다. **tar 머리의 소유자 이름**(현재 목록에 사용자명이 소유자로 보임)은 다시 묶을 때 숫자 0 등으로 바꿔야 한다. GNU tar라면 `--owner=0 --group=0 --numeric-owner --sort=name --mtime=…` 옵션을 쓴다. 다섯 옵션 모두 GNU tar 공식 설명서의 옵션 요약에 있다(https://www.gnu.org/software/tar/manual/html_node/Option-Summary.html, 2026-10-12 확인. `--sort` 값은 none·name·inode, `--owner`는 이름·숫자·`이름:숫자` 모두 가능). 서버의 tar 판이 이 옵션을 지원하는지는 실행 전에 `tar --version`으로 본다.
 - `batch1.tgz` 안의 중첩 보관본(`y1_out.tar`, `fc1.tar`, `fakes.tar`, `pack*.tgz`, `all_out.tgz` 등)은 `scan`이 FLAG를 낼 가능성이 크다(추정). 풀어서 따로 처리하거나 공개에서 뺀다 **[사용자 결정]**.
 
 ### 8.3 대조표 `REDACTION_MAP.json` (공개함, secret은 적지 않음)
