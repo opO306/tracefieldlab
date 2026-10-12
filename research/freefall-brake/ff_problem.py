@@ -8,7 +8,8 @@ from ff_krawczyk import di2s, krawczyk, q2s
 
 
 class Problem:
-    def __init__(self, name, system, base, param_comps, eq_comps, eq_targets, h_max):
+    def __init__(self, name, system, base, param_comps, eq_comps, eq_targets, h_max,
+                 tol_control=False, post_check=None):
         if len(param_comps) + 1 != len(eq_comps) or len(eq_comps) != len(eq_targets):
             raise ValueError("need (#params + 1) == #equations == #targets")
         self.name, self.system = name, system
@@ -17,6 +18,8 @@ class Problem:
         self.eq_comps = list(eq_comps)
         self.eq_targets = [Fraction(t) for t in eq_targets]
         self.h_max = Fraction(h_max)
+        self.tol_control = tol_control
+        self.post_check = post_check
 
 
 def _x0(problem, pvals):
@@ -29,7 +32,8 @@ def _x0(problem, pvals):
 def evaluate(problem, X, m):
     sysm, n, qp = problem.system, problem.system.dim, len(problem.param_comps)
     # g(m): 점 초기조건, 정확한 시각 m_τ
-    st, _, _ = integrate(sysm, ls.lohner_init(sysm, _x0(problem, m[:qp])), m[qp], problem.h_max)
+    st, _, _ = integrate(sysm, ls.lohner_init(sysm, _x0(problem, m[:qp])), m[qp], problem.h_max,
+                      tol_control=problem.tol_control)
     box = ls.enclosure_box(st)
     gm = [box[c] - DI(t) for c, t in zip(problem.eq_comps, problem.eq_targets)]
     # [Dg](X): 초기조건 상자 + 시각 구간
@@ -41,9 +45,10 @@ def evaluate(problem, X, m):
     eye = [[Fraction(1 if i == j else 0) for j in range(n)] for i in range(n)]
     st0 = ls.LohnerState(c0, eye, R0, Fraction(0))
     S = [[DI(1) if problem.param_comps[j] == i else DI(0) for j in range(qp)] for i in range(n)]
-    _P, D, F = flow_on_tau_box(sysm, st0, S, X[qp].lo_q, X[qp].hi_q, problem.h_max)
+    P, D, F = flow_on_tau_box(sysm, st0, S, X[qp].lo_q, X[qp].hi_q, problem.h_max,
+                                  tol_control=problem.tol_control)
     Dg = [D[c] + [F[c]] for c in problem.eq_comps]
-    return gm, Dg
+    return gm, Dg, P
 
 
 def run_problem(problem, m, r):
@@ -56,7 +61,7 @@ def run_problem(problem, m, r):
            "h_max": q2s(problem.h_max), "X": [di2s(x) for x in X], "m": [q2s(v) for v in m],
            "r": [q2s(Fraction(ri)) for ri in r]}
     try:
-        gm, Dg = evaluate(problem, X, m)
+        gm, Dg, P = evaluate(problem, X, m)
     except FlowRefused as e:
         out.update(verdict="REFUSED", reason="flow: %s" % e, wall_s=time.time() - t0)
         return out
@@ -65,4 +70,9 @@ def run_problem(problem, m, r):
                verdict=kr["verdict"], reason=kr["reason"], wall_s=time.time() - t0)
     if kr["C"] is not None:
         out.update(C=[[q2s(c) for c in row] for row in kr["C"]], K=[di2s(k) for k in kr["K"]])
+    if problem.post_check is not None:
+        ok, detail = problem.post_check(P)
+        out["post_check"] = {"ok": ok, "detail": detail}
+        if not ok and out["verdict"] == "PASS":
+            out.update(verdict="REFUSED", reason="post_check failed: %s" % detail)
     return out

@@ -7,8 +7,7 @@ C는 근사 역행렬이면 충분하다(정리는 임의의 C에 대해 성립)
 구간 연산은 dyad의 바깥 반올림이라 K는 참 Krawczyk 상자를 포함한다.
 """
 from fractions import Fraction
-
-import numpy as np
+import math
 
 from ff_common import DI
 
@@ -35,9 +34,27 @@ def _mid(x):
 
 
 def approx_inverse(Dg):
-    M = np.array([[float(_mid(e)) for e in row] for row in Dg], dtype=float)
-    Ci = np.linalg.inv(M)
-    return [[Fraction(float(x)) for x in row] for row in Ci]   # float는 정확한 이진 분수
+    """mid([Dg])의 근사 역행렬(부동소수 가우스–조르당, 부분 피벗). 정확할 필요 없음(정리는 임의의 C)."""
+    n = len(Dg)
+    a = [[float(_mid(e)) for e in row] + [1.0 if i == j else 0.0 for j in range(n)]
+         for i, row in enumerate(Dg)]
+    if any(not math.isfinite(x) for row in a for x in row):
+        raise ValueError("non-finite mid([Dg])")
+    for c in range(n):
+        p = max(range(c, n), key=lambda r: abs(a[r][c]))
+        if a[p][c] == 0.0:
+            raise ValueError("singular mid([Dg])")
+        a[c], a[p] = a[p], a[c]
+        piv = a[c][c]
+        a[c] = [x / piv for x in a[c]]
+        for r in range(n):
+            if r != c and a[r][c] != 0.0:
+                f = a[r][c]
+                a[r] = [x - f * y for x, y in zip(a[r], a[c])]
+    inv = [row[n:] for row in a]
+    if any(not math.isfinite(x) for row in inv for x in row):
+        raise ValueError("non-finite inverse")
+    return [[Fraction(x) for x in row] for row in inv]   # float는 정확한 이진 분수
 
 
 def krawczyk(gm, Dg, X, m):
@@ -47,7 +64,7 @@ def krawczyk(gm, Dg, X, m):
             raise ValueError("centre m must lie in X")
     try:
         C = approx_inverse(Dg)
-    except (np.linalg.LinAlgError, ValueError, OverflowError) as e:
+    except (ValueError, OverflowError, ZeroDivisionError) as e:
         return {"verdict": "REFUSED", "K": None, "C": None,
                 "reason": "singular or non-finite mid([Dg]): %s" % e}
     CD = [[DI(c) for c in row] for row in C]          # prec ≥ 53이면 정확 (작으면 바깥 반올림, 여전히 건전)
