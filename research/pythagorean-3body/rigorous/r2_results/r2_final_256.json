@@ -1,0 +1,64 @@
+{
+ "prec": 256,
+ "order": 24,
+ "started_local": "2026-10-11T14:03:53",
+ "stop_reason": "A_EXPLODE",
+ "stop_detail": null,
+ "exception": null,
+ "t_final": "903/128",
+ "t_final_f": 7.0546875,
+ "t_last_ok": "899/128",
+ "t_last_ok_f": 7.0234375,
+ "t_explode": "903/128",
+ "t_explode_f": 7.0546875,
+ "steps_accepted": 1599,
+ "attempts_total": 3138,
+ "discarded": 1539,
+ "wmax_final_log10": 0.080671,
+ "wall_s": 195.941,
+ "cpu_s": 192.453,
+ "grid_counts": {
+  "X1": {
+   "PASS": 0,
+   "UNDECIDED": 7,
+   "VIOLATION": 0,
+   "UND_ref_inside": 0,
+   "UND_ref_outside": 7
+  },
+  "B": {
+   "PASS": 705,
+   "UNDECIDED": 0,
+   "VIOLATION": 0,
+   "UND_ref_inside": 0,
+   "UND_ref_outside": 0
+  }
+ },
+ "violation_file": null,
+ "undecided_width": "1/1000000000000000",
+ "interpretations": "see r2_run.py header I1-I10",
+ "sha256": {
+  "r2_run.py": "763f475c3eb2c1ee456522359a4f334c26be64c514126897c121bce4c00766fa",
+  "GATE_R2_PLAN_KO.md": "79ed3d4ebfdf8f503cea4b215c1fa447de478282fea09f5a71a5ba0ce76b02c5",
+  "ROADMAP_AMENDMENT_3_KO.md": "9e080c99858635c2012c5112a0b9f0bda72fb8dcfeca68fd48eaa1ae80e5bef3",
+  "rigorous/dyad.py": "4d49cf8f707061d128fce3ed44b59ccb3a6bda14937e32dcd469cd201fbabaab",
+  "rigorous/taylor_step.py": "0183f0f8dc76dcf9c1a9933d8f16a636ac011bc15e9a95e0749fb2459be01c31",
+  "results/ref_B_grid.json": "3bfe3e44024d90bfe495c365bebb6c3c2ea7a92c18869d177bd5e6beaf8d3478",
+  "rigorous/R1_FINAL_RUN_KO.md": "7a0732b21287ecdba5090457fa200aedcbaeecc5d8373511b431569e95a1ddcc"
+ },
+ "python": "3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]",
+ "argv": [
+  "r2_run.py",
+  "--prec",
+  "256"
+ ],
+ "args": {
+  "prec": 256,
+  "outdir": "C:\\numerical-audit-lab-recovered-2026-10-01\\research\\pythagorean-3body\\rigorous\\r2_results",
+  "wall_limit": 3600.0,
+  "max_steps": null,
+  "debug_undecided_exp": null,
+  "debug_perturb_ref": null,
+  "force": false
+ },
+ "wall_limit_s": 3600.0
+}

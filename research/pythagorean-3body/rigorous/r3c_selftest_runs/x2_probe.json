@@ -1,0 +1,122 @@
+{
+ "checker": "check_r3c.py",
+ "checker_sha256": "031f11e28f63a2767b01c6e8a532983ee9882e8b82b7e02192eb8bbc7cbe45b3",
+ "module_under_test": "C:\\numerical-audit-lab-recovered-2026-10-01\\research\\pythagorean-3body\\rigorous\\fake_r3c_correct.py",
+ "module_sha256": "e8f63ee43a6f067f26402b3dbc863a3f0dffa89f1add7e0fc6f2a26baabed240",
+ "python": "3.12.7",
+ "platform": "Windows-11-10.0.26200-SP0",
+ "mpmath": "1.3.0",
+ "seed": 20261011,
+ "s1_steps": 1000,
+ "s2_boxes": 20,
+ "time_limit_sec": 3300.0,
+ "mp_dps": 130,
+ "margin": "1e-90",
+ "started_local": "2026-10-11T15:39:28",
+ "seal_check": {
+  "dyad.py": {
+   "expected": "4d49cf8f707061d128fce3ed44b59ccb3a6bda14937e32dcd469cd201fbabaab",
+   "actual": "4d49cf8f707061d128fce3ed44b59ccb3a6bda14937e32dcd469cd201fbabaab",
+   "match": true
+  },
+  "taylor_step.py": {
+   "expected": "0183f0f8dc76dcf9c1a9933d8f16a636ac011bc15e9a95e0749fb2459be01c31",
+   "actual": "0183f0f8dc76dcf9c1a9933d8f16a636ac011bc15e9a95e0749fb2459be01c31",
+   "match": true
+  }
+ },
+ "dyad_path": "C:\\numerical-audit-lab-recovered-2026-10-01\\research\\pythagorean-3body\\rigorous\\dyad.py",
+ "reference_selfcheck": {
+  "circle_vs_cos_sin_maxerr": "3.3812e-131",
+  "pythagorean_conservation_maxerr_t=1/4": "1.8033e-130",
+  "split_step_invariance_maxdiff": "4.5083e-131",
+  "cos_sin_t=100_mpmath_vs_doubling_series": "4.1563e-132"
+ },
+ "verdict_sealed_criteria": "PASS",
+ "verdict_all_including_supplementary": "PASS",
+ "criteria": {
+  "R3-C": {
+   "desc": "\uacc4\uc57d \ud615\uc2dd(7\uc808): \ubc18\ud658 \uad6c\uc870\u00b7info \ud0a4\u00b7h_used \ubc94\uc704\u00b7state.t \uc77c\uad00\u00b7B/c \uc774\uc9c4 \ubd84\uc218",
+   "sealed": true,
+   "verdict": "PASS",
+   "counts": {
+    "PASS": 60,
+    "VIOLATION": 0,
+    "REFUSED": 0,
+    "UNDECIDED": 0,
+    "NOT_RUN": 0
+   },
+   "total": 60,
+   "violations_sample": [],
+   "refused_sample": [],
+   "undecided_sample": []
+  },
+  "R3-X1": {
+   "desc": "[\ubcf4\ucda9] \uc9d1\ud569 c+B\u00b7R \uc758 \uc815\ud655\ud55c \uc810(\uaf2d\uc9d3\uc810\u00b7\ucd95 \uadf9\uc810)\uc774 enclosure_box \uc548\uc5d0 \uc788\ub294\uac00(\uc790\uae30 \uc77c\uad00\uc131)",
+   "sealed": false,
+   "verdict": "PASS",
+   "counts": {
+    "PASS": 4,
+    "VIOLATION": 0,
+    "REFUSED": 0,
+    "UNDECIDED": 0,
+    "NOT_RUN": 0
+   },
+   "total": 4,
+   "violations_sample": [],
+   "refused_sample": [],
+   "undecided_sample": []
+  },
+  "R3-X2": {
+   "desc": "[\ubcf4\ucda9] \ube44\uc6d0\ud615 \ucf00\ud50c\ub7ec \uc5ec\ub7ec \uac78\uc74c(\ub3c5\ub9bd \uae30\uc900 \uc801\ubd84\uacfc \ub300\uc870)",
+   "sealed": false,
+   "verdict": "PASS",
+   "counts": {
+    "PASS": 8,
+    "VIOLATION": 0,
+    "REFUSED": 0,
+    "UNDECIDED": 0,
+    "NOT_RUN": 0
+   },
+   "total": 8,
+   "violations_sample": [],
+   "refused_sample": [],
+   "undecided_sample": []
+  }
+ },
+ "violation_total": 0,
+ "sealed_violation_total": 0,
+ "min_counterexample": null,
+ "system_source": {
+  "make_kepler": "module"
+ },
+ "state_injection_mode_for_S2": null,
+ "advisories_not_counted_as_violations": {},
+ "log10_max_box_width_at_checkpoints": {
+  "kepler-eccentric|prec=128": {
+   "10": -15.704792670814042,
+   "20": -13.964899403386601,
+   "40": -10.136519711211912,
+   "60": -9.513756590296124
+  }
+ },
+ "step_time": {
+  "kepler-eccentric|prec=128": {
+   "calls": 60,
+   "median_ms": 71.499,
+   "max_ms": 85.982,
+   "total_s": 4.3
+  }
+ },
+ "reference_cache": {
+  "hits": 0,
+  "misses": 4,
+  "path": null
+ },
+ "stats": {
+  "steps": 60
+ },
+ "elapsed_sec": 60.9,
+ "evidence_level": "tested: containment violation 0 within the tested grid + independent reference",
+ "verdict": "PASS"
+}

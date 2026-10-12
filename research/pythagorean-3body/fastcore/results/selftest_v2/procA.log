@@ -1,0 +1,225 @@
+fc2 prec= 96 K= 1 masses=pyth nb=2 boxes=50 mismatch=0 intervals=2200 orig=0.03s fast=0.01s
+fc2 prec= 96 K= 1 masses=pyth nb=3 boxes=50 mismatch=0 intervals=3900 orig=0.09s fast=0.02s
+fc2 prec= 96 K= 1 masses=rand nb=2 boxes=50 mismatch=0 intervals=2200 orig=0.03s fast=0.01s
+fc2 prec= 96 K= 1 masses=rand nb=3 boxes=50 mismatch=0 intervals=3900 orig=0.10s fast=0.02s
+fc2 prec= 96 K= 5 masses=pyth nb=2 boxes=50 mismatch=0 intervals=15800 orig=0.62s fast=0.09s
+fc2 prec= 96 K= 5 masses=pyth nb=3 boxes=50 mismatch=0 intervals=33300 orig=2.13s fast=0.26s
+fc2 prec= 96 K= 5 masses=rand nb=2 boxes=50 mismatch=0 intervals=15800 orig=0.62s fast=0.09s
+fc2 prec= 96 K= 5 masses=rand nb=3 boxes=50 mismatch=0 intervals=33300 orig=2.15s fast=0.27s
+fc2 prec= 96 K=20 masses=pyth nb=2 boxes=50 mismatch=0 intervals=69800 orig=8.85s fast=0.95s
+fc2 prec= 96 K=20 masses=pyth nb=3 boxes=50 mismatch=0 intervals=150300 orig=36.44s fast=3.70s
+fc2 prec= 96 K=20 masses=rand nb=2 boxes=50 mismatch=0 intervals=69800 orig=8.96s fast=0.97s
+fc2 prec= 96 K=20 masses=rand nb=3 boxes=50 mismatch=0 intervals=150300 orig=36.23s fast=3.64s
+fc2 prec= 96 K=30 masses=pyth nb=2 boxes=50 mismatch=0 intervals=105800 orig=19.56s fast=1.95s
+fc2 prec= 96 K=30 masses=pyth nb=3 boxes=50 mismatch=0 intervals=228300 orig=65.78s fast=6.45s
+fc2 prec= 96 K=30 masses=rand nb=2 boxes=50 mismatch=0 intervals=105800 orig=15.07s fast=1.56s
+fc2 prec= 96 K=30 masses=rand nb=3 boxes=50 mismatch=0 intervals=228300 orig=81.92s fast=7.73s
+fc2 prec= 96 K=40 masses=pyth nb=2 boxes=50 mismatch=0 intervals=141800 orig=34.21s fast=3.30s
+fc2 prec= 96 K=40 masses=pyth nb=3 boxes=50 mismatch=0 intervals=306300 orig=110.56s fast=10.48s
+fc2 prec= 96 K=40 masses=rand nb=2 boxes=50 mismatch=0 intervals=141800 orig=26.22s fast=2.59s
+fc2 prec= 96 K=40 masses=rand nb=3 boxes=50 mismatch=0 intervals=306300 orig=129.69s fast=12.11s
+fc2 prec=112 K= 1 masses=pyth nb=2 boxes=50 mismatch=0 intervals=2200 orig=0.03s fast=0.01s
+fc2 prec=112 K= 1 masses=pyth nb=3 boxes=50 mismatch=0 intervals=3900 orig=0.09s fast=0.02s
+fc2 prec=112 K= 1 masses=rand nb=2 boxes=50 mismatch=0 intervals=2200 orig=0.03s fast=0.01s
+fc2 prec=112 K= 1 masses=rand nb=3 boxes=50 mismatch=0 intervals=3900 orig=0.09s fast=0.02s
+fc2 prec=112 K= 5 masses=pyth nb=2 boxes=50 mismatch=0 intervals=15800 orig=0.60s fast=0.09s
+fc2 prec=112 K= 5 masses=pyth nb=3 boxes=50 mismatch=0 intervals=33300 orig=2.13s fast=0.27s
+fc2 prec=112 K= 5 masses=rand nb=2 boxes=50 mismatch=0 intervals=15800 orig=0.61s fast=0.09s
+fc2 prec=112 K= 5 masses=rand nb=3 boxes=50 mismatch=0 intervals=33300 orig=2.22s fast=0.28s
+fc2 prec=112 K=20 masses=pyth nb=2 boxes=50 mismatch=0 intervals=69800 orig=8.94s fast=0.98s
+fc2 prec=112 K=20 masses=pyth nb=3 boxes=50 mismatch=0 intervals=150300 orig=35.80s fast=3.63s
+fc2 prec=112 K=20 masses=rand nb=2 boxes=50 mismatch=0 intervals=69800 orig=8.77s fast=0.95s
+fc2 prec=112 K=20 masses=rand nb=3 boxes=50 mismatch=0 intervals=150300 orig=36.04s fast=3.66s
+fc2 prec=112 K=30 masses=pyth nb=2 boxes=50 mismatch=0 intervals=105800 orig=19.53s fast=2.00s
+fc2 prec=112 K=30 masses=pyth nb=3 boxes=50 mismatch=0 intervals=228300 orig=81.24s fast=7.80s
+fc2 prec=112 K=30 masses=rand nb=2 boxes=50 mismatch=0 intervals=105800 orig=19.56s fast=1.97s
+fc2 prec=112 K=30 masses=rand nb=3 boxes=50 mismatch=0 intervals=228300 orig=81.24s fast=7.85s
+fc2 prec=112 K=40 masses=pyth nb=2 boxes=50 mismatch=0 intervals=141800 orig=34.49s fast=3.36s
+fc2 prec=112 K=40 masses=pyth nb=3 boxes=50 mismatch=0 intervals=306300 orig=143.50s fast=13.58s
+fc2 prec=112 K=40 masses=rand nb=2 boxes=50 mismatch=0 intervals=141800 orig=34.70s fast=3.38s
+fc2 prec=112 K=40 masses=rand nb=3 boxes=50 mismatch=0 intervals=306300 orig=145.66s fast=13.80s
+fc2 prec=128 K= 1 masses=pyth nb=2 boxes=50 mismatch=0 intervals=2200 orig=0.03s fast=0.01s
+fc2 prec=128 K= 1 masses=pyth nb=3 boxes=50 mismatch=0 intervals=3900 orig=0.09s fast=0.02s
+fc2 prec=128 K= 1 masses=rand nb=2 boxes=50 mismatch=0 intervals=2200 orig=0.03s fast=0.01s
+fc2 prec=128 K= 1 masses=rand nb=3 boxes=50 mismatch=0 intervals=3900 orig=0.10s fast=0.02s
+fc2 prec=128 K= 5 masses=pyth nb=2 boxes=50 mismatch=0 intervals=15800 orig=0.62s fast=0.09s
+fc2 prec=128 K= 5 masses=pyth nb=3 boxes=50 mismatch=0 intervals=33300 orig=2.07s fast=0.26s
+fc2 prec=128 K= 5 masses=rand nb=2 boxes=50 mismatch=0 intervals=15800 orig=0.33s fast=0.05s
+fc2 prec=128 K= 5 masses=rand nb=3 boxes=50 mismatch=0 intervals=33300 orig=1.77s fast=0.23s
+fc2 prec=128 K=20 masses=pyth nb=2 boxes=50 mismatch=0 intervals=69800 orig=9.02s fast=0.99s
+fc2 prec=128 K=20 masses=pyth nb=3 boxes=50 mismatch=0 intervals=150300 orig=35.90s fast=3.72s
+fc2 prec=128 K=20 masses=rand nb=2 boxes=50 mismatch=0 intervals=69800 orig=8.17s fast=0.91s
+fc2 prec=128 K=20 masses=rand nb=3 boxes=50 mismatch=0 intervals=150300 orig=24.69s fast=2.71s
+fc2 prec=128 K=30 masses=pyth nb=2 boxes=50 mismatch=0 intervals=105800 orig=19.93s fast=2.01s
+fc2 prec=128 K=30 masses=pyth nb=3 boxes=50 mismatch=0 intervals=228300 orig=82.32s fast=7.96s
+fc2 prec=128 K=30 masses=rand nb=2 boxes=50 mismatch=0 intervals=105800 orig=19.96s fast=2.03s
+fc2 prec=128 K=30 masses=rand nb=3 boxes=50 mismatch=0 intervals=228300 orig=82.36s fast=8.05s
+fc2 prec=128 K=40 masses=pyth nb=2 boxes=50 mismatch=0 intervals=141800 orig=34.80s fast=3.39s
+fc2 prec=128 K=40 masses=pyth nb=3 boxes=50 mismatch=0 intervals=306300 orig=141.87s fast=13.45s
+fc2 prec=128 K=40 masses=rand nb=2 boxes=50 mismatch=0 intervals=141800 orig=34.85s fast=3.41s
+fc2 prec=128 K=40 masses=rand nb=3 boxes=50 mismatch=0 intervals=306300 orig=147.01s fast=14.13s
+fc2 prec=144 K= 1 masses=pyth nb=2 boxes=50 mismatch=0 intervals=2200 orig=0.03s fast=0.01s
+fc2 prec=144 K= 1 masses=pyth nb=3 boxes=50 mismatch=0 intervals=3900 orig=0.09s fast=0.02s
+fc2 prec=144 K= 1 masses=rand nb=2 boxes=50 mismatch=0 intervals=2200 orig=0.03s fast=0.01s
+fc2 prec=144 K= 1 masses=rand nb=3 boxes=50 mismatch=0 intervals=3900 orig=0.10s fast=0.02s
+fc2 prec=144 K= 5 masses=pyth nb=2 boxes=50 mismatch=0 intervals=15800 orig=0.61s fast=0.09s
+fc2 prec=144 K= 5 masses=pyth nb=3 boxes=50 mismatch=0 intervals=33300 orig=2.14s fast=0.28s
+fc2 prec=144 K= 5 masses=rand nb=2 boxes=50 mismatch=0 intervals=15800 orig=0.63s fast=0.09s
+fc2 prec=144 K= 5 masses=rand nb=3 boxes=50 mismatch=0 intervals=33300 orig=2.19s fast=0.29s
+fc2 prec=144 K=20 masses=pyth nb=2 boxes=50 mismatch=0 intervals=69800 orig=8.90s fast=1.03s
+fc2 prec=144 K=20 masses=pyth nb=3 boxes=50 mismatch=0 intervals=150300 orig=37.00s fast=3.98s
+fc2 prec=144 K=20 masses=rand nb=2 boxes=50 mismatch=0 intervals=69800 orig=9.01s fast=1.05s
+fc2 prec=144 K=20 masses=rand nb=3 boxes=50 mismatch=0 intervals=150300 orig=36.68s fast=4.01s
+fc2 prec=144 K=30 masses=pyth nb=2 boxes=50 mismatch=0 intervals=105800 orig=20.17s fast=2.16s
+fc2 prec=144 K=30 masses=pyth nb=3 boxes=50 mismatch=0 intervals=228300 orig=82.96s fast=8.60s
+fc2 prec=144 K=30 masses=rand nb=2 boxes=50 mismatch=0 intervals=105800 orig=19.85s fast=2.18s
+fc2 prec=144 K=30 masses=rand nb=3 boxes=50 mismatch=0 intervals=228300 orig=78.46s fast=8.30s
+fc2 prec=144 K=40 masses=pyth nb=2 boxes=50 mismatch=0 intervals=141800 orig=17.83s fast=2.06s
+fc2 prec=144 K=40 masses=pyth nb=3 boxes=50 mismatch=0 intervals=306300 orig=141.37s fast=14.50s
+fc2 prec=144 K=40 masses=rand nb=2 boxes=50 mismatch=0 intervals=141800 orig=32.67s fast=3.39s
+fc2 prec=144 K=40 masses=rand nb=3 boxes=50 mismatch=0 intervals=306300 orig=129.08s fast=13.12s
+fc2 TOTAL cases=4000 mismatch=0 intervals=8460000 wall=2768.1s (orig 2500.2s, fast 248.5s)
+fc2_a rc=0
+fc1 prec= 96 K= 1 masses=pyth nb=2 boxes=50 mismatch=0 intervals=800 orig=0.00s fast=0.00s
+fc1 prec= 96 K= 1 masses=pyth nb=3 boxes=50 mismatch=0 intervals=1200 orig=0.01s fast=0.00s
+fc1 prec= 96 K= 1 masses=rand nb=2 boxes=50 mismatch=0 intervals=800 orig=0.00s fast=0.00s
+fc1 prec= 96 K= 1 masses=rand nb=3 boxes=50 mismatch=0 intervals=1200 orig=0.01s fast=0.00s
+fc1 prec= 96 K= 5 masses=pyth nb=2 boxes=50 mismatch=0 intervals=2400 orig=0.04s fast=0.01s
+fc1 prec= 96 K= 5 masses=pyth nb=3 boxes=50 mismatch=0 intervals=3600 orig=0.10s fast=0.01s
+fc1 prec= 96 K= 5 masses=rand nb=2 boxes=50 mismatch=0 intervals=2400 orig=0.04s fast=0.01s
+fc1 prec= 96 K= 5 masses=rand nb=3 boxes=50 mismatch=0 intervals=3600 orig=0.10s fast=0.02s
+fc1 prec= 96 K=20 masses=pyth nb=2 boxes=50 mismatch=0 intervals=8400 orig=0.34s fast=0.04s
+fc1 prec= 96 K=20 masses=pyth nb=3 boxes=50 mismatch=0 intervals=12600 orig=0.95s fast=0.12s
+fc1 prec= 96 K=20 masses=rand nb=2 boxes=50 mismatch=0 intervals=8400 orig=0.34s fast=0.05s
+fc1 prec= 96 K=20 masses=rand nb=3 boxes=50 mismatch=0 intervals=12600 orig=0.95s fast=0.12s
+fc1 prec= 96 K=30 masses=pyth nb=2 boxes=50 mismatch=0 intervals=12400 orig=1.36s fast=0.15s
+fc1 prec= 96 K=30 masses=pyth nb=3 boxes=50 mismatch=0 intervals=18600 orig=3.98s fast=0.42s
+fc1 prec= 96 K=30 masses=rand nb=2 boxes=50 mismatch=0 intervals=12400 orig=1.38s fast=0.16s
+fc1 prec= 96 K=30 masses=rand nb=3 boxes=50 mismatch=0 intervals=18600 orig=3.98s fast=0.42s
+fc1 prec= 96 K=40 masses=pyth nb=2 boxes=50 mismatch=0 intervals=16400 orig=2.42s fast=0.26s
+fc1 prec= 96 K=40 masses=pyth nb=3 boxes=50 mismatch=0 intervals=24600 orig=6.97s fast=0.70s
+fc1 prec= 96 K=40 masses=rand nb=2 boxes=50 mismatch=0 intervals=16400 orig=2.39s fast=0.26s
+fc1 prec= 96 K=40 masses=rand nb=3 boxes=50 mismatch=0 intervals=24600 orig=6.84s fast=0.70s
+fc1 prec=112 K= 1 masses=pyth nb=2 boxes=50 mismatch=0 intervals=800 orig=0.01s fast=0.00s
+fc1 prec=112 K= 1 masses=pyth nb=3 boxes=50 mismatch=0 intervals=1200 orig=0.02s fast=0.00s
+fc1 prec=112 K= 1 masses=rand nb=2 boxes=50 mismatch=0 intervals=800 orig=0.01s fast=0.00s
+fc1 prec=112 K= 1 masses=rand nb=3 boxes=50 mismatch=0 intervals=1200 orig=0.02s fast=0.01s
+fc1 prec=112 K= 5 masses=pyth nb=2 boxes=50 mismatch=0 intervals=2400 orig=0.07s fast=0.01s
+fc1 prec=112 K= 5 masses=pyth nb=3 boxes=50 mismatch=0 intervals=3600 orig=0.18s fast=0.03s
+fc1 prec=112 K= 5 masses=rand nb=2 boxes=50 mismatch=0 intervals=2400 orig=0.07s fast=0.01s
+fc1 prec=112 K= 5 masses=rand nb=3 boxes=50 mismatch=0 intervals=3600 orig=0.19s fast=0.03s
+fc1 prec=112 K=20 masses=pyth nb=2 boxes=50 mismatch=0 intervals=8400 orig=0.68s fast=0.08s
+fc1 prec=112 K=20 masses=pyth nb=3 boxes=50 mismatch=0 intervals=12600 orig=1.82s fast=0.20s
+fc1 prec=112 K=20 masses=rand nb=2 boxes=50 mismatch=0 intervals=8400 orig=0.34s fast=0.05s
+fc1 prec=112 K=20 masses=rand nb=3 boxes=50 mismatch=0 intervals=12600 orig=1.09s fast=0.13s
+fc1 prec=112 K=30 masses=pyth nb=2 boxes=50 mismatch=0 intervals=12400 orig=1.38s fast=0.16s
+fc1 prec=112 K=30 masses=pyth nb=3 boxes=50 mismatch=0 intervals=18600 orig=3.99s fast=0.42s
+fc1 prec=112 K=30 masses=rand nb=2 boxes=50 mismatch=0 intervals=12400 orig=1.45s fast=0.16s
+fc1 prec=112 K=30 masses=rand nb=3 boxes=50 mismatch=0 intervals=18600 orig=2.90s fast=0.32s
+fc1 prec=112 K=40 masses=pyth nb=2 boxes=50 mismatch=0 intervals=16400 orig=1.69s fast=0.19s
+fc1 prec=112 K=40 masses=pyth nb=3 boxes=50 mismatch=0 intervals=24600 orig=3.88s fast=0.43s
+fc1 prec=112 K=40 masses=rand nb=2 boxes=50 mismatch=0 intervals=16400 orig=1.19s fast=0.14s
+fc1 prec=112 K=40 masses=rand nb=3 boxes=50 mismatch=0 intervals=24600 orig=3.44s fast=0.38s
+fc1 prec=128 K= 1 masses=pyth nb=2 boxes=50 mismatch=0 intervals=800 orig=0.00s fast=0.00s
+fc1 prec=128 K= 1 masses=pyth nb=3 boxes=50 mismatch=0 intervals=1200 orig=0.01s fast=0.00s
+fc1 prec=128 K= 1 masses=rand nb=2 boxes=50 mismatch=0 intervals=800 orig=0.00s fast=0.00s
+fc1 prec=128 K= 1 masses=rand nb=3 boxes=50 mismatch=0 intervals=1200 orig=0.01s fast=0.00s
+fc1 prec=128 K= 5 masses=pyth nb=2 boxes=50 mismatch=0 intervals=2400 orig=0.04s fast=0.01s
+fc1 prec=128 K= 5 masses=pyth nb=3 boxes=50 mismatch=0 intervals=3600 orig=0.10s fast=0.02s
+fc1 prec=128 K= 5 masses=rand nb=2 boxes=50 mismatch=0 intervals=2400 orig=0.04s fast=0.01s
+fc1 prec=128 K= 5 masses=rand nb=3 boxes=50 mismatch=0 intervals=3600 orig=0.18s fast=0.03s
+fc1 prec=128 K=20 masses=pyth nb=2 boxes=50 mismatch=0 intervals=8400 orig=0.68s fast=0.08s
+fc1 prec=128 K=20 masses=pyth nb=3 boxes=50 mismatch=0 intervals=12600 orig=1.92s fast=0.22s
+fc1 prec=128 K=20 masses=rand nb=2 boxes=50 mismatch=0 intervals=8400 orig=0.68s fast=0.08s
+fc1 prec=128 K=20 masses=rand nb=3 boxes=50 mismatch=0 intervals=12600 orig=1.92s fast=0.21s
+fc1 prec=128 K=30 masses=pyth nb=2 boxes=50 mismatch=0 intervals=12400 orig=1.40s fast=0.16s
+fc1 prec=128 K=30 masses=pyth nb=3 boxes=50 mismatch=0 intervals=18600 orig=4.02s fast=0.43s
+fc1 prec=128 K=30 masses=rand nb=2 boxes=50 mismatch=0 intervals=12400 orig=1.45s fast=0.17s
+fc1 prec=128 K=30 masses=rand nb=3 boxes=50 mismatch=0 intervals=18600 orig=4.12s fast=0.44s
+fc1 prec=128 K=40 masses=pyth nb=2 boxes=50 mismatch=0 intervals=16400 orig=2.40s fast=0.26s
+fc1 prec=128 K=40 masses=pyth nb=3 boxes=50 mismatch=0 intervals=24600 orig=6.91s fast=0.71s
+fc1 prec=128 K=40 masses=rand nb=2 boxes=50 mismatch=0 intervals=16400 orig=2.41s fast=0.26s
+fc1 prec=128 K=40 masses=rand nb=3 boxes=50 mismatch=0 intervals=24600 orig=6.69s fast=0.69s
+fc1 prec=144 K= 1 masses=pyth nb=2 boxes=50 mismatch=0 intervals=800 orig=0.01s fast=0.00s
+fc1 prec=144 K= 1 masses=pyth nb=3 boxes=50 mismatch=0 intervals=1200 orig=0.02s fast=0.00s
+fc1 prec=144 K= 1 masses=rand nb=2 boxes=50 mismatch=0 intervals=800 orig=0.01s fast=0.00s
+fc1 prec=144 K= 1 masses=rand nb=3 boxes=50 mismatch=0 intervals=1200 orig=0.02s fast=0.01s
+fc1 prec=144 K= 5 masses=pyth nb=2 boxes=50 mismatch=0 intervals=2400 orig=0.07s fast=0.01s
+fc1 prec=144 K= 5 masses=pyth nb=3 boxes=50 mismatch=0 intervals=3600 orig=0.19s fast=0.03s
+fc1 prec=144 K= 5 masses=rand nb=2 boxes=50 mismatch=0 intervals=2400 orig=0.07s fast=0.01s
+fc1 prec=144 K= 5 masses=rand nb=3 boxes=50 mismatch=0 intervals=3600 orig=0.19s fast=0.03s
+fc1 prec=144 K=20 masses=pyth nb=2 boxes=50 mismatch=0 intervals=8400 orig=0.68s fast=0.09s
+fc1 prec=144 K=20 masses=pyth nb=3 boxes=50 mismatch=0 intervals=12600 orig=1.97s fast=0.23s
+fc1 prec=144 K=20 masses=rand nb=2 boxes=50 mismatch=0 intervals=8400 orig=0.72s fast=0.10s
+fc1 prec=144 K=20 masses=rand nb=3 boxes=50 mismatch=0 intervals=12600 orig=1.52s fast=0.19s
+fc1 prec=144 K=30 masses=pyth nb=2 boxes=50 mismatch=0 intervals=12400 orig=0.75s fast=0.10s
+fc1 prec=144 K=30 masses=pyth nb=3 boxes=50 mismatch=0 intervals=18600 orig=3.89s fast=0.43s
+fc1 prec=144 K=30 masses=rand nb=2 boxes=50 mismatch=0 intervals=12400 orig=1.45s fast=0.17s
+fc1 prec=144 K=30 masses=rand nb=3 boxes=50 mismatch=0 intervals=18600 orig=4.08s fast=0.46s
+fc1 prec=144 K=40 masses=pyth nb=2 boxes=50 mismatch=0 intervals=16400 orig=2.44s fast=0.28s
+fc1 prec=144 K=40 masses=pyth nb=3 boxes=50 mismatch=0 intervals=24600 orig=6.96s fast=0.75s
+fc1 prec=144 K=40 masses=rand nb=2 boxes=50 mismatch=0 intervals=16400 orig=2.40s fast=0.28s
+fc1 prec=144 K=40 masses=rand nb=3 boxes=50 mismatch=0 intervals=24600 orig=7.16s fast=0.77s
+fc1 prec=160 K= 1 masses=pyth nb=2 boxes=50 mismatch=0 intervals=800 orig=0.01s fast=0.00s
+fc1 prec=160 K= 1 masses=pyth nb=3 boxes=50 mismatch=0 intervals=1200 orig=0.02s fast=0.00s
+fc1 prec=160 K= 1 masses=rand nb=2 boxes=50 mismatch=0 intervals=800 orig=0.01s fast=0.00s
+fc1 prec=160 K= 1 masses=rand nb=3 boxes=50 mismatch=0 intervals=1200 orig=0.02s fast=0.01s
+fc1 prec=160 K= 5 masses=pyth nb=2 boxes=50 mismatch=0 intervals=2400 orig=0.07s fast=0.01s
+fc1 prec=160 K= 5 masses=pyth nb=3 boxes=50 mismatch=0 intervals=3600 orig=0.19s fast=0.03s
+fc1 prec=160 K= 5 masses=rand nb=2 boxes=50 mismatch=0 intervals=2400 orig=0.07s fast=0.01s
+fc1 prec=160 K= 5 masses=rand nb=3 boxes=50 mismatch=0 intervals=3600 orig=0.19s fast=0.03s
+fc1 prec=160 K=20 masses=pyth nb=2 boxes=50 mismatch=0 intervals=8400 orig=0.69s fast=0.09s
+fc1 prec=160 K=20 masses=pyth nb=3 boxes=50 mismatch=0 intervals=12600 orig=1.96s fast=0.23s
+fc1 prec=160 K=20 masses=rand nb=2 boxes=50 mismatch=0 intervals=8400 orig=0.69s fast=0.09s
+fc1 prec=160 K=20 masses=rand nb=3 boxes=50 mismatch=0 intervals=12600 orig=1.97s fast=0.23s
+fc1 prec=160 K=30 masses=pyth nb=2 boxes=50 mismatch=0 intervals=12400 orig=1.43s fast=0.17s
+fc1 prec=160 K=30 masses=pyth nb=3 boxes=50 mismatch=0 intervals=18600 orig=4.13s fast=0.45s
+fc1 prec=160 K=30 masses=rand nb=2 boxes=50 mismatch=0 intervals=12400 orig=1.45s fast=0.17s
+fc1 prec=160 K=30 masses=rand nb=3 boxes=50 mismatch=0 intervals=18600 orig=3.40s fast=0.38s
+fc1 prec=160 K=40 masses=pyth nb=2 boxes=50 mismatch=0 intervals=16400 orig=1.22s fast=0.15s
+fc1 prec=160 K=40 masses=pyth nb=3 boxes=50 mismatch=0 intervals=24600 orig=5.80s fast=0.63s
+fc1 prec=160 K=40 masses=rand nb=2 boxes=50 mismatch=0 intervals=16400 orig=2.51s fast=0.29s
+fc1 prec=160 K=40 masses=rand nb=3 boxes=50 mismatch=0 intervals=24600 orig=7.15s fast=0.76s
+fc1 prec=192 K= 1 masses=pyth nb=2 boxes=50 mismatch=0 intervals=800 orig=0.01s fast=0.00s
+fc1 prec=192 K= 1 masses=pyth nb=3 boxes=50 mismatch=0 intervals=1200 orig=0.02s fast=0.00s
+fc1 prec=192 K= 1 masses=rand nb=2 boxes=50 mismatch=0 intervals=800 orig=0.01s fast=0.00s
+fc1 prec=192 K= 1 masses=rand nb=3 boxes=50 mismatch=0 intervals=1200 orig=0.02s fast=0.01s
+fc1 prec=192 K= 5 masses=pyth nb=2 boxes=50 mismatch=0 intervals=2400 orig=0.07s fast=0.01s
+fc1 prec=192 K= 5 masses=pyth nb=3 boxes=50 mismatch=0 intervals=3600 orig=0.19s fast=0.03s
+fc1 prec=192 K= 5 masses=rand nb=2 boxes=50 mismatch=0 intervals=2400 orig=0.07s fast=0.01s
+fc1 prec=192 K= 5 masses=rand nb=3 boxes=50 mismatch=0 intervals=3600 orig=0.20s fast=0.03s
+fc1 prec=192 K=20 masses=pyth nb=2 boxes=50 mismatch=0 intervals=8400 orig=0.70s fast=0.09s
+fc1 prec=192 K=20 masses=pyth nb=3 boxes=50 mismatch=0 intervals=12600 orig=2.02s fast=0.23s
+fc1 prec=192 K=20 masses=rand nb=2 boxes=50 mismatch=0 intervals=8400 orig=0.72s fast=0.09s
+fc1 prec=192 K=20 masses=rand nb=3 boxes=50 mismatch=0 intervals=12600 orig=2.05s fast=0.24s
+fc1 prec=192 K=30 masses=pyth nb=2 boxes=50 mismatch=0 intervals=12400 orig=1.46s fast=0.17s
+fc1 prec=192 K=30 masses=pyth nb=3 boxes=50 mismatch=0 intervals=18600 orig=4.19s fast=0.46s
+fc1 prec=192 K=30 masses=rand nb=2 boxes=50 mismatch=0 intervals=12400 orig=1.46s fast=0.18s
+fc1 prec=192 K=30 masses=rand nb=3 boxes=50 mismatch=0 intervals=18600 orig=4.34s fast=0.48s
+fc1 prec=192 K=40 masses=pyth nb=2 boxes=50 mismatch=0 intervals=16400 orig=2.56s fast=0.29s
+fc1 prec=192 K=40 masses=pyth nb=3 boxes=50 mismatch=0 intervals=24600 orig=7.24s fast=0.78s
+fc1 prec=192 K=40 masses=rand nb=2 boxes=50 mismatch=0 intervals=16400 orig=2.50s fast=0.28s
+fc1 prec=192 K=40 masses=rand nb=3 boxes=50 mismatch=0 intervals=24600 orig=7.24s fast=0.78s
+fc1 prec=256 K= 1 masses=pyth nb=2 boxes=50 mismatch=0 intervals=800 orig=0.01s fast=0.00s
+fc1 prec=256 K= 1 masses=pyth nb=3 boxes=50 mismatch=0 intervals=1200 orig=0.02s fast=0.01s
+fc1 prec=256 K= 1 masses=rand nb=2 boxes=50 mismatch=0 intervals=800 orig=0.01s fast=0.00s
+fc1 prec=256 K= 1 masses=rand nb=3 boxes=50 mismatch=0 intervals=1200 orig=0.02s fast=0.01s
+fc1 prec=256 K= 5 masses=pyth nb=2 boxes=50 mismatch=0 intervals=2400 orig=0.05s fast=0.01s
+fc1 prec=256 K= 5 masses=pyth nb=3 boxes=50 mismatch=0 intervals=3600 orig=0.10s fast=0.02s
+fc1 prec=256 K= 5 masses=rand nb=2 boxes=50 mismatch=0 intervals=2400 orig=0.04s fast=0.01s
+fc1 prec=256 K= 5 masses=rand nb=3 boxes=50 mismatch=0 intervals=3600 orig=0.11s fast=0.02s
+fc1 prec=256 K=20 masses=pyth nb=2 boxes=50 mismatch=0 intervals=8400 orig=0.37s fast=0.05s
+fc1 prec=256 K=20 masses=pyth nb=3 boxes=50 mismatch=0 intervals=12600 orig=1.42s fast=0.17s
+fc1 prec=256 K=20 masses=rand nb=2 boxes=50 mismatch=0 intervals=8400 orig=0.73s fast=0.10s
+fc1 prec=256 K=20 masses=rand nb=3 boxes=50 mismatch=0 intervals=12600 orig=2.15s fast=0.25s
+fc1 prec=256 K=30 masses=pyth nb=2 boxes=50 mismatch=0 intervals=12400 orig=1.57s fast=0.19s
+fc1 prec=256 K=30 masses=pyth nb=3 boxes=50 mismatch=0 intervals=18600 orig=4.45s fast=0.49s
+fc1 prec=256 K=30 masses=rand nb=2 boxes=50 mismatch=0 intervals=12400 orig=1.53s fast=0.19s
+fc1 prec=256 K=30 masses=rand nb=3 boxes=50 mismatch=0 intervals=18600 orig=4.42s fast=0.49s
+fc1 prec=256 K=40 masses=pyth nb=2 boxes=50 mismatch=0 intervals=16400 orig=2.60s fast=0.30s
+fc1 prec=256 K=40 masses=pyth nb=3 boxes=50 mismatch=0 intervals=24600 orig=7.52s fast=0.81s
+fc1 prec=256 K=40 masses=rand nb=2 boxes=50 mismatch=0 intervals=16400 orig=2.35s fast=0.27s
+fc1 prec=256 K=40 masses=rand nb=3 boxes=50 mismatch=0 intervals=24600 orig=6.32s fast=0.69s
+fc1 TOTAL cases=7000 mismatch=0 intervals=1414000 wall=262.8s (orig 232.0s, fast 25.9s)
+fc1 rc=0
+procA done_utc=2026-10-11T16:30:19Z

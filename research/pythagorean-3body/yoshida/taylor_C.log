@@ -1,0 +1,21 @@
+t=3.8037 steps=200 h=7.39e-04 dE=3.38e-22 wall=4s
+t=8.7601 steps=400 h=5.98e-05 dE=6.17e-23 wall=7s
+t=14.6026 steps=600 h=5.66e-03 dE=7.51e-22 wall=11s
+t=16.0454 steps=800 h=2.50e-02 dE=6.36e-19 wall=14s
+t=22.9382 steps=1000 h=4.26e-03 dE=6.36e-19 wall=18s
+t=27.7560 steps=1200 h=3.64e-03 dE=6.36e-19 wall=22s
+t=29.8063 steps=1400 h=5.97e-04 dE=6.33e-19 wall=25s
+t=34.9301 steps=1600 h=1.78e-02 dE=6.32e-19 wall=29s
+t=41.6825 steps=1800 h=2.69e-02 dE=6.32e-19 wall=33s
+t=47.3657 steps=2000 h=8.57e-04 dE=6.32e-19 wall=37s
+t=50.2402 steps=2200 h=5.77e-02 dE=6.33e-19 wall=40s
+t=54.5055 steps=2400 h=1.11e-04 dE=6.33e-19 wall=44s
+t=59.1057 steps=2600 h=1.60e-02 dE=6.33e-19 wall=48s
+t=59.8922 steps=2800 h=1.36e-02 dE=6.34e-19 wall=51s
+t=61.4906 steps=3000 h=4.15e-05 dE=6.35e-19 wall=54s
+t=63.1871 steps=3200 h=3.63e-03 dE=6.38e-19 wall=57s
+t=64.0867 steps=3400 h=2.03e-03 dE=6.39e-19 wall=61s
+t=65.7899 steps=3600 h=4.29e-05 dE=6.42e-19 wall=64s
+t=67.2668 steps=3800 h=3.65e-02 dE=6.44e-19 wall=67s
+t=68.3723 steps=4000 h=2.37e-04 dE=6.46e-19 wall=71s
+done steps=4177 final dE=6.47e-19 maxdE(sampled)=6.47e-19 wall=74s

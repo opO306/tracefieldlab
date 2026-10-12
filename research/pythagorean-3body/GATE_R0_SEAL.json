@@ -1,0 +1,8 @@
+{
+ "sealed_at_local": "2026-10-11T12:12:44",
+ "note": "Gate R0 plan sealed before any implementation code",
+ "files": {
+  "GATE_R0_PLAN_KO.md": "f8537baa4bde7ada8a851e7c4fbc1390e13da528266a34b9e88cee5d3a6d5a97",
+  "ROADMAP_RIGOROUS_KO.md": "a0e861ce686f0d9a406c226840b4f67a555a75af3a50162440051b33995d69d5"
+ }
+}

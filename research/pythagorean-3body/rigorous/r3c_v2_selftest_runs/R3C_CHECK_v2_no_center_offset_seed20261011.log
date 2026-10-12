@@ -1,0 +1,11 @@
+== check_r3c_v2: strict_fake_r3c_no_center_offset.py ==
+sealed criteria verdict: FAIL | incl. supplementary: FAIL | elapsed 425.9s
+  R3-S1   FAIL       {'PASS': 0, 'VIOLATION': 160, 'REFUSED': 0, 'UNDECIDED': 0, 'NOT_RUN': 0}
+  R3-S2   FAIL       {'PASS': 1656, 'VIOLATION': 700, 'REFUSED': 0, 'UNDECIDED': 0, 'NOT_RUN': 0}
+  R3-C    PASS       {'PASS': 4098, 'VIOLATION': 0, 'REFUSED': 0, 'UNDECIDED': 0, 'NOT_RUN': 0}
+  R3-S1e  FAIL       {'PASS': 8, 'VIOLATION': 48, 'REFUSED': 0, 'UNDECIDED': 0, 'NOT_RUN': 0}
+  R3-X1   PASS       {'PASS': 138, 'VIOLATION': 0, 'REFUSED': 0, 'UNDECIDED': 0, 'NOT_RUN': 0}
+  R3-X2   FAIL       {'PASS': 0, 'VIOLATION': 8, 'REFUSED': 0, 'UNDECIDED': 0, 'NOT_RUN': 0}
+  R3-X4   FAIL       {'PASS': 721, 'VIOLATION': 11, 'REFUSED': 0, 'UNDECIDED': 0, 'NOT_RUN': 0}
+  R3-X3   FAIL       {'PASS': 0, 'VIOLATION': 8, 'REFUSED': 0, 'UNDECIDED': 0, 'NOT_RUN': 0}
+min counterexample: {"test": "box", "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot", "point": 7, "r_index_kind": "vertex/axis/interior", "r": ["-0.018", "0.0365"], "component": 1, "overshoot": "2.5892597e-5", "lo": "-0.4189276053829032242945429", "hi": "-0.3416952601846343075720458", "truth": "-0.4189534979802646312710998", "e_ref": "1.0e-120", "crit": "R3-X4"}

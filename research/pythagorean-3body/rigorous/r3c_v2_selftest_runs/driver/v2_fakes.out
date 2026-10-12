@@ -1,0 +1,16 @@
+correct (reused r3c_v2_selftest_runs/R3C_CHECK_v2_correct_seed20261011.json): PASS {'R3-S1': 0, 'R3-S2': 0, 'R3-C': 0, 'R3-S1e': 0, 'R3-X1': 0, 'R3-X2': 0, 'R3-X4': 0, 'R3-X3': 0} {}
+inv_float              sealed=FAIL any=True viol={'R3-S2': 6} refused={} 428s
+point_J                sealed=FAIL any=True viol={'R3-S2': 247, 'R3-X4': 65} refused={} 430s
+no_remainder           sealed=FAIL any=True viol={'R3-S1': 80, 'R3-S2': 757, 'R3-S1e': 24, 'R3-X2': 8, 'R3-X4': 14, 'R3-X3': 8} refused={} 431s
+R_not_updated          sealed=FAIL any=True viol={'R3-S2': 294, 'R3-X4': 18} refused={'R3-S1': 2} 152s
+no_center_offset       sealed=FAIL any=True viol={'R3-S1': 160, 'R3-S2': 700, 'R3-S1e': 48, 'R3-X2': 8, 'R3-X4': 11, 'R3-X3': 8} refused={} 426s
+no_apriori             sealed=FAIL any=True viol={'R3-S1': 80, 'R3-S2': 677, 'R3-S1e': 24, 'R3-X2': 8, 'R3-X3': 8} refused={} 429s
+box_ignores_B          sealed=FAIL any=True viol={'R3-S1': 5, 'R3-S2': 676, 'R3-X1': 138, 'R3-X4': 280} refused={} 432s
+h_used_lie             sealed=FAIL any=True viol={'R3-S1': 160, 'R3-S2': 2356, 'R3-S1e': 48, 'R3-X2': 8, 'R3-X4': 470, 'R3-X3': 8} refused={} 429s
+poly_drops_last_term   sealed=FAIL any=True viol={'R3-S1': 40, 'R3-S2': 935, 'R3-S1e': 12, 'R3-X4': 131, 'R3-X3': 8} refused={} 430s
+J_drops_last_term      sealed=FAIL any=True viol={'R3-S2': 10, 'R3-X4': 4} refused={} 428s
+qt_inverse             sealed=PASS any=False viol={} refused={} 427s
+J_no_remainder         sealed=PASS any=False viol={} refused={} 426s
+PY_is_identity         sealed=PASS any=False viol={} refused={} 428s
+pivot_qr               sealed=UNRESOLVED any=False viol={} refused={'R3-S1': 2} 238s
+required detected 6/6 (sealed-only 6); extra detected 4/5 (sealed-only 4); reference violations=0; undetected=['qt_inverse']; valid variants flagged=[]

@@ -1,0 +1,23 @@
+[     0.0s] start prec=128 order=20 pivot=colnorm started_local=2026-10-11T14:50:31 python=3.12.7 args={'prec': 128, 'pivot': 'colnorm', 'outdir': 'C:\\numerical-audit-lab-recovered-2026-10-01\\research\\pythagorean-3body\\rigorous\\r3c_results', 'wall_limit': 10800.0, 'max_steps': None, 'debug_undecided_exp': None, 'debug_perturb_ref': None, 'force': False}
+[     0.0s] seal ok: {'GATE_R3C_PLAN_KO.md': '26a6d9872732', 'PRIOR_ART_R3_METHODS_KO.md': '09babb30c1c4', 'rigorous/R2_RESULT_KO.md': 'fed6dfc29d08', 'rigorous/dyad.py': '4d49cf8f7070', 'rigorous/taylor_step.py': '0183f0f8dc76', 'results/ref_B_grid.json': '3bfe3e44024d'}
+[     0.0s] r3c_run.py sha256=ce113414f17053d41d03a147a8298b3813e11f07cb8a5b1b1a711306f86dbe5b lohner_step.py sha256=936138ea73b878c811df8db7b582ddb6883590be0f47cc7ece76d5ffc2db6b62
+[    29.8s] step 25 t=0.640625 h=2^-6 logW=-32.927 logR=-32.956 logInj=-37.45 logJw=-34.14 cond=2.199 disc_total=0
+[    60.9s] step 50 t=1.031250 h=2^-6 logW=-32.775 logR=-32.732 logInj=-35.11 logJw=-33.44 cond=2.750 disc_total=0
+[    92.0s] step 75 t=1.296875 h=2^-7 logW=-32.363 logR=-32.352 logInj=-37.45 logJw=-33.23 cond=3.191 disc_total=1
+[   122.3s] step 100 t=1.492188 h=2^-7 logW=-32.165 logR=-32.120 logInj=-34.01 logJw=-32.28 cond=3.621 disc_total=1
+[   147.6s] step 125 t=1.601562 h=2^-8 logW=-31.936 logR=-31.891 logInj=-37.12 logJw=-32.49 cond=3.944 disc_total=3
+[   173.2s] step 150 t=1.693359 h=2^-9 logW=-31.680 logR=-31.635 logInj=-37.45 logJw=-32.21 cond=4.257 disc_total=6
+[   197.8s] step 175 t=1.742188 h=2^-9 logW=-31.517 logR=-31.455 logInj=-36.53 logJw=-31.83 cond=4.425 disc_total=9
+[   223.2s] step 200 t=1.785156 h=2^-10 logW=-31.291 logR=-31.222 logInj=-37.45 logJw=-31.62 cond=4.776 disc_total=15
+[   248.2s] step 225 t=1.809570 h=2^-10 logW=-31.125 logR=-31.044 logInj=-36.36 logJw=-31.24 cond=4.824 disc_total=19
+[   273.8s] step 250 t=1.831055 h=2^-11 logW=-30.909 logR=-30.820 logInj=-37.45 logJw=-31.05 cond=4.772 disc_total=25
+[   299.3s] step 275 t=1.843262 h=2^-11 logW=-30.745 logR=-30.646 logInj=-36.40 logJw=-30.68 cond=4.717 disc_total=32
+[   323.5s] step 300 t=1.854248 h=2^-12 logW=-30.315 logR=-30.200 logInj=-37.15 logJw=-29.53 cond=5.082 disc_total=37
+[   349.6s] step 325 t=1.860352 h=2^-12 logW=-29.676 logR=-29.546 logInj=-36.59 logJw=-29.19 cond=4.668 disc_total=46
+[   372.5s] step 350 t=1.866211 h=2^-13 logW=-28.220 logR=-28.074 logInj=-37.15 logJw=-27.22 cond=5.012 disc_total=48
+[   400.0s] step 375 t=1.869263 h=2^-13 logW=-26.952 logR=-26.874 logInj=-36.73 logJw=-25.24 cond=6.231 disc_total=60
+[   421.3s] step 400 t=1.872314 h=2^-13 logW=-23.524 logR=-23.401 logInj=-33.20 logJw=-21.91 cond=6.557 disc_total=60
+[   451.4s] step 425 t=1.873901 h=2^-14 logW=-20.115 logR=-20.002 logInj=-36.93 logJw=-18.54 cond=6.598 disc_total=77
+[   473.5s] step 450 t=1.875427 h=2^-14 logW=-13.698 logR=-13.480 logInj=-33.88 logJw=-11.62 cond=6.981 disc_total=77
+[   504.5s] step 475 t=1.876373 h=2^-15 logW=-6.235 logR=-5.988 logInj=-36.85 logJw=-4.10 cond=5.908 disc_total=96
+[   519.0s] STOP A_EXPLODE t_final=1.876725197 steps=488 attempts=589 discarded=101 wall=519.0s detail=None

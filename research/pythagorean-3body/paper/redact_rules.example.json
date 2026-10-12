@@ -1,0 +1,13 @@
+{
+ "_comment": "Template only. Copy to a PRIVATE file outside the release folder, replace every <<...>> with the exact original string (case-sensitive), and never publish the filled file. redact_verify.py refuses to run while any secret still contains '<<'. Longest secrets are applied first automatically. Tokens: the first candidate that does not occur anywhere in the originals is used.",
+ "rules": [
+  {"id": "gcp_instance", "description": "GCP instance name",
+   "secret": "<<INSTANCE_NAME e.g. instance-2026...>>", "tokens": ["INSTANCE", "REDACTED_INSTANCE", "XINSTANCEX"]},
+  {"id": "gcp_project", "description": "GCP project ID (full string, not truncated)",
+   "secret": "<<PROJECT_ID e.g. project-a2e66968-...>>", "tokens": ["PROJECT", "REDACTED_PROJECT", "XPROJECTX"]},
+  {"id": "email", "description": "e-mail address (removed)",
+   "secret": "<<EMAIL_ADDRESS>>", "tokens": ["EMAIL_REMOVED", "REDACTED_EMAIL"]},
+  {"id": "username", "description": "OS user name; covers /home/<user>, C:\\Users\\<user> and bare occurrences",
+   "secret": "<<USERNAME>>", "tokens": ["USER", "REDACTED_USER", "XUSERX"]}
+ ]
+}

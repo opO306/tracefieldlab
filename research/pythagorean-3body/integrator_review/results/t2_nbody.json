@@ -1,0 +1,3796 @@
+{
+ "suite": "nbody",
+ "quick": false,
+ "seed": 20261012,
+ "sources": {
+  "dyad.py": {
+   "path": "/home/zun24/integrator_review_dev/src/dyad.py",
+   "sha256": "4d49cf8f707061d128fce3ed44b59ccb3a6bda14937e32dcd469cd201fbabaab",
+   "match_seal": true
+  },
+  "taylor_step.py": {
+   "path": "/home/zun24/integrator_review_dev/src/taylor_step.py",
+   "sha256": "0183f0f8dc76dcf9c1a9933d8f16a636ac011bc15e9a95e0749fb2459be01c31",
+   "match_seal": true
+  },
+  "lohner_step.py": {
+   "path": "/home/zun24/integrator_review_dev/src/lohner_step.py",
+   "sha256": "936138ea73b878c811df8db7b582ddb6883590be0f47cc7ece76d5ffc2db6b62",
+   "match_seal": true
+  }
+ },
+ "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+ "mpmath": "1.3.0",
+ "summary": {
+  "by_check": {
+   "set": {
+    "PASS": 18720,
+    "UNDECIDED": 0,
+    "VIOLATION": 0,
+    "min_rel_slack": 4.279393059221048e-14
+   },
+   "box": {
+    "PASS": 18720,
+    "UNDECIDED": 0,
+    "VIOLATION": 0,
+    "min_rel_slack": 7.306508712278188e-06
+   },
+   "aux": {
+    "PASS": 56160,
+    "UNDECIDED": 0,
+    "VIOLATION": 0,
+    "min_rel_slack": 4.228149139119566e-18
+   },
+   "P": {
+    "PASS": 18000,
+    "UNDECIDED": 0,
+    "VIOLATION": 0,
+    "min_rel_slack": 0.0
+   },
+   "J": {
+    "PASS": 17184,
+    "UNDECIDED": 96,
+    "VIOLATION": 0,
+    "min_rel_slack": 7.649765712156213e-05
+   }
+  },
+  "n_cases": 60,
+  "n_step_errors": 0,
+  "step_errors": []
+ },
+ "results": [
+  {
+   "case": "nbody t0 p128 o20 h=1/32(x1) B=I R=point(0) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/32",
+   "pivot": "width",
+   "step_wall_s": 0.791,
+   "h_used": "1/32",
+   "log10_wR_new_max": -36.77947304679266,
+   "log10_box_new_max": -36.77548865011122,
+   "ref_eps_log10": -64.39796336280634,
+   "frame_cond_inf": 1.0628882634431305,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.35826994012798,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.41388661382557834,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.3387123579042106,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.3382199354855444,
+     "examples": []
+    }
+   },
+   "case_wall_s": 8.983
+  },
+  {
+   "case": "nbody t0 p128 o20 h=1/32(x1) B=I R=sym(1/10000000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/32",
+   "pivot": "width",
+   "step_wall_s": 0.9,
+   "h_used": "1/32",
+   "log10_wR_new_max": -9.847962163320135,
+   "log10_box_new_max": -9.835122798087063,
+   "ref_eps_log10": -64.39796336280634,
+   "frame_cond_inf": 1.0793732484565879,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 4.279393059221048e-14,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 8.847078358336211e-06,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.6936381782604e-11,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 7.649765712156213e-05,
+     "examples": []
+    }
+   },
+   "case_wall_s": 10.549
+  },
+  {
+   "case": "nbody t0 p128 o20 h=1/32(x1) B=I R=sym(1/1000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/32",
+   "pivot": "width",
+   "step_wall_s": 0.9,
+   "h_used": "1/32",
+   "log10_wR_new_max": -5.743712720447596,
+   "log10_box_new_max": -5.7401673354804625,
+   "ref_eps_log10": -64.39796336280634,
+   "frame_cond_inf": 1.0760761593802106,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 7.97658393013529e-10,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.00018315965969532328,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.3527525594059533e-08,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.00010250156234795932,
+     "examples": []
+    }
+   },
+   "case_wall_s": 10.674
+  },
+  {
+   "case": "nbody t0 p128 o20 h=1/32(x1) B=I R=offset(1/10000000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/32",
+   "pivot": "width",
+   "step_wall_s": 0.919,
+   "h_used": "1/32",
+   "log10_wR_new_max": -9.674590286444868,
+   "log10_box_new_max": -9.662085515639827,
+   "ref_eps_log10": -64.39796336280634,
+   "frame_cond_inf": 1.0628882634431305,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 8.905436871682302e-13,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0001507650992583716,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.0634880186596772e-11,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.005294208267820611,
+     "examples": []
+    }
+   },
+   "case_wall_s": 10.281
+  },
+  {
+   "case": "nbody t0 p128 o20 h=1/32(x1) B=orth R=point(0) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/32",
+   "pivot": "width",
+   "step_wall_s": 0.804,
+   "h_used": "1/32",
+   "log10_wR_new_max": -36.81887291995774,
+   "log10_box_new_max": -36.46087852918866,
+   "ref_eps_log10": -64.39796336280634,
+   "frame_cond_inf": 10.064026558464919,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.4684825676133205,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.4874399787866604,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.3387123579042106,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.3382199354855444,
+     "examples": []
+    }
+   },
+   "case_wall_s": 9.241
+  },
+  {
+   "case": "nbody t0 p128 o20 h=1/32(x1) B=orth R=sym(1/10000000000) piv=colnorm",
+   "prec": 128,
+   "order": 20,
+   "h": "1/32",
+   "pivot": "colnorm",
+   "step_wall_s": 0.916,
+   "h_used": "1/32",
+   "log10_wR_new_max": -9.745101949273566,
+   "log10_box_new_max": -9.396079835719116,
+   "ref_eps_log10": -64.39796336280634,
+   "frame_cond_inf": 9.025602371746679,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 2.4930814113435442e-11,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.03561638821654576,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.02005251424679851,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.00018197533215498274,
+     "examples": []
+    }
+   },
+   "case_wall_s": 10.92
+  },
+  {
+   "case": "nbody t0 p128 o20 h=1/32(x1) B=orth R=sym(1/10000000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/32",
+   "pivot": "width",
+   "step_wall_s": 0.903,
+   "h_used": "1/32",
+   "log10_wR_new_max": -9.738716697772045,
+   "log10_box_new_max": -9.429659237868847,
+   "ref_eps_log10": -64.39796336280634,
+   "frame_cond_inf": 10.120169842473738,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 7.272037094033115e-11,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.011234197178278489,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 8.01317699357016e-12,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004278133787765775,
+     "examples": []
+    }
+   },
+   "case_wall_s": 10.617
+  },
+  {
+   "case": "nbody t0 p128 o20 h=1/32(x1) B=orth R=sym(1/1000000) piv=colnorm",
+   "prec": 128,
+   "order": 20,
+   "h": "1/32",
+   "pivot": "colnorm",
+   "step_wall_s": 0.901,
+   "h_used": "1/32",
+   "log10_wR_new_max": -5.7838219095655035,
+   "log10_box_new_max": -5.431864922463224,
+   "ref_eps_log10": -64.39796336280634,
+   "frame_cond_inf": 9.868076199449654,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 3.1786189402843696e-07,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.05982831928731574,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.04018893932361229,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.005334605184722072,
+     "examples": []
+    }
+   },
+   "case_wall_s": 10.747
+  },
+  {
+   "case": "nbody t0 p128 o20 h=1/32(x1) B=orth R=sym(1/1000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/32",
+   "pivot": "width",
+   "step_wall_s": 0.922,
+   "h_used": "1/32",
+   "log10_wR_new_max": -5.694861747432835,
+   "log10_box_new_max": -5.400394117623266,
+   "ref_eps_log10": -64.39796336280634,
+   "frame_cond_inf": 9.973107455937237,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 5.263767934232185e-07,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.025991358338767194,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.012478391469545751,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0001019117787994291,
+     "examples": []
+    }
+   },
+   "case_wall_s": 10.901
+  },
+  {
+   "case": "nbody t0 p128 o20 h=1/32(x1) B=orth R=offset(1/10000000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/32",
+   "pivot": "width",
+   "step_wall_s": 0.903,
+   "h_used": "1/32",
+   "log10_wR_new_max": -9.65683039468897,
+   "log10_box_new_max": -9.199315160922465,
+   "ref_eps_log10": -64.39796336280634,
+   "frame_cond_inf": 9.29869553492235,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.1754448824273956e-10,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.039520800814858564,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.016597670089056518,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.00014941292024760606,
+     "examples": []
+    }
+   },
+   "case_wall_s": 10.636
+  },
+  {
+   "case": "nbody t0 p128 o20 h=1/4(x8) B=I R=point(0) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/4",
+   "pivot": "width",
+   "step_wall_s": 0.797,
+   "h_used": "1/4",
+   "log10_wR_new_max": -14.686437077081377,
+   "log10_box_new_max": -14.665405988556815,
+   "ref_eps_log10": -64.39943979088099,
+   "frame_cond_inf": 1.508716400933458,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.495855631170653,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.4959608011513424,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.4956335122541514,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.4959404109909282,
+     "examples": []
+    }
+   },
+   "case_wall_s": 57.254
+  },
+  {
+   "case": "nbody t0 p128 o20 h=1/4(x8) B=I R=sym(1/10000000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/4",
+   "pivot": "width",
+   "step_wall_s": 0.896,
+   "h_used": "1/4",
+   "log10_wR_new_max": -9.664550253620236,
+   "log10_box_new_max": -9.635955355839021,
+   "ref_eps_log10": -64.39943979088099,
+   "frame_cond_inf": 1.5531375865470585,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 9.376818065810283e-09,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0032938466305326773,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.8492542515327025e-09,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.04819703863943777,
+     "examples": []
+    }
+   },
+   "case_wall_s": 57.409
+  },
+  {
+   "case": "nbody t0 p128 o20 h=1/4(x8) B=I R=sym(1/1000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/4",
+   "pivot": "width",
+   "step_wall_s": 0.891,
+   "h_used": "1/4",
+   "log10_wR_new_max": -5.698411191208722,
+   "log10_box_new_max": -5.641731135212721,
+   "ref_eps_log10": -64.39943979088099,
+   "frame_cond_inf": 1.716097735845022,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 4.845715952449554e-08,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0007504034281938479,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 8.335746318790704e-09,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.009722109660730628,
+     "examples": []
+    }
+   },
+   "case_wall_s": 57.096
+  },
+  {
+   "case": "nbody t0 p128 o20 h=1/4(x8) B=I R=offset(1/10000000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/4",
+   "pivot": "width",
+   "step_wall_s": 0.882,
+   "h_used": "1/4",
+   "log10_wR_new_max": -9.517458700213986,
+   "log10_box_new_max": -9.462202866265782,
+   "ref_eps_log10": -64.39943979088099,
+   "frame_cond_inf": 1.508716400933458,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 5.603434758810784e-09,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0066916113547014705,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 3.0430521901075713e-07,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.04757116748057051,
+     "examples": []
+    }
+   },
+   "case_wall_s": 57.061
+  },
+  {
+   "case": "nbody t0 p128 o20 h=1/4(x8) B=orth R=point(0) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/4",
+   "pivot": "width",
+   "step_wall_s": 0.781,
+   "h_used": "1/4",
+   "log10_wR_new_max": -14.82633843945077,
+   "log10_box_new_max": -14.48210694731346,
+   "ref_eps_log10": -64.39943979088099,
+   "frame_cond_inf": 9.428170538106826,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.4979194749642648,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.4986654731185356,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.4956335122541514,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.4959404109909282,
+     "examples": []
+    }
+   },
+   "case_wall_s": 56.13
+  },
+  {
+   "case": "nbody t0 p128 o20 h=1/4(x8) B=orth R=sym(1/10000000000) piv=colnorm",
+   "prec": 128,
+   "order": 20,
+   "h": "1/4",
+   "pivot": "colnorm",
+   "step_wall_s": 0.927,
+   "h_used": "1/4",
+   "log10_wR_new_max": -9.730623984516761,
+   "log10_box_new_max": -9.317500534966399,
+   "ref_eps_log10": -64.39943979088099,
+   "frame_cond_inf": 8.867140105963243,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.5996803791950787e-06,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.1413033408103913,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0012536690981394902,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.009801703911279937,
+     "examples": []
+    }
+   },
+   "case_wall_s": 57.166
+  },
+  {
+   "case": "nbody t0 p128 o20 h=1/4(x8) B=orth R=sym(1/10000000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/4",
+   "pivot": "width",
+   "step_wall_s": 0.904,
+   "h_used": "1/4",
+   "log10_wR_new_max": -9.615354655196851,
+   "log10_box_new_max": -9.3461566882804,
+   "ref_eps_log10": -64.39943979088099,
+   "frame_cond_inf": 9.581979805291144,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.4710097599422919e-06,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.12176547583183903,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.012686908835152005,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.011794362400397048,
+     "examples": []
+    }
+   },
+   "case_wall_s": 57.405
+  },
+  {
+   "case": "nbody t0 p128 o20 h=1/4(x8) B=orth R=sym(1/1000000) piv=colnorm",
+   "prec": 128,
+   "order": 20,
+   "h": "1/4",
+   "pivot": "colnorm",
+   "step_wall_s": 0.907,
+   "h_used": "1/4",
+   "log10_wR_new_max": -5.629513601816969,
+   "log10_box_new_max": -5.233249266032978,
+   "ref_eps_log10": -64.39943979088099,
+   "frame_cond_inf": 10.23101245325752,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 3.6155084483733587e-06,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.11235930773871391,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.009248308094878956,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.04219401999299203,
+     "examples": []
+    }
+   },
+   "case_wall_s": 56.957
+  },
+  {
+   "case": "nbody t0 p128 o20 h=1/4(x8) B=orth R=sym(1/1000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/4",
+   "pivot": "width",
+   "step_wall_s": 0.885,
+   "h_used": "1/4",
+   "log10_wR_new_max": -5.553585083682601,
+   "log10_box_new_max": -5.278523379622125,
+   "ref_eps_log10": -64.39943979088099,
+   "frame_cond_inf": 10.312743103039102,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 5.2603526825463555e-06,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10059374583826719,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.7737571207490728e-07,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.04876862020778676,
+     "examples": []
+    }
+   },
+   "case_wall_s": 56.869
+  },
+  {
+   "case": "nbody t0 p128 o20 h=1/4(x8) B=orth R=offset(1/10000000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/4",
+   "pivot": "width",
+   "step_wall_s": 0.884,
+   "h_used": "1/4",
+   "log10_wR_new_max": -9.451414370185606,
+   "log10_box_new_max": -9.057912844437352,
+   "ref_eps_log10": -64.39943979088099,
+   "frame_cond_inf": 9.657487608791863,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.3709773110612302e-06,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.17977408949119722,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0794923990158702,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.00793164802100817,
+     "examples": []
+    }
+   },
+   "case_wall_s": 56.808
+  },
+  {
+   "case": "nbody t1.87 p128 o20 h=1/8192(x1) B=I R=point(0) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/8192",
+   "pivot": "width",
+   "step_wall_s": 0.863,
+   "h_used": "1/8192",
+   "log10_wR_new_max": -35.99458901479719,
+   "log10_box_new_max": -35.802674655296826,
+   "ref_eps_log10": -64.14714833147906,
+   "frame_cond_inf": 3.8230885995664363,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.4669018054920304,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.48007023551257233,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.3376012117510449,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 240,
+      "UNDECIDED": 48,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.06136548662846006,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "J[0][1]",
+       "out_by": "-1.54192e-46",
+       "err": "1.0e-45",
+       "width": "3.17482e-46"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "J[0][3]",
+       "out_by": "-9.60941e-46",
+       "err": "1.0e-45",
+       "width": "1.93226e-45"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "J[0][5]",
+       "out_by": "-9.78341e-46",
+       "err": "1.0e-45",
+       "width": "1.97058e-45"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "J[0][7]",
+       "out_by": "-6.92966e-51",
+       "err": "1.0e-45",
+       "width": "1.12924e-49"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "J[0][8]",
+       "out_by": "-9.12238e-48",
+       "err": "1.0e-45",
+       "width": "1.83704e-47"
+      }
+     ]
+    }
+   },
+   "case_wall_s": 10.264
+  },
+  {
+   "case": "nbody t1.87 p128 o20 h=1/8192(x1) B=I R=sym(1/10000000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/8192",
+   "pivot": "width",
+   "step_wall_s": 0.883,
+   "h_used": "1/8192",
+   "log10_wR_new_max": -9.52881318832316,
+   "log10_box_new_max": -9.386943030084003,
+   "ref_eps_log10": -64.14714833147906,
+   "frame_cond_inf": 3.391895768214968,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.0020128329184363e-13,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.4346169594004242e-05,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 3.986319750002977e-15,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.284824559200487,
+     "examples": []
+    }
+   },
+   "case_wall_s": 10.313
+  },
+  {
+   "case": "nbody t1.87 p128 o20 h=1/8192(x1) B=I R=sym(1/1000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/8192",
+   "pivot": "width",
+   "step_wall_s": 0.886,
+   "h_used": "1/8192",
+   "log10_wR_new_max": -5.583427624705349,
+   "log10_box_new_max": -5.576184745611314,
+   "ref_eps_log10": -64.14714833147906,
+   "frame_cond_inf": 3.5316627906458757,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 5.967951742853517e-10,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 7.306508712278188e-06,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 8.799322208963405e-15,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.31378256289246287,
+     "examples": []
+    }
+   },
+   "case_wall_s": 10.26
+  },
+  {
+   "case": "nbody t1.87 p128 o20 h=1/8192(x1) B=I R=offset(1/10000000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/8192",
+   "pivot": "width",
+   "step_wall_s": 0.873,
+   "h_used": "1/8192",
+   "log10_wR_new_max": -9.313919561734101,
+   "log10_box_new_max": -9.150952288344069,
+   "ref_eps_log10": -64.14714833147906,
+   "frame_cond_inf": 3.8230885995664377,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 3.347821347420344e-13,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 4.3392367617220025e-05,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.3952033102959438e-15,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.3251184641362728,
+     "examples": []
+    }
+   },
+   "case_wall_s": 10.315
+  },
+  {
+   "case": "nbody t1.87 p128 o20 h=1/8192(x1) B=orth R=point(0) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/8192",
+   "pivot": "width",
+   "step_wall_s": 0.883,
+   "h_used": "1/8192",
+   "log10_wR_new_max": -36.01756110724278,
+   "log10_box_new_max": -35.624428084215005,
+   "ref_eps_log10": -64.14714833147906,
+   "frame_cond_inf": 9.945610772677993,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.4891480736668122,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.4952651204718406,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.3376012117510449,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 240,
+      "UNDECIDED": 48,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.06136548662846006,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "J[0][1]",
+       "out_by": "-1.54192e-46",
+       "err": "1.0e-45",
+       "width": "3.17482e-46"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "J[0][3]",
+       "out_by": "-9.60941e-46",
+       "err": "1.0e-45",
+       "width": "1.93226e-45"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "J[0][5]",
+       "out_by": "-9.78341e-46",
+       "err": "1.0e-45",
+       "width": "1.97058e-45"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "J[0][7]",
+       "out_by": "-6.92966e-51",
+       "err": "1.0e-45",
+       "width": "1.12924e-49"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "J[0][8]",
+       "out_by": "-9.12238e-48",
+       "err": "1.0e-45",
+       "width": "1.83704e-47"
+      }
+     ]
+    }
+   },
+   "case_wall_s": 10.527
+  },
+  {
+   "case": "nbody t1.87 p128 o20 h=1/8192(x1) B=orth R=sym(1/10000000000) piv=colnorm",
+   "prec": 128,
+   "order": 20,
+   "h": "1/8192",
+   "pivot": "colnorm",
+   "step_wall_s": 0.866,
+   "h_used": "1/8192",
+   "log10_wR_new_max": -9.51190827694508,
+   "log10_box_new_max": -9.286075605653357,
+   "ref_eps_log10": -64.14714833147906,
+   "frame_cond_inf": 8.943174027317704,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 2.53600187406756e-08,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.12500376476025019,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.029757057992100995,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.33384210648849244,
+     "examples": []
+    }
+   },
+   "case_wall_s": 10.521
+  },
+  {
+   "case": "nbody t1.87 p128 o20 h=1/8192(x1) B=orth R=sym(1/10000000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/8192",
+   "pivot": "width",
+   "step_wall_s": 0.868,
+   "h_used": "1/8192",
+   "log10_wR_new_max": -9.476304199783224,
+   "log10_box_new_max": -9.289525491084815,
+   "ref_eps_log10": -64.14714833147906,
+   "frame_cond_inf": 9.127532244193366,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 3.903208544221889e-08,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.146306680151403,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.01961818098824211,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.28438948728656893,
+     "examples": []
+    }
+   },
+   "case_wall_s": 10.531
+  },
+  {
+   "case": "nbody t1.87 p128 o20 h=1/8192(x1) B=orth R=sym(1/1000000) piv=colnorm",
+   "prec": 128,
+   "order": 20,
+   "h": "1/8192",
+   "pivot": "colnorm",
+   "step_wall_s": 0.878,
+   "h_used": "1/8192",
+   "log10_wR_new_max": -5.507246475300979,
+   "log10_box_new_max": -5.268144281616452,
+   "ref_eps_log10": -64.14714833147906,
+   "frame_cond_inf": 9.619806138514967,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.00010015806357359157,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.14037181515172653,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 9.425462684788889e-05,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.29821104374660745,
+     "examples": []
+    }
+   },
+   "case_wall_s": 10.521
+  },
+  {
+   "case": "nbody t1.87 p128 o20 h=1/8192(x1) B=orth R=sym(1/1000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/8192",
+   "pivot": "width",
+   "step_wall_s": 0.879,
+   "h_used": "1/8192",
+   "log10_wR_new_max": -5.518526052083428,
+   "log10_box_new_max": -5.323925950121936,
+   "ref_eps_log10": -64.14714833147906,
+   "frame_cond_inf": 9.528069704631246,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.00010161125186084915,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.1094411296070364,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.007366048755926414,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.265172307378232,
+     "examples": []
+    }
+   },
+   "case_wall_s": 10.51
+  },
+  {
+   "case": "nbody t1.87 p128 o20 h=1/8192(x1) B=orth R=offset(1/10000000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/8192",
+   "pivot": "width",
+   "step_wall_s": 0.866,
+   "h_used": "1/8192",
+   "log10_wR_new_max": -9.315917403414458,
+   "log10_box_new_max": -9.042871411202368,
+   "ref_eps_log10": -64.14714833147906,
+   "frame_cond_inf": 9.578157814767588,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.0139126125423614e-07,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.11387564490840282,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 4.228149139119566e-18,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.3303261046184037,
+     "examples": []
+    }
+   },
+   "case_wall_s": 10.551
+  },
+  {
+   "case": "nbody t1.87 p128 o20 h=1/1024(x8) B=I R=point(0) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/1024",
+   "pivot": "width",
+   "step_wall_s": 0.872,
+   "h_used": "1/1024",
+   "log10_wR_new_max": -14.337174264037587,
+   "log10_box_new_max": -14.107696515826538,
+   "ref_eps_log10": -64.13477101903351,
+   "frame_cond_inf": 5.11465995172563,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.49988775532910235,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.4999634622223678,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.4987384965568166,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.4998900609377779,
+     "examples": []
+    }
+   },
+   "case_wall_s": 45.758
+  },
+  {
+   "case": "nbody t1.87 p128 o20 h=1/1024(x8) B=I R=sym(1/10000000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/1024",
+   "pivot": "width",
+   "step_wall_s": 0.862,
+   "h_used": "1/1024",
+   "log10_wR_new_max": -8.749149784936574,
+   "log10_box_new_max": -8.817428793355665,
+   "ref_eps_log10": -64.13477101903351,
+   "frame_cond_inf": 5.143727541759522,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.6564699882166333e-09,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0002114945653662721,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 4.738754446203206e-12,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.3303359239105856,
+     "examples": []
+    }
+   },
+   "case_wall_s": 45.899
+  },
+  {
+   "case": "nbody t1.87 p128 o20 h=1/1024(x8) B=I R=sym(1/1000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/1024",
+   "pivot": "width",
+   "step_wall_s": 0.87,
+   "h_used": "1/1024",
+   "log10_wR_new_max": -4.729028777148269,
+   "log10_box_new_max": -4.743619566536864,
+   "ref_eps_log10": -64.13477101903351,
+   "frame_cond_inf": 5.272804426678214,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 3.694961353321217e-08,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0002777731291244798,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 3.9075460899450566e-09,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.2464014656354548,
+     "examples": []
+    }
+   },
+   "case_wall_s": 45.982
+  },
+  {
+   "case": "nbody t1.87 p128 o20 h=1/1024(x8) B=I R=offset(1/10000000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/1024",
+   "pivot": "width",
+   "step_wall_s": 0.868,
+   "h_used": "1/1024",
+   "log10_wR_new_max": -8.54644566022539,
+   "log10_box_new_max": -8.583873816192305,
+   "ref_eps_log10": -64.13477101903351,
+   "frame_cond_inf": 5.11465995172563,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 9.066068278143013e-11,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0003386457170636763,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 4.838951170368445e-12,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.26341007765826324,
+     "examples": []
+    }
+   },
+   "case_wall_s": 46.418
+  },
+  {
+   "case": "nbody t1.87 p128 o20 h=1/1024(x8) B=orth R=point(0) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/1024",
+   "pivot": "width",
+   "step_wall_s": 0.88,
+   "h_used": "1/1024",
+   "log10_wR_new_max": -14.320933179554803,
+   "log10_box_new_max": -14.099330029088236,
+   "ref_eps_log10": -64.13477101903351,
+   "frame_cond_inf": 9.142062955768706,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.4999138273292429,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.4999634250698977,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.4987384965568166,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.4998900609377779,
+     "examples": []
+    }
+   },
+   "case_wall_s": 46.182
+  },
+  {
+   "case": "nbody t1.87 p128 o20 h=1/1024(x8) B=orth R=sym(1/10000000000) piv=colnorm",
+   "prec": 128,
+   "order": 20,
+   "h": "1/1024",
+   "pivot": "colnorm",
+   "step_wall_s": 0.868,
+   "h_used": "1/1024",
+   "log10_wR_new_max": -8.615387334390084,
+   "log10_box_new_max": -8.65330405555149,
+   "ref_eps_log10": -64.13477101903351,
+   "frame_cond_inf": 9.208835690132133,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.2672135172795926e-06,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.1311771478421418,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.011490079119639455,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.3463292181798412,
+     "examples": []
+    }
+   },
+   "case_wall_s": 46.716
+  },
+  {
+   "case": "nbody t1.87 p128 o20 h=1/1024(x8) B=orth R=sym(1/10000000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/1024",
+   "pivot": "width",
+   "step_wall_s": 0.873,
+   "h_used": "1/1024",
+   "log10_wR_new_max": -8.594672968603573,
+   "log10_box_new_max": -8.63504515978787,
+   "ref_eps_log10": -64.13477101903351,
+   "frame_cond_inf": 9.576133944128205,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 6.3615139479762875e-06,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.23133518539299378,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.00967365363333775,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.27352442356492424,
+     "examples": []
+    }
+   },
+   "case_wall_s": 46.392
+  },
+  {
+   "case": "nbody t1.87 p128 o20 h=1/1024(x8) B=orth R=sym(1/1000000) piv=colnorm",
+   "prec": 128,
+   "order": 20,
+   "h": "1/1024",
+   "pivot": "colnorm",
+   "step_wall_s": 0.872,
+   "h_used": "1/1024",
+   "log10_wR_new_max": -4.6174311668867425,
+   "log10_box_new_max": -4.6380901844584494,
+   "ref_eps_log10": -64.13477101903351,
+   "frame_cond_inf": 8.349569117671718,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.001050731558803123,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.20961028095400033,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.008555038182524151,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.3026897340372827,
+     "examples": []
+    }
+   },
+   "case_wall_s": 46.373
+  },
+  {
+   "case": "nbody t1.87 p128 o20 h=1/1024(x8) B=orth R=sym(1/1000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/1024",
+   "pivot": "width",
+   "step_wall_s": 0.88,
+   "h_used": "1/1024",
+   "log10_wR_new_max": -4.702718164493775,
+   "log10_box_new_max": -4.692098629961905,
+   "ref_eps_log10": -64.13477101903351,
+   "frame_cond_inf": 8.775598664583068,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0007207781651330425,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.1927259762701189,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.04005818798002635,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.28215448648186053,
+     "examples": []
+    }
+   },
+   "case_wall_s": 46.398
+  },
+  {
+   "case": "nbody t1.87 p128 o20 h=1/1024(x8) B=orth R=offset(1/10000000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/1024",
+   "pivot": "width",
+   "step_wall_s": 0.881,
+   "h_used": "1/1024",
+   "log10_wR_new_max": -8.430668215284483,
+   "log10_box_new_max": -8.43546469287918,
+   "ref_eps_log10": -64.13477101903351,
+   "frame_cond_inf": 9.256493602377747,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 2.675339698902149e-06,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.22283138954141135,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.019481400341064336,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.3169806972749568,
+     "examples": []
+    }
+   },
+   "case_wall_s": 46.243
+  },
+  {
+   "case": "nbody t59.50(R4) p128 o20 h=1/512(x1) B=I R=point(0) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/512",
+   "pivot": "width",
+   "step_wall_s": 0.878,
+   "h_used": "1/512",
+   "log10_wR_new_max": -32.40820162158769,
+   "log10_box_new_max": -32.405045894475116,
+   "ref_eps_log10": -64.27296174747558,
+   "frame_cond_inf": 1.261919961923618,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.4997998613221851,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.4998129577752306,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.3435756201767862,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.4992196322858906,
+     "examples": []
+    }
+   },
+   "case_wall_s": 10.333
+  },
+  {
+   "case": "nbody t59.50(R4) p128 o20 h=1/512(x1) B=I R=sym(1/10000000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/512",
+   "pivot": "width",
+   "step_wall_s": 0.875,
+   "h_used": "1/512",
+   "log10_wR_new_max": -9.695537329227719,
+   "log10_box_new_max": -9.66716747494837,
+   "ref_eps_log10": -64.27296174747558,
+   "frame_cond_inf": 1.237277994758118,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 8.488128346667486e-13,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 7.31046661029167e-06,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 3.0207975699987967e-09,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.1896637980160493,
+     "examples": []
+    }
+   },
+   "case_wall_s": 10.452
+  },
+  {
+   "case": "nbody t59.50(R4) p128 o20 h=1/512(x1) B=I R=sym(1/1000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/512",
+   "pivot": "width",
+   "step_wall_s": 0.873,
+   "h_used": "1/512",
+   "log10_wR_new_max": -5.692911351236885,
+   "log10_box_new_max": -5.662904012498817,
+   "ref_eps_log10": -64.27296174747558,
+   "frame_cond_inf": 1.2570287449276583,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 6.824186132212778e-08,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.001406630794754693,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 4.970905633918485e-10,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.2983294043599277,
+     "examples": []
+    }
+   },
+   "case_wall_s": 10.398
+  },
+  {
+   "case": "nbody t59.50(R4) p128 o20 h=1/512(x1) B=I R=offset(1/10000000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/512",
+   "pivot": "width",
+   "step_wall_s": 0.874,
+   "h_used": "1/512",
+   "log10_wR_new_max": -9.64608283473081,
+   "log10_box_new_max": -9.600526670581859,
+   "ref_eps_log10": -64.27296174747558,
+   "frame_cond_inf": 1.261919961923618,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 9.670527543084885e-11,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.002799821472281451,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.0190122192003136e-09,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.340879305447697,
+     "examples": []
+    }
+   },
+   "case_wall_s": 10.403
+  },
+  {
+   "case": "nbody t59.50(R4) p128 o20 h=1/512(x1) B=orth R=point(0) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/512",
+   "pivot": "width",
+   "step_wall_s": 0.892,
+   "h_used": "1/512",
+   "log10_wR_new_max": -32.42348647088238,
+   "log10_box_new_max": -32.14114017437998,
+   "ref_eps_log10": -64.27296174747558,
+   "frame_cond_inf": 9.611234886101927,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.49991463585306073,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.4999541263406102,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.3435756201767862,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.4992196322858906,
+     "examples": []
+    }
+   },
+   "case_wall_s": 10.715
+  },
+  {
+   "case": "nbody t59.50(R4) p128 o20 h=1/512(x1) B=orth R=sym(1/10000000000) piv=colnorm",
+   "prec": 128,
+   "order": 20,
+   "h": "1/512",
+   "pivot": "colnorm",
+   "step_wall_s": 0.866,
+   "h_used": "1/512",
+   "log10_wR_new_max": -9.661764201211595,
+   "log10_box_new_max": -9.405014816693892,
+   "ref_eps_log10": -64.27296174747558,
+   "frame_cond_inf": 10.16076322964082,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 9.497510371109537e-10,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.021419384914513694,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.1323772712166449e-10,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.31698630963612034,
+     "examples": []
+    }
+   },
+   "case_wall_s": 10.65
+  },
+  {
+   "case": "nbody t59.50(R4) p128 o20 h=1/512(x1) B=orth R=sym(1/10000000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/512",
+   "pivot": "width",
+   "step_wall_s": 0.88,
+   "h_used": "1/512",
+   "log10_wR_new_max": -9.705895208743824,
+   "log10_box_new_max": -9.42984558523585,
+   "ref_eps_log10": -64.27296174747558,
+   "frame_cond_inf": 9.084482285350537,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 2.059429712602385e-09,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.015784494961248934,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 4.173232193173537e-14,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.30062358911729925,
+     "examples": []
+    }
+   },
+   "case_wall_s": 10.666
+  },
+  {
+   "case": "nbody t59.50(R4) p128 o20 h=1/512(x1) B=orth R=sym(1/1000000) piv=colnorm",
+   "prec": 128,
+   "order": 20,
+   "h": "1/512",
+   "pivot": "colnorm",
+   "step_wall_s": 0.876,
+   "h_used": "1/512",
+   "log10_wR_new_max": -5.7600074635222125,
+   "log10_box_new_max": -5.42600111297035,
+   "ref_eps_log10": -64.27296174747558,
+   "frame_cond_inf": 9.778409412365699,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 2.0022275688862458e-05,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.02960240090368486,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.467385793449374e-06,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.3451822936020445,
+     "examples": []
+    }
+   },
+   "case_wall_s": 10.619
+  },
+  {
+   "case": "nbody t59.50(R4) p128 o20 h=1/512(x1) B=orth R=sym(1/1000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/512",
+   "pivot": "width",
+   "step_wall_s": 0.864,
+   "h_used": "1/512",
+   "log10_wR_new_max": -5.766893206721265,
+   "log10_box_new_max": -5.460424494198709,
+   "ref_eps_log10": -64.27296174747558,
+   "frame_cond_inf": 9.391544442665076,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.4569569050113551e-05,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.05268202044115197,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.030622034108858557,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.3355759230108813,
+     "examples": []
+    }
+   },
+   "case_wall_s": 10.617
+  },
+  {
+   "case": "nbody t59.50(R4) p128 o20 h=1/512(x1) B=orth R=offset(1/10000000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/512",
+   "pivot": "width",
+   "step_wall_s": 0.875,
+   "h_used": "1/512",
+   "log10_wR_new_max": -9.642410544170152,
+   "log10_box_new_max": -9.195618772967759,
+   "ref_eps_log10": -64.27296174747558,
+   "frame_cond_inf": 9.240815943765151,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 4.62599729708077e-09,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.040165553820331996,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.023121621504117514,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.3237455282907068,
+     "examples": []
+    }
+   },
+   "case_wall_s": 10.662
+  },
+  {
+   "case": "nbody t59.50(R4) p128 o20 h=1/64(x8) B=I R=point(0) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/64",
+   "pivot": "width",
+   "step_wall_s": 0.87,
+   "h_used": "1/64",
+   "log10_wR_new_max": -11.240231299233182,
+   "log10_box_new_max": -11.115391257788506,
+   "ref_eps_log10": -64.28511867406007,
+   "frame_cond_inf": 3.469652678885032,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.4999793429709211,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.49998321762912495,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.49981021457203684,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.49983215640578527,
+     "examples": []
+    }
+   },
+   "case_wall_s": 58.764
+  },
+  {
+   "case": "nbody t59.50(R4) p128 o20 h=1/64(x8) B=I R=sym(1/10000000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/64",
+   "pivot": "width",
+   "step_wall_s": 0.887,
+   "h_used": "1/64",
+   "log10_wR_new_max": -9.553313420542523,
+   "log10_box_new_max": -9.424393996851279,
+   "ref_eps_log10": -64.28511867406007,
+   "frame_cond_inf": 2.5112196486054974,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.2374399824754538e-05,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004879668206402487,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 8.537213133806081e-13,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.2777229542169479,
+     "examples": []
+    }
+   },
+   "case_wall_s": 58.867
+  },
+  {
+   "case": "nbody t59.50(R4) p128 o20 h=1/64(x8) B=I R=sym(1/1000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/64",
+   "pivot": "width",
+   "step_wall_s": 0.891,
+   "h_used": "1/64",
+   "log10_wR_new_max": -5.59764416045589,
+   "log10_box_new_max": -5.562683173430664,
+   "ref_eps_log10": -64.28511867406007,
+   "frame_cond_inf": 2.746293589259109,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 2.0053401002573768e-06,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.009854771983740886,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 4.102126223012231e-07,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.3249815133152468,
+     "examples": []
+    }
+   },
+   "case_wall_s": 58.811
+  },
+  {
+   "case": "nbody t59.50(R4) p128 o20 h=1/64(x8) B=I R=offset(1/10000000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/64",
+   "pivot": "width",
+   "step_wall_s": 0.914,
+   "h_used": "1/64",
+   "log10_wR_new_max": -9.34127886027387,
+   "log10_box_new_max": -9.165624445928644,
+   "ref_eps_log10": -64.28511867406007,
+   "frame_cond_inf": 3.4696526788850317,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.002057945822560107,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.12542922737864354,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 5.862202713169314e-07,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.23903964200220676,
+     "examples": []
+    }
+   },
+   "case_wall_s": 58.644
+  },
+  {
+   "case": "nbody t59.50(R4) p128 o20 h=1/64(x8) B=orth R=point(0) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/64",
+   "pivot": "width",
+   "step_wall_s": 0.875,
+   "h_used": "1/64",
+   "log10_wR_new_max": -11.228680141321854,
+   "log10_box_new_max": -10.897138593500074,
+   "ref_eps_log10": -64.28511867406007,
+   "frame_cond_inf": 9.418499538455844,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.4999823919226536,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.49998984685356057,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.49981021457203684,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.49983215640578527,
+     "examples": []
+    }
+   },
+   "case_wall_s": 58.691
+  },
+  {
+   "case": "nbody t59.50(R4) p128 o20 h=1/64(x8) B=orth R=sym(1/10000000000) piv=colnorm",
+   "prec": 128,
+   "order": 20,
+   "h": "1/64",
+   "pivot": "colnorm",
+   "step_wall_s": 0.871,
+   "h_used": "1/64",
+   "log10_wR_new_max": -9.60029638359474,
+   "log10_box_new_max": -9.278307503295542,
+   "ref_eps_log10": -64.28511867406007,
+   "frame_cond_inf": 9.763276097418734,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.008192609699628721,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.17461086515974567,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.003685851221621276,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.3807865242398311,
+     "examples": []
+    }
+   },
+   "case_wall_s": 58.898
+  },
+  {
+   "case": "nbody t59.50(R4) p128 o20 h=1/64(x8) B=orth R=sym(1/10000000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/64",
+   "pivot": "width",
+   "step_wall_s": 0.873,
+   "h_used": "1/64",
+   "log10_wR_new_max": -9.644611485599063,
+   "log10_box_new_max": -9.314676295654209,
+   "ref_eps_log10": -64.28511867406007,
+   "frame_cond_inf": 9.4306797789671,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.009565936648864229,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.15404799682420953,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.04582075433127206,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.3364931934803324,
+     "examples": []
+    }
+   },
+   "case_wall_s": 58.914
+  },
+  {
+   "case": "nbody t59.50(R4) p128 o20 h=1/64(x8) B=orth R=sym(1/1000000) piv=colnorm",
+   "prec": 128,
+   "order": 20,
+   "h": "1/64",
+   "pivot": "colnorm",
+   "step_wall_s": 0.873,
+   "h_used": "1/64",
+   "log10_wR_new_max": -5.545416597532784,
+   "log10_box_new_max": -5.258196316081733,
+   "ref_eps_log10": -64.28511867406007,
+   "frame_cond_inf": 10.32671155736022,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 9.888979699706837e-05,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.14133522339927165,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.026768740163112686,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.23701399107419713,
+     "examples": []
+    }
+   },
+   "case_wall_s": 58.728
+  },
+  {
+   "case": "nbody t59.50(R4) p128 o20 h=1/64(x8) B=orth R=sym(1/1000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/64",
+   "pivot": "width",
+   "step_wall_s": 0.864,
+   "h_used": "1/64",
+   "log10_wR_new_max": -5.519979376981291,
+   "log10_box_new_max": -5.26939235708311,
+   "ref_eps_log10": -64.28511867406007,
+   "frame_cond_inf": 9.421290670357214,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 9.439589491855042e-05,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.13358467429983306,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.03321464695710038,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.2250585284826906,
+     "examples": []
+    }
+   },
+   "case_wall_s": 58.748
+  },
+  {
+   "case": "nbody t59.50(R4) p128 o20 h=1/64(x8) B=orth R=offset(1/10000000000) piv=width",
+   "prec": 128,
+   "order": 20,
+   "h": "1/64",
+   "pivot": "width",
+   "step_wall_s": 0.871,
+   "h_used": "1/64",
+   "log10_wR_new_max": -9.370481634351085,
+   "log10_box_new_max": -9.061902948922528,
+   "ref_eps_log10": -64.28511867406007,
+   "frame_cond_inf": 9.919720111055595,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465907089913564,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 312,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.1678744638808813,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 936,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.07134363556723959,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 300,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 288,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.2356136243475144,
+     "examples": []
+    }
+   },
+   "case_wall_s": 58.8
+  }
+ ],
+ "wall_s": 1935.0
+}

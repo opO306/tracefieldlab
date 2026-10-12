@@ -1,0 +1,15 @@
+{
+ "gate": "R4",
+ "sealed_at": "2026-10-11",
+ "files": {
+  "GATE_R4_PLAN_KO.md": "e59ce0ee1ce1a73eb22c5dc5b62f4878f522b54282d6edb37f059b64ac43acce",
+  "rigorous/r4_run.py": "9b10b434e9b12e040091dcb9923e67c7e400f711259579b5855ae20ef2de93d9",
+  "rigorous/r3c_run.py": "ce113414f17053d41d03a147a8298b3813e11f07cb8a5b1b1a711306f86dbe5b",
+  "rigorous/lohner_step.py": "936138ea73b878c811df8db7b582ddb6883590be0f47cc7ece76d5ffc2db6b62",
+  "rigorous/dyad.py": "4d49cf8f707061d128fce3ed44b59ccb3a6bda14937e32dcd469cd201fbabaab",
+  "rigorous/taylor_step.py": "0183f0f8dc76dcf9c1a9933d8f16a636ac011bc15e9a95e0749fb2459be01c31",
+  "results/ref_B_grid.json": "3bfe3e44024d90bfe495c365bebb6c3c2ea7a92c18869d177bd5e6beaf8d3478",
+  "GATE_R3CP_SEAL.json": "e4a12399c1ded092129f2b6818c44cda2fb5191bac70ad0ebb84576409cb8c1c",
+  "GATE_R3C_SEAL.json": "2315f76ece4df82ad6227175c2a4af7df1bea5db9b2855d918a76c41ddcee6c1"
+ }
+}

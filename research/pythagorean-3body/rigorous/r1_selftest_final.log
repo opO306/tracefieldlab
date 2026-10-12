@@ -1,0 +1,37 @@
+[  73.8s] fake_r1_b_is_x1                    rc=1 sealed=FAIL
+[  95.5s] fake_r1_coef_index_off             rc=1 sealed=FAIL
+[ 107.0s] fake_r1_drop_x0_width              rc=0 sealed=PASS
+[ 109.9s] correct_seed424242                 rc=0 sealed=PASS
+[ 111.3s] correct_seed7                      rc=0 sealed=PASS
+[ 121.3s] correct_seed20261011               rc=0 sealed=PASS
+[ 106.0s] fake_r1_float_poly                 rc=1 sealed=FAIL
+[  84.2s] fake_r1_kepler_exp2                rc=0 sealed=PASS
+[ 110.5s] fake_r1_half_remainder             rc=1 sealed=FAIL
+[ 175.0s] fake_r1_hused_hidden               rc=1 sealed=FAIL
+[ 175.3s] fake_r1_hused_missing              rc=1 sealed=FAIL
+[ 108.2s] fake_r1_nbody_exp2                 rc=1 sealed=FAIL
+[ 196.7s] fake_r1_hused_bigger               rc=1 sealed=FAIL
+[ 106.0s] fake_r1_no_remainder               rc=1 sealed=FAIL
+[  76.3s] fake_r1_picard_half_interval       rc=1 sealed=FAIL
+[ 169.2s] fake_r1_no_apriori                 rc=1 sealed=FAIL
+[ 108.8s] fake_r1_no_valueerror              rc=1 sealed=FAIL
+[ 107.1s] fake_r1_poly_drops_last_term       rc=1 sealed=FAIL
+[ 106.3s] fake_r1_remainder_hpower_off       rc=1 sealed=FAIL
+[ 161.9s] fake_r1_picard_unverified          rc=1 sealed=FAIL
+[  94.1s] fake_r1_remainder_midpoint         rc=1 sealed=FAIL
+[  89.8s] fake_r1_remainder_over_x0          rc=1 sealed=FAIL
+{
+ "starts": 50,
+ "fakes_total": 19,
+ "caught_by_sealed_criteria": 17,
+ "caught_by_any_including_supplementary": 19,
+ "caught_only_by_supplementary": [
+  "fake_r1_drop_x0_width",
+  "fake_r1_kepler_exp2"
+ ],
+ "missed": [],
+ "correct_runs": 3,
+ "false_positives(FAIL)": [],
+ "correct_runs_not_all_PASS": []
+}
+done

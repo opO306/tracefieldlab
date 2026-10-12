@@ -1,0 +1,274 @@
+==============================================================================
+Gate Y1 자기시험  (케이스 43개 x 판정기 2개)
+==============================================================================
+[PASS] S0_indep_y1_exact.py  다른 판정기를 import 하지 않음 -- []
+[PASS] S0_indep_y1_mpiv.py  다른 판정기를 import 하지 않음 -- []
+[PASS] S0_float_exact  float 입력 거부
+[PASS] S0_order_exact  하한>상한 상자 거부
+[PASS] S0_float_mpiv  float 입력 거부
+[PASS] S0_order_mpiv  하한>상한 상자 거부
+[PASS] G1_generator  상태 생성기가 질량 가중 평균 계산과 정확히 일치 (r^2, rho^2, rho_bar.rho_bar_dot)
+[PASS] a_a1_DOP853_t17.118_exact  상태 exact 기대=('REFUTED', 'PASS', 'PASS') -- 실제=('REFUTED', 'PASS', 'PASS') verdict=NOT_CERTIFIED
+[PASS] a_a1_DOP853_t17.118_mpiv  상태 mpiv 기대=('REFUTED', 'PASS', 'PASS') -- 실제=('REFUTED', 'PASS', 'PASS') verdict=NOT_CERTIFIED
+[PASS] X_a1_DOP853_t17.118  두 판정기 상태·경계값 일치 -- 경계값 최대차 1.87e-60
+[PASS] a_a2_TaylorB_t17.12_exact  상태 exact 기대=('REFUTED', 'PASS', 'PASS') -- 실제=('REFUTED', 'PASS', 'PASS') verdict=NOT_CERTIFIED
+[PASS] a_a2_TaylorB_t17.12_mpiv  상태 mpiv 기대=('REFUTED', 'PASS', 'PASS') -- 실제=('REFUTED', 'PASS', 'PASS') verdict=NOT_CERTIFIED
+[PASS] X_a2_TaylorB_t17.12  두 판정기 상태·경계값 일치 -- 경계값 최대차 1.70e-60
+[PASS] R_R_t59.73_exact  상태 exact 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] R_R_t59.73_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] X_R_t59.73  두 판정기 상태·경계값 일치 -- 경계값 최대차 1.80e-60
+[PASS] R_R_t60.00_exact  상태 exact 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] R_R_t60.00_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] X_R_t60.00  두 판정기 상태·경계값 일치 -- 경계값 최대차 1.06e-60
+[PASS] R_R_t61.00_exact  상태 exact 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] R_R_t61.00_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] X_R_t61.00  두 판정기 상태·경계값 일치 -- 경계값 최대차 5.14e-61
+[PASS] R_R_t62.00_exact  상태 exact 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] R_R_t62.00_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] X_R_t62.00  두 판정기 상태·경계값 일치 -- 경계값 최대차 7.51e-61
+[PASS] R_R_t63.00_exact  상태 exact 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] R_R_t63.00_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] X_R_t63.00  두 판정기 상태·경계값 일치 -- 경계값 최대차 4.47e-61
+[PASS] R_R_t64.00_exact  상태 exact 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] R_R_t64.00_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] X_R_t64.00  두 판정기 상태·경계값 일치 -- 경계값 최대차 7.26e-61
+[PASS] R_R_t65.00_exact  상태 exact 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] R_R_t65.00_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] X_R_t65.00  두 판정기 상태·경계값 일치 -- 경계값 최대차 5.34e-61
+[PASS] R_R_t66.00_exact  상태 exact 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] R_R_t66.00_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] X_R_t66.00  두 판정기 상태·경계값 일치 -- 경계값 최대차 5.74e-61
+[PASS] R_R_t67.00_exact  상태 exact 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] R_R_t67.00_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] X_R_t67.00  두 판정기 상태·경계값 일치 -- 경계값 최대차 6.63e-61
+[PASS] R_R_t68.00_exact  상태 exact 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] R_R_t68.00_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] X_R_t68.00  두 판정기 상태·경계값 일치 -- 경계값 최대차 6.05e-61
+[PASS] R_R_t69.00_exact  상태 exact 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] R_R_t69.00_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] X_R_t69.00  두 판정기 상태·경계값 일치 -- 경계값 최대차 5.65e-61
+[PASS] R_R_t70.00_exact  상태 exact 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] R_R_t70.00_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] X_R_t70.00  두 판정기 상태·경계값 일치 -- 경계값 최대차 5.55e-61
+[PASS] X_R_first_t59.72234  두 판정기 상태·경계값 일치 -- 경계값 최대차 2.08e-60
+[PASS] c_c1_basic_exact  상태 exact 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] c_c1_basic_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] X_c1_basic  두 판정기 상태·경계값 일치 -- 경계값 최대차 6.22e-61
+[PASS] c_c2_rotated_offset_exact  상태 exact 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] c_c2_rotated_offset_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] X_c2_rotated_offset  두 판정기 상태·경계값 일치 -- 경계값 최대차 6.63e-61
+[PASS] c_c3_rotated_offset2_exact  상태 exact 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] c_c3_rotated_offset2_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] X_c3_rotated_offset2  두 판정기 상태·경계값 일치 -- 경계값 최대차 6.22e-61
+[PASS] c_c4_r1.55_margin0.02_exact  상태 exact 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] c_c4_r1.55_margin0.02_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] X_c4_r1.55_margin0.02  두 판정기 상태·경계값 일치 -- 경계값 최대차 6.32e-61
+[PASS] c_c5_rho_near_lam_d1_exact  상태 exact 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] c_c5_rho_near_lam_d1_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] X_c5_rho_near_lam_d1  두 판정기 상태·경계값 일치 -- 경계값 최대차 3.29e-58
+[PASS] c_c6_binary_vel_matters_exact  상태 exact 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] c_c6_binary_vel_matters_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] X_c6_binary_vel_matters  두 판정기 상태·경계값 일치 -- 경계값 최대차 6.32e-61
+[PASS] inv_INV0_exact  상태 exact 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] inv_INV0_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] X_INV0  두 판정기 상태·경계값 일치 -- 경계값 최대차 6.93e-61
+[PASS] inv_INV1_exact  상태 exact 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] inv_INV1_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] X_INV1  두 판정기 상태·경계값 일치 -- 경계값 최대차 6.93e-61
+[PASS] inv_INV2_exact  상태 exact 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] inv_INV2_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] X_INV2  두 판정기 상태·경계값 일치 -- 경계값 최대차 6.93e-61
+[PASS] inv_INV3_exact  상태 exact 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] inv_INV3_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] X_INV3  두 판정기 상태·경계값 일치 -- 경계값 최대차 6.93e-61
+[PASS] inv_INV4_exact  상태 exact 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] inv_INV4_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] X_INV4  두 판정기 상태·경계값 일치 -- 경계값 최대차 6.93e-61
+[PASS] b_b0_control_C3_exact  상태 exact 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] b_b0_control_C3_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] X_b0_control_C3  두 판정기 상태·경계값 일치 -- 경계값 최대차 6.32e-61
+[PASS] b_b1_widen_vx0_C3_exact  상태 exact 기대=('PASS', 'PASS', 'UNDECIDED') -- 실제=('PASS', 'PASS', 'UNDECIDED') verdict=NOT_CERTIFIED
+[PASS] b_b1_widen_vx0_C3_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'UNDECIDED') -- 실제=('PASS', 'PASS', 'UNDECIDED') verdict=NOT_CERTIFIED
+[PASS] X_b1_widen_vx0_C3  두 판정기 상태·경계값 일치 -- 경계값 최대차 6.22e-61
+[PASS] b_b2_control_C1_exact  상태 exact 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] b_b2_control_C1_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] X_b2_control_C1  두 판정기 상태·경계값 일치 -- 경계값 최대차 8.35e-61
+[PASS] b_b2_widen_x2_C1_exact  상태 exact 기대=('UNDECIDED', 'PASS', 'PASS') -- 실제=('UNDECIDED', 'PASS', 'PASS') verdict=NOT_CERTIFIED
+[PASS] b_b2_widen_x2_C1_mpiv  상태 mpiv 기대=('UNDECIDED', 'PASS', 'PASS') -- 실제=('UNDECIDED', 'PASS', 'PASS') verdict=NOT_CERTIFIED
+[PASS] X_b2_widen_x2_C1  두 판정기 상태·경계값 일치 -- 경계값 최대차 1.54e-60
+[PASS] b_b3_control_C2_exact  상태 exact 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] b_b3_control_C2_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] X_b3_control_C2  두 판정기 상태·경계값 일치 -- 경계값 최대차 3.29e-58
+[PASS] b_b3_widen_x0_C2_exact  상태 exact 기대=('PASS', 'UNDECIDED', 'UNDEFINED') -- 실제=('PASS', 'UNDECIDED', 'UNDEFINED') verdict=NOT_CERTIFIED
+[PASS] b_b3_widen_x0_C2_mpiv  상태 mpiv 기대=('PASS', 'UNDECIDED', 'UNDEFINED') -- 실제=('PASS', 'UNDECIDED', 'UNDEFINED') verdict=NOT_CERTIFIED
+[PASS] X_b3_widen_x0_C2  두 판정기 상태·경계값 일치 -- 경계값 최대차 6.22e-61
+[PASS] d_d1a_r=d1+0.01_exact  상태 exact 기대=('REFUTED', 'PASS', 'PASS') -- 실제=('REFUTED', 'PASS', 'PASS') verdict=NOT_CERTIFIED
+[PASS] d_d1a_r=d1+0.01_mpiv  상태 mpiv 기대=('REFUTED', 'PASS', 'PASS') -- 실제=('REFUTED', 'PASS', 'PASS') verdict=NOT_CERTIFIED
+[PASS] X_d1a_r=d1+0.01  두 판정기 상태·경계값 일치 -- 경계값 최대차 6.22e-61
+[PASS] d_d1b_r=1.58_exact  상태 exact 기대=('REFUTED', 'PASS', 'PASS') -- 실제=('REFUTED', 'PASS', 'PASS') verdict=NOT_CERTIFIED
+[PASS] d_d1b_r=1.58_mpiv  상태 mpiv 기대=('REFUTED', 'PASS', 'PASS') -- 실제=('REFUTED', 'PASS', 'PASS') verdict=NOT_CERTIFIED
+[PASS] X_d1b_r=1.58  두 판정기 상태·경계값 일치 -- 경계값 최대차 6.22e-61
+[PASS] d_d1c_r=3_exact  상태 exact 기대=('REFUTED', 'PASS', 'PASS') -- 실제=('REFUTED', 'PASS', 'PASS') verdict=NOT_CERTIFIED
+[PASS] d_d1c_r=3_mpiv  상태 mpiv 기대=('REFUTED', 'PASS', 'PASS') -- 실제=('REFUTED', 'PASS', 'PASS') verdict=NOT_CERTIFIED
+[PASS] X_d1c_r=3  두 판정기 상태·경계값 일치 -- 경계값 최대차 6.22e-61
+[PASS] d_d1e_r=d1_exact(strict)_exact  상태 exact 기대=('NOT_PASS', 'PASS', 'PASS') -- 실제=('REFUTED', 'PASS', 'PASS') verdict=NOT_CERTIFIED
+[PASS] d_d1e_r=d1_exact(strict)_mpiv  상태 mpiv 기대=('NOT_PASS', 'PASS', 'PASS') -- 실제=('UNDECIDED', 'PASS', 'PASS') verdict=NOT_CERTIFIED
+[PASS] X_d1e_r=d1_exact(strict)  두 판정기 상태·경계값 일치 -- 경계값 최대차 6.22e-61
+[PASS] d_d2a_rho=0.8_exact  상태 exact 기대=('PASS', 'REFUTED', 'UNDEFINED') -- 실제=('PASS', 'REFUTED', 'UNDEFINED') verdict=NOT_CERTIFIED
+[PASS] d_d2a_rho=0.8_mpiv  상태 mpiv 기대=('PASS', 'REFUTED', 'UNDEFINED') -- 실제=('PASS', 'REFUTED', 'UNDEFINED') verdict=NOT_CERTIFIED
+[PASS] X_d2a_rho=0.8  두 판정기 상태·경계값 일치 -- 경계값 최대차 4.98e-61
+[PASS] d_d2b_rho=lam*d1_exact(strict)_exact  상태 exact 기대=('PASS', 'NOT_PASS', 'UNDEFINED') -- 실제=('PASS', 'REFUTED', 'UNDEFINED') verdict=NOT_CERTIFIED
+[PASS] d_d2b_rho=lam*d1_exact(strict)_mpiv  상태 mpiv 기대=('PASS', 'NOT_PASS', 'UNDEFINED') -- 실제=('PASS', 'UNDECIDED', 'UNDEFINED') verdict=NOT_CERTIFIED
+[PASS] X_d2b_rho=lam*d1_exact(strict)  두 판정기 상태·경계값 일치 -- 경계값 최대차 3.73e-61
+[PASS] d_d3a_rhod=need-0.05_exact  상태 exact 기대=('PASS', 'PASS', 'REFUTED') -- 실제=('PASS', 'PASS', 'REFUTED') verdict=NOT_CERTIFIED
+[PASS] d_d3a_rhod=need-0.05_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'REFUTED') -- 실제=('PASS', 'PASS', 'REFUTED') verdict=NOT_CERTIFIED
+[PASS] X_d3a_rhod=need-0.05  두 판정기 상태·경계값 일치 -- 경계값 최대차 7.03e-61
+[PASS] d_d3b_rhod=-5_exact  상태 exact 기대=('PASS', 'PASS', 'REFUTED') -- 실제=('PASS', 'PASS', 'REFUTED') verdict=NOT_CERTIFIED
+[PASS] d_d3b_rhod=-5_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'REFUTED') -- 실제=('PASS', 'PASS', 'REFUTED') verdict=NOT_CERTIFIED
+[PASS] X_d3b_rhod=-5  두 판정기 상태·경계값 일치 -- 경계값 최대차 8.11e-61
+[PASS] d_d3c_rhod=0_exact  상태 exact 기대=('PASS', 'PASS', 'REFUTED') -- 실제=('PASS', 'PASS', 'REFUTED') verdict=NOT_CERTIFIED
+[PASS] d_d3c_rhod=0_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'REFUTED') -- 실제=('PASS', 'PASS', 'REFUTED') verdict=NOT_CERTIFIED
+[PASS] X_d3c_rhod=0  두 판정기 상태·경계값 일치 -- 경계값 최대차 6.22e-61
+[PASS] d_d3d_rhod=need-1e-20_exact  상태 exact 기대=('PASS', 'PASS', 'REFUTED') -- 실제=('PASS', 'PASS', 'REFUTED') verdict=NOT_CERTIFIED
+[PASS] d_d3d_rhod=need-1e-20_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'REFUTED') -- 실제=('PASS', 'PASS', 'REFUTED') verdict=NOT_CERTIFIED
+[PASS] X_d3d_rhod=need-1e-20  두 판정기 상태·경계값 일치 -- 경계값 최대차 1.71e-60
+[PASS] d_d3e_rhod=need+1e-20_exact  상태 exact 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] d_d3e_rhod=need+1e-20_mpiv  상태 mpiv 기대=('PASS', 'PASS', 'PASS') -- 실제=('PASS', 'PASS', 'PASS') verdict=PASS
+[PASS] X_d3e_rhod=need+1e-20  두 판정기 상태·경계값 일치 -- 경계값 최대차 1.71e-60
+[PASS] O_a1_DOP853_t17.118_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 3.3e-60
+[PASS] O_a1_DOP853_t17.118_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 8.3e-76
+[PASS] O_a2_TaylorB_t17.12_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 3.3e-60
+[PASS] O_a2_TaylorB_t17.12_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 8.6e-76
+[PASS] O_R_t59.73_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 3.4e-60
+[PASS] O_R_t59.73_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 1.2e-75
+[PASS] O_R_t60.00_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 2.1e-60
+[PASS] O_R_t60.00_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 7.9e-76
+[PASS] O_R_t61.00_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 9.3e-61
+[PASS] O_R_t61.00_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 5.9e-76
+[PASS] O_R_t62.00_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 1.4e-60
+[PASS] O_R_t62.00_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 4.8e-76
+[PASS] O_R_t63.00_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 7.6e-61
+[PASS] O_R_t63.00_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 8.3e-76
+[PASS] O_R_t64.00_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 1.4e-60
+[PASS] O_R_t64.00_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 9.7e-76
+[PASS] O_R_t65.00_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 7.2e-61
+[PASS] O_R_t65.00_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 1.2e-75
+[PASS] O_R_t66.00_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 7.0e-61
+[PASS] O_R_t66.00_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 1.7e-75
+[PASS] O_R_t67.00_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 6.9e-61
+[PASS] O_R_t67.00_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 1.1e-75
+[PASS] O_R_t68.00_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 6.8e-61
+[PASS] O_R_t68.00_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 1.4e-75
+[PASS] O_R_t69.00_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 6.8e-61
+[PASS] O_R_t69.00_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 1.7e-75
+[PASS] O_R_t70.00_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 6.7e-61
+[PASS] O_R_t70.00_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 1.4e-75
+[PASS] O_R_first_t59.72234_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 3.5e-60
+[PASS] O_R_first_t59.72234_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 1.2e-75
+[PASS] O_c1_basic_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 9.3e-61
+[PASS] O_c1_basic_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 6.9e-76
+[PASS] O_c2_rotated_offset_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 9.8e-61
+[PASS] O_c2_rotated_offset_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 7.3e-76
+[PASS] O_c3_rotated_offset2_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 9.3e-61
+[PASS] O_c3_rotated_offset2_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 9.7e-76
+[PASS] O_c4_r1.55_margin0.02_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 1.2e-60
+[PASS] O_c4_r1.55_margin0.02_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 5.9e-76
+[PASS] O_c5_rho_near_lam_d1_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 3.7e-58
+[PASS] O_c5_rho_near_lam_d1_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 4.8e-74
+[PASS] O_c6_binary_vel_matters_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 1.2e-60
+[PASS] O_c6_binary_vel_matters_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 6.6e-76
+[PASS] O_INV0_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 1.1e-60
+[PASS] O_INV0_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 4.5e-76
+[PASS] O_INV1_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 1.1e-60
+[PASS] O_INV1_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 5.5e-76
+[PASS] O_INV2_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 1.1e-60
+[PASS] O_INV2_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 3.5e-76
+[PASS] O_INV3_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 1.1e-60
+[PASS] O_INV3_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 6.0e-75
+[PASS] O_INV4_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 1.1e-60
+[PASS] O_INV4_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 8.6e-76
+[PASS] O_b0_control_C3_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 1.2e-60
+[PASS] O_b0_control_C3_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 5.9e-76
+[PASS] O_b2_control_C1_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 1.4e-60
+[PASS] O_b2_control_C1_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 6.6e-76
+[PASS] O_b3_control_C2_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 3.7e-58
+[PASS] O_b3_control_C2_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 4.8e-74
+[PASS] O_d1a_r=d1+0.01_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 9.3e-61
+[PASS] O_d1a_r=d1+0.01_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 5.5e-76
+[PASS] O_d1b_r=1.58_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 9.3e-61
+[PASS] O_d1b_r=1.58_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 2.8e-76
+[PASS] O_d1c_r=3_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 9.3e-61
+[PASS] O_d1c_r=3_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 6.9e-76
+[PASS] O_d1e_r=d1_exact(strict)_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 9.3e-61
+[PASS] O_d1e_r=d1_exact(strict)_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 5.5e-76
+[PASS] O_d2a_rho=0.8_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 6.2e-61
+[PASS] O_d2a_rho=0.8_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 8.6e-77
+[PASS] O_d2b_rho=lam*d1_exact(strict)_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 6.2e-61
+[PASS] O_d2b_rho=lam*d1_exact(strict)_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 6.0e-77
+[PASS] O_d3a_rhod=need-0.05_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 8.9e-61
+[PASS] O_d3a_rhod=need-0.05_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 4.8e-76
+[PASS] O_d3b_rhod=-5_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 1.2e-60
+[PASS] O_d3b_rhod=-5_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 6.2e-76
+[PASS] O_d3c_rhod=0_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 6.2e-61
+[PASS] O_d3c_rhod=0_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 3.5e-76
+[PASS] O_d3d_rhod=need-1e-20_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 3.0e-60
+[PASS] O_d3d_rhod=need-1e-20_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 6.9e-76
+[PASS] O_d3e_rhod=need+1e-20_exact  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 3.0e-60
+[PASS] O_d3e_rhod=need+1e-20_mpiv  폭 0 상자의 여유 구간이 오라클(decimal 100자리)을 포함 -- 구간 폭 7.3e-76
+[PASS] I_exact  방향·원점·표류속도를 바꿔도 C1/C3 여유 하한 동일 -- 최대차 0.0e+00
+[PASS] I_mpiv  방향·원점·표류속도를 바꿔도 C1/C3 여유 하한 동일 -- 최대차 2.7e-75
+[PASS] F_a1_exact  (a1) C3 여유가 corollary_counterexample_output.txt 의 need=3.9888266751 과 1e-6 이내 (파일 반올림) -- 판정기 0.346068606  파일 0.346068609  차 2.25e-09
+[PASS] F_a1b_exact  (a1) C3 여유가 yoshida_check_output.txt 의 vel_margin=0.34607 과 1e-5 이내 -- 판정기 0.346068606
+[PASS] F_a2_exact  (a2) C3 여유가 analyze_taylor_output.txt [B] 5번째 값 0.3303173096996854 와 1e-9 이내 -- 판정기 0.330317309699687  파일 0.330317309699685  차 1.12e-15
+[PASS] F_R_exact  (R) 기준 궤적 표 12행의 C3 여유가 파일 값과 3e-4 이내 (입력이 4자리 반올림) -- 최대차 5.73e-05
+[PASS] F_R0_exact  (R0) 첫 성립 시각 상태의 C3 여유가 0 에서 1e-4 이내 (59.72234 는 여유가 0이 되는 시각) -- 여유 -9.665e-06
+[PASS] F_a1_mpiv  (a1) C3 여유가 corollary_counterexample_output.txt 의 need=3.9888266751 과 1e-6 이내 (파일 반올림) -- 판정기 0.346068606  파일 0.346068609  차 2.25e-09
+[PASS] F_a1b_mpiv  (a1) C3 여유가 yoshida_check_output.txt 의 vel_margin=0.34607 과 1e-5 이내 -- 판정기 0.346068606
+[PASS] F_a2_mpiv  (a2) C3 여유가 analyze_taylor_output.txt [B] 5번째 값 0.3303173096996854 와 1e-9 이내 -- 판정기 0.330317309699687  파일 0.330317309699685  차 1.12e-15
+[PASS] F_R_mpiv  (R) 기준 궤적 표 12행의 C3 여유가 파일 값과 3e-4 이내 (입력이 4자리 반올림) -- 최대차 5.73e-05
+[PASS] F_R0_mpiv  (R0) 첫 성립 시각 상태의 C3 여유가 0 에서 1e-4 이내 (59.72234 는 여유가 0이 되는 시각) -- 여유 -9.665e-06
+   [참고] 기준 궤적 표와 판정기 C3 여유 비교 (exact 판정기):
+      t=59.73  파일 여유 0.0374480811  판정기 여유 0.0375053913  차 +5.73e-05
+      t=60.00  파일 여유 0.5615791992  판정기 여유 0.5615996678  차 +2.05e-05
+      t=61.00  파일 여유 0.9278577112  판정기 여유 0.9278454866  차 -1.22e-05
+      t=62.00  파일 여유 1.0657795652  판정기 여유 1.0657902820  차 +1.07e-05
+      t=63.00  파일 여유 1.1548944418  판정기 여유 1.1549074703  차 +1.30e-05
+      t=64.00  파일 여유 1.2208616552  판정기 여유 1.2208875014  차 +2.58e-05
+      t=65.00  파일 여유 1.2730343605  판정기 여유 1.2730038678  차 -3.05e-05
+      t=66.00  파일 여유 1.3159984840  판정기 여유 1.3160333373  차 +3.49e-05
+      t=67.00  파일 여유 1.3523652128  판정기 여유 1.3523663477  차 +1.13e-06
+      t=68.00  파일 여유 1.3837752486  판정기 여유 1.3837806221  차 +5.37e-06
+      t=69.00  파일 여유 1.4113295363  판정기 여유 1.4113547653  차 +2.52e-05
+      t=70.00  파일 여유 1.4358029895  판정기 여유 1.4357600802  차 -4.29e-05
+[PASS] D0_exact  진단: P=0, L=0 포함, H 가 정확히 -5/2 를 포함하고 -769/60 은 불포함
+[PASS] D1_exact  진단: 운동량 != 0 인 상태는 P_contains_0=False
+[PASS] D2_exact  진단: 각운동량 != 0 인 상태는 L_contains_0=False
+[PASS] D3_exact  진단: 넓힌 상자의 H 구간이 -5/2 를 포함하고 폭이 양수
+[PASS] D3b_exact  진단: x0 만 넓혀도 운동량·각운동량 구간은 여전히 0 포함
+[PASS] D0_mpiv  진단: P=0, L=0 포함, H 가 정확히 -5/2 를 포함하고 -769/60 은 불포함
+[PASS] D1_mpiv  진단: 운동량 != 0 인 상태는 P_contains_0=False
+[PASS] D2_mpiv  진단: 각운동량 != 0 인 상태는 L_contains_0=False
+[PASS] D3_mpiv  진단: 넓힌 상자의 H 구간이 -5/2 를 포함하고 폭이 양수
+[PASS] D3b_mpiv  진단: x0 만 넓혀도 운동량·각운동량 구간은 여전히 0 포함
+------------------------------------------------------------------------------
+(e) 가짜 판정기 검사력
+[PASS] E_F1_exact  가짜 판정기 [F1 lam<->nu 교환 (G는 정상)] 가 (a)~(d) 중 최소 하나에서 다른 결과 -- 다른 결과 4건, 그룹 ['b', 'd']: b3_widen_x0_C2, d2a_rho=0.8, d2b_rho=lam*d1_exact(strict), d3d_rhod=need-1e-20
+[PASS] E_F1_mpiv  가짜 판정기 [F1 lam<->nu 교환 (G는 정상)] 가 (a)~(d) 중 최소 하나에서 다른 결과 -- 다른 결과 4건, 그룹 ['b', 'd']: b3_widen_x0_C2, d2a_rho=0.8, d2b_rho=lam*d1_exact(strict), d3d_rhod=need-1e-20
+[PASS] E_F2_exact  가짜 판정기 [F2 G 의 질량 가중치 m1<->m2 교환] 가 (a)~(d) 중 최소 하나에서 다른 결과 -- 다른 결과 7건, 그룹 ['b', 'c', 'd', 'inv']: c4_r1.55_margin0.02, c6_binary_vel_matters, INV4, b1_widen_vx0_C3, b3_widen_x0_C2, d2b_rho=lam*d1_exact(strict) ...
+[PASS] E_F2_mpiv  가짜 판정기 [F2 G 의 질량 가중치 m1<->m2 교환] 가 (a)~(d) 중 최소 하나에서 다른 결과 -- 다른 결과 7건, 그룹 ['b', 'c', 'd', 'inv']: c4_r1.55_margin0.02, c6_binary_vel_matters, INV4, b1_widen_vx0_C3, b3_widen_x0_C2, d2b_rho=lam*d1_exact(strict) ...
+[PASS] E_F3_exact  가짜 판정기 [F3 d1=33/20 (=1.65, 원문 Theorem 2 에 쓴 값)] 가 (a)~(d) 중 최소 하나에서 다른 결과 -- 다른 결과 8건, 그룹 ['R', 'b', 'c', 'd']: R_t59.73, c5_rho_near_lam_d1, b2_widen_x2_C1, b3_control_C2, d1a_r=d1+0.01, d1b_r=1.58 ...
+[PASS] E_F3_mpiv  가짜 판정기 [F3 d1=33/20 (=1.65, 원문 Theorem 2 에 쓴 값)] 가 (a)~(d) 중 최소 하나에서 다른 결과 -- 다른 결과 8건, 그룹 ['R', 'b', 'c', 'd']: R_t59.73, c5_rho_near_lam_d1, b2_widen_x2_C1, b3_control_C2, d1a_r=d1+0.01, d1b_r=1.58 ...
+[PASS] E_F4_exact  가짜 판정기 [F4 d1=3/2] 가 (a)~(d) 중 최소 하나에서 다른 결과 -- 다른 결과 5건, 그룹 ['b', 'c', 'd']: c4_r1.55_margin0.02, b2_control_C1, b3_widen_x0_C2, d2b_rho=lam*d1_exact(strict), d3d_rhod=need-1e-20
+[PASS] E_F4_mpiv  가짜 판정기 [F4 d1=3/2] 가 (a)~(d) 중 최소 하나에서 다른 결과 -- 다른 결과 5건, 그룹 ['b', 'c', 'd']: c4_r1.55_margin0.02, b2_control_C1, b3_widen_x0_C2, d2b_rho=lam*d1_exact(strict), d3d_rhod=need-1e-20
+[PASS] E_F5_exact  가짜 판정기 [F5 d1=25/16 (=1.5625, 약간 큼)] 가 (a)~(d) 중 최소 하나에서 다른 결과 -- 다른 결과 2건, 그룹 ['d']: d1e_r=d1_exact(strict), d3e_rhod=need+1e-20
+[PASS] E_F5_mpiv  가짜 판정기 [F5 d1=25/16 (=1.5625, 약간 큼)] 가 (a)~(d) 중 최소 하나에서 다른 결과 -- 다른 결과 2건, 그룹 ['d']: d1e_r=d1_exact(strict), d3e_rhod=need+1e-20
+[PASS] E_F6_exact  가짜 판정기 [F6 M=9 (쌍성 질량만 씀)] 가 (a)~(d) 중 최소 하나에서 다른 결과 -- 다른 결과 3건, 그룹 ['b', 'd']: b1_widen_vx0_C3, d3a_rhod=need-0.05, d3d_rhod=need-1e-20
+[PASS] E_F6_mpiv  가짜 판정기 [F6 M=9 (쌍성 질량만 씀)] 가 (a)~(d) 중 최소 하나에서 다른 결과 -- 다른 결과 3건, 그룹 ['b', 'd']: b1_widen_vx0_C3, d3a_rhod=need-0.05, d3d_rhod=need-1e-20
+[PASS] E_F7_exact  가짜 판정기 [F7 C1 삭제 (원문 Corollary 처럼 r<d1 미검사)] 가 (a)~(d) 중 최소 하나에서 다른 결과 -- 다른 결과 7건, 그룹 ['a', 'b', 'd']: a1_DOP853_t17.118, a2_TaylorB_t17.12, b2_widen_x2_C1, d1a_r=d1+0.01, d1b_r=1.58, d1c_r=3 ...
+[PASS] E_F7_mpiv  가짜 판정기 [F7 C1 삭제 (원문 Corollary 처럼 r<d1 미검사)] 가 (a)~(d) 중 최소 하나에서 다른 결과 -- 다른 결과 7건, 그룹 ['a', 'b', 'd']: a1_DOP853_t17.118, a2_TaylorB_t17.12, b2_widen_x2_C1, d1a_r=d1+0.01, d1b_r=1.58, d1c_r=3 ...
+[PASS] E_F8_exact  가짜 판정기 [F8 질량 4<->5 전면 교환 (m1,m2,lam,nu)] 가 (a)~(d) 중 최소 하나에서 다른 결과 -- 다른 결과 8건, 그룹 ['b', 'c', 'd', 'inv']: c4_r1.55_margin0.02, c6_binary_vel_matters, INV4, b1_widen_vx0_C3, b3_widen_x0_C2, d2a_rho=0.8 ...
+[PASS] E_F8_mpiv  가짜 판정기 [F8 질량 4<->5 전면 교환 (m1,m2,lam,nu)] 가 (a)~(d) 중 최소 하나에서 다른 결과 -- 다른 결과 8건, 그룹 ['b', 'c', 'd', 'inv']: c4_r1.55_margin0.02, c6_binary_vel_matters, INV4, b1_widen_vx0_C3, b3_widen_x0_C2, d2a_rho=0.8 ...
+[PASS] E_count  상수를 틀린 가짜 판정기 3종 이상 (실제 시험 7종)
+==============================================================================
+총 253개 검사, 실패 0개
+자기시험 전부 통과

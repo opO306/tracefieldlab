@@ -1,0 +1,427 @@
+{
+ "checker": "check_r3c.py",
+ "checker_sha256": "031f11e28f63a2767b01c6e8a532983ee9882e8b82b7e02192eb8bbc7cbe45b3",
+ "module_under_test": "/home/zun24/r3c_check_v2_dev/r3c_v1_repro_runs/strict/strict_fake_r3c_correct.py",
+ "module_sha256": "8b99add01f7797d84f56e3d9a7ee6da3462b928d2270edc75533aa7fec339537",
+ "python": "3.13.5",
+ "platform": "Linux-6.12.111+deb13-cloud-amd64-x86_64-with-glibc2.41",
+ "mpmath": "1.3.0",
+ "seed": 20261011,
+ "s1_steps": 1000,
+ "s2_boxes": 20,
+ "time_limit_sec": 3300.0,
+ "mp_dps": 130,
+ "margin": "1e-90",
+ "started_local": "2026-10-12T06:20:34",
+ "seal_check": {
+  "dyad.py": {
+   "expected": "4d49cf8f707061d128fce3ed44b59ccb3a6bda14937e32dcd469cd201fbabaab",
+   "actual": "4d49cf8f707061d128fce3ed44b59ccb3a6bda14937e32dcd469cd201fbabaab",
+   "match": true
+  },
+  "taylor_step.py": {
+   "expected": "0183f0f8dc76dcf9c1a9933d8f16a636ac011bc15e9a95e0749fb2459be01c31",
+   "actual": "0183f0f8dc76dcf9c1a9933d8f16a636ac011bc15e9a95e0749fb2459be01c31",
+   "match": true
+  }
+ },
+ "dyad_path": "/home/zun24/r3c_check_v2_dev/dyad.py",
+ "reference_selfcheck": {
+  "circle_vs_cos_sin_maxerr": "3.3812e-131",
+  "pythagorean_conservation_maxerr_t=1/4": "1.8033e-130",
+  "split_step_invariance_maxdiff": "4.5083e-131",
+  "cos_sin_t=100_mpmath_vs_doubling_series": "4.1563e-132"
+ },
+ "verdict_sealed_criteria": "UNRESOLVED",
+ "verdict_all_including_supplementary": "UNRESOLVED",
+ "criteria": {
+  "R3-S2": {
+   "desc": "\ud55c \uac78\uc74c \uc0ac\uc0c1: \ubb34\uc791\uc704 \uc2dc\uc791 \ud3c9\ud589\uc721\uba74\uccb4 20\uac1c\uc758 \uaf2d\uc9d3\uc810\u00b7\ucd95 \uadf9\uc810\u00b7\ub0b4\ubd80 \uc810\uc758 \uc815\ub2f5 \uc0c1\uc774 \uc0c8 \uc0c1\uc790\uc640 \uc0c8 \uc9d1\ud569\uc5d0 \ud3ec\ud568",
+   "sealed": true,
+   "verdict": "UNRESOLVED",
+   "counts": {
+    "PASS": 504,
+    "VIOLATION": 0,
+    "REFUSED": 8,
+    "UNDECIDED": 0,
+    "NOT_RUN": 0
+   },
+   "total": 512,
+   "violations_sample": [],
+   "refused_sample": [
+    {
+     "test": "R3-S2",
+     "box": "box12 nbody p=4 h=1/16 prec=128 w=1e-06 rot",
+     "exception": "ValueError: state entry 1099555498983969/1099511627776000 is not a dyadic with <= 128 mantissa bits (R0 decision A: one precision per run)",
+     "tb": "3c_check_v2_dev/check_r3c.py\", line 1118, in run_s2\n    (state1, info), dt = ctx.step(system, state0, h, order)\n                         ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/zun24/r3c_check_v2_dev/check_r3c.py\", line 640, in step\n    out = self.mod.lohner_step(system, state, h, order)\n  File \"/home/zun24/r3c_check_v2_dev/r3c_v1_repro_runs/strict/strict_fake_r3c_correct.py\", line 47, in lohner_step\n    _check_state(state)\n    ~~~~~~~~~~~~^^^^^^^\nValueError: state entry 1099555498983969/1099511627776000 is not a dyadic with <= 128 mantissa bits (R0 decision A: one precision per run)\n"
+    },
+    {
+     "test": "R3-S2",
+     "box": "box13 nbody p=8 h=1/16 prec=128 w=1e-04 rot",
+     "exception": "ValueError: state entry 274664100140889/274877906944000 is not a dyadic with <= 128 mantissa bits (R0 decision A: one precision per run)",
+     "tb": "/r3c_check_v2_dev/check_r3c.py\", line 1118, in run_s2\n    (state1, info), dt = ctx.step(system, state0, h, order)\n                         ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/zun24/r3c_check_v2_dev/check_r3c.py\", line 640, in step\n    out = self.mod.lohner_step(system, state, h, order)\n  File \"/home/zun24/r3c_check_v2_dev/r3c_v1_repro_runs/strict/strict_fake_r3c_correct.py\", line 47, in lohner_step\n    _check_state(state)\n    ~~~~~~~~~~~~^^^^^^^\nValueError: state entry 274664100140889/274877906944000 is not a dyadic with <= 128 mantissa bits (R0 decision A: one precision per run)\n"
+    },
+    {
+     "test": "R3-S2",
+     "box": "box14 nbody p=3 h=1/32 prec=256 w=1e-07 eye",
+     "exception": "ValueError: state entry 1099018609548691/1099511627776000 is not a dyadic with <= 256 mantissa bits (R0 decision A: one precision per run)",
+     "tb": "3c_check_v2_dev/check_r3c.py\", line 1118, in run_s2\n    (state1, info), dt = ctx.step(system, state0, h, order)\n                         ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/zun24/r3c_check_v2_dev/check_r3c.py\", line 640, in step\n    out = self.mod.lohner_step(system, state, h, order)\n  File \"/home/zun24/r3c_check_v2_dev/r3c_v1_repro_runs/strict/strict_fake_r3c_correct.py\", line 47, in lohner_step\n    _check_state(state)\n    ~~~~~~~~~~~~^^^^^^^\nValueError: state entry 1099018609548691/1099511627776000 is not a dyadic with <= 256 mantissa bits (R0 decision A: one precision per run)\n"
+    },
+    {
+     "test": "R3-S2",
+     "box": "box15 nbody p=6 h=1/16 prec=128 w=1e-05 skew",
+     "exception": "ValueError: state entry 1099523811002461/1099511627776000 is not a dyadic with <= 128 mantissa bits (R0 decision A: one precision per run)",
+     "tb": "3c_check_v2_dev/check_r3c.py\", line 1118, in run_s2\n    (state1, info), dt = ctx.step(system, state0, h, order)\n                         ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/zun24/r3c_check_v2_dev/check_r3c.py\", line 640, in step\n    out = self.mod.lohner_step(system, state, h, order)\n  File \"/home/zun24/r3c_check_v2_dev/r3c_v1_repro_runs/strict/strict_fake_r3c_correct.py\", line 47, in lohner_step\n    _check_state(state)\n    ~~~~~~~~~~~~^^^^^^^\nValueError: state entry 1099523811002461/1099511627776000 is not a dyadic with <= 128 mantissa bits (R0 decision A: one precision per run)\n"
+    },
+    {
+     "test": "R3-S2",
+     "box": "box16 nbody p=20 h=1/16 prec=128 w=1e-06 rot",
+     "exception": "ValueError: state entry 1098682953462337/1099511627776000 is not a dyadic with <= 128 mantissa bits (R0 decision A: one precision per run)",
+     "tb": "3c_check_v2_dev/check_r3c.py\", line 1118, in run_s2\n    (state1, info), dt = ctx.step(system, state0, h, order)\n                         ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/zun24/r3c_check_v2_dev/check_r3c.py\", line 640, in step\n    out = self.mod.lohner_step(system, state, h, order)\n  File \"/home/zun24/r3c_check_v2_dev/r3c_v1_repro_runs/strict/strict_fake_r3c_correct.py\", line 47, in lohner_step\n    _check_state(state)\n    ~~~~~~~~~~~~^^^^^^^\nValueError: state entry 1098682953462337/1099511627776000 is not a dyadic with <= 128 mantissa bits (R0 decision A: one precision per run)\n"
+    },
+    {
+     "test": "R3-S2",
+     "box": "box17 nbody p=10 h=1/32 prec=128 w=1e-05 rot",
+     "exception": "ValueError: state entry 1099474363558791/1099511627776000 is not a dyadic with <= 128 mantissa bits (R0 decision A: one precision per run)",
+     "tb": "3c_check_v2_dev/check_r3c.py\", line 1118, in run_s2\n    (state1, info), dt = ctx.step(system, state0, h, order)\n                         ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/zun24/r3c_check_v2_dev/check_r3c.py\", line 640, in step\n    out = self.mod.lohner_step(system, state, h, order)\n  File \"/home/zun24/r3c_check_v2_dev/r3c_v1_repro_runs/strict/strict_fake_r3c_correct.py\", line 47, in lohner_step\n    _check_state(state)\n    ~~~~~~~~~~~~^^^^^^^\nValueError: state entry 1099474363558791/1099511627776000 is not a dyadic with <= 128 mantissa bits (R0 decision A: one precision per run)\n"
+    },
+    {
+     "test": "R3-S2",
+     "box": "box18 nbody p=5 h=1/16 prec=128 w=1e-45 rot",
+     "exception": "ValueError: state entry 1100430930827161/1099511627776000 is not a dyadic with <= 128 mantissa bits (R0 decision A: one precision per run)",
+     "tb": "3c_check_v2_dev/check_r3c.py\", line 1118, in run_s2\n    (state1, info), dt = ctx.step(system, state0, h, order)\n                         ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/zun24/r3c_check_v2_dev/check_r3c.py\", line 640, in step\n    out = self.mod.lohner_step(system, state, h, order)\n  File \"/home/zun24/r3c_check_v2_dev/r3c_v1_repro_runs/strict/strict_fake_r3c_correct.py\", line 47, in lohner_step\n    _check_state(state)\n    ~~~~~~~~~~~~^^^^^^^\nValueError: state entry 1100430930827161/1099511627776000 is not a dyadic with <= 128 mantissa bits (R0 decision A: one precision per run)\n"
+    },
+    {
+     "test": "R3-S2",
+     "box": "box19 nbody p=4 h=1/32 prec=128 w=0 rot",
+     "exception": "ValueError: state entry 17179036602709/17179869184000 is not a dyadic with <= 128 mantissa bits (R0 decision A: one precision per run)",
+     "tb": "24/r3c_check_v2_dev/check_r3c.py\", line 1118, in run_s2\n    (state1, info), dt = ctx.step(system, state0, h, order)\n                         ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/zun24/r3c_check_v2_dev/check_r3c.py\", line 640, in step\n    out = self.mod.lohner_step(system, state, h, order)\n  File \"/home/zun24/r3c_check_v2_dev/r3c_v1_repro_runs/strict/strict_fake_r3c_correct.py\", line 47, in lohner_step\n    _check_state(state)\n    ~~~~~~~~~~~~^^^^^^^\nValueError: state entry 17179036602709/17179869184000 is not a dyadic with <= 128 mantissa bits (R0 decision A: one precision per run)\n"
+    }
+   ],
+   "undecided_sample": [],
+   "extra": {
+    "boxes_planned": 20,
+    "boxes": [
+     {
+      "box": "box00 harmonic p=4 h=1/8 prec=128 w=1e-05 rot",
+      "h_used": "1/8",
+      "points": 17,
+      "e_ref": "1.0e-120",
+      "min_new_box_width": "1.234e-5",
+      "max_new_box_width": "1.356e-5",
+      "start_box_halfwidth_class": "1/100000",
+      "sensitive": true,
+      "step_seconds": 0.002
+     },
+     {
+      "box": "box01 harmonic p=8 h=1/8 prec=256 w=1e-03 rot",
+      "h_used": "1/8",
+      "points": 17,
+      "e_ref": "1.0e-120",
+      "min_new_box_width": "0.001145",
+      "max_new_box_width": "0.001817",
+      "start_box_halfwidth_class": "1/1000",
+      "sensitive": true,
+      "step_seconds": 0.004
+     },
+     {
+      "box": "box02 harmonic p=3 h=1/16 prec=128 w=1e-07 skew",
+      "h_used": "1/16",
+      "points": 17,
+      "e_ref": "1.0e-120",
+      "min_new_box_width": "7.052e-8",
+      "max_new_box_width": "2.023e-7",
+      "start_box_halfwidth_class": "1/10000000",
+      "sensitive": true,
+      "step_seconds": 0.002
+     },
+     {
+      "box": "box03 harmonic p=20 h=1/8 prec=128 w=1e-04 rot",
+      "h_used": "1/8",
+      "points": 17,
+      "e_ref": "1.0e-120",
+      "min_new_box_width": "0.0001991",
+      "max_new_box_width": "0.0001995",
+      "start_box_halfwidth_class": "1/10000",
+      "sensitive": true,
+      "step_seconds": 0.004
+     },
+     {
+      "box": "box04 harmonic p=6 h=1/8 prec=128 w=1e-45 rot",
+      "h_used": "1/8",
+      "points": 17,
+      "e_ref": "1.0e-120",
+      "min_new_box_width": "1.349e-11",
+      "max_new_box_width": "1.423e-11",
+      "start_box_halfwidth_class": "1/1000000000000000000000000000000000000000000000",
+      "sensitive": true,
+      "step_seconds": 0.003
+     },
+     {
+      "box": "box05 harmonic p=5 h=1/8 prec=128 w=0 rot",
+      "h_used": "1/8",
+      "points": 1,
+      "e_ref": "1.0e-120",
+      "min_new_box_width": "7.633e-10",
+      "max_new_box_width": "7.72e-10",
+      "start_box_halfwidth_class": "0",
+      "sensitive": true,
+      "step_seconds": 0.002
+     },
+     {
+      "box": "box06 kepler p=4 h=1/8 prec=128 w=1e-06 rot",
+      "h_used": "1/8",
+      "points": 33,
+      "e_ref": "1.043e-118",
+      "min_new_box_width": "3.718e-6",
+      "max_new_box_width": "4.583e-6",
+      "start_box_halfwidth_class": "1/1000000",
+      "sensitive": true,
+      "step_seconds": 0.018
+     },
+     {
+      "box": "box07 kepler p=8 h=1/16 prec=256 w=1e-04 rot",
+      "h_used": "1/16",
+      "points": 33,
+      "e_ref": "6.541e-119",
+      "min_new_box_width": "0.000194",
+      "max_new_box_width": "0.0002341",
+      "start_box_halfwidth_class": "1/10000",
+      "sensitive": true,
+      "step_seconds": 0.04
+     },
+     {
+      "box": "box08 kepler p=3 h=1/8 prec=128 w=1e-08 skew",
+      "h_used": "1/8",
+      "points": 33,
+      "e_ref": "1.002e-118",
+      "min_new_box_width": "4.265e-5",
+      "max_new_box_width": "5.669e-5",
+      "start_box_halfwidth_class": "1/100000000",
+      "sensitive": true,
+      "step_seconds": 0.014
+     },
+     {
+      "box": "box09 kepler p=20 h=1/8 prec=128 w=1e-05 rot",
+      "h_used": "1/8",
+      "points": 33,
+      "e_ref": "1.974e-118",
+      "min_new_box_width": "2.103e-5",
+      "max_new_box_width": "3.341e-5",
+      "start_box_halfwidth_class": "1/100000",
+      "sensitive": true,
+      "step_seconds": 0.143
+     },
+     {
+      "box": "box10 kepler p=6 h=1/8 prec=128 w=1e-45 rot",
+      "h_used": "1/8",
+      "points": 33,
+      "e_ref": "1.171e-118",
+      "min_new_box_width": "2.236e-8",
+      "max_new_box_width": "3.272e-8",
+      "start_box_halfwidth_class": "1/1000000000000000000000000000000000000000000000",
+      "sensitive": true,
+      "step_seconds": 0.024
+     },
+     {
+      "box": "box11 kepler p=5 h=1/8 prec=128 w=0 rot",
+      "h_used": "1/8",
+      "points": 1,
+      "e_ref": "1.008e-118",
+      "min_new_box_width": "1.482e-5",
+      "max_new_box_width": "2.131e-5",
+      "start_box_halfwidth_class": "0",
+      "sensitive": true,
+      "step_seconds": 0.022
+     },
+     {
+      "box": "box12 nbody p=4 h=1/16 prec=128 w=1e-06 rot",
+      "status": "REFUSED"
+     },
+     {
+      "box": "box13 nbody p=8 h=1/16 prec=128 w=1e-04 rot",
+      "status": "REFUSED"
+     },
+     {
+      "box": "box14 nbody p=3 h=1/32 prec=256 w=1e-07 eye",
+      "status": "REFUSED"
+     },
+     {
+      "box": "box15 nbody p=6 h=1/16 prec=128 w=1e-05 skew",
+      "status": "REFUSED"
+     },
+     {
+      "box": "box16 nbody p=20 h=1/16 prec=128 w=1e-06 rot",
+      "status": "REFUSED"
+     },
+     {
+      "box": "box17 nbody p=10 h=1/32 prec=128 w=1e-05 rot",
+      "status": "REFUSED"
+     },
+     {
+      "box": "box18 nbody p=5 h=1/16 prec=128 w=1e-45 rot",
+      "status": "REFUSED"
+     },
+     {
+      "box": "box19 nbody p=4 h=1/32 prec=128 w=0 rot",
+      "status": "REFUSED"
+     }
+    ]
+   }
+  },
+  "R3-C": {
+   "desc": "\uacc4\uc57d \ud615\uc2dd(7\uc808): \ubc18\ud658 \uad6c\uc870\u00b7info \ud0a4\u00b7h_used \ubc94\uc704\u00b7state.t \uc77c\uad00\u00b7B/c \uc774\uc9c4 \ubd84\uc218",
+   "sealed": true,
+   "verdict": "PASS",
+   "counts": {
+    "PASS": 16,
+    "VIOLATION": 0,
+    "REFUSED": 0,
+    "UNDECIDED": 0,
+    "NOT_RUN": 0
+   },
+   "total": 16,
+   "violations_sample": [],
+   "refused_sample": [],
+   "undecided_sample": []
+  },
+  "R3-X1": {
+   "desc": "[\ubcf4\ucda9] \uc9d1\ud569 c+B\u00b7R \uc758 \uc815\ud655\ud55c \uc810(\uaf2d\uc9d3\uc810\u00b7\ucd95 \uadf9\uc810)\uc774 enclosure_box \uc548\uc5d0 \uc788\ub294\uac00(\uc790\uae30 \uc77c\uad00\uc131)",
+   "sealed": false,
+   "verdict": "PASS",
+   "counts": {
+    "PASS": 16,
+    "VIOLATION": 0,
+    "REFUSED": 0,
+    "UNDECIDED": 0,
+    "NOT_RUN": 0
+   },
+   "total": 16,
+   "violations_sample": [],
+   "refused_sample": [],
+   "undecided_sample": []
+  },
+  "R3-X4": {
+   "desc": "[\ubcf4\ucda9] \ub113\uc740 \uc2dc\uc791 \ud3c9\ud589\uc721\uba74\uccb4(\ubc18\ud3ed 1e-2~5e-2) \ud55c \uac78\uc74c \uc0ac\uc0c1: \ub098\uba38\uc9c0 \ubbf8\ubd84 \ubaab\u00b7\ube44\uc120\ud615 2\ucc28\ud56d \ubbfc\uac10\ub3c4",
+   "sealed": false,
+   "verdict": "UNRESOLVED",
+   "counts": {
+    "PASS": 200,
+    "VIOLATION": 0,
+    "REFUSED": 2,
+    "UNDECIDED": 0,
+    "NOT_RUN": 0
+   },
+   "total": 202,
+   "violations_sample": [],
+   "refused_sample": [
+    {
+     "test": "R3-X4",
+     "box": "box04 nbody p=2 h=1/32 prec=128 w=1e-02 rot",
+     "exception": "ValueError: state entry 68756274176631/68719476736000 is not a dyadic with <= 128 mantissa bits (R0 decision A: one precision per run)",
+     "tb": "24/r3c_check_v2_dev/check_r3c.py\", line 1118, in run_s2\n    (state1, info), dt = ctx.step(system, state0, h, order)\n                         ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/zun24/r3c_check_v2_dev/check_r3c.py\", line 640, in step\n    out = self.mod.lohner_step(system, state, h, order)\n  File \"/home/zun24/r3c_check_v2_dev/r3c_v1_repro_runs/strict/strict_fake_r3c_correct.py\", line 47, in lohner_step\n    _check_state(state)\n    ~~~~~~~~~~~~^^^^^^^\nValueError: state entry 68756274176631/68719476736000 is not a dyadic with <= 128 mantissa bits (R0 decision A: one precision per run)\n"
+    },
+    {
+     "test": "R3-X4",
+     "box": "box05 nbody p=3 h=1/32 prec=128 w=1e-02 rot",
+     "exception": "ValueError: state entry 549385605187521/549755813888000 is not a dyadic with <= 128 mantissa bits (R0 decision A: one precision per run)",
+     "tb": "/r3c_check_v2_dev/check_r3c.py\", line 1118, in run_s2\n    (state1, info), dt = ctx.step(system, state0, h, order)\n                         ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/zun24/r3c_check_v2_dev/check_r3c.py\", line 640, in step\n    out = self.mod.lohner_step(system, state, h, order)\n  File \"/home/zun24/r3c_check_v2_dev/r3c_v1_repro_runs/strict/strict_fake_r3c_correct.py\", line 47, in lohner_step\n    _check_state(state)\n    ~~~~~~~~~~~~^^^^^^^\nValueError: state entry 549385605187521/549755813888000 is not a dyadic with <= 128 mantissa bits (R0 decision A: one precision per run)\n"
+    }
+   ],
+   "undecided_sample": [],
+   "extra": {
+    "boxes_planned": 6,
+    "boxes": [
+     {
+      "box": "box00 harmonic p=2 h=1/16 prec=128 w=5e-02 rot",
+      "h_used": "1/16",
+      "points": 17,
+      "e_ref": "1.0e-120",
+      "min_new_box_width": "0.09716",
+      "max_new_box_width": "0.09904",
+      "start_box_halfwidth_class": "1/20",
+      "sensitive": true,
+      "step_seconds": 0.002
+     },
+     {
+      "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+      "h_used": "1/8",
+      "points": 17,
+      "e_ref": "1.0e-120",
+      "min_new_box_width": "0.07963",
+      "max_new_box_width": "0.09205",
+      "start_box_halfwidth_class": "1/20",
+      "sensitive": true,
+      "step_seconds": 0.002
+     },
+     {
+      "box": "box02 kepler p=2 h=1/16 prec=128 w=2e-02 rot",
+      "h_used": "1/16",
+      "points": 33,
+      "e_ref": "1.106e-118",
+      "min_new_box_width": "0.04874",
+      "max_new_box_width": "0.05645",
+      "start_box_halfwidth_class": "1/50",
+      "sensitive": true,
+      "step_seconds": 0.012
+     },
+     {
+      "box": "box03 kepler p=3 h=1/16 prec=256 w=2e-02 rot",
+      "h_used": "1/16",
+      "points": 33,
+      "e_ref": "1.187e-118",
+      "min_new_box_width": "0.05596",
+      "max_new_box_width": "0.06289",
+      "start_box_halfwidth_class": "1/50",
+      "sensitive": true,
+      "step_seconds": 0.018
+     },
+     {
+      "box": "box04 nbody p=2 h=1/32 prec=128 w=1e-02 rot",
+      "status": "REFUSED"
+     },
+     {
+      "box": "box05 nbody p=3 h=1/32 prec=128 w=1e-02 rot",
+      "status": "REFUSED"
+     }
+    ]
+   }
+  }
+ },
+ "violation_total": 0,
+ "sealed_violation_total": 0,
+ "min_counterexample": null,
+ "system_source": {
+  "make_harmonic": "module",
+  "make_kepler": "module",
+  "make_nbody": "module"
+ },
+ "state_injection_mode_for_S2": "setattr on lohner_init result",
+ "advisories_not_counted_as_violations": {},
+ "log10_max_box_width_at_checkpoints": {},
+ "step_time": {
+  "S2|harmonic": {
+   "calls": 8,
+   "median_ms": 2.453,
+   "max_ms": 4.448,
+   "total_s": 0.02
+  },
+  "S2|kepler": {
+   "calls": 8,
+   "median_ms": 21.624,
+   "max_ms": 143.183,
+   "total_s": 0.29
+  }
+ },
+ "reference_cache": {
+  "hits": 0,
+  "misses": 352,
+  "path": "r3c_v1_repro_runs/ref_cache.pkl"
+ },
+ "stats": {
+  "steps": 16
+ },
+ "elapsed_sec": 53.4,
+ "evidence_level": "see criteria; NOT a formal proof",
+ "verdict": "UNRESOLVED"
+}

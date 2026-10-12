@@ -1,0 +1,16 @@
+correct: PASS {'R3-S1': 0, 'R3-S2': 0, 'R3-C': 0, 'R3-S1e': 0, 'R3-X1': 0, 'R3-X2': 0, 'R3-X4': 0, 'R3-X3': 0} 429s
+inv_float              sealed=FAIL any=True viol={'R3-S2': 6} 519s
+point_J                sealed=FAIL any=True viol={'R3-S2': 247, 'R3-X4': 65} 524s
+no_remainder           sealed=FAIL any=True viol={'R3-S1': 80, 'R3-S2': 757, 'R3-S1e': 24, 'R3-X2': 8, 'R3-X4': 14, 'R3-X3': 8} 524s
+R_not_updated          sealed=FAIL any=True viol={'R3-S2': 294, 'R3-X4': 18} 142s
+no_center_offset       sealed=FAIL any=True viol={'R3-S1': 160, 'R3-S2': 700, 'R3-S1e': 48, 'R3-X2': 8, 'R3-X4': 11, 'R3-X3': 8} 518s
+no_apriori             sealed=FAIL any=True viol={'R3-S1': 80, 'R3-S2': 677, 'R3-S1e': 24, 'R3-X2': 8, 'R3-X3': 8} 521s
+box_ignores_B          sealed=FAIL any=True viol={'R3-S1': 5, 'R3-S2': 676, 'R3-X1': 138, 'R3-X4': 280} 522s
+h_used_lie             sealed=FAIL any=True viol={'R3-S1': 160, 'R3-S2': 2356, 'R3-S1e': 48, 'R3-X2': 8, 'R3-X4': 470, 'R3-X3': 8} 522s
+poly_drops_last_term   sealed=FAIL any=True viol={'R3-S1': 40, 'R3-S2': 935, 'R3-S1e': 12, 'R3-X4': 131, 'R3-X3': 8} 522s
+J_drops_last_term      sealed=FAIL any=True viol={'R3-S2': 10, 'R3-X4': 4} 521s
+qt_inverse             sealed=PASS any=False viol={} 519s
+J_no_remainder         sealed=PASS any=False viol={} 518s
+PY_is_identity         sealed=PASS any=False viol={} 492s
+pivot_qr               sealed=UNRESOLVED any=False viol={} 203s
+required detected 6/6 (sealed-only 6); extra detected 4/5 (sealed-only 4); reference violations=0; undetected=['qt_inverse']; valid variants flagged=[]

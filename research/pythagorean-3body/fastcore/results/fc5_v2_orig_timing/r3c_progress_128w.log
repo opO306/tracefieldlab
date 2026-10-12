@@ -1,0 +1,44 @@
+[     0.0s] start prec=128 order=20 pivot=width started_local=2026-10-11T16:31:15 python=3.13.5 args={'prec': 128, 'pivot': 'width', 'outdir': '/home/zun24/fastcore_dev/fc5_v2_orig_timing', 'wall_limit': 10800.0, 'max_steps': 500, 'debug_undecided_exp': None, 'debug_perturb_ref': None, 'force': False}
+[     0.0s] seal ok: {'GATE_R3C_PLAN_KO.md': '26a6d9872732', 'PRIOR_ART_R3_METHODS_KO.md': '09babb30c1c4', 'rigorous/R2_RESULT_KO.md': 'fed6dfc29d08', 'rigorous/dyad.py': '4d49cf8f7070', 'rigorous/taylor_step.py': '0183f0f8dc76', 'results/ref_B_grid.json': '3bfe3e44024d'}
+[     0.0s] r3c_run.py sha256=ce113414f17053d41d03a147a8298b3813e11f07cb8a5b1b1a711306f86dbe5b lohner_step.py sha256=936138ea73b878c811df8db7b582ddb6883590be0f47cc7ece76d5ffc2db6b62
+[    31.6s] step 16 t=0.500000 h=2^-5 logW=-32.984 logR=-33.033 logInj=-33.42 logJw=-32.23 cond=2.075 disc_total=0
+[    48.7s] step 25 t=0.640625 h=2^-6 logW=-32.925 logR=-32.955 logInj=-37.45 logJw=-34.14 cond=2.350 disc_total=0
+[    79.0s] step 41 t=0.890625 h=2^-6 logW=-32.832 logR=-32.817 logInj=-36.65 logJw=-33.87 cond=2.845 disc_total=0
+[    95.9s] step 50 t=1.031250 h=2^-6 logW=-32.770 logR=-32.731 logInj=-35.11 logJw=-33.44 cond=3.202 disc_total=0
+[   126.4s] step 66 t=1.226562 h=2^-7 logW=-32.376 logR=-32.414 logInj=-37.45 logJw=-33.37 cond=3.889 disc_total=1
+[   142.7s] step 75 t=1.296875 h=2^-7 logW=-32.332 logR=-32.353 logInj=-37.45 logJw=-33.23 cond=4.226 disc_total=1
+[   173.6s] step 92 t=1.429688 h=2^-7 logW=-32.238 logR=-32.218 logInj=-35.49 logJw=-32.88 cond=5.077 disc_total=1
+[   188.2s] step 100 t=1.492188 h=2^-7 logW=-32.159 logR=-32.123 logInj=-34.01 logJw=-32.28 cond=5.617 disc_total=1
+[   219.0s] step 116 t=1.566406 h=2^-8 logW=-31.988 logR=-31.960 logInj=-37.45 logJw=-32.63 cond=6.420 disc_total=3
+[   235.1s] step 125 t=1.601562 h=2^-8 logW=-31.927 logR=-31.891 logInj=-37.12 logJw=-32.48 cond=6.873 disc_total=3
+[   265.7s] step 142 t=1.667969 h=2^-8 logW=-31.776 logR=-31.727 logInj=-34.36 logJw=-32.01 cond=7.834 disc_total=3
+[   283.1s] step 150 t=1.693359 h=2^-9 logW=-31.665 logR=-31.624 logInj=-37.45 logJw=-32.19 cond=8.205 disc_total=6
+[   314.7s] step 166 t=1.724609 h=2^-9 logW=-31.560 logR=-31.508 logInj=-37.45 logJw=-31.94 cond=8.594 disc_total=9
+[   330.7s] step 175 t=1.742188 h=2^-9 logW=-31.490 logR=-31.432 logInj=-36.53 logJw=-31.78 cond=8.741 disc_total=9
+[   360.9s] step 192 t=1.775391 h=2^-9 logW=-31.320 logR=-31.252 logInj=-33.76 logJw=-31.28 cond=8.733 disc_total=9
+[   381.1s] step 200 t=1.785156 h=2^-10 logW=-31.249 logR=-31.181 logInj=-37.45 logJw=-31.55 cond=8.668 disc_total=15
+[   411.8s] step 215 t=1.799805 h=2^-10 logW=-31.147 logR=-31.071 logInj=-37.45 logJw=-31.33 cond=8.549 disc_total=19
+[   429.6s] step 225 t=1.809570 h=2^-10 logW=-31.067 logR=-30.987 logInj=-36.36 logJw=-31.16 cond=8.481 disc_total=19
+[   459.9s] step 242 t=1.826172 h=2^-10 logW=-30.896 logR=-30.808 logInj=-33.65 logJw=-30.73 cond=8.171 disc_total=19
+[   480.1s] step 250 t=1.831055 h=2^-11 logW=-30.830 logR=-30.742 logInj=-37.45 logJw=-30.94 cond=8.074 disc_total=25
+[   510.3s] step 263 t=1.837402 h=2^-11 logW=-30.742 logR=-30.650 logInj=-37.33 logJw=-30.76 cond=7.897 disc_total=32
+[   531.7s] step 275 t=1.843262 h=2^-11 logW=-30.649 logR=-30.553 logInj=-36.40 logJw=-30.56 cond=7.692 disc_total=32
+[   562.8s] step 294 t=1.852539 h=2^-11 logW=-30.464 logR=-30.361 logInj=-33.43 logJw=-30.12 cond=7.652 disc_total=32
+[   578.2s] step 300 t=1.854248 h=2^-12 logW=-30.422 logR=-30.318 logInj=-37.15 logJw=-30.36 cond=7.583 disc_total=37
+[   609.5s] step 313 t=1.857422 h=2^-12 logW=-30.340 logR=-30.232 logInj=-37.15 logJw=-30.18 cond=7.357 disc_total=46
+[   630.4s] step 325 t=1.860352 h=2^-12 logW=-30.253 logR=-30.141 logInj=-36.59 logJw=-29.99 cond=6.961 disc_total=46
+[   660.9s] step 342 t=1.864502 h=2^-12 logW=-30.105 logR=-29.986 logInj=-34.13 logJw=-29.66 cond=6.958 disc_total=46
+[   677.2s] step 350 t=1.866211 h=2^-13 logW=-30.029 logR=-29.907 logInj=-37.15 logJw=-29.78 cond=7.004 disc_total=48
+[   708.4s] step 361 t=1.867554 h=2^-13 logW=-29.965 logR=-29.838 logInj=-37.15 logJw=-29.64 cond=6.850 disc_total=59
+[   734.5s] step 375 t=1.869263 h=2^-13 logW=-29.871 logR=-29.739 logInj=-36.73 logJw=-29.43 cond=6.583 disc_total=60
+[   765.4s] step 392 t=1.871338 h=2^-13 logW=-29.735 logR=-29.593 logInj=-34.53 logJw=-29.13 cond=6.801 disc_total=60
+[   779.9s] step 400 t=1.872314 h=2^-13 logW=-29.658 logR=-29.510 logInj=-33.20 logJw=-28.94 cond=6.980 disc_total=60
+[   811.9s] step 415 t=1.873291 h=2^-14 logW=-29.571 logR=-29.414 logInj=-37.15 logJw=-29.04 cond=7.089 disc_total=74
+[   832.6s] step 425 t=1.873901 h=2^-14 logW=-29.509 logR=-29.346 logInj=-36.93 logJw=-28.90 cond=7.126 disc_total=77
+[   862.8s] step 442 t=1.874939 h=2^-14 logW=-29.389 logR=-29.210 logInj=-35.08 logJw=-28.62 cond=7.140 disc_total=77
+[   877.2s] step 450 t=1.875427 h=2^-14 logW=-29.324 logR=-29.134 logInj=-33.88 logJw=-28.47 cond=7.193 disc_total=77
+[   909.1s] step 468 t=1.876160 h=2^-15 logW=-29.209 logR=-29.000 logInj=-36.85 logJw=-28.49 cond=7.246 disc_total=89
+[   922.0s] step 475 t=1.876373 h=2^-15 logW=-29.172 logR=-28.954 logInj=-36.85 logJw=-28.40 cond=7.252 disc_total=96
+[   953.3s] step 492 t=1.876892 h=2^-15 logW=-29.055 logR=-28.829 logInj=-35.71 logJw=-28.16 cond=7.240 disc_total=97
+[   967.6s] step 500 t=1.877136 h=2^-15 logW=-28.973 logR=-28.760 logInj=-34.66 logJw=-27.99 cond=7.217 disc_total=97
+[   967.6s] STOP SMOKE_MAX_STEPS t_final=1.877136230 steps=500 attempts=597 discarded=97 wall=967.6s detail=None

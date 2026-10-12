@@ -1,0 +1,2 @@
+G1 done n=400 wall=184.8s
+M2 done n=100 wall=459.9s

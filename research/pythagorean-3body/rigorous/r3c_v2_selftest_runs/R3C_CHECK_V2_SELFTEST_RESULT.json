@@ -1,0 +1,2581 @@
+{
+ "checker": "check_r3c_v2.py",
+ "checker_sha256": "5f13766f2a461f49c8b36e86456574bd38b5f432cd0c384ea0d2d6f4ab078e0c",
+ "seed": 20261011,
+ "s1_steps": 1000,
+ "wrapper": "strict-contract wrapper (ValueError on non-dyadic / over-precision state entries) around each fake",
+ "extra_args": [],
+ "false_positives_reference": 0,
+ "reference_undecided_refused_notrun": {
+  "undecided": {},
+  "refused": {},
+  "not_run": {}
+ },
+ "required_fakes_total": 6,
+ "required_fakes_detected": 6,
+ "required_fakes_detected_by_sealed_criteria": 6,
+ "extra_fakes_total": 5,
+ "extra_fakes_detected": 4,
+ "extra_fakes_detected_by_sealed_criteria": 4,
+ "undetected": [
+  "qt_inverse"
+ ],
+ "valid_variants_total": 3,
+ "valid_variants_flagged_as_violation": [],
+ "per_fake": {
+  "correct": {
+   "name": "correct",
+   "verdict_sealed": "PASS",
+   "verdict_all": "PASS",
+   "violations": {
+    "R3-S1": 0,
+    "R3-S2": 0,
+    "R3-C": 0,
+    "R3-S1e": 0,
+    "R3-X1": 0,
+    "R3-X2": 0,
+    "R3-X4": 0,
+    "R3-X3": 0
+   },
+   "totals": {
+    "R3-S1": 160,
+    "R3-S2": 2356,
+    "R3-C": 4098,
+    "R3-S1e": 56,
+    "R3-X1": 138,
+    "R3-X2": 8,
+    "R3-X4": 732,
+    "R3-X3": 8
+   },
+   "counts": {
+    "R3-S1": {
+     "PASS": 160,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-S2": {
+     "PASS": 2356,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-C": {
+     "PASS": 4098,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-S1e": {
+     "PASS": 56,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X1": {
+     "PASS": 138,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X2": {
+     "PASS": 8,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X4": {
+     "PASS": 732,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X3": {
+     "PASS": 8,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    }
+   },
+   "detected_by_sealed": false,
+   "detected_any": false,
+   "undecided": {},
+   "refused": {},
+   "not_run": {},
+   "min_counterexample": null,
+   "elapsed_sec": 849.0,
+   "checker_sha256": "5f13766f2a461f49c8b36e86456574bd38b5f432cd0c384ea0d2d6f4ab078e0c",
+   "module_sha256": "8b99add01f7797d84f56e3d9a7ee6da3462b928d2270edc75533aa7fec339537",
+   "start_set_contract_audit_v2": {
+    "states_audited": 26,
+    "states_outside_contract": 0,
+    "max_mantissa_bits": {
+     "c": 52,
+     "B": 60,
+     "R": 71
+    }
+   },
+   "error": null,
+   "returncode": null,
+   "wall_sec": null,
+   "reused_existing_result": true
+  },
+  "inv_float": {
+   "name": "inv_float",
+   "verdict_sealed": "FAIL",
+   "verdict_all": "FAIL",
+   "violations": {
+    "R3-S1": 0,
+    "R3-S2": 6,
+    "R3-C": 0,
+    "R3-S1e": 0,
+    "R3-X1": 0,
+    "R3-X2": 0,
+    "R3-X4": 0,
+    "R3-X3": 0
+   },
+   "totals": {
+    "R3-S1": 160,
+    "R3-S2": 2356,
+    "R3-C": 4098,
+    "R3-S1e": 56,
+    "R3-X1": 138,
+    "R3-X2": 8,
+    "R3-X4": 732,
+    "R3-X3": 8
+   },
+   "counts": {
+    "R3-S1": {
+     "PASS": 160,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-S2": {
+     "PASS": 2350,
+     "VIOLATION": 6,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-C": {
+     "PASS": 4098,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-S1e": {
+     "PASS": 56,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X1": {
+     "PASS": 138,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X2": {
+     "PASS": 8,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X4": {
+     "PASS": 732,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X3": {
+     "PASS": 8,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    }
+   },
+   "detected_by_sealed": true,
+   "detected_any": true,
+   "undecided": {},
+   "refused": {},
+   "not_run": {},
+   "min_counterexample": {
+    "test": "set",
+    "box": "box03 harmonic p=20 h=1/8 prec=128 w=1e-04 rot",
+    "point": 1,
+    "r_index_kind": "vertex/axis/interior",
+    "r": [
+     "-4.9e-5",
+     "0.0"
+    ],
+    "component": 0,
+    "overshoot": "1.0546614e-21",
+    "detail": "-0.00004900000000000000000072354",
+    "r_lo": "-0.0000489999999999999989460621",
+    "r_hi": "0.00009399999999999999849434332",
+    "e_ref": "1.0e-120",
+    "crit": "R3-S2"
+   },
+   "elapsed_sec": 428.3,
+   "checker_sha256": "5f13766f2a461f49c8b36e86456574bd38b5f432cd0c384ea0d2d6f4ab078e0c",
+   "module_sha256": "b66d9af01097cbc741d59478dcbf0427e0126e8d4fe82d5d37ad845bf8cfac72",
+   "start_set_contract_audit_v2": {
+    "states_audited": 26,
+    "states_outside_contract": 0,
+    "max_mantissa_bits": {
+     "c": 52,
+     "B": 60,
+     "R": 71
+    }
+   },
+   "error": null,
+   "returncode": 1,
+   "wall_sec": 428.5
+  },
+  "point_J": {
+   "name": "point_J",
+   "verdict_sealed": "FAIL",
+   "verdict_all": "FAIL",
+   "violations": {
+    "R3-S1": 0,
+    "R3-S2": 247,
+    "R3-C": 0,
+    "R3-S1e": 0,
+    "R3-X1": 0,
+    "R3-X2": 0,
+    "R3-X4": 65,
+    "R3-X3": 0
+   },
+   "totals": {
+    "R3-S1": 160,
+    "R3-S2": 2356,
+    "R3-C": 4098,
+    "R3-S1e": 56,
+    "R3-X1": 138,
+    "R3-X2": 8,
+    "R3-X4": 732,
+    "R3-X3": 8
+   },
+   "counts": {
+    "R3-S1": {
+     "PASS": 160,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-S2": {
+     "PASS": 2109,
+     "VIOLATION": 247,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-C": {
+     "PASS": 4098,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-S1e": {
+     "PASS": 56,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X1": {
+     "PASS": 138,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X2": {
+     "PASS": 8,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X4": {
+     "PASS": 667,
+     "VIOLATION": 65,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X3": {
+     "PASS": 8,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    }
+   },
+   "detected_by_sealed": true,
+   "detected_any": true,
+   "undecided": {},
+   "refused": {},
+   "not_run": {},
+   "min_counterexample": {
+    "test": "set",
+    "box": "box07 kepler p=8 h=1/16 prec=256 w=1e-04 rot",
+    "point": 8,
+    "r_index_kind": "vertex/axis/interior",
+    "r": [
+     "0.0",
+     "0.0",
+     "0.0",
+     "5.8e-5"
+    ],
+    "component": 3,
+    "overshoot": "7.8046671e-11",
+    "detail": "0.00006114267701674716614677048",
+    "r_lo": "-0.00009487644614718050519578147",
+    "r_hi": "0.00006114259897007625049141248",
+    "e_ref": "6.541e-119",
+    "crit": "R3-S2"
+   },
+   "elapsed_sec": 429.4,
+   "checker_sha256": "5f13766f2a461f49c8b36e86456574bd38b5f432cd0c384ea0d2d6f4ab078e0c",
+   "module_sha256": "6ad58e312d6b862d45fe7318988913bcdce5c2a0aa654a551a10acae789e1b04",
+   "start_set_contract_audit_v2": {
+    "states_audited": 26,
+    "states_outside_contract": 0,
+    "max_mantissa_bits": {
+     "c": 52,
+     "B": 60,
+     "R": 71
+    }
+   },
+   "error": null,
+   "returncode": 1,
+   "wall_sec": 429.6
+  },
+  "no_remainder": {
+   "name": "no_remainder",
+   "verdict_sealed": "FAIL",
+   "verdict_all": "FAIL",
+   "violations": {
+    "R3-S1": 80,
+    "R3-S2": 757,
+    "R3-C": 0,
+    "R3-S1e": 24,
+    "R3-X1": 0,
+    "R3-X2": 8,
+    "R3-X4": 14,
+    "R3-X3": 8
+   },
+   "totals": {
+    "R3-S1": 160,
+    "R3-S2": 2356,
+    "R3-C": 4098,
+    "R3-S1e": 56,
+    "R3-X1": 138,
+    "R3-X2": 8,
+    "R3-X4": 732,
+    "R3-X3": 8
+   },
+   "counts": {
+    "R3-S1": {
+     "PASS": 80,
+     "VIOLATION": 80,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-S2": {
+     "PASS": 1599,
+     "VIOLATION": 757,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-C": {
+     "PASS": 4098,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-S1e": {
+     "PASS": 32,
+     "VIOLATION": 24,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X1": {
+     "PASS": 138,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X2": {
+     "PASS": 0,
+     "VIOLATION": 8,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X4": {
+     "PASS": 718,
+     "VIOLATION": 14,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X3": {
+     "PASS": 0,
+     "VIOLATION": 8,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    }
+   },
+   "detected_by_sealed": true,
+   "detected_any": true,
+   "undecided": {},
+   "refused": {},
+   "not_run": {},
+   "min_counterexample": {
+    "test": "box",
+    "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+    "point": 6,
+    "r_index_kind": "vertex/axis/interior",
+    "r": [
+     "0.029",
+     "-0.04"
+    ],
+    "component": 1,
+    "overshoot": "0.0026004833",
+    "lo": "-0.4216649225179630589724127",
+    "hi": "-0.3444325773196941422499156",
+    "truth": "-0.3418320940614479853322509",
+    "e_ref": "1.0e-120",
+    "crit": "R3-X4"
+   },
+   "elapsed_sec": 431.2,
+   "checker_sha256": "5f13766f2a461f49c8b36e86456574bd38b5f432cd0c384ea0d2d6f4ab078e0c",
+   "module_sha256": "d40e4c8807cb3b1cd440066afc5cf14104f23df9e9f881ff6a94da645554f39a",
+   "start_set_contract_audit_v2": {
+    "states_audited": 26,
+    "states_outside_contract": 0,
+    "max_mantissa_bits": {
+     "c": 52,
+     "B": 60,
+     "R": 71
+    }
+   },
+   "error": null,
+   "returncode": 1,
+   "wall_sec": 431.3
+  },
+  "R_not_updated": {
+   "name": "R_not_updated",
+   "verdict_sealed": "FAIL",
+   "verdict_all": "FAIL",
+   "violations": {
+    "R3-S1": 0,
+    "R3-S2": 294,
+    "R3-C": 0,
+    "R3-S1e": 0,
+    "R3-X1": 0,
+    "R3-X2": 0,
+    "R3-X4": 18,
+    "R3-X3": 0
+   },
+   "totals": {
+    "R3-S1": 160,
+    "R3-S2": 2356,
+    "R3-C": 2246,
+    "R3-S1e": 56,
+    "R3-X1": 100,
+    "R3-X2": 8,
+    "R3-X4": 732,
+    "R3-X3": 8
+   },
+   "counts": {
+    "R3-S1": {
+     "PASS": 84,
+     "VIOLATION": 0,
+     "REFUSED": 2,
+     "UNDECIDED": 0,
+     "NOT_RUN": 74
+    },
+    "R3-S2": {
+     "PASS": 2062,
+     "VIOLATION": 294,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-C": {
+     "PASS": 2246,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-S1e": {
+     "PASS": 56,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X1": {
+     "PASS": 100,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X2": {
+     "PASS": 8,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X4": {
+     "PASS": 714,
+     "VIOLATION": 18,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X3": {
+     "PASS": 8,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    }
+   },
+   "detected_by_sealed": true,
+   "detected_any": true,
+   "undecided": {},
+   "refused": {
+    "R3-S1": 2
+   },
+   "not_run": {
+    "R3-S1": 74
+   },
+   "min_counterexample": {
+    "test": "set",
+    "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+    "point": 3,
+    "r_index_kind": "vertex/axis/interior",
+    "r": [
+     "0.0",
+     "-0.04"
+    ],
+    "component": 1,
+    "overshoot": "0.0062641972",
+    "detail": "-0.03985906268371909947348881",
+    "r_lo": "-0.03359486550582251678834375",
+    "r_hi": "0.04496917453233281395592156",
+    "e_ref": "1.0e-120",
+    "crit": "R3-X4"
+   },
+   "elapsed_sec": 151.6,
+   "checker_sha256": "5f13766f2a461f49c8b36e86456574bd38b5f432cd0c384ea0d2d6f4ab078e0c",
+   "module_sha256": "8bf642d72be7ecca4d3ff1562fa3a4cccbd096ac8f153771ee39d8388702df00",
+   "start_set_contract_audit_v2": {
+    "states_audited": 26,
+    "states_outside_contract": 0,
+    "max_mantissa_bits": {
+     "c": 52,
+     "B": 60,
+     "R": 71
+    }
+   },
+   "error": null,
+   "returncode": 1,
+   "wall_sec": 151.7
+  },
+  "no_center_offset": {
+   "name": "no_center_offset",
+   "verdict_sealed": "FAIL",
+   "verdict_all": "FAIL",
+   "violations": {
+    "R3-S1": 160,
+    "R3-S2": 700,
+    "R3-C": 0,
+    "R3-S1e": 48,
+    "R3-X1": 0,
+    "R3-X2": 8,
+    "R3-X4": 11,
+    "R3-X3": 8
+   },
+   "totals": {
+    "R3-S1": 160,
+    "R3-S2": 2356,
+    "R3-C": 4098,
+    "R3-S1e": 56,
+    "R3-X1": 138,
+    "R3-X2": 8,
+    "R3-X4": 732,
+    "R3-X3": 8
+   },
+   "counts": {
+    "R3-S1": {
+     "PASS": 0,
+     "VIOLATION": 160,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-S2": {
+     "PASS": 1656,
+     "VIOLATION": 700,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-C": {
+     "PASS": 4098,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-S1e": {
+     "PASS": 8,
+     "VIOLATION": 48,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X1": {
+     "PASS": 138,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X2": {
+     "PASS": 0,
+     "VIOLATION": 8,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X4": {
+     "PASS": 721,
+     "VIOLATION": 11,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X3": {
+     "PASS": 0,
+     "VIOLATION": 8,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    }
+   },
+   "detected_by_sealed": true,
+   "detected_any": true,
+   "undecided": {},
+   "refused": {},
+   "not_run": {},
+   "min_counterexample": {
+    "test": "box",
+    "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+    "point": 7,
+    "r_index_kind": "vertex/axis/interior",
+    "r": [
+     "-0.018",
+     "0.0365"
+    ],
+    "component": 1,
+    "overshoot": "2.5892597e-5",
+    "lo": "-0.4189276053829032242945429",
+    "hi": "-0.3416952601846343075720458",
+    "truth": "-0.4189534979802646312710998",
+    "e_ref": "1.0e-120",
+    "crit": "R3-X4"
+   },
+   "elapsed_sec": 425.9,
+   "checker_sha256": "5f13766f2a461f49c8b36e86456574bd38b5f432cd0c384ea0d2d6f4ab078e0c",
+   "module_sha256": "cfd294093dbe5a86b09f6f9ea68685b2cbb2f8bb55665df48588ef94990f6dc8",
+   "start_set_contract_audit_v2": {
+    "states_audited": 26,
+    "states_outside_contract": 0,
+    "max_mantissa_bits": {
+     "c": 52,
+     "B": 60,
+     "R": 71
+    }
+   },
+   "error": null,
+   "returncode": 1,
+   "wall_sec": 426.0
+  },
+  "no_apriori": {
+   "name": "no_apriori",
+   "verdict_sealed": "FAIL",
+   "verdict_all": "FAIL",
+   "violations": {
+    "R3-S1": 80,
+    "R3-S2": 677,
+    "R3-C": 0,
+    "R3-S1e": 24,
+    "R3-X1": 0,
+    "R3-X2": 8,
+    "R3-X4": 0,
+    "R3-X3": 8
+   },
+   "totals": {
+    "R3-S1": 160,
+    "R3-S2": 2356,
+    "R3-C": 4098,
+    "R3-S1e": 56,
+    "R3-X1": 138,
+    "R3-X2": 8,
+    "R3-X4": 732,
+    "R3-X3": 8
+   },
+   "counts": {
+    "R3-S1": {
+     "PASS": 80,
+     "VIOLATION": 80,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-S2": {
+     "PASS": 1679,
+     "VIOLATION": 677,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-C": {
+     "PASS": 4098,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-S1e": {
+     "PASS": 32,
+     "VIOLATION": 24,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X1": {
+     "PASS": 138,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X2": {
+     "PASS": 0,
+     "VIOLATION": 8,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X4": {
+     "PASS": 732,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X3": {
+     "PASS": 0,
+     "VIOLATION": 8,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    }
+   },
+   "detected_by_sealed": true,
+   "detected_any": true,
+   "undecided": {},
+   "refused": {},
+   "not_run": {},
+   "min_counterexample": {
+    "test": "box",
+    "case": "harmonic|prec=256",
+    "step": 1,
+    "t": "1/10",
+    "component": 0,
+    "overshoot": "6.6531321e-44",
+    "lo": "0.6963364156351052484182644",
+    "hi": "0.6963364156351052484182644",
+    "truth": "0.6963364156351052484182644",
+    "crit": "R3-S1e"
+   },
+   "elapsed_sec": 429.3,
+   "checker_sha256": "5f13766f2a461f49c8b36e86456574bd38b5f432cd0c384ea0d2d6f4ab078e0c",
+   "module_sha256": "2cb010c891145dcfa1d947eb25f255b4e36be5de0caf451ab884ebae08dd7100",
+   "start_set_contract_audit_v2": {
+    "states_audited": 26,
+    "states_outside_contract": 0,
+    "max_mantissa_bits": {
+     "c": 52,
+     "B": 60,
+     "R": 71
+    }
+   },
+   "error": null,
+   "returncode": 1,
+   "wall_sec": 429.4
+  },
+  "box_ignores_B": {
+   "name": "box_ignores_B",
+   "verdict_sealed": "FAIL",
+   "verdict_all": "FAIL",
+   "violations": {
+    "R3-S1": 5,
+    "R3-S2": 676,
+    "R3-C": 0,
+    "R3-S1e": 0,
+    "R3-X1": 138,
+    "R3-X2": 0,
+    "R3-X4": 280,
+    "R3-X3": 0
+   },
+   "totals": {
+    "R3-S1": 160,
+    "R3-S2": 2356,
+    "R3-C": 4098,
+    "R3-S1e": 56,
+    "R3-X1": 138,
+    "R3-X2": 8,
+    "R3-X4": 732,
+    "R3-X3": 8
+   },
+   "counts": {
+    "R3-S1": {
+     "PASS": 155,
+     "VIOLATION": 5,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-S2": {
+     "PASS": 1680,
+     "VIOLATION": 676,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-C": {
+     "PASS": 4098,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-S1e": {
+     "PASS": 56,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X1": {
+     "PASS": 0,
+     "VIOLATION": 138,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X2": {
+     "PASS": 8,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X4": {
+     "PASS": 452,
+     "VIOLATION": 280,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X3": {
+     "PASS": 8,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    }
+   },
+   "detected_by_sealed": true,
+   "detected_any": true,
+   "undecided": {},
+   "refused": {},
+   "not_run": {},
+   "min_counterexample": {
+    "test": "box",
+    "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+    "point": 3,
+    "r_index_kind": "vertex/axis/interior",
+    "r": [
+     "0.0",
+     "-0.04"
+    ],
+    "component": 0,
+    "overshoot": "0.005379811",
+    "lo": "0.5125113880628004822132641",
+    "hi": "0.5613831116054681534386552",
+    "truth": "0.5667629226055044909036799",
+    "e_ref": "1.0e-120",
+    "crit": "R3-X4"
+   },
+   "elapsed_sec": 431.5,
+   "checker_sha256": "5f13766f2a461f49c8b36e86456574bd38b5f432cd0c384ea0d2d6f4ab078e0c",
+   "module_sha256": "bcefa10565e6877c69f936fa5fbf553457fa1feccc4f632de597c1be38655438",
+   "start_set_contract_audit_v2": {
+    "states_audited": 26,
+    "states_outside_contract": 0,
+    "max_mantissa_bits": {
+     "c": 52,
+     "B": 60,
+     "R": 71
+    }
+   },
+   "error": null,
+   "returncode": 1,
+   "wall_sec": 431.7
+  },
+  "h_used_lie": {
+   "name": "h_used_lie",
+   "verdict_sealed": "FAIL",
+   "verdict_all": "FAIL",
+   "violations": {
+    "R3-S1": 160,
+    "R3-S2": 2356,
+    "R3-C": 0,
+    "R3-S1e": 48,
+    "R3-X1": 0,
+    "R3-X2": 8,
+    "R3-X4": 470,
+    "R3-X3": 8
+   },
+   "totals": {
+    "R3-S1": 160,
+    "R3-S2": 2356,
+    "R3-C": 4098,
+    "R3-S1e": 56,
+    "R3-X1": 138,
+    "R3-X2": 8,
+    "R3-X4": 732,
+    "R3-X3": 8
+   },
+   "counts": {
+    "R3-S1": {
+     "PASS": 0,
+     "VIOLATION": 160,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-S2": {
+     "PASS": 0,
+     "VIOLATION": 2356,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-C": {
+     "PASS": 4098,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-S1e": {
+     "PASS": 8,
+     "VIOLATION": 48,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X1": {
+     "PASS": 138,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X2": {
+     "PASS": 0,
+     "VIOLATION": 8,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X4": {
+     "PASS": 262,
+     "VIOLATION": 470,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X3": {
+     "PASS": 0,
+     "VIOLATION": 8,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    }
+   },
+   "detected_by_sealed": true,
+   "detected_any": true,
+   "undecided": {},
+   "refused": {},
+   "not_run": {},
+   "min_counterexample": {
+    "test": "box",
+    "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+    "point": 1,
+    "r_index_kind": "vertex/axis/interior",
+    "r": [
+     "-0.018",
+     "0.0"
+    ],
+    "component": 1,
+    "overshoot": "0.015337524",
+    "lo": "-0.3866861995419820391951531",
+    "hi": "-0.3063582130472597573443973",
+    "truth": "-0.4020237238145355573984972",
+    "e_ref": "1.0e-120",
+    "crit": "R3-X4"
+   },
+   "elapsed_sec": 429.1,
+   "checker_sha256": "5f13766f2a461f49c8b36e86456574bd38b5f432cd0c384ea0d2d6f4ab078e0c",
+   "module_sha256": "86bf10dd133d35d1adec0fe9b498a12a15237dc6e38d3f0a3c2616d6ac352957",
+   "start_set_contract_audit_v2": {
+    "states_audited": 26,
+    "states_outside_contract": 0,
+    "max_mantissa_bits": {
+     "c": 52,
+     "B": 60,
+     "R": 71
+    }
+   },
+   "error": null,
+   "returncode": 1,
+   "wall_sec": 429.2
+  },
+  "poly_drops_last_term": {
+   "name": "poly_drops_last_term",
+   "verdict_sealed": "FAIL",
+   "verdict_all": "FAIL",
+   "violations": {
+    "R3-S1": 40,
+    "R3-S2": 935,
+    "R3-C": 0,
+    "R3-S1e": 12,
+    "R3-X1": 0,
+    "R3-X2": 0,
+    "R3-X4": 131,
+    "R3-X3": 8
+   },
+   "totals": {
+    "R3-S1": 160,
+    "R3-S2": 2356,
+    "R3-C": 4098,
+    "R3-S1e": 56,
+    "R3-X1": 138,
+    "R3-X2": 8,
+    "R3-X4": 732,
+    "R3-X3": 8
+   },
+   "counts": {
+    "R3-S1": {
+     "PASS": 120,
+     "VIOLATION": 40,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-S2": {
+     "PASS": 1421,
+     "VIOLATION": 935,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-C": {
+     "PASS": 4098,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-S1e": {
+     "PASS": 44,
+     "VIOLATION": 12,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X1": {
+     "PASS": 138,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X2": {
+     "PASS": 8,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X4": {
+     "PASS": 601,
+     "VIOLATION": 131,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X3": {
+     "PASS": 0,
+     "VIOLATION": 8,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    }
+   },
+   "detected_by_sealed": true,
+   "detected_any": true,
+   "undecided": {},
+   "refused": {},
+   "not_run": {},
+   "min_counterexample": {
+    "test": "box",
+    "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+    "point": 0,
+    "r_index_kind": "center",
+    "r": [
+     "0.0",
+     "0.0"
+    ],
+    "component": 1,
+    "overshoot": "0.037864711",
+    "lo": "-0.3482123711362106790828867",
+    "hi": "-0.2685818901339515351837302",
+    "truth": "-0.3860770823989403363788256",
+    "e_ref": "1.0e-120",
+    "crit": "R3-X4"
+   },
+   "elapsed_sec": 430.2,
+   "checker_sha256": "5f13766f2a461f49c8b36e86456574bd38b5f432cd0c384ea0d2d6f4ab078e0c",
+   "module_sha256": "6972d2ed389107a52e91403be40d4d3e378a40ba2a0752ef088be03d1047bda5",
+   "start_set_contract_audit_v2": {
+    "states_audited": 26,
+    "states_outside_contract": 0,
+    "max_mantissa_bits": {
+     "c": 52,
+     "B": 60,
+     "R": 71
+    }
+   },
+   "error": null,
+   "returncode": 1,
+   "wall_sec": 430.3
+  },
+  "J_drops_last_term": {
+   "name": "J_drops_last_term",
+   "verdict_sealed": "FAIL",
+   "verdict_all": "FAIL",
+   "violations": {
+    "R3-S1": 0,
+    "R3-S2": 10,
+    "R3-C": 0,
+    "R3-S1e": 0,
+    "R3-X1": 0,
+    "R3-X2": 0,
+    "R3-X4": 4,
+    "R3-X3": 0
+   },
+   "totals": {
+    "R3-S1": 160,
+    "R3-S2": 2356,
+    "R3-C": 4098,
+    "R3-S1e": 56,
+    "R3-X1": 138,
+    "R3-X2": 8,
+    "R3-X4": 732,
+    "R3-X3": 8
+   },
+   "counts": {
+    "R3-S1": {
+     "PASS": 160,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-S2": {
+     "PASS": 2346,
+     "VIOLATION": 10,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-C": {
+     "PASS": 4098,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-S1e": {
+     "PASS": 56,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X1": {
+     "PASS": 138,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X2": {
+     "PASS": 8,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X4": {
+     "PASS": 728,
+     "VIOLATION": 4,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X3": {
+     "PASS": 8,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    }
+   },
+   "detected_by_sealed": true,
+   "detected_any": true,
+   "undecided": {},
+   "refused": {},
+   "not_run": {},
+   "min_counterexample": {
+    "test": "set",
+    "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+    "point": 5,
+    "r_index_kind": "vertex/axis/interior",
+    "r": [
+     "-0.018",
+     "-0.04"
+    ],
+    "component": 0,
+    "overshoot": "0.0040466469",
+    "detail": "-0.02286174088837194158252021",
+    "r_lo": "-0.01881509396085582131915088",
+    "r_hi": "0.02973617995815752578538453",
+    "e_ref": "1.0e-120",
+    "crit": "R3-X4"
+   },
+   "elapsed_sec": 427.8,
+   "checker_sha256": "5f13766f2a461f49c8b36e86456574bd38b5f432cd0c384ea0d2d6f4ab078e0c",
+   "module_sha256": "8397216daeb9d31454ee45af04667eb01fda4e48a79e7f33bef29ec39dc3330b",
+   "start_set_contract_audit_v2": {
+    "states_audited": 26,
+    "states_outside_contract": 0,
+    "max_mantissa_bits": {
+     "c": 52,
+     "B": 60,
+     "R": 71
+    }
+   },
+   "error": null,
+   "returncode": 1,
+   "wall_sec": 428.0
+  },
+  "qt_inverse": {
+   "name": "qt_inverse",
+   "verdict_sealed": "PASS",
+   "verdict_all": "PASS",
+   "violations": {
+    "R3-S1": 0,
+    "R3-S2": 0,
+    "R3-C": 0,
+    "R3-S1e": 0,
+    "R3-X1": 0,
+    "R3-X2": 0,
+    "R3-X4": 0,
+    "R3-X3": 0
+   },
+   "totals": {
+    "R3-S1": 160,
+    "R3-S2": 2356,
+    "R3-C": 4098,
+    "R3-S1e": 56,
+    "R3-X1": 138,
+    "R3-X2": 8,
+    "R3-X4": 732,
+    "R3-X3": 8
+   },
+   "counts": {
+    "R3-S1": {
+     "PASS": 160,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-S2": {
+     "PASS": 2356,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-C": {
+     "PASS": 4098,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-S1e": {
+     "PASS": 56,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X1": {
+     "PASS": 138,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X2": {
+     "PASS": 8,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X4": {
+     "PASS": 732,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X3": {
+     "PASS": 8,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    }
+   },
+   "detected_by_sealed": false,
+   "detected_any": false,
+   "undecided": {},
+   "refused": {},
+   "not_run": {},
+   "min_counterexample": null,
+   "elapsed_sec": 426.7,
+   "checker_sha256": "5f13766f2a461f49c8b36e86456574bd38b5f432cd0c384ea0d2d6f4ab078e0c",
+   "module_sha256": "2bb770b7e0e54b3d672a2325ad5e3029826e053bf6813066d1d67c4d73e42e34",
+   "start_set_contract_audit_v2": {
+    "states_audited": 26,
+    "states_outside_contract": 0,
+    "max_mantissa_bits": {
+     "c": 52,
+     "B": 60,
+     "R": 71
+    }
+   },
+   "error": null,
+   "returncode": 0,
+   "wall_sec": 426.8
+  },
+  "J_no_remainder": {
+   "name": "J_no_remainder",
+   "verdict_sealed": "PASS",
+   "verdict_all": "PASS",
+   "violations": {
+    "R3-S1": 0,
+    "R3-S2": 0,
+    "R3-C": 0,
+    "R3-S1e": 0,
+    "R3-X1": 0,
+    "R3-X2": 0,
+    "R3-X4": 0,
+    "R3-X3": 0
+   },
+   "totals": {
+    "R3-S1": 160,
+    "R3-S2": 2356,
+    "R3-C": 4098,
+    "R3-S1e": 56,
+    "R3-X1": 138,
+    "R3-X2": 8,
+    "R3-X4": 732,
+    "R3-X3": 8
+   },
+   "counts": {
+    "R3-S1": {
+     "PASS": 160,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-S2": {
+     "PASS": 2356,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-C": {
+     "PASS": 4098,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-S1e": {
+     "PASS": 56,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X1": {
+     "PASS": 138,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X2": {
+     "PASS": 8,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X4": {
+     "PASS": 732,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X3": {
+     "PASS": 8,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    }
+   },
+   "detected_by_sealed": false,
+   "detected_any": false,
+   "undecided": {},
+   "refused": {},
+   "not_run": {},
+   "min_counterexample": null,
+   "elapsed_sec": 426.0,
+   "checker_sha256": "5f13766f2a461f49c8b36e86456574bd38b5f432cd0c384ea0d2d6f4ab078e0c",
+   "module_sha256": "d0172916685f407ca2c1c0966316eaba14509d753013cffbb173aec7c901ba03",
+   "start_set_contract_audit_v2": {
+    "states_audited": 26,
+    "states_outside_contract": 0,
+    "max_mantissa_bits": {
+     "c": 52,
+     "B": 60,
+     "R": 71
+    }
+   },
+   "error": null,
+   "returncode": 0,
+   "wall_sec": 426.1
+  },
+  "PY_is_identity": {
+   "name": "PY_is_identity",
+   "verdict_sealed": "PASS",
+   "verdict_all": "PASS",
+   "violations": {
+    "R3-S1": 0,
+    "R3-S2": 0,
+    "R3-C": 0,
+    "R3-S1e": 0,
+    "R3-X1": 0,
+    "R3-X2": 0,
+    "R3-X4": 0,
+    "R3-X3": 0
+   },
+   "totals": {
+    "R3-S1": 160,
+    "R3-S2": 2356,
+    "R3-C": 4098,
+    "R3-S1e": 56,
+    "R3-X1": 138,
+    "R3-X2": 8,
+    "R3-X4": 732,
+    "R3-X3": 8
+   },
+   "counts": {
+    "R3-S1": {
+     "PASS": 160,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-S2": {
+     "PASS": 2356,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-C": {
+     "PASS": 4098,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-S1e": {
+     "PASS": 56,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X1": {
+     "PASS": 138,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X2": {
+     "PASS": 8,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X4": {
+     "PASS": 732,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X3": {
+     "PASS": 8,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    }
+   },
+   "detected_by_sealed": false,
+   "detected_any": false,
+   "undecided": {},
+   "refused": {},
+   "not_run": {},
+   "min_counterexample": null,
+   "elapsed_sec": 427.7,
+   "checker_sha256": "5f13766f2a461f49c8b36e86456574bd38b5f432cd0c384ea0d2d6f4ab078e0c",
+   "module_sha256": "65bc7d5853844542425c429bbc97685e4a5c3593cb15ce5bdb09b6f856135fb5",
+   "start_set_contract_audit_v2": {
+    "states_audited": 26,
+    "states_outside_contract": 0,
+    "max_mantissa_bits": {
+     "c": 52,
+     "B": 60,
+     "R": 71
+    }
+   },
+   "error": null,
+   "returncode": 0,
+   "wall_sec": 427.8
+  },
+  "pivot_qr": {
+   "name": "pivot_qr",
+   "verdict_sealed": "UNRESOLVED",
+   "verdict_all": "UNRESOLVED",
+   "violations": {
+    "R3-S1": 0,
+    "R3-S2": 0,
+    "R3-C": 0,
+    "R3-S1e": 0,
+    "R3-X1": 0,
+    "R3-X2": 0,
+    "R3-X4": 0,
+    "R3-X3": 0
+   },
+   "totals": {
+    "R3-S1": 160,
+    "R3-S2": 2356,
+    "R3-C": 2806,
+    "R3-S1e": 56,
+    "R3-X1": 112,
+    "R3-X2": 8,
+    "R3-X4": 732,
+    "R3-X3": 8
+   },
+   "counts": {
+    "R3-S1": {
+     "PASS": 108,
+     "VIOLATION": 0,
+     "REFUSED": 2,
+     "UNDECIDED": 0,
+     "NOT_RUN": 50
+    },
+    "R3-S2": {
+     "PASS": 2356,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-C": {
+     "PASS": 2806,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-S1e": {
+     "PASS": 56,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X1": {
+     "PASS": 112,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X2": {
+     "PASS": 8,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X4": {
+     "PASS": 732,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    },
+    "R3-X3": {
+     "PASS": 8,
+     "VIOLATION": 0,
+     "REFUSED": 0,
+     "UNDECIDED": 0,
+     "NOT_RUN": 0
+    }
+   },
+   "detected_by_sealed": false,
+   "detected_any": false,
+   "undecided": {},
+   "refused": {
+    "R3-S1": 2
+   },
+   "not_run": {
+    "R3-S1": 50
+   },
+   "min_counterexample": null,
+   "elapsed_sec": 237.6,
+   "checker_sha256": "5f13766f2a461f49c8b36e86456574bd38b5f432cd0c384ea0d2d6f4ab078e0c",
+   "module_sha256": "43af04b401db8cd391123382b97fb894d4d6bf7f0b6fa5b283e5a9cab973c414",
+   "start_set_contract_audit_v2": {
+    "states_audited": 26,
+    "states_outside_contract": 0,
+    "max_mantissa_bits": {
+     "c": 52,
+     "B": 60,
+     "R": 71
+    }
+   },
+   "error": null,
+   "returncode": 2,
+   "wall_sec": 237.7
+  }
+ },
+ "wall_sec": 2810.1,
+ "compare_with_v1_selftest": {
+  "correct": {
+   "verdict_sealed_v1": "PASS",
+   "verdict_sealed_v2": "PASS",
+   "same_detection_class": true,
+   "per_criterion": {
+    "R3-C": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 4098,
+     "v2_total": 4098
+    },
+    "R3-S1": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 160,
+     "v2_total": 160
+    },
+    "R3-S1e": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 56,
+     "v2_total": 56
+    },
+    "R3-S2": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 2356,
+     "v2_total": 2356
+    },
+    "R3-X1": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 138,
+     "v2_total": 138
+    },
+    "R3-X2": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 8,
+     "v2_total": 8
+    },
+    "R3-X3": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 8,
+     "v2_total": 8
+    },
+    "R3-X4": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 732,
+     "v2_total": 732
+    }
+   }
+  },
+  "inv_float": {
+   "verdict_sealed_v1": "FAIL",
+   "verdict_sealed_v2": "FAIL",
+   "same_detection_class": true,
+   "per_criterion": {
+    "R3-C": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 4098,
+     "v2_total": 4098
+    },
+    "R3-S1": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 160,
+     "v2_total": 160
+    },
+    "R3-S1e": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 56,
+     "v2_total": 56
+    },
+    "R3-S2": {
+     "v1_viol": 6,
+     "v2_viol": 6,
+     "v1_total": 2356,
+     "v2_total": 2356
+    },
+    "R3-X1": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 138,
+     "v2_total": 138
+    },
+    "R3-X2": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 8,
+     "v2_total": 8
+    },
+    "R3-X3": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 8,
+     "v2_total": 8
+    },
+    "R3-X4": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 732,
+     "v2_total": 732
+    }
+   }
+  },
+  "point_J": {
+   "verdict_sealed_v1": "FAIL",
+   "verdict_sealed_v2": "FAIL",
+   "same_detection_class": true,
+   "per_criterion": {
+    "R3-C": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 4098,
+     "v2_total": 4098
+    },
+    "R3-S1": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 160,
+     "v2_total": 160
+    },
+    "R3-S1e": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 56,
+     "v2_total": 56
+    },
+    "R3-S2": {
+     "v1_viol": 247,
+     "v2_viol": 247,
+     "v1_total": 2356,
+     "v2_total": 2356
+    },
+    "R3-X1": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 138,
+     "v2_total": 138
+    },
+    "R3-X2": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 8,
+     "v2_total": 8
+    },
+    "R3-X3": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 8,
+     "v2_total": 8
+    },
+    "R3-X4": {
+     "v1_viol": 65,
+     "v2_viol": 65,
+     "v1_total": 732,
+     "v2_total": 732
+    }
+   }
+  },
+  "no_remainder": {
+   "verdict_sealed_v1": "FAIL",
+   "verdict_sealed_v2": "FAIL",
+   "same_detection_class": true,
+   "per_criterion": {
+    "R3-C": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 4098,
+     "v2_total": 4098
+    },
+    "R3-S1": {
+     "v1_viol": 80,
+     "v2_viol": 80,
+     "v1_total": 160,
+     "v2_total": 160
+    },
+    "R3-S1e": {
+     "v1_viol": 24,
+     "v2_viol": 24,
+     "v1_total": 56,
+     "v2_total": 56
+    },
+    "R3-S2": {
+     "v1_viol": 757,
+     "v2_viol": 757,
+     "v1_total": 2356,
+     "v2_total": 2356
+    },
+    "R3-X1": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 138,
+     "v2_total": 138
+    },
+    "R3-X2": {
+     "v1_viol": 8,
+     "v2_viol": 8,
+     "v1_total": 8,
+     "v2_total": 8
+    },
+    "R3-X3": {
+     "v1_viol": 8,
+     "v2_viol": 8,
+     "v1_total": 8,
+     "v2_total": 8
+    },
+    "R3-X4": {
+     "v1_viol": 14,
+     "v2_viol": 14,
+     "v1_total": 732,
+     "v2_total": 732
+    }
+   }
+  },
+  "R_not_updated": {
+   "verdict_sealed_v1": "FAIL",
+   "verdict_sealed_v2": "FAIL",
+   "same_detection_class": true,
+   "per_criterion": {
+    "R3-C": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 2246,
+     "v2_total": 2246
+    },
+    "R3-S1": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 160,
+     "v2_total": 160
+    },
+    "R3-S1e": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 56,
+     "v2_total": 56
+    },
+    "R3-S2": {
+     "v1_viol": 294,
+     "v2_viol": 294,
+     "v1_total": 2356,
+     "v2_total": 2356
+    },
+    "R3-X1": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 100,
+     "v2_total": 100
+    },
+    "R3-X2": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 8,
+     "v2_total": 8
+    },
+    "R3-X3": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 8,
+     "v2_total": 8
+    },
+    "R3-X4": {
+     "v1_viol": 18,
+     "v2_viol": 18,
+     "v1_total": 732,
+     "v2_total": 732
+    }
+   }
+  },
+  "no_center_offset": {
+   "verdict_sealed_v1": "FAIL",
+   "verdict_sealed_v2": "FAIL",
+   "same_detection_class": true,
+   "per_criterion": {
+    "R3-C": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 4098,
+     "v2_total": 4098
+    },
+    "R3-S1": {
+     "v1_viol": 160,
+     "v2_viol": 160,
+     "v1_total": 160,
+     "v2_total": 160
+    },
+    "R3-S1e": {
+     "v1_viol": 48,
+     "v2_viol": 48,
+     "v1_total": 56,
+     "v2_total": 56
+    },
+    "R3-S2": {
+     "v1_viol": 700,
+     "v2_viol": 700,
+     "v1_total": 2356,
+     "v2_total": 2356
+    },
+    "R3-X1": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 138,
+     "v2_total": 138
+    },
+    "R3-X2": {
+     "v1_viol": 8,
+     "v2_viol": 8,
+     "v1_total": 8,
+     "v2_total": 8
+    },
+    "R3-X3": {
+     "v1_viol": 8,
+     "v2_viol": 8,
+     "v1_total": 8,
+     "v2_total": 8
+    },
+    "R3-X4": {
+     "v1_viol": 11,
+     "v2_viol": 11,
+     "v1_total": 732,
+     "v2_total": 732
+    }
+   }
+  },
+  "no_apriori": {
+   "verdict_sealed_v1": "FAIL",
+   "verdict_sealed_v2": "FAIL",
+   "same_detection_class": true,
+   "per_criterion": {
+    "R3-C": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 4098,
+     "v2_total": 4098
+    },
+    "R3-S1": {
+     "v1_viol": 80,
+     "v2_viol": 80,
+     "v1_total": 160,
+     "v2_total": 160
+    },
+    "R3-S1e": {
+     "v1_viol": 24,
+     "v2_viol": 24,
+     "v1_total": 56,
+     "v2_total": 56
+    },
+    "R3-S2": {
+     "v1_viol": 677,
+     "v2_viol": 677,
+     "v1_total": 2356,
+     "v2_total": 2356
+    },
+    "R3-X1": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 138,
+     "v2_total": 138
+    },
+    "R3-X2": {
+     "v1_viol": 8,
+     "v2_viol": 8,
+     "v1_total": 8,
+     "v2_total": 8
+    },
+    "R3-X3": {
+     "v1_viol": 8,
+     "v2_viol": 8,
+     "v1_total": 8,
+     "v2_total": 8
+    },
+    "R3-X4": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 732,
+     "v2_total": 732
+    }
+   }
+  },
+  "box_ignores_B": {
+   "verdict_sealed_v1": "FAIL",
+   "verdict_sealed_v2": "FAIL",
+   "same_detection_class": true,
+   "per_criterion": {
+    "R3-C": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 4098,
+     "v2_total": 4098
+    },
+    "R3-S1": {
+     "v1_viol": 5,
+     "v2_viol": 5,
+     "v1_total": 160,
+     "v2_total": 160
+    },
+    "R3-S1e": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 56,
+     "v2_total": 56
+    },
+    "R3-S2": {
+     "v1_viol": 676,
+     "v2_viol": 676,
+     "v1_total": 2356,
+     "v2_total": 2356
+    },
+    "R3-X1": {
+     "v1_viol": 138,
+     "v2_viol": 138,
+     "v1_total": 138,
+     "v2_total": 138
+    },
+    "R3-X2": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 8,
+     "v2_total": 8
+    },
+    "R3-X3": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 8,
+     "v2_total": 8
+    },
+    "R3-X4": {
+     "v1_viol": 280,
+     "v2_viol": 280,
+     "v1_total": 732,
+     "v2_total": 732
+    }
+   }
+  },
+  "h_used_lie": {
+   "verdict_sealed_v1": "FAIL",
+   "verdict_sealed_v2": "FAIL",
+   "same_detection_class": true,
+   "per_criterion": {
+    "R3-C": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 4098,
+     "v2_total": 4098
+    },
+    "R3-S1": {
+     "v1_viol": 160,
+     "v2_viol": 160,
+     "v1_total": 160,
+     "v2_total": 160
+    },
+    "R3-S1e": {
+     "v1_viol": 48,
+     "v2_viol": 48,
+     "v1_total": 56,
+     "v2_total": 56
+    },
+    "R3-S2": {
+     "v1_viol": 2356,
+     "v2_viol": 2356,
+     "v1_total": 2356,
+     "v2_total": 2356
+    },
+    "R3-X1": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 138,
+     "v2_total": 138
+    },
+    "R3-X2": {
+     "v1_viol": 8,
+     "v2_viol": 8,
+     "v1_total": 8,
+     "v2_total": 8
+    },
+    "R3-X3": {
+     "v1_viol": 8,
+     "v2_viol": 8,
+     "v1_total": 8,
+     "v2_total": 8
+    },
+    "R3-X4": {
+     "v1_viol": 470,
+     "v2_viol": 470,
+     "v1_total": 732,
+     "v2_total": 732
+    }
+   }
+  },
+  "poly_drops_last_term": {
+   "verdict_sealed_v1": "FAIL",
+   "verdict_sealed_v2": "FAIL",
+   "same_detection_class": true,
+   "per_criterion": {
+    "R3-C": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 4098,
+     "v2_total": 4098
+    },
+    "R3-S1": {
+     "v1_viol": 40,
+     "v2_viol": 40,
+     "v1_total": 160,
+     "v2_total": 160
+    },
+    "R3-S1e": {
+     "v1_viol": 12,
+     "v2_viol": 12,
+     "v1_total": 56,
+     "v2_total": 56
+    },
+    "R3-S2": {
+     "v1_viol": 935,
+     "v2_viol": 935,
+     "v1_total": 2356,
+     "v2_total": 2356
+    },
+    "R3-X1": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 138,
+     "v2_total": 138
+    },
+    "R3-X2": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 8,
+     "v2_total": 8
+    },
+    "R3-X3": {
+     "v1_viol": 8,
+     "v2_viol": 8,
+     "v1_total": 8,
+     "v2_total": 8
+    },
+    "R3-X4": {
+     "v1_viol": 131,
+     "v2_viol": 131,
+     "v1_total": 732,
+     "v2_total": 732
+    }
+   }
+  },
+  "J_drops_last_term": {
+   "verdict_sealed_v1": "FAIL",
+   "verdict_sealed_v2": "FAIL",
+   "same_detection_class": true,
+   "per_criterion": {
+    "R3-C": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 4098,
+     "v2_total": 4098
+    },
+    "R3-S1": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 160,
+     "v2_total": 160
+    },
+    "R3-S1e": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 56,
+     "v2_total": 56
+    },
+    "R3-S2": {
+     "v1_viol": 10,
+     "v2_viol": 10,
+     "v1_total": 2356,
+     "v2_total": 2356
+    },
+    "R3-X1": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 138,
+     "v2_total": 138
+    },
+    "R3-X2": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 8,
+     "v2_total": 8
+    },
+    "R3-X3": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 8,
+     "v2_total": 8
+    },
+    "R3-X4": {
+     "v1_viol": 4,
+     "v2_viol": 4,
+     "v1_total": 732,
+     "v2_total": 732
+    }
+   }
+  },
+  "qt_inverse": {
+   "verdict_sealed_v1": "PASS",
+   "verdict_sealed_v2": "PASS",
+   "same_detection_class": true,
+   "per_criterion": {
+    "R3-C": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 4098,
+     "v2_total": 4098
+    },
+    "R3-S1": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 160,
+     "v2_total": 160
+    },
+    "R3-S1e": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 56,
+     "v2_total": 56
+    },
+    "R3-S2": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 2356,
+     "v2_total": 2356
+    },
+    "R3-X1": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 138,
+     "v2_total": 138
+    },
+    "R3-X2": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 8,
+     "v2_total": 8
+    },
+    "R3-X3": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 8,
+     "v2_total": 8
+    },
+    "R3-X4": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 732,
+     "v2_total": 732
+    }
+   }
+  },
+  "J_no_remainder": {
+   "verdict_sealed_v1": "PASS",
+   "verdict_sealed_v2": "PASS",
+   "same_detection_class": true,
+   "per_criterion": {
+    "R3-C": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 4098,
+     "v2_total": 4098
+    },
+    "R3-S1": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 160,
+     "v2_total": 160
+    },
+    "R3-S1e": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 56,
+     "v2_total": 56
+    },
+    "R3-S2": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 2356,
+     "v2_total": 2356
+    },
+    "R3-X1": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 138,
+     "v2_total": 138
+    },
+    "R3-X2": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 8,
+     "v2_total": 8
+    },
+    "R3-X3": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 8,
+     "v2_total": 8
+    },
+    "R3-X4": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 732,
+     "v2_total": 732
+    }
+   }
+  },
+  "PY_is_identity": {
+   "verdict_sealed_v1": "PASS",
+   "verdict_sealed_v2": "PASS",
+   "same_detection_class": true,
+   "per_criterion": {
+    "R3-C": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 4098,
+     "v2_total": 4098
+    },
+    "R3-S1": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 160,
+     "v2_total": 160
+    },
+    "R3-S1e": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 56,
+     "v2_total": 56
+    },
+    "R3-S2": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 2356,
+     "v2_total": 2356
+    },
+    "R3-X1": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 138,
+     "v2_total": 138
+    },
+    "R3-X2": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 8,
+     "v2_total": 8
+    },
+    "R3-X3": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 8,
+     "v2_total": 8
+    },
+    "R3-X4": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 732,
+     "v2_total": 732
+    }
+   }
+  },
+  "pivot_qr": {
+   "verdict_sealed_v1": "UNRESOLVED",
+   "verdict_sealed_v2": "UNRESOLVED",
+   "same_detection_class": true,
+   "per_criterion": {
+    "R3-C": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 2806,
+     "v2_total": 2806
+    },
+    "R3-S1": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 160,
+     "v2_total": 160
+    },
+    "R3-S1e": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 56,
+     "v2_total": 56
+    },
+    "R3-S2": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 2356,
+     "v2_total": 2356
+    },
+    "R3-X1": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 112,
+     "v2_total": 112
+    },
+    "R3-X2": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 8,
+     "v2_total": 8
+    },
+    "R3-X3": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 8,
+     "v2_total": 8
+    },
+    "R3-X4": {
+     "v1_viol": 0,
+     "v2_viol": 0,
+     "v1_total": 732,
+     "v2_total": 732
+    }
+   }
+  }
+ }
+}

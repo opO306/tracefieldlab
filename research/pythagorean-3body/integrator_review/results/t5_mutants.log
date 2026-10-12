@@ -1,0 +1,40 @@
+[    2.7s] mutant qt_inverse        harmonic viol={'set': 32, 'box': 17, 'aux': 0, 'P': 0, 'J': 0, 'W': 0} step_errors=0
+[  127.7s] mutant qt_inverse        kepler   viol={'set': 0, 'box': 0, 'aux': 0, 'P': 0, 'J': 0, 'W': 0} step_errors=0
+[  179.4s] mutant qt_inverse        nbody    viol={'set': 0, 'box': 0, 'aux': 0, 'P': 0, 'J': 0} step_errors=0
+[  180.9s] mutant inv_inward_1ulp   harmonic viol={'set': 0, 'box': 0, 'aux': 0, 'P': 0, 'J': 0, 'W': 0} step_errors=0
+[  280.9s] mutant inv_inward_1ulp   kepler   viol={'set': 0, 'box': 0, 'aux': 0, 'P': 0, 'J': 0, 'W': 0} step_errors=0
+[  332.5s] mutant inv_inward_1ulp   nbody    viol={'set': 0, 'box': 0, 'aux': 0, 'P': 0, 'J': 0} step_errors=0
+[  334.0s] mutant point_J           harmonic viol={'set': 0, 'box': 0, 'aux': 0, 'P': 0, 'J': 1080, 'W': 0} step_errors=0
+[  433.1s] mutant point_J           kepler   viol={'set': 95, 'box': 1, 'aux': 0, 'P': 0, 'J': 326, 'W': 0} step_errors=0
+[  484.5s] mutant point_J           nbody    viol={'set': 44, 'box': 0, 'aux': 0, 'P': 0, 'J': 1554} step_errors=0
+[  486.0s] mutant no_remJ           harmonic viol={'set': 0, 'box': 0, 'aux': 0, 'P': 0, 'J': 720, 'W': 0} step_errors=0
+[  586.2s] mutant no_remJ           kepler   viol={'set': 0, 'box': 0, 'aux': 0, 'P': 0, 'J': 32, 'W': 0} step_errors=0
+[  637.8s] mutant no_remJ           nbody    viol={'set': 0, 'box': 0, 'aux': 0, 'P': 0, 'J': 592} step_errors=0
+[  639.2s] mutant W_identity        harmonic viol={'set': 0, 'box': 0, 'aux': 0, 'P': 0, 'J': 720, 'W': 0} step_errors=0
+[  739.1s] mutant W_identity        kepler   viol={'set': 0, 'box': 0, 'aux': 0, 'P': 0, 'J': 0, 'W': 0} step_errors=0
+[  790.4s] mutant W_identity        nbody    viol={'set': 0, 'box': 0, 'aux': 0, 'P': 0, 'J': 0} step_errors=0
+[  791.9s] mutant DX_at_center      harmonic viol={'set': 0, 'box': 0, 'aux': 0, 'P': 0, 'J': 0, 'W': 0} step_errors=0
+[  891.6s] mutant DX_at_center      kepler   viol={'set': 93, 'box': 1, 'aux': 84, 'P': 0, 'J': 106, 'W': 0} step_errors=0
+[  943.1s] mutant DX_at_center      nbody    viol={'set': 52, 'box': 0, 'aux': 3, 'P': 0, 'J': 432} step_errors=0
+[  944.6s] mutant no_hull_c         harmonic viol={'set': 0, 'box': 0, 'aux': 0, 'P': 14, 'J': 0, 'W': 0} step_errors=0
+[ 1045.0s] mutant no_hull_c         kepler   viol={'set': 0, 'box': 0, 'aux': 0, 'P': 2, 'J': 12, 'W': 0} step_errors=0
+[ 1096.5s] mutant no_hull_c         nbody    viol={'set': 0, 'box': 0, 'aux': 0, 'P': 0, 'J': 0} step_errors=0
+[ 1098.0s] mutant P_is_Xhat         harmonic viol={'set': 401, 'box': 330, 'aux': 874, 'P': 2865, 'J': 0, 'W': 0} step_errors=0
+[ 1197.7s] mutant P_is_Xhat         kepler   viol={'set': 87, 'box': 72, 'aux': 220, 'P': 894, 'J': 20, 'W': 166} step_errors=0
+[ 1248.8s] mutant P_is_Xhat         nbody    viol={'set': 0, 'box': 0, 'aux': 0, 'P': 1440, 'J': 140} step_errors=0
+[ 1250.3s] mutant no_Z              harmonic viol={'set': 406, 'box': 340, 'aux': 0, 'P': 0, 'J': 0, 'W': 0} step_errors=0
+[ 1350.1s] mutant no_Z              kepler   viol={'set': 72, 'box': 72, 'aux': 0, 'P': 0, 'J': 0, 'W': 0} step_errors=0
+[ 1401.2s] mutant no_Z              nbody    viol={'set': 234, 'box': 72, 'aux': 0, 'P': 0, 'J': 0} step_errors=0
+[ 1402.7s] mutant drop_E            harmonic viol={'set': 584, 'box': 467, 'aux': 0, 'P': 0, 'J': 0, 'W': 0} step_errors=0
+[ 1503.2s] mutant drop_E            kepler   viol={'set': 235, 'box': 217, 'aux': 0, 'P': 0, 'J': 0, 'W': 0} step_errors=0
+[ 1554.5s] mutant drop_E            nbody    viol={'set': 648, 'box': 648, 'aux': 0, 'P': 0, 'J': 0} step_errors=0
+[ 1556.0s] mutant center_mid_exact  harmonic viol={'set': 0, 'box': 0, 'aux': 0, 'P': 0, 'J': 0, 'W': 0} step_errors=0
+[ 1655.9s] mutant center_mid_exact  kepler   viol={'set': 0, 'box': 0, 'aux': 0, 'P': 0, 'J': 0, 'W': 0} step_errors=0
+[ 1707.3s] mutant center_mid_exact  nbody    viol={'set': 0, 'box': 0, 'aux': 0, 'P': 0, 'J': 0} step_errors=0
+[ 1708.8s] mutant aux_no_rem        harmonic viol={'set': 0, 'box': 0, 'aux': 1016, 'P': 0, 'J': 0, 'W': 0} step_errors=0
+[ 1808.8s] mutant aux_no_rem        kepler   viol={'set': 0, 'box': 0, 'aux': 216, 'P': 0, 'J': 0, 'W': 0} step_errors=0
+[ 1860.2s] mutant aux_no_rem        nbody    viol={'set': 0, 'box': 0, 'aux': 216, 'P': 0, 'J': 0} step_errors=0
+[ 1861.6s] ORIGINAL harmonic viol={'set': 0, 'box': 0, 'aux': 0, 'P': 0, 'J': 0, 'W': 0}
+[ 1961.3s] ORIGINAL kepler   viol={'set': 0, 'box': 0, 'aux': 0, 'P': 0, 'J': 0, 'W': 0}
+[ 2012.6s] ORIGINAL nbody    viol={'set': 0, 'box': 0, 'aux': 0, 'P': 0, 'J': 0}
+[ 2012.6s] caught: {'qt_inverse': True, 'inv_inward_1ulp': False, 'point_J': True, 'no_remJ': True, 'W_identity': True, 'DX_at_center': True, 'no_hull_c': True, 'P_is_Xhat': True, 'no_Z': True, 'drop_E': True, 'center_mid_exact': False, 'aux_no_rem': True}

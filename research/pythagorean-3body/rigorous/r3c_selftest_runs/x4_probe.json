@@ -1,0 +1,200 @@
+{
+ "checker": "check_r3c.py",
+ "checker_sha256": "a86a4d2d729c24c28bfda3a51ef4249ce22df9a8b63cb1b085e821cb149f5ca1",
+ "module_under_test": "C:\\numerical-audit-lab-recovered-2026-10-01\\research\\pythagorean-3body\\rigorous\\fake_r3c_correct.py",
+ "module_sha256": "e8f63ee43a6f067f26402b3dbc863a3f0dffa89f1add7e0fc6f2a26baabed240",
+ "python": "3.12.7",
+ "platform": "Windows-11-10.0.26200-SP0",
+ "mpmath": "1.3.0",
+ "seed": 20261011,
+ "s1_steps": 1000,
+ "s2_boxes": 20,
+ "time_limit_sec": 3300.0,
+ "mp_dps": 130,
+ "margin": "1e-90",
+ "started_local": "2026-10-11T14:41:08",
+ "seal_check": {
+  "dyad.py": {
+   "expected": "4d49cf8f707061d128fce3ed44b59ccb3a6bda14937e32dcd469cd201fbabaab",
+   "actual": "4d49cf8f707061d128fce3ed44b59ccb3a6bda14937e32dcd469cd201fbabaab",
+   "match": true
+  },
+  "taylor_step.py": {
+   "expected": "0183f0f8dc76dcf9c1a9933d8f16a636ac011bc15e9a95e0749fb2459be01c31",
+   "actual": "0183f0f8dc76dcf9c1a9933d8f16a636ac011bc15e9a95e0749fb2459be01c31",
+   "match": true
+  }
+ },
+ "dyad_path": "C:\\numerical-audit-lab-recovered-2026-10-01\\research\\pythagorean-3body\\rigorous\\dyad.py",
+ "reference_selfcheck": {
+  "circle_vs_cos_sin_maxerr": "3.3812e-131",
+  "pythagorean_conservation_maxerr_t=1/4": "1.8033e-130",
+  "split_step_invariance_maxdiff": "4.5083e-131",
+  "cos_sin_t=100_mpmath_vs_doubling_series": "4.1563e-132"
+ },
+ "verdict_sealed_criteria": "PASS",
+ "verdict_all_including_supplementary": "PASS",
+ "criteria": {
+  "R3-C": {
+   "desc": "\uacc4\uc57d \ud615\uc2dd(7\uc808): \ubc18\ud658 \uad6c\uc870\u00b7info \ud0a4\u00b7h_used \ubc94\uc704\u00b7state.t \uc77c\uad00\u00b7B/c \uc774\uc9c4 \ubd84\uc218",
+   "sealed": true,
+   "verdict": "PASS",
+   "counts": {
+    "PASS": 6,
+    "VIOLATION": 0,
+    "REFUSED": 0,
+    "UNDECIDED": 0,
+    "NOT_RUN": 0
+   },
+   "total": 6,
+   "violations_sample": [],
+   "refused_sample": [],
+   "undecided_sample": []
+  },
+  "R3-X1": {
+   "desc": "[\ubcf4\ucda9] \uc9d1\ud569 c+B\u00b7R \uc758 \uc815\ud655\ud55c \uc810(\uaf2d\uc9d3\uc810\u00b7\ucd95 \uadf9\uc810)\uc774 enclosure_box \uc548\uc5d0 \uc788\ub294\uac00(\uc790\uae30 \uc77c\uad00\uc131)",
+   "sealed": false,
+   "verdict": "PASS",
+   "counts": {
+    "PASS": 6,
+    "VIOLATION": 0,
+    "REFUSED": 0,
+    "UNDECIDED": 0,
+    "NOT_RUN": 0
+   },
+   "total": 6,
+   "violations_sample": [],
+   "refused_sample": [],
+   "undecided_sample": []
+  },
+  "R3-X4": {
+   "desc": "[\ubcf4\ucda9] \ub113\uc740 \uc2dc\uc791 \ud3c9\ud589\uc721\uba74\uccb4(\ubc18\ud3ed 1e-2~5e-2) \ud55c \uac78\uc74c \uc0ac\uc0c1: \ub098\uba38\uc9c0 \ubbf8\ubd84 \ubaab\u00b7\ube44\uc120\ud615 2\ucc28\ud56d \ubbfc\uac10\ub3c4",
+   "sealed": false,
+   "verdict": "PASS",
+   "counts": {
+    "PASS": 732,
+    "VIOLATION": 0,
+    "REFUSED": 0,
+    "UNDECIDED": 0,
+    "NOT_RUN": 0
+   },
+   "total": 732,
+   "violations_sample": [],
+   "refused_sample": [],
+   "undecided_sample": [],
+   "extra": {
+    "boxes_planned": 6,
+    "boxes": [
+     {
+      "box": "box00 harmonic p=2 h=1/16 prec=128 w=5e-02 rot",
+      "h_used": "1/16",
+      "points": 17,
+      "e_ref": "1.0e-120",
+      "min_new_box_width": "0.09716",
+      "max_new_box_width": "0.09904",
+      "start_box_halfwidth_class": "1/20",
+      "sensitive": true,
+      "step_seconds": 0.002
+     },
+     {
+      "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+      "h_used": "1/8",
+      "points": 17,
+      "e_ref": "1.0e-120",
+      "min_new_box_width": "0.07963",
+      "max_new_box_width": "0.09205",
+      "start_box_halfwidth_class": "1/20",
+      "sensitive": true,
+      "step_seconds": 0.001
+     },
+     {
+      "box": "box02 kepler p=2 h=1/16 prec=128 w=2e-02 rot",
+      "h_used": "1/16",
+      "points": 33,
+      "e_ref": "1.106e-118",
+      "min_new_box_width": "0.04881",
+      "max_new_box_width": "0.05583",
+      "start_box_halfwidth_class": "1/50",
+      "sensitive": true,
+      "step_seconds": 0.009
+     },
+     {
+      "box": "box03 kepler p=3 h=1/16 prec=256 w=2e-02 rot",
+      "h_used": "1/16",
+      "points": 33,
+      "e_ref": "1.187e-118",
+      "min_new_box_width": "0.05675",
+      "max_new_box_width": "0.06446",
+      "start_box_halfwidth_class": "1/50",
+      "sensitive": true,
+      "step_seconds": 0.013
+     },
+     {
+      "box": "box04 nbody p=2 h=1/32 prec=128 w=1e-02 rot",
+      "h_used": "1/32",
+      "points": 133,
+      "e_ref": "4.336e-119",
+      "min_new_box_width": "0.03635",
+      "max_new_box_width": "0.04382",
+      "start_box_halfwidth_class": "1/100",
+      "sensitive": true,
+      "step_seconds": 0.147
+     },
+     {
+      "box": "box05 nbody p=3 h=1/32 prec=128 w=1e-02 rot",
+      "h_used": "1/32",
+      "points": 133,
+      "e_ref": "4.336e-119",
+      "min_new_box_width": "0.02911",
+      "max_new_box_width": "0.03984",
+      "start_box_halfwidth_class": "1/100",
+      "sensitive": true,
+      "step_seconds": 0.196
+     }
+    ]
+   }
+  }
+ },
+ "violation_total": 0,
+ "sealed_violation_total": 0,
+ "min_counterexample": null,
+ "system_source": {
+  "make_harmonic": "module",
+  "make_kepler": "module",
+  "make_nbody": "module"
+ },
+ "state_injection_mode_for_S2": "setattr on lohner_init result",
+ "advisories_not_counted_as_violations": {},
+ "log10_max_box_width_at_checkpoints": {},
+ "step_time": {
+  "S2|harmonic": {
+   "calls": 2,
+   "median_ms": 1.729,
+   "max_ms": 1.729,
+   "total_s": 0.0
+  },
+  "S2|kepler": {
+   "calls": 2,
+   "median_ms": 12.888,
+   "max_ms": 12.888,
+   "total_s": 0.02
+  },
+  "S2|nbody": {
+   "calls": 2,
+   "median_ms": 195.637,
+   "max_ms": 195.637,
+   "total_s": 0.34
+  }
+ },
+ "reference_cache": {
+  "hits": 0,
+  "misses": 366,
+  "path": null
+ },
+ "stats": {
+  "steps": 6
+ },
+ "elapsed_sec": 144.2,
+ "evidence_level": "tested: containment violation 0 within the tested grid + independent reference",
+ "verdict": "PASS"
+}

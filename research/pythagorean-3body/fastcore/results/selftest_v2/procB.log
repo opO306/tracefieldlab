@@ -1,0 +1,232 @@
+fc2 prec=160 K= 1 masses=pyth nb=2 boxes=50 mismatch=0 intervals=2200 orig=0.03s fast=0.01s
+fc2 prec=160 K= 1 masses=pyth nb=3 boxes=50 mismatch=0 intervals=3900 orig=0.09s fast=0.02s
+fc2 prec=160 K= 1 masses=rand nb=2 boxes=50 mismatch=0 intervals=2200 orig=0.03s fast=0.01s
+fc2 prec=160 K= 1 masses=rand nb=3 boxes=50 mismatch=0 intervals=3900 orig=0.10s fast=0.02s
+fc2 prec=160 K= 5 masses=pyth nb=2 boxes=50 mismatch=0 intervals=15800 orig=0.63s fast=0.09s
+fc2 prec=160 K= 5 masses=pyth nb=3 boxes=50 mismatch=0 intervals=33300 orig=2.20s fast=0.29s
+fc2 prec=160 K= 5 masses=rand nb=2 boxes=50 mismatch=0 intervals=15800 orig=0.64s fast=0.10s
+fc2 prec=160 K= 5 masses=rand nb=3 boxes=50 mismatch=0 intervals=33300 orig=2.21s fast=0.29s
+fc2 prec=160 K=20 masses=pyth nb=2 boxes=50 mismatch=0 intervals=69800 orig=9.00s fast=1.03s
+fc2 prec=160 K=20 masses=pyth nb=3 boxes=50 mismatch=0 intervals=150300 orig=37.64s fast=4.00s
+fc2 prec=160 K=20 masses=rand nb=2 boxes=50 mismatch=0 intervals=69800 orig=9.22s fast=1.06s
+fc2 prec=160 K=20 masses=rand nb=3 boxes=50 mismatch=0 intervals=150300 orig=37.54s fast=4.00s
+fc2 prec=160 K=30 masses=pyth nb=2 boxes=50 mismatch=0 intervals=105800 orig=20.26s fast=2.17s
+fc2 prec=160 K=30 masses=pyth nb=3 boxes=50 mismatch=0 intervals=228300 orig=70.28s fast=7.33s
+fc2 prec=160 K=30 masses=rand nb=2 boxes=50 mismatch=0 intervals=105800 orig=20.29s fast=2.16s
+fc2 prec=160 K=30 masses=rand nb=3 boxes=50 mismatch=0 intervals=228300 orig=84.38s fast=8.60s
+fc2 prec=160 K=40 masses=pyth nb=2 boxes=50 mismatch=0 intervals=141800 orig=35.91s fast=3.62s
+fc2 prec=160 K=40 masses=pyth nb=3 boxes=50 mismatch=0 intervals=306300 orig=150.11s fast=14.80s
+fc2 prec=160 K=40 masses=rand nb=2 boxes=50 mismatch=0 intervals=141800 orig=35.77s fast=3.65s
+fc2 prec=160 K=40 masses=rand nb=3 boxes=50 mismatch=0 intervals=306300 orig=150.96s fast=14.94s
+fc2 prec=192 K= 1 masses=pyth nb=2 boxes=50 mismatch=0 intervals=2200 orig=0.03s fast=0.01s
+fc2 prec=192 K= 1 masses=pyth nb=3 boxes=50 mismatch=0 intervals=3900 orig=0.09s fast=0.02s
+fc2 prec=192 K= 1 masses=rand nb=2 boxes=50 mismatch=0 intervals=2200 orig=0.03s fast=0.01s
+fc2 prec=192 K= 1 masses=rand nb=3 boxes=50 mismatch=0 intervals=3900 orig=0.10s fast=0.02s
+fc2 prec=192 K= 5 masses=pyth nb=2 boxes=50 mismatch=0 intervals=15800 orig=0.62s fast=0.09s
+fc2 prec=192 K= 5 masses=pyth nb=3 boxes=50 mismatch=0 intervals=33300 orig=2.22s fast=0.29s
+fc2 prec=192 K= 5 masses=rand nb=2 boxes=50 mismatch=0 intervals=15800 orig=0.65s fast=0.10s
+fc2 prec=192 K= 5 masses=rand nb=3 boxes=50 mismatch=0 intervals=33300 orig=2.38s fast=0.32s
+fc2 prec=192 K=20 masses=pyth nb=2 boxes=50 mismatch=0 intervals=69800 orig=9.42s fast=1.09s
+fc2 prec=192 K=20 masses=pyth nb=3 boxes=50 mismatch=0 intervals=150300 orig=38.31s fast=4.05s
+fc2 prec=192 K=20 masses=rand nb=2 boxes=50 mismatch=0 intervals=69800 orig=9.55s fast=1.09s
+fc2 prec=192 K=20 masses=rand nb=3 boxes=50 mismatch=0 intervals=150300 orig=38.55s fast=4.11s
+fc2 prec=192 K=30 masses=pyth nb=2 boxes=50 mismatch=0 intervals=105800 orig=20.84s fast=2.23s
+fc2 prec=192 K=30 masses=pyth nb=3 boxes=50 mismatch=0 intervals=228300 orig=86.72s fast=8.84s
+fc2 prec=192 K=30 masses=rand nb=2 boxes=50 mismatch=0 intervals=105800 orig=20.96s fast=2.22s
+fc2 prec=192 K=30 masses=rand nb=3 boxes=50 mismatch=0 intervals=228300 orig=85.61s fast=8.79s
+fc2 prec=192 K=40 masses=pyth nb=2 boxes=50 mismatch=0 intervals=141800 orig=36.56s fast=3.73s
+fc2 prec=192 K=40 masses=pyth nb=3 boxes=50 mismatch=0 intervals=306300 orig=153.61s fast=15.31s
+fc2 prec=192 K=40 masses=rand nb=2 boxes=50 mismatch=0 intervals=141800 orig=36.58s fast=3.74s
+fc2 prec=192 K=40 masses=rand nb=3 boxes=50 mismatch=0 intervals=306300 orig=116.80s fast=12.02s
+fc2 prec=256 K= 1 masses=pyth nb=2 boxes=50 mismatch=0 intervals=2200 orig=0.03s fast=0.01s
+fc2 prec=256 K= 1 masses=pyth nb=3 boxes=50 mismatch=0 intervals=3900 orig=0.10s fast=0.02s
+fc2 prec=256 K= 1 masses=rand nb=2 boxes=50 mismatch=0 intervals=2200 orig=0.03s fast=0.01s
+fc2 prec=256 K= 1 masses=rand nb=3 boxes=50 mismatch=0 intervals=3900 orig=0.10s fast=0.02s
+fc2 prec=256 K= 5 masses=pyth nb=2 boxes=50 mismatch=0 intervals=15800 orig=0.65s fast=0.10s
+fc2 prec=256 K= 5 masses=pyth nb=3 boxes=50 mismatch=0 intervals=33300 orig=2.27s fast=0.31s
+fc2 prec=256 K= 5 masses=rand nb=2 boxes=50 mismatch=0 intervals=15800 orig=0.66s fast=0.10s
+fc2 prec=256 K= 5 masses=rand nb=3 boxes=50 mismatch=0 intervals=33300 orig=2.34s fast=0.32s
+fc2 prec=256 K=20 masses=pyth nb=2 boxes=50 mismatch=0 intervals=69800 orig=9.60s fast=1.12s
+fc2 prec=256 K=20 masses=pyth nb=3 boxes=50 mismatch=0 intervals=150300 orig=39.69s fast=4.31s
+fc2 prec=256 K=20 masses=rand nb=2 boxes=50 mismatch=0 intervals=69800 orig=9.61s fast=1.13s
+fc2 prec=256 K=20 masses=rand nb=3 boxes=50 mismatch=0 intervals=150300 orig=38.36s fast=4.12s
+fc2 prec=256 K=30 masses=pyth nb=2 boxes=50 mismatch=0 intervals=105800 orig=21.46s fast=2.31s
+fc2 prec=256 K=30 masses=pyth nb=3 boxes=50 mismatch=0 intervals=228300 orig=82.13s fast=8.51s
+fc2 prec=256 K=30 masses=rand nb=2 boxes=50 mismatch=0 intervals=105800 orig=21.38s fast=2.33s
+fc2 prec=256 K=30 masses=rand nb=3 boxes=50 mismatch=0 intervals=228300 orig=83.20s fast=8.65s
+fc2 prec=256 K=40 masses=pyth nb=2 boxes=50 mismatch=0 intervals=141800 orig=37.72s fast=3.91s
+fc2 prec=256 K=40 masses=pyth nb=3 boxes=50 mismatch=0 intervals=306300 orig=160.10s fast=16.22s
+fc2 prec=256 K=40 masses=rand nb=2 boxes=50 mismatch=0 intervals=141800 orig=38.10s fast=3.93s
+fc2 prec=256 K=40 masses=rand nb=3 boxes=50 mismatch=0 intervals=306300 orig=161.10s fast=16.23s
+fc2 TOTAL cases=3000 mismatch=0 intervals=6345000 wall=2260.3s (orig 2035.6s, fast 209.9s)
+fc2_b rc=0
+fc3 prec= 96 K= 1 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec= 96 K= 1 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec= 96 K= 1 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec= 96 K= 1 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec= 96 K= 5 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec= 96 K= 5 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec= 96 K= 5 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec= 96 K= 5 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec= 96 K=20 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec= 96 K=20 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec= 96 K=20 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec= 96 K=20 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec= 96 K=30 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec= 96 K=30 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec= 96 K=30 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec= 96 K=30 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec= 96 K=40 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec= 96 K=40 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec= 96 K=40 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec= 96 K=40 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=112 K= 1 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=112 K= 1 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=112 K= 1 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=112 K= 1 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=112 K= 5 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=112 K= 5 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=112 K= 5 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=112 K= 5 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=112 K=20 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=112 K=20 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=112 K=20 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=112 K=20 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=112 K=30 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=112 K=30 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=112 K=30 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=112 K=30 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=112 K=40 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=112 K=40 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=112 K=40 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=112 K=40 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=128 K= 1 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=128 K= 1 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=128 K= 1 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=128 K= 1 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=128 K= 5 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=128 K= 5 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=128 K= 5 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=128 K= 5 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=128 K=20 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=128 K=20 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=128 K=20 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=128 K=20 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=128 K=30 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=128 K=30 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=128 K=30 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=128 K=30 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=128 K=40 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=128 K=40 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=128 K=40 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=128 K=40 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=144 K= 1 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=144 K= 1 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=144 K= 1 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=144 K= 1 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=144 K= 5 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=144 K= 5 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=144 K= 5 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=144 K= 5 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=144 K=20 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=144 K=20 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=144 K=20 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=144 K=20 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=144 K=30 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=144 K=30 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=144 K=30 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=144 K=30 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=144 K=40 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=144 K=40 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=144 K=40 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=144 K=40 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=160 K= 1 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=160 K= 1 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=160 K= 1 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=160 K= 1 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=160 K= 5 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=160 K= 5 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=160 K= 5 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=160 K= 5 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=160 K=20 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=160 K=20 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=160 K=20 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=160 K=20 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=160 K=30 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=160 K=30 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=160 K=30 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=160 K=30 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=160 K=40 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=160 K=40 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=160 K=40 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=160 K=40 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=192 K= 1 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=192 K= 1 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=192 K= 1 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=192 K= 1 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=192 K= 5 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=192 K= 5 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=192 K= 5 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=192 K= 5 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=192 K=20 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=192 K=20 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=192 K=20 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=192 K=20 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=192 K=30 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=192 K=30 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=192 K=30 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=192 K=30 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=192 K=40 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=192 K=40 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=192 K=40 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=192 K=40 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=256 K= 1 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=256 K= 1 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=256 K= 1 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=256 K= 1 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=256 K= 5 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=256 K= 5 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=256 K= 5 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=256 K= 5 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=256 K=20 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=256 K=20 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=256 K=20 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=256 K=20 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=256 K=30 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=256 K=30 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=256 K=30 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=256 K=30 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=256 K=40 path=DI nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=256 K=40 path=DI nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 prec=256 K=40 path=GD nb=2 boxes=50 mismatch=0 singular_both=50
+fc3 prec=256 K=40 path=GD nb=3 boxes=50 mismatch=0 singular_both=50
+fc3 K=0 singular boxes: cases=40 mismatch=0
+fc3 TOTAL cases=7040 mismatch=0 intervals=0 wall=5.8s (orig 0.0s, fast 0.0s)
+fc3 rc=0
+fcx long_mantissa          n=180 mismatch=0 kinds={'val': 180}
+fcx long_mantissa_gd       n=180 mismatch=0 kinds={'val': 180}
+fcx scale2^-300            n= 24 mismatch=0 kinds={'val': 24}
+fcx scale2^-300_gd         n= 24 mismatch=0 kinds={'val': 24}
+fcx scale2^-64             n= 24 mismatch=0 kinds={'val': 24}
+fcx scale2^-64_gd          n= 24 mismatch=0 kinds={'val': 24}
+fcx scale2^64              n= 24 mismatch=0 kinds={'val': 24}
+fcx scale2^64_gd           n= 24 mismatch=0 kinds={'val': 24}
+fcx scale2^300             n= 24 mismatch=0 kinds={'val': 24}
+fcx scale2^300_gd          n= 24 mismatch=0 kinds={'val': 24}
+fcx tiny_near_zero         n= 30 mismatch=0 kinds={'val': 30}
+fcx tiny_near_zero_gd      n= 30 mismatch=0 kinds={'val': 30}
+fcx mixed_DI_GD            n= 30 mismatch=0 kinds={'val': 30}
+fcx one_body               n=  4 mismatch=0 kinds={'val': 4}
+fcx one_body_gd            n=  4 mismatch=0 kinds={'val': 4}
+fcx zero_mass              n=  4 mismatch=0 kinds={'val': 4}
+fcx K_special              n=  3 mismatch=0 kinds={'val': 3}
+fcx K_special_gd           n=  3 mismatch=0 kinds={'val': 3}
+fcx fallback_int_element   n=  1 mismatch=0 kinds={'val': 1}
+fcx fallback_short_X       n=  1 mismatch=0 kinds={'exc:IndexError': 1}
+fcx fallback_tuple_ok      n=  1 mismatch=0 kinds={'val': 1}
+fcx fallback_huge_shift    n=  1 mismatch=0 kinds={'val': 1}
+fcx TOTAL cases=664 mismatch=0 intervals=0 wall=98.9s (orig 0.0s, fast 0.0s)
+fcx rc=0
+FC-0 ops: n=200000 mismatch=0 | int roundtrip n=20468 mismatch=0 | 29.5s
+fc0 rc=0
+procB done_utc=2026-10-11T16:19:43Z

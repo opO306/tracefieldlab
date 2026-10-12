@@ -1,0 +1,15 @@
+fc2 prec= 96 K= 1 masses=pyth nb=2 boxes=50 mismatch=0 intervals=2200 orig=0.03s fast=0.01s
+fc2 prec= 96 K= 1 masses=pyth nb=3 boxes=50 mismatch=0 intervals=3900 orig=0.10s fast=0.02s
+fc2 prec= 96 K= 1 masses=rand nb=2 boxes=50 mismatch=0 intervals=2200 orig=0.03s fast=0.01s
+fc2 prec= 96 K= 1 masses=rand nb=3 boxes=50 mismatch=0 intervals=3900 orig=0.10s fast=0.02s
+fc2 prec= 96 K= 5 masses=pyth nb=2 boxes=50 mismatch=0 intervals=15800 orig=0.65s fast=0.09s
+fc2 prec= 96 K= 5 masses=pyth nb=3 boxes=50 mismatch=0 intervals=33300 orig=2.28s fast=0.28s
+fc2 prec= 96 K= 5 masses=rand nb=2 boxes=50 mismatch=0 intervals=15800 orig=0.61s fast=0.09s
+fc2 prec= 96 K= 5 masses=rand nb=3 boxes=50 mismatch=0 intervals=33300 orig=2.16s fast=0.27s
+fc2 prec= 96 K=20 masses=pyth nb=2 boxes=50 mismatch=0 intervals=69800 orig=9.05s fast=0.97s
+fc2 prec= 96 K=20 masses=pyth nb=3 boxes=50 mismatch=0 intervals=150300 orig=36.86s fast=3.73s
+fc2 prec= 96 K=20 masses=rand nb=2 boxes=50 mismatch=0 intervals=69800 orig=8.94s fast=0.96s
+fc2 prec= 96 K=20 masses=rand nb=3 boxes=50 mismatch=0 intervals=150300 orig=36.08s fast=3.64s
+fc2 prec= 96 K=30 masses=pyth nb=2 boxes=50 mismatch=0 intervals=105800 orig=19.92s fast=1.98s
+fc2 prec= 96 K=30 masses=pyth nb=3 boxes=50 mismatch=0 intervals=228300 orig=81.97s fast=7.90s
+fc2 prec= 96 K=30 masses=rand nb=2 boxes=50 mismatch=0 intervals=105800 orig=20.05s fast=1.99s

@@ -1,0 +1,66 @@
+{
+ "tag": "128w",
+ "prec": 128,
+ "pivot": "width",
+ "order": 20,
+ "NOTE": "계획 밖 진단 실행. 구현자가 2026-10-11T16:31:43+09:00에 프로세스를 강제 종료했다. 이유: 계획 9절 '그 밖의 실행은 60분 상한'을 이 진단 실행에 적용해야 한다는 것을 실행 91.5분째에 알아차렸다(실행 시작 시 기본 상한 3시간으로 띄움 = 구현자 실수). 종료 전까지 줄 단위로 기록된 걸음·격자 기록만 사용한다. r3c_final_128w.json은 프로세스가 쓰지 못했으므로 없다.",
+ "stop_reason": "STOPPED_BY_IMPLEMENTER_60MIN_RULE",
+ "stop_detail": "kill at 16:31:43 (started 15:00:16 per progress log)",
+ "t_final": "2296549/262144",
+ "t_final_f": 8.760639190673828,
+ "t_last_ok_f": 8.760639190673828,
+ "steps_accepted": 4494,
+ "attempts_total": 5839,
+ "discarded": 1345,
+ "wall_s": 5485.422,
+ "cpu_s": null,
+ "wmax_final_log10": -22.851646,
+ "h_hist_log2": {
+  "-18": 443,
+  "-17": 265,
+  "-16": 176,
+  "-15": 167,
+  "-14": 368,
+  "-13": 441,
+  "-12": 450,
+  "-11": 385,
+  "-10": 364,
+  "-9": 560,
+  "-8": 431,
+  "-7": 263,
+  "-6": 158,
+  "-5": 23
+ },
+ "grid_counts": {
+  "X1": {
+   "PASS": 0,
+   "UNDECIDED": 7,
+   "VIOLATION": 0,
+   "UND_ref_inside": 7,
+   "UND_ref_outside": 0
+  },
+  "P": {
+   "PASS": 876,
+   "UNDECIDED": 0,
+   "VIOLATION": 0,
+   "UND_ref_inside": 0,
+   "UND_ref_outside": 0
+  },
+  "AUX": {
+   "PASS": 0,
+   "UNDECIDED": 869,
+   "VIOLATION": 0,
+   "UND_ref_inside": 869,
+   "UND_ref_outside": 0
+  }
+ },
+ "violation_file": null,
+ "sha256_from_progress_log": [
+  "[     0.0s] r3c_run.py sha256=ce113414f17053d41d03a147a8298b3813e11f07cb8a5b1b1a711306f86dbe5b lohner_step.py sha256=936138ea73b878c811df8db7b582ddb6883590be0f47cc7ece76d5ffc2db6b62"
+ ],
+ "synthesized_from": [
+  "r3c_steps_128w.jsonl",
+  "r3c_grid_128w.jsonl",
+  "r3c_progress_128w.log"
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "gate": "FC1",
+ "runner": "fastcore/r5_run.py",
+ "argv": [
+  "/home/zun24/fastcore_dev/p3b/fastcore/r5_run.py",
+  "--outdir",
+  "/home/zun24/fastcore_dev/fc4_v2_fc",
+  "--prec",
+  "128",
+  "--pivot",
+  "width",
+  "--max-steps",
+  "2000"
+ ],
+ "tag": "128w",
+ "started_local": "2026-10-11T16:31:15",
+ "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+ "sha256": {
+  "fastcore/r5_run.py": "a7e775caa968fd7aebac872273798e57cb176e542759d16c2bcd808e69899dcf",
+  "fastcore/fast_system.py": "f51858424daa6de86257f519f0c4ca40cea254e45f1e618e0dbef3444a2e076e",
+  "fastcore/fastcore.cpp": "dda936dacd8b6799cc15544f205e25f3bb2c12a81ab477332282a153c7675b8b",
+  "fastcore/_fastcore.cpython-313-x86_64-linux-gnu.so": "3c142f0c4f80ad897c1c05e33efe4ed4099eaaab47123d701c74c951d4162b09",
+  "rigorous/r4_run.py": "9b10b434e9b12e040091dcb9923e67c7e400f711259579b5855ae20ef2de93d9",
+  "rigorous/r3c_run.py": "ce113414f17053d41d03a147a8298b3813e11f07cb8a5b1b1a711306f86dbe5b",
+  "rigorous/lohner_step.py": "936138ea73b878c811df8db7b582ddb6883590be0f47cc7ece76d5ffc2db6b62",
+  "rigorous/taylor_step.py": "0183f0f8dc76dcf9c1a9933d8f16a636ac011bc15e9a95e0749fb2459be01c31",
+  "rigorous/dyad.py": "4d49cf8f707061d128fce3ed44b59ccb3a6bda14937e32dcd469cd201fbabaab"
+ },
+ "gmp_version": "6.3.0",
+ "system_factory": "fast_system.make_nbody_fast",
+ "return_code": 0,
+ "wall_s": 907.682,
+ "ended_local": "2026-10-11T16:46:22",
+ "systems_created": 1,
+ "fc_stats": [
+  {
+   "fast_calls": 12103,
+   "fallback_calls": 0,
+   "fallback_reasons": {},
+   "singular": 0
+  }
+ ]
+}

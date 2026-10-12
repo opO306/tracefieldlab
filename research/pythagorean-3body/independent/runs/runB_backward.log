@@ -1,0 +1,8 @@
+# start p=36 eps=1e-55 dps=60 dir=-1 tmax=2.0
+# E0 = -12.81666666666666666666666666666666666667  (기대값 -769/60 = -12.81666666666666666666666666666666666667)
+t=-1.00 steps=100 elapsed=4.6s dE_max=3.8843e-61 min_dist_so_far=2.4299
+t=-2.00 steps=708 elapsed=35.2s dE_max=6.1893e-57 min_dist_so_far=0.020562
+# done rows=201 steps=708 elapsed=35.2s
+# max_rel_dE=6.1892864e-57 max_|P|=1.026326e-59 max_|L|=9.0706671e-57 max_|COM|=1.0122575e-60
+# min_pair_dist_on_grid=0.020561911 at t=-1.88
+# h_min=7.84238e-6 h_max=0.01

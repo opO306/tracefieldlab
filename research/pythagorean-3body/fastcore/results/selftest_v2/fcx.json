@@ -1,0 +1,186 @@
+{
+ "suite": "fcx",
+ "seed": 20261012,
+ "precs": [
+  96,
+  112,
+  128,
+  144,
+  160,
+  192,
+  256
+ ],
+ "orders": [
+  1,
+  5,
+  20,
+  30,
+  40
+ ],
+ "boxes_per_combo": 50,
+ "combos": [],
+ "mismatch_total": 0,
+ "cases_total": 664,
+ "intervals_compared": 0,
+ "first_mismatches": [],
+ "by_case": {
+  "long_mantissa": {
+   "n": 180,
+   "mismatch": 0,
+   "kinds": {
+    "val": 180
+   }
+  },
+  "long_mantissa_gd": {
+   "n": 180,
+   "mismatch": 0,
+   "kinds": {
+    "val": 180
+   }
+  },
+  "scale2^-300": {
+   "n": 24,
+   "mismatch": 0,
+   "kinds": {
+    "val": 24
+   }
+  },
+  "scale2^-300_gd": {
+   "n": 24,
+   "mismatch": 0,
+   "kinds": {
+    "val": 24
+   }
+  },
+  "scale2^-64": {
+   "n": 24,
+   "mismatch": 0,
+   "kinds": {
+    "val": 24
+   }
+  },
+  "scale2^-64_gd": {
+   "n": 24,
+   "mismatch": 0,
+   "kinds": {
+    "val": 24
+   }
+  },
+  "scale2^64": {
+   "n": 24,
+   "mismatch": 0,
+   "kinds": {
+    "val": 24
+   }
+  },
+  "scale2^64_gd": {
+   "n": 24,
+   "mismatch": 0,
+   "kinds": {
+    "val": 24
+   }
+  },
+  "scale2^300": {
+   "n": 24,
+   "mismatch": 0,
+   "kinds": {
+    "val": 24
+   }
+  },
+  "scale2^300_gd": {
+   "n": 24,
+   "mismatch": 0,
+   "kinds": {
+    "val": 24
+   }
+  },
+  "tiny_near_zero": {
+   "n": 30,
+   "mismatch": 0,
+   "kinds": {
+    "val": 30
+   }
+  },
+  "tiny_near_zero_gd": {
+   "n": 30,
+   "mismatch": 0,
+   "kinds": {
+    "val": 30
+   }
+  },
+  "mixed_DI_GD": {
+   "n": 30,
+   "mismatch": 0,
+   "kinds": {
+    "val": 30
+   }
+  },
+  "one_body": {
+   "n": 4,
+   "mismatch": 0,
+   "kinds": {
+    "val": 4
+   }
+  },
+  "one_body_gd": {
+   "n": 4,
+   "mismatch": 0,
+   "kinds": {
+    "val": 4
+   }
+  },
+  "zero_mass": {
+   "n": 4,
+   "mismatch": 0,
+   "kinds": {
+    "val": 4
+   }
+  },
+  "K_special": {
+   "n": 3,
+   "mismatch": 0,
+   "kinds": {
+    "val": 3
+   }
+  },
+  "K_special_gd": {
+   "n": 3,
+   "mismatch": 0,
+   "kinds": {
+    "val": 3
+   }
+  },
+  "fallback_int_element": {
+   "n": 1,
+   "mismatch": 0,
+   "kinds": {
+    "val": 1
+   }
+  },
+  "fallback_short_X": {
+   "n": 1,
+   "mismatch": 0,
+   "kinds": {
+    "exc:IndexError": 1
+   }
+  },
+  "fallback_tuple_ok": {
+   "n": 1,
+   "mismatch": 0,
+   "kinds": {
+    "val": 1
+   }
+  },
+  "fallback_huge_shift": {
+   "n": 1,
+   "mismatch": 0,
+   "kinds": {
+    "val": 1
+   }
+  }
+ },
+ "wall_s": 98.93,
+ "t_orig_s": 0.0,
+ "t_fast_s": 0.0,
+ "fastcore_core": "_fastcore.cpython-313-x86_64-linux-gnu.so"
+}

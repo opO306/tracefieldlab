@@ -1,0 +1,88 @@
+M3 order=8 h=1/1000: total min 9.5 ms, median 13.6 ms (apriori 2.3, poly 5.2, rem 7.3)
+M3 order=8 h=1/100: total min 9.8 ms, median 11.9 ms (apriori 1.3, poly 4.3, rem 6.5)
+M3 order=8 h=1/10: total min 10.1 ms, median 14.8 ms (apriori 2.4, poly 4.8, rem 5.9)
+M3 order=16 h=1/1000: total min 26.8 ms, median 35.5 ms (apriori 1.6, poly 13.0, rem 16.9)
+M3 order=16 h=1/100: total min 36.0 ms, median 43.5 ms (apriori 2.5, poly 14.7, rem 20.6)
+M3 order=16 h=1/10: total min 28.3 ms, median 40.7 ms (apriori 1.6, poly 14.4, rem 18.1)
+M3 order=24 h=1/1000: total min 63.4 ms, median 85.0 ms (apriori 1.8, poly 28.1, rem 34.5)
+M3 order=24 h=1/100: total min 50.6 ms, median 63.6 ms (apriori 2.1, poly 27.9, rem 38.3)
+M3 order=24 h=1/10: total min 56.9 ms, median 70.0 ms (apriori 2.1, poly 28.7, rem 42.1)
+M1 harmonic         p64  h=1/1000 o=4   poly p50=-18.7  rem p50=-19.8  rem>poly 0.00  hred=0
+M1 harmonic         p64  h=1/1000 o=8   poly p50=-18.7  rem p50=-35.3  rem>poly 0.00  hred=0
+M1 harmonic         p64  h=1/1000 o=16  poly p50=-18.7  rem p50=-68.3  rem>poly 0.00  hred=0
+M1 harmonic         p64  h=1/1000 o=24  poly p50=-18.7  rem p50=-102.9  rem>poly 0.00  hred=0
+M1 harmonic         p64  h=1/100  o=4   poly p50=-18.7  rem p50=-13.8  rem>poly 1.00  hred=0
+M1 harmonic         p64  h=1/100  o=8   poly p50=-18.7  rem p50=-25.3  rem>poly 0.00  hred=0
+M1 harmonic         p64  h=1/100  o=16  poly p50=-18.7  rem p50=-50.3  rem>poly 0.00  hred=0
+M1 harmonic         p64  h=1/100  o=24  poly p50=-18.7  rem p50=-76.9  rem>poly 0.00  hred=0
+M1 harmonic         p64  h=1/10   o=4   poly p50=-18.4  rem p50=-7.7  rem>poly 1.00  hred=0
+M1 harmonic         p64  h=1/10   o=8   poly p50=-18.4  rem p50=-15.2  rem>poly 1.00  hred=0
+M1 harmonic         p64  h=1/10   o=16  poly p50=-18.4  rem p50=-32.2  rem>poly 0.00  hred=0
+M1 harmonic         p64  h=1/10   o=24  poly p50=-18.4  rem p50=-50.8  rem>poly 0.00  hred=0
+M1 harmonic         p64  h=1/2    o=4   poly p50=-18.2  rem p50=-3.3  rem>poly 1.00  hred=0
+M1 harmonic         p64  h=1/2    o=8   poly p50=-18.4  rem p50=-8.0  rem>poly 1.00  hred=0
+M1 harmonic         p64  h=1/2    o=16  poly p50=-18.4  rem p50=-19.4  rem>poly 0.00  hred=0
+M1 harmonic         p64  h=1/2    o=24  poly p50=-18.4  rem p50=-32.4  rem>poly 0.00  hred=0
+M1 harmonic         p128 h=1/1000 o=4   poly p50=-37.9  rem p50=-19.8  rem>poly 1.00  hred=0
+M1 harmonic         p128 h=1/1000 o=8   poly p50=-37.9  rem p50=-35.3  rem>poly 1.00  hred=0
+M1 harmonic         p128 h=1/1000 o=16  poly p50=-37.9  rem p50=-68.3  rem>poly 0.00  hred=0
+M1 harmonic         p128 h=1/1000 o=24  poly p50=-37.9  rem p50=-102.9  rem>poly 0.00  hred=0
+M1 harmonic         p128 h=1/100  o=4   poly p50=-37.9  rem p50=-13.8  rem>poly 1.00  hred=0
+M1 harmonic         p128 h=1/100  o=8   poly p50=-37.8  rem p50=-25.3  rem>poly 1.00  hred=0
+M1 harmonic         p128 h=1/100  o=16  poly p50=-37.9  rem p50=-50.3  rem>poly 0.00  hred=0
+M1 harmonic         p128 h=1/100  o=24  poly p50=-37.9  rem p50=-76.9  rem>poly 0.00  hred=0
+M1 harmonic         p128 h=1/10   o=4   poly p50=-37.6  rem p50=-7.7  rem>poly 1.00  hred=0
+M1 harmonic         p128 h=1/10   o=8   poly p50=-37.6  rem p50=-15.2  rem>poly 1.00  hred=0
+M1 harmonic         p128 h=1/10   o=16  poly p50=-37.6  rem p50=-32.2  rem>poly 1.00  hred=0
+M1 harmonic         p128 h=1/10   o=24  poly p50=-37.6  rem p50=-50.8  rem>poly 0.00  hred=0
+M1 harmonic         p128 h=1/2    o=4   poly p50=-37.6  rem p50=-3.3  rem>poly 1.00  hred=0
+M1 harmonic         p128 h=1/2    o=8   poly p50=-37.6  rem p50=-8.0  rem>poly 1.00  hred=0
+M1 harmonic         p128 h=1/2    o=16  poly p50=-37.5  rem p50=-19.4  rem>poly 1.00  hred=0
+M1 harmonic         p128 h=1/2    o=24  poly p50=-37.6  rem p50=-32.4  rem>poly 1.00  hred=0
+M1 kepler_circular  p64  h=1/1000 o=4   poly p50=-19.0  rem p50=-18.0  rem>poly 0.92  hred=1
+M1 kepler_circular  p64  h=1/1000 o=8   poly p50=-19.0  rem p50=-30.5  rem>poly 0.00  hred=1
+M1 kepler_circular  p64  h=1/1000 o=16  poly p50=-19.0  rem p50=-56.1  rem>poly 0.00  hred=1
+M1 kepler_circular  p64  h=1/1000 o=24  poly p50=-19.0  rem p50=-81.8  rem>poly 0.00  hred=1
+M1 kepler_circular  p64  h=1/100  o=4   poly p50=-19.0  rem p50=-12.0  rem>poly 0.92  hred=1
+M1 kepler_circular  p64  h=1/100  o=8   poly p50=-19.0  rem p50=-20.4  rem>poly 0.00  hred=1
+M1 kepler_circular  p64  h=1/100  o=16  poly p50=-19.0  rem p50=-37.3  rem>poly 0.00  hred=1
+M1 kepler_circular  p64  h=1/100  o=24  poly p50=-19.0  rem p50=-54.0  rem>poly 0.00  hred=1
+M1 kepler_circular  p64  h=1/10   o=4   poly p50=-19.0  rem p50=-5.6  rem>poly 0.92  hred=1
+M1 kepler_circular  p64  h=1/10   o=8   poly p50=-18.9  rem p50=-9.2  rem>poly 0.92  hred=1
+M1 kepler_circular  p64  h=1/10   o=16  poly p50=-18.9  rem p50=-16.2  rem>poly 0.92  hred=1
+M1 kepler_circular  p64  h=1/10   o=24  poly p50=-18.9  rem p50=-22.9  rem>poly 0.00  hred=1
+M1 kepler_circular  p64  h=1/2    o=4   poly p50=-19.0  rem p50=-4.9  rem>poly 0.92  hred=13
+M1 kepler_circular  p64  h=1/2    o=8   poly p50=-19.0  rem p50=-7.9  rem>poly 0.92  hred=13
+M1 kepler_circular  p64  h=1/2    o=16  poly p50=-19.0  rem p50=-13.8  rem>poly 0.92  hred=13
+M1 kepler_circular  p64  h=1/2    o=24  poly p50=-19.0  rem p50=-19.6  rem>poly 0.31  hred=13
+M1 kepler_circular  p128 h=1/1000 o=4   poly p50=-38.2  rem p50=-18.0  rem>poly 0.92  hred=1
+M1 kepler_circular  p128 h=1/1000 o=8   poly p50=-38.2  rem p50=-30.5  rem>poly 0.92  hred=1
+M1 kepler_circular  p128 h=1/1000 o=16  poly p50=-38.2  rem p50=-56.1  rem>poly 0.00  hred=1
+M1 kepler_circular  p128 h=1/1000 o=24  poly p50=-38.2  rem p50=-81.8  rem>poly 0.00  hred=1
+M1 kepler_circular  p128 h=1/100  o=4   poly p50=-38.2  rem p50=-12.0  rem>poly 0.92  hred=1
+M1 kepler_circular  p128 h=1/100  o=8   poly p50=-38.2  rem p50=-20.4  rem>poly 0.92  hred=1
+M1 kepler_circular  p128 h=1/100  o=16  poly p50=-38.2  rem p50=-37.3  rem>poly 0.92  hred=1
+M1 kepler_circular  p128 h=1/100  o=24  poly p50=-38.2  rem p50=-54.0  rem>poly 0.00  hred=1
+M1 kepler_circular  p128 h=1/10   o=4   poly p50=-38.1  rem p50=-5.6  rem>poly 0.92  hred=1
+M1 kepler_circular  p128 h=1/10   o=8   poly p50=-38.2  rem p50=-9.2  rem>poly 0.92  hred=1
+M1 kepler_circular  p128 h=1/10   o=16  poly p50=-38.1  rem p50=-16.2  rem>poly 0.92  hred=1
+M1 kepler_circular  p128 h=1/10   o=24  poly p50=-38.1  rem p50=-22.9  rem>poly 0.92  hred=1
+M1 kepler_circular  p128 h=1/2    o=4   poly p50=-38.1  rem p50=-4.9  rem>poly 0.92  hred=13
+M1 kepler_circular  p128 h=1/2    o=8   poly p50=-38.1  rem p50=-7.9  rem>poly 0.92  hred=13
+M1 kepler_circular  p128 h=1/2    o=16  poly p50=-38.1  rem p50=-13.8  rem>poly 0.92  hred=13
+M1 kepler_circular  p128 h=1/2    o=24  poly p50=-38.1  rem p50=-19.6  rem>poly 0.92  hred=13
+M1 pythagorean_t0   p128 h=1/1000 o=8   poly p50=-38.5  rem p50=-33.5  rem>poly 1.00  hred=0
+M1 pythagorean_t0   p128 h=1/1000 o=16  poly p50=-38.5  rem p50=-59.4  rem>poly 0.00  hred=0
+M1 pythagorean_t0   p128 h=1/1000 o=24  poly p50=-38.5  rem p50=-85.1  rem>poly 0.00  hred=0
+M1 pythagorean_t0   p128 h=1/100  o=8   poly p50=-38.5  rem p50=-23.5  rem>poly 1.00  hred=0
+M1 pythagorean_t0   p128 h=1/100  o=16  poly p50=-38.5  rem p50=-41.2  rem>poly 0.17  hred=0
+M1 pythagorean_t0   p128 h=1/100  o=24  poly p50=-38.5  rem p50=-58.5  rem>poly 0.00  hred=0
+M1 pythagorean_t0   p128 h=1/10   o=8   poly p50=-38.5  rem p50=-12.9  rem>poly 1.00  hred=0
+M1 pythagorean_t0   p128 h=1/10   o=16  poly p50=-38.5  rem p50=-22.0  rem>poly 1.00  hred=0
+M1 pythagorean_t0   p128 h=1/10   o=24  poly p50=-38.5  rem p50=-31.1  rem>poly 1.00  hred=0
+M2 order=16 prec=128 half=0: 1000걸음 후 log10 wx=11.69 wv=11.69  기울기=0.04343/걸음  h축소=0  위반=0  1.1s
+M2 order=24 prec=128 half=0: 1000걸음 후 log10 wx=6.10 wv=6.10  기울기=0.04343/걸음  h축소=0  위반=0  1.3s
+M2 order=8 prec=128 half=0: 1000걸음 후 log10 wx=28.68 wv=28.68  기울기=0.04343/걸음  h축소=0  위반=0  0.8s
+M2 order=16 prec=64 half=0: 1000걸음 후 log10 wx=25.39 wv=25.39  기울기=0.04343/걸음  h축소=0  위반=0  1.7s
+M2 order=16 prec=128 half=1/10000000000: 1000걸음 후 log10 wx=33.73 wv=33.73  기울기=0.04343/걸음  h축소=0  위반=0  1.8s
+저장: R1_IMPL_MEASURE.json  (19 s)

@@ -1,0 +1,671 @@
+{
+ "checker": "check_r3c_v2.py",
+ "checker_sha256": "5f13766f2a461f49c8b36e86456574bd38b5f432cd0c384ea0d2d6f4ab078e0c",
+ "derived_from_v1": {
+  "file": "check_r3c.py",
+  "sha256": "031f11e28f63a2767b01c6e8a532983ee9882e8b82b7e02192eb8bbc7cbe45b3"
+ },
+ "module_under_test": "/home/zun24/r3c_v2_final/lohner_step.py",
+ "module_sha256": "936138ea73b878c811df8db7b582ddb6883590be0f47cc7ece76d5ffc2db6b62",
+ "python": "3.13.5",
+ "platform": "Linux-6.12.111+deb13-cloud-amd64-x86_64-with-glibc2.41",
+ "mpmath": "1.3.0",
+ "seed": 20261011,
+ "s1_steps": 1000,
+ "s2_boxes": 20,
+ "time_limit_sec": 3300.0,
+ "mp_dps": 130,
+ "margin": "1e-90",
+ "started_local": "2026-10-12T07:27:38",
+ "seal_check": {
+  "dyad.py": {
+   "expected": "4d49cf8f707061d128fce3ed44b59ccb3a6bda14937e32dcd469cd201fbabaab",
+   "actual": "4d49cf8f707061d128fce3ed44b59ccb3a6bda14937e32dcd469cd201fbabaab",
+   "match": true
+  },
+  "taylor_step.py": {
+   "expected": "0183f0f8dc76dcf9c1a9933d8f16a636ac011bc15e9a95e0749fb2459be01c31",
+   "actual": "0183f0f8dc76dcf9c1a9933d8f16a636ac011bc15e9a95e0749fb2459be01c31",
+   "match": true
+  }
+ },
+ "dyad_path": "/home/zun24/r3c_v2_final/dyad.py",
+ "reference_selfcheck": {
+  "circle_vs_cos_sin_maxerr": "3.3812e-131",
+  "pythagorean_conservation_maxerr_t=1/4": "1.8033e-130",
+  "split_step_invariance_maxdiff": "4.5083e-131",
+  "cos_sin_t=100_mpmath_vs_doubling_series": "4.1563e-132"
+ },
+ "verdict_sealed_criteria": "UNRESOLVED",
+ "verdict_all_including_supplementary": "UNRESOLVED",
+ "criteria": {
+  "R3-S1": {
+   "desc": "\uc9c4\ub3d9\uc790\u00b7\ucf00\ud50c\ub7ec \uc6d0 \uada4\ub3c4 h=1/10 x 1000\uac78\uc74c, \ub9e4 50\uac78\uc74c: \uc815\ub2f5\uc774 enclosure_box \uc640 \uc9d1\ud569 c+B\u00b7R \uc5d0 \ud3ec\ud568",
+   "sealed": true,
+   "verdict": "UNRESOLVED",
+   "counts": {
+    "PASS": 108,
+    "VIOLATION": 0,
+    "REFUSED": 2,
+    "UNDECIDED": 0,
+    "NOT_RUN": 50
+   },
+   "total": 160,
+   "violations_sample": [],
+   "refused_sample": [
+    {
+     "test": "R3-S1",
+     "case": "kepler-circle|prec=128",
+     "step": 358,
+     "exception": "LohnerStepError: singular: f cannot be evaluated on X-hat (collision configuration in box)",
+     "tb": "ion occurred:\n\nTraceback (most recent call last):\n  File \"/home/zun24/r3c_v2_final/check_r3c_v2.py\", line 937, in run_s1\n    (state, info), dt = ctx.step(system, state, S1_H, S1_ORDER)\n                        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/zun24/r3c_v2_final/check_r3c_v2.py\", line 680, in step\n    out = self.mod.lohner_step(system, state, h, order)\n  File \"/home/zun24/r3c_v2_final/lohner_step.py\", line 613, in lohner_step\n    prep = lohner_prepare(system, state, order)\nlohner_step.LohnerStepError: singular: f cannot be evaluated on X-hat (collision configuration in box)\n"
+    },
+    {
+     "test": "R3-S1",
+     "case": "kepler-circle|prec=256",
+     "step": 358,
+     "exception": "LohnerStepError: singular: f cannot be evaluated on X-hat (collision configuration in box)",
+     "tb": "ion occurred:\n\nTraceback (most recent call last):\n  File \"/home/zun24/r3c_v2_final/check_r3c_v2.py\", line 937, in run_s1\n    (state, info), dt = ctx.step(system, state, S1_H, S1_ORDER)\n                        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/zun24/r3c_v2_final/check_r3c_v2.py\", line 680, in step\n    out = self.mod.lohner_step(system, state, h, order)\n  File \"/home/zun24/r3c_v2_final/lohner_step.py\", line 613, in lohner_step\n    prep = lohner_prepare(system, state, order)\nlohner_step.LohnerStepError: singular: f cannot be evaluated on X-hat (collision configuration in box)\n"
+    }
+   ],
+   "undecided_sample": [],
+   "extra": {
+    "planned_cases_per_run_incl_early_and_init": 54
+   }
+  },
+  "R3-S2": {
+   "desc": "\ud55c \uac78\uc74c \uc0ac\uc0c1: \ubb34\uc791\uc704 \uc2dc\uc791 \ud3c9\ud589\uc721\uba74\uccb4 20\uac1c\uc758 \uaf2d\uc9d3\uc810\u00b7\ucd95 \uadf9\uc810\u00b7\ub0b4\ubd80 \uc810\uc758 \uc815\ub2f5 \uc0c1\uc774 \uc0c8 \uc0c1\uc790\uc640 \uc0c8 \uc9d1\ud569\uc5d0 \ud3ec\ud568",
+   "sealed": true,
+   "verdict": "PASS",
+   "counts": {
+    "PASS": 2356,
+    "VIOLATION": 0,
+    "REFUSED": 0,
+    "UNDECIDED": 0,
+    "NOT_RUN": 0
+   },
+   "total": 2356,
+   "violations_sample": [],
+   "refused_sample": [],
+   "undecided_sample": [],
+   "extra": {
+    "boxes_planned": 20,
+    "boxes": [
+     {
+      "box": "box00 harmonic p=4 h=1/8 prec=128 w=1e-05 rot",
+      "h_used": "1/8",
+      "points": 17,
+      "e_ref": "1.0e-120",
+      "min_new_box_width": "1.234e-5",
+      "max_new_box_width": "1.356e-5",
+      "start_box_halfwidth_class": "1/100000",
+      "sensitive": true,
+      "step_seconds": 0.002
+     },
+     {
+      "box": "box01 harmonic p=8 h=1/8 prec=256 w=1e-03 rot",
+      "h_used": "1/8",
+      "points": 17,
+      "e_ref": "1.0e-120",
+      "min_new_box_width": "0.001145",
+      "max_new_box_width": "0.001817",
+      "start_box_halfwidth_class": "1/1000",
+      "sensitive": true,
+      "step_seconds": 0.002
+     },
+     {
+      "box": "box02 harmonic p=3 h=1/16 prec=128 w=1e-07 skew",
+      "h_used": "1/16",
+      "points": 17,
+      "e_ref": "1.0e-120",
+      "min_new_box_width": "6.662e-8",
+      "max_new_box_width": "1.993e-7",
+      "start_box_halfwidth_class": "1/10000000",
+      "sensitive": true,
+      "step_seconds": 0.001
+     },
+     {
+      "box": "box03 harmonic p=20 h=1/8 prec=128 w=1e-04 rot",
+      "h_used": "1/8",
+      "points": 17,
+      "e_ref": "1.0e-120",
+      "min_new_box_width": "0.0001991",
+      "max_new_box_width": "0.0001995",
+      "start_box_halfwidth_class": "1/10000",
+      "sensitive": true,
+      "step_seconds": 0.003
+     },
+     {
+      "box": "box04 harmonic p=6 h=1/8 prec=128 w=1e-45 rot",
+      "h_used": "1/8",
+      "points": 17,
+      "e_ref": "1.0e-120",
+      "min_new_box_width": "1.24e-11",
+      "max_new_box_width": "1.307e-11",
+      "start_box_halfwidth_class": "1/1000000000000000000000000000000000000000000000",
+      "sensitive": true,
+      "step_seconds": 0.002
+     },
+     {
+      "box": "box05 harmonic p=5 h=1/8 prec=128 w=0 rot",
+      "h_used": "1/8",
+      "points": 1,
+      "e_ref": "1.0e-120",
+      "min_new_box_width": "7.001e-10",
+      "max_new_box_width": "7.08e-10",
+      "start_box_halfwidth_class": "0",
+      "sensitive": true,
+      "step_seconds": 0.002
+     },
+     {
+      "box": "box06 kepler p=4 h=1/8 prec=128 w=1e-06 rot",
+      "h_used": "1/8",
+      "points": 33,
+      "e_ref": "1.043e-118",
+      "min_new_box_width": "3.384e-6",
+      "max_new_box_width": "4.478e-6",
+      "start_box_halfwidth_class": "1/1000000",
+      "sensitive": true,
+      "step_seconds": 0.011
+     },
+     {
+      "box": "box07 kepler p=8 h=1/16 prec=256 w=1e-04 rot",
+      "h_used": "1/16",
+      "points": 33,
+      "e_ref": "6.541e-119",
+      "min_new_box_width": "0.000191",
+      "max_new_box_width": "0.0002342",
+      "start_box_halfwidth_class": "1/10000",
+      "sensitive": true,
+      "step_seconds": 0.028
+     },
+     {
+      "box": "box08 kepler p=3 h=1/8 prec=128 w=1e-08 skew",
+      "h_used": "1/8",
+      "points": 33,
+      "e_ref": "1.002e-118",
+      "min_new_box_width": "3.794e-5",
+      "max_new_box_width": "4.81e-5",
+      "start_box_halfwidth_class": "1/100000000",
+      "sensitive": true,
+      "step_seconds": 0.01
+     },
+     {
+      "box": "box09 kepler p=20 h=1/8 prec=128 w=1e-05 rot",
+      "h_used": "1/8",
+      "points": 33,
+      "e_ref": "1.974e-118",
+      "min_new_box_width": "2.471e-5",
+      "max_new_box_width": "3.174e-5",
+      "start_box_halfwidth_class": "1/100000",
+      "sensitive": true,
+      "step_seconds": 0.112
+     },
+     {
+      "box": "box10 kepler p=6 h=1/8 prec=128 w=1e-45 rot",
+      "h_used": "1/8",
+      "points": 33,
+      "e_ref": "1.171e-118",
+      "min_new_box_width": "1.971e-8",
+      "max_new_box_width": "2.85e-8",
+      "start_box_halfwidth_class": "1/1000000000000000000000000000000000000000000000",
+      "sensitive": true,
+      "step_seconds": 0.017
+     },
+     {
+      "box": "box11 kepler p=5 h=1/8 prec=128 w=0 rot",
+      "h_used": "1/8",
+      "points": 1,
+      "e_ref": "1.008e-118",
+      "min_new_box_width": "1.311e-5",
+      "max_new_box_width": "1.885e-5",
+      "start_box_halfwidth_class": "0",
+      "sensitive": true,
+      "step_seconds": 0.014
+     },
+     {
+      "box": "box12 nbody p=4 h=1/16 prec=128 w=1e-06 rot",
+      "h_used": "1/16",
+      "points": 133,
+      "e_ref": "8.737e-119",
+      "min_new_box_width": "3.238e-6",
+      "max_new_box_width": "4.205e-6",
+      "start_box_halfwidth_class": "1/1000000",
+      "sensitive": true,
+      "step_seconds": 0.159
+     },
+     {
+      "box": "box13 nbody p=8 h=1/16 prec=128 w=1e-04 rot",
+      "h_used": "1/16",
+      "points": 132,
+      "e_ref": "8.736e-119",
+      "min_new_box_width": "0.0003689",
+      "max_new_box_width": "0.0004389",
+      "start_box_halfwidth_class": "1/10000",
+      "sensitive": true,
+      "step_seconds": 0.27
+     },
+     {
+      "box": "box14 nbody p=3 h=1/32 prec=256 w=1e-07 eye",
+      "h_used": "1/32",
+      "points": 132,
+      "e_ref": "4.334e-119",
+      "min_new_box_width": "6.936e-8",
+      "max_new_box_width": "1.964e-7",
+      "start_box_halfwidth_class": "1/10000000",
+      "sensitive": true,
+      "step_seconds": 0.163
+     },
+     {
+      "box": "box15 nbody p=6 h=1/16 prec=128 w=1e-05 skew",
+      "h_used": "1/16",
+      "points": 131,
+      "e_ref": "8.734e-119",
+      "min_new_box_width": "0.000146",
+      "max_new_box_width": "0.0002022",
+      "start_box_halfwidth_class": "1/100000",
+      "sensitive": true,
+      "step_seconds": 0.201
+     },
+     {
+      "box": "box16 nbody p=20 h=1/16 prec=128 w=1e-06 rot",
+      "h_used": "1/16",
+      "points": 131,
+      "e_ref": "8.736e-119",
+      "min_new_box_width": "3.633e-6",
+      "max_new_box_width": "4.698e-6",
+      "start_box_halfwidth_class": "1/1000000",
+      "sensitive": true,
+      "step_seconds": 0.908
+     },
+     {
+      "box": "box17 nbody p=10 h=1/32 prec=128 w=1e-05 rot",
+      "h_used": "1/32",
+      "points": 133,
+      "e_ref": "4.333e-119",
+      "min_new_box_width": "3.102e-5",
+      "max_new_box_width": "3.942e-5",
+      "start_box_halfwidth_class": "1/100000",
+      "sensitive": true,
+      "step_seconds": 0.335
+     },
+     {
+      "box": "box18 nbody p=5 h=1/16 prec=128 w=1e-45 rot",
+      "h_used": "1/16",
+      "points": 133,
+      "e_ref": "8.732e-119",
+      "min_new_box_width": "7.943e-10",
+      "max_new_box_width": "1.026e-9",
+      "start_box_halfwidth_class": "1/1000000000000000000000000000000000000000000000",
+      "sensitive": true,
+      "step_seconds": 0.178
+     },
+     {
+      "box": "box19 nbody p=4 h=1/32 prec=128 w=0 rot",
+      "h_used": "1/32",
+      "points": 1,
+      "e_ref": "4.334e-119",
+      "min_new_box_width": "8.668e-11",
+      "max_new_box_width": "1.207e-10",
+      "start_box_halfwidth_class": "0",
+      "sensitive": true,
+      "step_seconds": 0.16
+     }
+    ]
+   }
+  },
+  "R3-C": {
+   "desc": "\uacc4\uc57d \ud615\uc2dd(7\uc808): \ubc18\ud658 \uad6c\uc870\u00b7info \ud0a4\u00b7h_used \ubc94\uc704\u00b7state.t \uc77c\uad00\u00b7B/c \uc774\uc9c4 \ubd84\uc218",
+   "sealed": true,
+   "verdict": "PASS",
+   "counts": {
+    "PASS": 2812,
+    "VIOLATION": 0,
+    "REFUSED": 0,
+    "UNDECIDED": 0,
+    "NOT_RUN": 0
+   },
+   "total": 2812,
+   "violations_sample": [],
+   "refused_sample": [],
+   "undecided_sample": []
+  },
+  "R3-S1e": {
+   "desc": "[\ubcf4\ucda9] S1 \uc758 \ucd08\uae30 \uac78\uc74c(0,1,2,3,5,10,20)\uc5d0\uc11c\ub3c4 \uac19\uc740 \ud3ec\ud568 \ud310\uc815",
+   "sealed": false,
+   "verdict": "PASS",
+   "counts": {
+    "PASS": 56,
+    "VIOLATION": 0,
+    "REFUSED": 0,
+    "UNDECIDED": 0,
+    "NOT_RUN": 0
+   },
+   "total": 56,
+   "violations_sample": [],
+   "refused_sample": [],
+   "undecided_sample": []
+  },
+  "R3-X1": {
+   "desc": "[\ubcf4\ucda9] \uc9d1\ud569 c+B\u00b7R \uc758 \uc815\ud655\ud55c \uc810(\uaf2d\uc9d3\uc810\u00b7\ucd95 \uadf9\uc810)\uc774 enclosure_box \uc548\uc5d0 \uc788\ub294\uac00(\uc790\uae30 \uc77c\uad00\uc131)",
+   "sealed": false,
+   "verdict": "PASS",
+   "counts": {
+    "PASS": 112,
+    "VIOLATION": 0,
+    "REFUSED": 0,
+    "UNDECIDED": 0,
+    "NOT_RUN": 0
+   },
+   "total": 112,
+   "violations_sample": [],
+   "refused_sample": [],
+   "undecided_sample": []
+  },
+  "R3-X2": {
+   "desc": "[\ubcf4\ucda9] \ube44\uc6d0\ud615 \ucf00\ud50c\ub7ec \uc5ec\ub7ec \uac78\uc74c(\ub3c5\ub9bd \uae30\uc900 \uc801\ubd84\uacfc \ub300\uc870)",
+   "sealed": false,
+   "verdict": "PASS",
+   "counts": {
+    "PASS": 8,
+    "VIOLATION": 0,
+    "REFUSED": 0,
+    "UNDECIDED": 0,
+    "NOT_RUN": 0
+   },
+   "total": 8,
+   "violations_sample": [],
+   "refused_sample": [],
+   "undecided_sample": []
+  },
+  "R3-X4": {
+   "desc": "[\ubcf4\ucda9] \ub113\uc740 \uc2dc\uc791 \ud3c9\ud589\uc721\uba74\uccb4(\ubc18\ud3ed 1e-2~5e-2) \ud55c \uac78\uc74c \uc0ac\uc0c1: \ub098\uba38\uc9c0 \ubbf8\ubd84 \ubaab\u00b7\ube44\uc120\ud615 2\ucc28\ud56d \ubbfc\uac10\ub3c4",
+   "sealed": false,
+   "verdict": "PASS",
+   "counts": {
+    "PASS": 732,
+    "VIOLATION": 0,
+    "REFUSED": 0,
+    "UNDECIDED": 0,
+    "NOT_RUN": 0
+   },
+   "total": 732,
+   "violations_sample": [],
+   "refused_sample": [],
+   "undecided_sample": [],
+   "extra": {
+    "boxes_planned": 6,
+    "boxes": [
+     {
+      "box": "box00 harmonic p=2 h=1/16 prec=128 w=5e-02 rot",
+      "h_used": "1/16",
+      "points": 17,
+      "e_ref": "1.0e-120",
+      "min_new_box_width": "0.09716",
+      "max_new_box_width": "0.09904",
+      "start_box_halfwidth_class": "1/20",
+      "sensitive": true,
+      "step_seconds": 0.001
+     },
+     {
+      "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+      "h_used": "1/8",
+      "points": 17,
+      "e_ref": "1.0e-120",
+      "min_new_box_width": "0.07942",
+      "max_new_box_width": "0.09185",
+      "start_box_halfwidth_class": "1/20",
+      "sensitive": true,
+      "step_seconds": 0.001
+     },
+     {
+      "box": "box02 kepler p=2 h=1/16 prec=128 w=2e-02 rot",
+      "h_used": "1/16",
+      "points": 33,
+      "e_ref": "1.106e-118",
+      "min_new_box_width": "0.04925",
+      "max_new_box_width": "0.05628",
+      "start_box_halfwidth_class": "1/50",
+      "sensitive": true,
+      "step_seconds": 0.008
+     },
+     {
+      "box": "box03 kepler p=3 h=1/16 prec=256 w=2e-02 rot",
+      "h_used": "1/16",
+      "points": 33,
+      "e_ref": "1.187e-118",
+      "min_new_box_width": "0.05958",
+      "max_new_box_width": "0.06763",
+      "start_box_halfwidth_class": "1/50",
+      "sensitive": true,
+      "step_seconds": 0.011
+     },
+     {
+      "box": "box04 nbody p=2 h=1/32 prec=128 w=1e-02 rot",
+      "h_used": "1/32",
+      "points": 133,
+      "e_ref": "4.336e-119",
+      "min_new_box_width": "0.03644",
+      "max_new_box_width": "0.04391",
+      "start_box_halfwidth_class": "1/100",
+      "sensitive": true,
+      "step_seconds": 0.108
+     },
+     {
+      "box": "box05 nbody p=3 h=1/32 prec=128 w=1e-02 rot",
+      "h_used": "1/32",
+      "points": 133,
+      "e_ref": "4.336e-119",
+      "min_new_box_width": "0.02921",
+      "max_new_box_width": "0.03993",
+      "start_box_halfwidth_class": "1/100",
+      "sensitive": true,
+      "step_seconds": 0.137
+     }
+    ]
+   }
+  },
+  "R3-X3": {
+   "desc": "[\ubcf4\ucda9] \ud53c\ud0c0\uace0\ub77c\uc2a4 t=0 \uc5d0\uc11c \uc9e7\uc740 \uc5ec\ub7ec \uac78\uc74c(12\ucc28\uc6d0 \uccb4\uc778)",
+   "sealed": false,
+   "verdict": "PASS",
+   "counts": {
+    "PASS": 8,
+    "VIOLATION": 0,
+    "REFUSED": 0,
+    "UNDECIDED": 0,
+    "NOT_RUN": 0
+   },
+   "total": 8,
+   "violations_sample": [],
+   "refused_sample": [],
+   "undecided_sample": []
+  }
+ },
+ "violation_total": 0,
+ "sealed_violation_total": 0,
+ "min_counterexample": null,
+ "system_source": {
+  "make_harmonic": "taylor_step",
+  "make_kepler": "taylor_step",
+  "make_nbody": "taylor_step"
+ },
+ "state_injection_mode_for_S2": "setattr on lohner_init result",
+ "start_set_contract_audit_v2": {
+  "states_audited": 26,
+  "states_outside_contract": 0,
+  "max_mantissa_bits": {
+   "c": 52,
+   "B": 60,
+   "R": 71
+  }
+ },
+ "advisories_not_counted_as_violations": {},
+ "log10_max_box_width_at_checkpoints": {
+  "harmonic|prec=128": {
+   "1": -37.92977945366163,
+   "2": -37.75368819460595,
+   "3": -37.53183944498959,
+   "5": -37.32771946233367,
+   "10": -37.04047775115532,
+   "20": -36.75732247926104,
+   "50": -36.3888246447355,
+   "100": -36.049680749578314,
+   "150": -35.86625845397164,
+   "200": -35.76916088126216,
+   "250": -35.73595942764552,
+   "300": -35.65045478821902,
+   "350": -35.523665260983165,
+   "400": -35.44717381524301,
+   "450": -35.402471849266604,
+   "500": -35.39925959732986,
+   "550": -35.429062830106155,
+   "600": -35.310425207147254,
+   "650": -35.23936185132181,
+   "700": -35.20407195508687,
+   "750": -35.19960302949815,
+   "800": -35.23715282071015,
+   "850": -35.191395330149476,
+   "900": -35.110894039067624,
+   "950": -35.071768901695435,
+   "1000": -35.058790639901055
+  },
+  "harmonic|prec=256": {
+   "1": -41.76706023667329,
+   "2": -41.433122909336845,
+   "3": -41.22714972810299,
+   "5": -40.956564152249236,
+   "10": -40.65448025664767,
+   "20": -40.3787466190732,
+   "50": -40.00479694908669,
+   "100": -39.66814446717689,
+   "150": -39.488708739037854,
+   "200": -39.38169814404869,
+   "250": -39.34103231496991,
+   "300": -39.25614158675374,
+   "350": -39.13626123167419,
+   "400": -39.064065294416636,
+   "450": -39.017345962854094,
+   "500": -39.00881391005031,
+   "550": -39.03292834644134,
+   "600": -38.9214183052214,
+   "650": -38.85540982713085,
+   "700": -38.8210612748265,
+   "750": -38.81076411336418,
+   "800": -38.84218553116875,
+   "850": -38.798181444634785,
+   "900": -38.72380178041012,
+   "950": -38.68918973276041,
+   "1000": -38.672230700537575
+  },
+  "kepler-circle|prec=128": {
+   "1": -21.116166679651677,
+   "2": -20.19789483286576,
+   "3": -19.401819898129432,
+   "5": -18.142168784683907,
+   "10": -16.816603131898827,
+   "20": -16.284905497309982,
+   "50": -14.887252878416334,
+   "100": -12.66457290515891,
+   "150": -10.48631517343961,
+   "200": -8.320447984611143,
+   "250": -6.124105456505052,
+   "300": -3.7773982439013003,
+   "350": -1.3281830976032465
+  },
+  "kepler-circle|prec=256": {
+   "1": -21.116166679651677,
+   "2": -20.19789483286576,
+   "3": -19.401819898129432,
+   "5": -18.142168784683907,
+   "10": -16.816603131898827,
+   "20": -16.284905497309982,
+   "50": -14.887252878416334,
+   "100": -12.66457290515891,
+   "150": -10.48631517343961,
+   "200": -8.320447984611143,
+   "250": -6.124105456505052,
+   "300": -3.7773982439013003,
+   "350": -1.3281830976032465
+  },
+  "kepler-eccentric|prec=128": {
+   "10": -15.859596944588148,
+   "20": -14.124154436952615,
+   "40": -10.239038149107214,
+   "60": -9.173733230500005
+  },
+  "pythagorean-t0|prec=128": {
+   "1": -23.56677674883671,
+   "4": -22.51596618720099,
+   "8": -21.774291515536202,
+   "12": -21.160233046833763
+  }
+ },
+ "step_time": {
+  "harmonic|prec=128": {
+   "calls": 1000,
+   "median_ms": 2.967,
+   "max_ms": 3.827,
+   "total_s": 2.98
+  },
+  "harmonic|prec=256": {
+   "calls": 1000,
+   "median_ms": 3.368,
+   "max_ms": 4.613,
+   "total_s": 3.36
+  },
+  "kepler-circle|prec=128": {
+   "calls": 357,
+   "median_ms": 109.429,
+   "max_ms": 231.585,
+   "total_s": 39.34
+  },
+  "kepler-circle|prec=256": {
+   "calls": 357,
+   "median_ms": 119.856,
+   "max_ms": 259.642,
+   "total_s": 43.09
+  },
+  "S2|harmonic": {
+   "calls": 8,
+   "median_ms": 1.668,
+   "max_ms": 2.867,
+   "total_s": 0.01
+  },
+  "S2|kepler": {
+   "calls": 8,
+   "median_ms": 14.119,
+   "max_ms": 112.094,
+   "total_s": 0.21
+  },
+  "S2|nbody": {
+   "calls": 10,
+   "median_ms": 177.973,
+   "max_ms": 908.056,
+   "total_s": 2.62
+  },
+  "kepler-eccentric|prec=128": {
+   "calls": 60,
+   "median_ms": 59.684,
+   "max_ms": 60.889,
+   "total_s": 3.58
+  },
+  "pythagorean-t0|prec=128": {
+   "calls": 12,
+   "median_ms": 405.776,
+   "max_ms": 433.344,
+   "total_s": 4.89
+  }
+ },
+ "reference_cache": {
+  "hits": 1552,
+  "misses": 0,
+  "path": "r3c_v2_selftest_runs/ref_cache.pkl"
+ },
+ "stats": {
+  "steps": 2812
+ },
+ "elapsed_sec": 144.8,
+ "evidence_level": "see criteria; NOT a formal proof",
+ "verdict": "UNRESOLVED"
+}

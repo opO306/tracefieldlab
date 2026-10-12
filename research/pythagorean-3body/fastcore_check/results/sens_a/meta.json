@@ -1,0 +1,257 @@
+{
+ "targets": [
+  {
+   "idx": 0,
+   "name": "ref_mutant_identity",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/ref/ref_mutant_identity.py"
+  },
+  {
+   "idx": 1,
+   "name": "ref_original",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/ref/ref_original.py"
+  },
+  {
+   "idx": 2,
+   "name": "ref_rebuilt",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/ref/ref_rebuilt.py"
+  },
+  {
+   "idx": 3,
+   "name": "fake_assoc_order",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_assoc_order.py"
+  },
+  {
+   "idx": 4,
+   "name": "fake_canon_off",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_canon_off.py"
+  },
+  {
+   "idx": 5,
+   "name": "fake_consts_at_make",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_consts_at_make.py"
+  },
+  {
+   "idx": 6,
+   "name": "fake_consts_cached",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_consts_cached.py"
+  },
+  {
+   "idx": 7,
+   "name": "fake_container_tuple",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_container_tuple.py"
+  },
+  {
+   "idx": 8,
+   "name": "fake_conv_reversed",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_conv_reversed.py"
+  },
+  {
+   "idx": 9,
+   "name": "fake_dim_wrong",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_dim_wrong.py"
+  },
+  {
+   "idx": 10,
+   "name": "fake_div_int_recip",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_div_int_recip.py"
+  },
+  {
+   "idx": 11,
+   "name": "fake_dn_nearest",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_dn_nearest.py"
+  },
+  {
+   "idx": 12,
+   "name": "fake_dn_trunc",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_dn_trunc.py"
+  },
+  {
+   "idx": 13,
+   "name": "fake_eq_acc_plus_acc",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_eq_acc_plus_acc.py"
+  },
+  {
+   "idx": 14,
+   "name": "fake_eq_acc_times_di2",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_eq_acc_times_di2.py"
+  },
+  {
+   "idx": 15,
+   "name": "fake_eq_add_commuted",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_eq_add_commuted.py"
+  },
+  {
+   "idx": 16,
+   "name": "fake_exc_type",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_exc_type.py"
+  },
+  {
+   "idx": 17,
+   "name": "fake_exc_wide",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_exc_wide.py"
+  },
+  {
+   "idx": 18,
+   "name": "fake_exp_wrap32",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_exp_wrap32.py"
+  },
+  {
+   "idx": 19,
+   "name": "fake_gd_div_split",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_gd_div_split.py"
+  },
+  {
+   "idx": 20,
+   "name": "fake_gd_mul_none",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_gd_mul_none.py"
+  },
+  {
+   "idx": 21,
+   "name": "fake_gd_rsub_sign",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_gd_rsub_sign.py"
+  },
+  {
+   "idx": 22,
+   "name": "fake_gd_rtruediv_sign",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_gd_rtruediv_sign.py"
+  },
+  {
+   "idx": 23,
+   "name": "fake_gd_sqr_factor",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_gd_sqr_factor.py"
+  },
+  {
+   "idx": 24,
+   "name": "fake_gd_sqrt_factor",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_gd_sqrt_factor.py"
+  },
+  {
+   "idx": 25,
+   "name": "fake_k_short",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_k_short.py"
+  },
+  {
+   "idx": 26,
+   "name": "fake_mass_hiprec",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_mass_hiprec.py"
+  },
+  {
+   "idx": 27,
+   "name": "fake_mul_minmax",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_mul_minmax.py"
+  },
+  {
+   "idx": 28,
+   "name": "fake_mutates_input",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_mutates_input.py"
+  },
+  {
+   "idx": 29,
+   "name": "fake_none_to_di0",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_none_to_di0.py"
+  },
+  {
+   "idx": 30,
+   "name": "fake_pairs_reversed",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_pairs_reversed.py"
+  },
+  {
+   "idx": 31,
+   "name": "fake_pow_div_twice",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_pow_div_twice.py"
+  },
+  {
+   "idx": 32,
+   "name": "fake_prec_at_make",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_prec_at_make.py"
+  },
+  {
+   "idx": 33,
+   "name": "fake_prec_clamp128",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_prec_clamp128.py"
+  },
+  {
+   "idx": 34,
+   "name": "fake_prec_plus_one",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_prec_plus_one.py"
+  },
+  {
+   "idx": 35,
+   "name": "fake_prec_side_effect",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_prec_side_effect.py"
+  },
+  {
+   "idx": 36,
+   "name": "fake_process_exit",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_process_exit.py"
+  },
+  {
+   "idx": 37,
+   "name": "fake_qdn_ceil",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_qdn_ceil.py"
+  },
+  {
+   "idx": 38,
+   "name": "fake_qdn_trunc",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_qdn_trunc.py"
+  },
+  {
+   "idx": 39,
+   "name": "fake_qup_nobump",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_qup_nobump.py"
+  },
+  {
+   "idx": 40,
+   "name": "fake_singular_lt",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_singular_lt.py"
+  },
+  {
+   "idx": 41,
+   "name": "fake_sqconv_cauchy",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_sqconv_cauchy.py"
+  },
+  {
+   "idx": 42,
+   "name": "fake_sqconv_mid_mul",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_sqconv_mid_mul.py"
+  },
+  {
+   "idx": 43,
+   "name": "fake_sqr_as_mul",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_sqr_as_mul.py"
+  },
+  {
+   "idx": 44,
+   "name": "fake_sqr_negative_branch",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_sqr_negative_branch.py"
+  },
+  {
+   "idx": 45,
+   "name": "fake_sqrt_exact_ignored",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_sqrt_exact_ignored.py"
+  },
+  {
+   "idx": 46,
+   "name": "fake_sqrt_up_floor",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_sqrt_up_floor.py"
+  },
+  {
+   "idx": 47,
+   "name": "fake_stateful",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_stateful.py"
+  },
+  {
+   "idx": 48,
+   "name": "fake_up_floor",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_up_floor.py"
+  },
+  {
+   "idx": 49,
+   "name": "fake_zero_to_none",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/fakes/fake_zero_to_none.py"
+  }
+ ],
+ "profile": "sens",
+ "seed": 20261012,
+ "workers": 2
+}

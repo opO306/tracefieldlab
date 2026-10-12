@@ -1,0 +1,26 @@
+# start p=36 eps=1e-55 dps=60 dir=1 tmax=20.0
+# E0 = -12.81666666666666666666666666666666666667  (기대값 -769/60 = -12.81666666666666666666666666666666666667)
+t=1.00 steps=100 elapsed=5.5s dE_max=3.8843e-61 min_dist_so_far=2.4299
+t=2.00 steps=708 elapsed=37.6s dE_max=6.1893e-57 min_dist_so_far=0.020562
+t=3.00 steps=875 elapsed=46.0s dE_max=6.1893e-57 min_dist_so_far=0.020562
+t=4.00 steps=1341 elapsed=69.1s dE_max=6.1893e-57 min_dist_so_far=0.020562
+t=5.00 steps=1457 elapsed=75.2s dE_max=6.1893e-57 min_dist_so_far=0.020562
+t=6.00 steps=1557 elapsed=80.6s dE_max=6.1893e-57 min_dist_so_far=0.020562
+t=7.00 steps=1892 elapsed=98.4s dE_max=6.1893e-57 min_dist_so_far=0.020562
+t=8.00 steps=2028 elapsed=105.5s dE_max=6.1893e-57 min_dist_so_far=0.020562
+t=9.00 steps=2668 elapsed=139.7s dE_max=7.4564e-57 min_dist_so_far=0.011486
+t=10.00 steps=2842 elapsed=148.4s dE_max=7.4564e-57 min_dist_so_far=0.011486
+t=11.00 steps=2985 elapsed=155.5s dE_max=7.4564e-57 min_dist_so_far=0.011486
+t=12.00 steps=3308 elapsed=171.2s dE_max=7.4564e-57 min_dist_so_far=0.011486
+t=13.00 steps=3408 elapsed=176.2s dE_max=7.4564e-57 min_dist_so_far=0.011486
+t=14.00 steps=3508 elapsed=181.6s dE_max=7.4564e-57 min_dist_so_far=0.011486
+t=15.00 steps=3791 elapsed=196.1s dE_max=7.4564e-57 min_dist_so_far=0.011486
+t=16.00 steps=4769 elapsed=245.2s dE_max=4.1432e-54 min_dist_so_far=0.0059746
+t=17.00 steps=4970 elapsed=255.3s dE_max=4.1437e-54 min_dist_so_far=0.0059746
+t=18.00 steps=5155 elapsed=264.3s dE_max=4.1441e-54 min_dist_so_far=0.0059746
+t=19.00 steps=5255 elapsed=269.3s dE_max=4.1441e-54 min_dist_so_far=0.0059746
+t=20.00 steps=5533 elapsed=282.7s dE_max=4.1446e-54 min_dist_so_far=0.0059746
+# done rows=2001 steps=5533 elapsed=282.7s
+# max_rel_dE=4.1446187e-54 max_|P|=1.5382936e-58 max_|L|=9.0706671e-57 max_|COM|=5.0856799e-59
+# min_pair_dist_on_grid=0.0059745925 at t=15.83
+# h_min=6.58964e-8 h_max=0.01

@@ -1,0 +1,7296 @@
+{
+ "suite": "harmonic",
+ "quick": true,
+ "seed": 20261012,
+ "sources": {
+  "dyad.py": {
+   "path": "/home/zun24/integrator_review_dev/src/dyad.py",
+   "sha256": "4d49cf8f707061d128fce3ed44b59ccb3a6bda14937e32dcd469cd201fbabaab",
+   "match_seal": true
+  },
+  "taylor_step.py": {
+   "path": "/home/zun24/integrator_review_dev/src/taylor_step.py",
+   "sha256": "0183f0f8dc76dcf9c1a9933d8f16a636ac011bc15e9a95e0749fb2459be01c31",
+   "match_seal": true
+  },
+  "lohner_step.py": {
+   "path": "/home/zun24/integrator_review_dev/src/lohner_step.py",
+   "sha256": "936138ea73b878c811df8db7b582ddb6883590be0f47cc7ece76d5ffc2db6b62",
+   "match_seal": true
+  }
+ },
+ "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+ "mpmath": "1.3.0",
+ "summary": {
+  "by_check": {
+   "set": {
+    "PASS": 1008,
+    "UNDECIDED": 0,
+    "VIOLATION": 0,
+    "min_rel_slack": 4.579829714621921e-37
+   },
+   "box": {
+    "PASS": 1008,
+    "UNDECIDED": 0,
+    "VIOLATION": 0,
+    "min_rel_slack": 9.527364126550193e-37
+   },
+   "aux": {
+    "PASS": 3024,
+    "UNDECIDED": 0,
+    "VIOLATION": 0,
+    "min_rel_slack": 2.7625266658473346e-37
+   },
+   "P": {
+    "PASS": 3191,
+    "UNDECIDED": 409,
+    "VIOLATION": 0,
+    "min_rel_slack": 0.0
+   },
+   "J": {
+    "PASS": 1152,
+    "UNDECIDED": 0,
+    "VIOLATION": 0,
+    "min_rel_slack": 0.042449253906866595
+   },
+   "W": {
+    "PASS": 2304,
+    "UNDECIDED": 0,
+    "VIOLATION": 0,
+    "min_rel_slack": 0.004465773543627026
+   }
+  },
+  "n_cases": 72,
+  "n_step_errors": 0,
+  "step_errors": []
+ },
+ "results": [
+  {
+   "case": "harm p53 o4 h=1/10 B=I R=point(0)",
+   "prec": 53,
+   "order": 4,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/10",
+   "log10_wR_new_max": -7.988919323794077,
+   "log10_box_new_max": -7.973555648121615,
+   "ref_eps_log10": -111.666300377064,
+   "frame_cond_inf": 1.1986693305670273,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.1552737194827541,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.18198965064974562,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.052701857282236586,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 40,
+      "UNDECIDED": 10,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.16e-112",
+       "width": "0.119827"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.16e-112",
+       "width": "0.0387931"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.16e-112",
+       "width": "0.119827"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.16e-112",
+       "width": "0.0387931"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.16e-112",
+       "width": "0.119827"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.1190449844550778,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543629254,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.015
+  },
+  {
+   "case": "harm p53 o4 h=1/10 B=I R=sym(1/1048576)",
+   "prec": 53,
+   "order": 4,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.001,
+   "h_used": "1/10",
+   "log10_wR_new_max": -6.012841618019392,
+   "log10_box_new_max": -5.983219366629019,
+   "ref_eps_log10": -111.52370339167217,
+   "frame_cond_inf": 1.1986693305670273,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.002848774591193509,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004155502879263706,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 3.545264518390679e-06,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 46,
+      "UNDECIDED": 4,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.99e-112",
+       "width": "0.219991"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.99e-112",
+       "width": "0.185239"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.99e-112",
+       "width": "0.219991"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.99e-112",
+       "width": "0.185239"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.1190449844550778,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543629254,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.014
+  },
+  {
+   "case": "harm p53 o4 h=1/10 B=I R=offset(1/1024)",
+   "prec": 53,
+   "order": 4,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/10",
+   "log10_wR_new_max": -2.7092673915457284,
+   "log10_box_new_max": -2.669917838145753,
+   "ref_eps_log10": -111.63510780348251,
+   "frame_cond_inf": 1.1986693305670273,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 6.474099494510599e-07,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 6.864759540667779e-07,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 2.362605663156625e-10,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 45,
+      "UNDECIDED": 5,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.32e-112",
+       "width": "0.0403366"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.32e-112",
+       "width": "0.135115"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.32e-112",
+       "width": "0.135115"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.32e-112",
+       "width": "0.0403366"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.32e-112",
+       "width": "0.0403366"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.1190449844550778,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543629254,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.014
+  },
+  {
+   "case": "harm p53 o4 h=1/10 B=orth R=point(0)",
+   "prec": 53,
+   "order": 4,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/10",
+   "log10_wR_new_max": -7.885991506883185,
+   "log10_box_new_max": -7.880333718790162,
+   "ref_eps_log10": -111.59779268024492,
+   "frame_cond_inf": 1.032643969676441,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.14666608724532879,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.16009897135540835,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.04814209378170585,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 40,
+      "UNDECIDED": 10,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.52e-112",
+       "width": "0.124105"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.52e-112",
+       "width": "0.154018"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.52e-112",
+       "width": "0.124105"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.52e-112",
+       "width": "0.154018"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.52e-112",
+       "width": "0.124105"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.1190449844550778,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543629254,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.014
+  },
+  {
+   "case": "harm p53 o4 h=1/10 B=orth R=sym(1/1048576)",
+   "prec": 53,
+   "order": 4,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/10",
+   "log10_wR_new_max": -6.0716123004278115,
+   "log10_box_new_max": -6.012056070341139,
+   "ref_eps_log10": -111.57393331435031,
+   "frame_cond_inf": 1.7570515957697614,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.002830782049747455,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.003066835988784336,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.8245675024855357e-06,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 48,
+      "UNDECIDED": 2,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.67e-112",
+       "width": "0.168781"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.67e-112",
+       "width": "0.168781"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.1190449844550778,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543629254,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.015
+  },
+  {
+   "case": "harm p53 o4 h=1/10 B=orth R=offset(1/1024)",
+   "prec": 53,
+   "order": 4,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/10",
+   "log10_wR_new_max": -2.7092689657548723,
+   "log10_box_new_max": -2.581845783926998,
+   "ref_eps_log10": -111.84272370207054,
+   "frame_cond_inf": 1.7982353356547716,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 2.565632842158647e-07,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 4.952069875124621e-07,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.586778865124381e-10,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 45,
+      "UNDECIDED": 5,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "1.44e-112",
+       "width": "0.0495897"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.44e-112",
+       "width": "0.0200115"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "1.44e-112",
+       "width": "0.0495897"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.44e-112",
+       "width": "0.0200115"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "1.44e-112",
+       "width": "0.0495897"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.1190449844550778,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543629254,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.015
+  },
+  {
+   "case": "harm p53 o4 h=1/10 B=illcond R=point(0)",
+   "prec": 53,
+   "order": 4,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/10",
+   "log10_wR_new_max": -7.824434799524293,
+   "log10_box_new_max": -7.712642872445948,
+   "ref_eps_log10": -111.60312594380082,
+   "frame_cond_inf": 1.8195115393273107,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.15830246269428067,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.28232905325723606,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.04654845312102232,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 40,
+      "UNDECIDED": 10,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.49e-112",
+       "width": "0.150635"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.49e-112",
+       "width": "0.0999699"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.49e-112",
+       "width": "0.150635"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.49e-112",
+       "width": "0.0999699"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.49e-112",
+       "width": "0.150635"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.1190449844550778,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543629254,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.014
+  },
+  {
+   "case": "harm p53 o4 h=1/10 B=illcond R=sym(1/1048576)",
+   "prec": 53,
+   "order": 4,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/10",
+   "log10_wR_new_max": -5.686354959921015,
+   "log10_box_new_max": -5.688568591432262,
+   "ref_eps_log10": -111.56024267681977,
+   "frame_cond_inf": 1.2084006841061805,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.001236452028017325,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0015358030330161693,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.662507799040651e-06,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 46,
+      "UNDECIDED": 4,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.75e-112",
+       "width": "0.0802341"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.75e-112",
+       "width": "0.0802341"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.75e-112",
+       "width": "0.184049"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.75e-112",
+       "width": "0.184049"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.1190449844550778,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543629254,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.015
+  },
+  {
+   "case": "harm p53 o4 h=1/10 B=illcond R=offset(1/1024)",
+   "prec": 53,
+   "order": 4,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/10",
+   "log10_wR_new_max": -2.5745947414248587,
+   "log10_box_new_max": -2.708598155534651,
+   "ref_eps_log10": -111.63383515084048,
+   "frame_cond_inf": 1.9968749184679113,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.3610585184074454e-06,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.9433097739426764e-06,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 4.862957475061555e-10,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 44,
+      "UNDECIDED": 6,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.32e-112",
+       "width": "0.0466285"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.32e-112",
+       "width": "0.0466285"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.32e-112",
+       "width": "0.139822"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.32e-112",
+       "width": "0.139822"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.32e-112",
+       "width": "0.0466285"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.1190449844550778,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543629254,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.015
+  },
+  {
+   "case": "harm p53 o4 h=1/2 B=I R=point(0)",
+   "prec": 53,
+   "order": 4,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.001,
+   "h_used": "1/2",
+   "log10_wR_new_max": -3.4364193340198135,
+   "log10_box_new_max": -3.3051274531915427,
+   "ref_eps_log10": -111.5368705621088,
+   "frame_cond_inf": 1.841466486874181,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.12784510077148087,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.2738928813463506,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.027381263669749033,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 40,
+      "UNDECIDED": 10,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.9e-112",
+       "width": "1.0464"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.9e-112",
+       "width": "1.01676"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.9e-112",
+       "width": "1.0464"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.9e-112",
+       "width": "1.01676"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.9e-112",
+       "width": "1.0464"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.11898163155403402,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251341,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.014
+  },
+  {
+   "case": "harm p53 o4 h=1/2 B=I R=sym(1/1048576)",
+   "prec": 53,
+   "order": 4,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/2",
+   "log10_wR_new_max": -3.68241956377733,
+   "log10_box_new_max": -3.5702632949658324,
+   "ref_eps_log10": -111.67556325208928,
+   "frame_cond_inf": 1.841466486874181,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.2079787231086453,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.2614559026902234,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.01749918493380092,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 48,
+      "UNDECIDED": 2,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.11e-112",
+       "width": "0.675741"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.11e-112",
+       "width": "0.675741"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.11898163155403402,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251341,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.014
+  },
+  {
+   "case": "harm p53 o4 h=1/2 B=I R=offset(1/1024)",
+   "prec": 53,
+   "order": 4,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/2",
+   "log10_wR_new_max": -2.643413757861835,
+   "log10_box_new_max": -2.5134074338062793,
+   "ref_eps_log10": -111.63182768108365,
+   "frame_cond_inf": 1.841466486874181,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.016213765890529384,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.03417136489767312,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.5573052166711504e-05,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 45,
+      "UNDECIDED": 5,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.33e-112",
+       "width": "1.03287"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.33e-112",
+       "width": "0.665987"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.33e-112",
+       "width": "1.03287"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.33e-112",
+       "width": "0.665987"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.33e-112",
+       "width": "0.665987"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.11898163155403402,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251341,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.014
+  },
+  {
+   "case": "harm p53 o4 h=1/2 B=orth R=point(0)",
+   "prec": 53,
+   "order": 4,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/2",
+   "log10_wR_new_max": -3.4783216366762613,
+   "log10_box_new_max": -3.3472557711419997,
+   "ref_eps_log10": -111.61008826553704,
+   "frame_cond_inf": 1.9489353929613105,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.1260036049556376,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.25788384769829786,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.03772206016593163,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 40,
+      "UNDECIDED": 10,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.45e-112",
+       "width": "0.668862"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.45e-112",
+       "width": "1.09143"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.45e-112",
+       "width": "0.668862"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.45e-112",
+       "width": "1.09143"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.45e-112",
+       "width": "0.668862"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.11898163155403402,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251341,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.014
+  },
+  {
+   "case": "harm p53 o4 h=1/2 B=orth R=sym(1/1048576)",
+   "prec": 53,
+   "order": 4,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/2",
+   "log10_wR_new_max": -3.716296167918036,
+   "log10_box_new_max": -3.6361127358761056,
+   "ref_eps_log10": -111.65675127810721,
+   "frame_cond_inf": 1.5675909231757714,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.08445267998357592,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.2507217557337822,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0025508889239710376,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 46,
+      "UNDECIDED": 4,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.2e-112",
+       "width": "0.442117"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.2e-112",
+       "width": "0.62951"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.2e-112",
+       "width": "0.62951"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.2e-112",
+       "width": "0.442117"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.11898163155403402,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251341,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.015
+  },
+  {
+   "case": "harm p53 o4 h=1/2 B=orth R=offset(1/1024)",
+   "prec": 53,
+   "order": 4,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/2",
+   "log10_wR_new_max": -2.6618325155584177,
+   "log10_box_new_max": -2.567384069215553,
+   "ref_eps_log10": -111.61864453122112,
+   "frame_cond_inf": 1.5571557512927563,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.008118529898164176,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.02339058522460622,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 4.847571660351995e-06,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 46,
+      "UNDECIDED": 4,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.41e-112",
+       "width": "0.528096"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.41e-112",
+       "width": "0.740727"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.41e-112",
+       "width": "0.740727"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.41e-112",
+       "width": "0.528096"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.11898163155403402,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251341,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.014
+  },
+  {
+   "case": "harm p53 o4 h=1/2 B=illcond R=point(0)",
+   "prec": 53,
+   "order": 4,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/2",
+   "log10_wR_new_max": -4.264879204300884,
+   "log10_box_new_max": -4.136879986221092,
+   "ref_eps_log10": -111.90208813137336,
+   "frame_cond_inf": 1.8646303009286322,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.11456176300094373,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.2679345333626902,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.03115937022063303,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 40,
+      "UNDECIDED": 10,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.25e-112",
+       "width": "0.162261"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "1.25e-112",
+       "width": "0.136391"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.25e-112",
+       "width": "0.162261"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "1.25e-112",
+       "width": "0.136391"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.25e-112",
+       "width": "0.162261"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.11898163155403402,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251341,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.014
+  },
+  {
+   "case": "harm p53 o4 h=1/2 B=illcond R=sym(1/1048576)",
+   "prec": 53,
+   "order": 4,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/2",
+   "log10_wR_new_max": -3.508143387326206,
+   "log10_box_new_max": -3.4127219192821934,
+   "ref_eps_log10": -111.54612143001272,
+   "frame_cond_inf": 1.6054359709211896,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.1355037321465782,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.2492506251680987,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.011575385815884283,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 46,
+      "UNDECIDED": 4,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.84e-112",
+       "width": "0.842071"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.84e-112",
+       "width": "0.973776"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.84e-112",
+       "width": "0.842071"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.84e-112",
+       "width": "0.973776"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.11898163155403402,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251341,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.014
+  },
+  {
+   "case": "harm p53 o4 h=1/2 B=illcond R=offset(1/1024)",
+   "prec": 53,
+   "order": 4,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/2",
+   "log10_wR_new_max": -2.5337548109368626,
+   "log10_box_new_max": -2.6324700025661727,
+   "ref_eps_log10": -111.58006589787172,
+   "frame_cond_inf": 1.9976079325523073,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.046867688890636805,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.05259172549617274,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 6.2480412993026205e-06,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 46,
+      "UNDECIDED": 4,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.63e-112",
+       "width": "0.670429"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.63e-112",
+       "width": "0.85923"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.63e-112",
+       "width": "0.85923"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.63e-112",
+       "width": "0.670429"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.11898163155403402,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251341,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.014
+  },
+  {
+   "case": "harm p53 o20 h=1/10 B=I R=point(0)",
+   "prec": 53,
+   "order": 20,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/10",
+   "log10_wR_new_max": -15.323195023305257,
+   "log10_box_new_max": -15.05149978319906,
+   "ref_eps_log10": -111.6673429753827,
+   "frame_cond_inf": 1.1986693307950613,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.27419999947177515,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.3654303661915409,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.06416815700464112,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 40,
+      "UNDECIDED": 10,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.15e-112",
+       "width": "0.115963"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.15e-112",
+       "width": "0.0684438"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.15e-112",
+       "width": "0.115963"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.15e-112",
+       "width": "0.0684438"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.15e-112",
+       "width": "0.115963"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.24529679035113577,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543629254,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.026
+  },
+  {
+   "case": "harm p53 o20 h=1/10 B=I R=sym(1/1048576)",
+   "prec": 53,
+   "order": 20,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/10",
+   "log10_wR_new_max": -5.96944739072935,
+   "log10_box_new_max": -5.943502936378439,
+   "ref_eps_log10": -111.7542418254227,
+   "frame_cond_inf": 1.1986693307950613,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 8.582015512450889e-11,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.49332333218573e-10,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 5.2505700350017735e-11,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 46,
+      "UNDECIDED": 4,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.76e-112",
+       "width": "0.0599689"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "1.76e-112",
+       "width": "0.0768494"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.76e-112",
+       "width": "0.0599689"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "1.76e-112",
+       "width": "0.0768494"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.24529679035113577,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543629254,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.027
+  },
+  {
+   "case": "harm p53 o20 h=1/10 B=I R=offset(1/1024)",
+   "prec": 53,
+   "order": 20,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/10",
+   "log10_wR_new_max": -2.709269960975727,
+   "log10_box_new_max": -2.66992026417912,
+   "ref_eps_log10": -111.53706747272405,
+   "frame_cond_inf": 1.1986693307950613,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 2.9172143336755175e-14,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 4.643795695688276e-14,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 4.515270486764355e-14,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 45,
+      "UNDECIDED": 5,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.9e-112",
+       "width": "0.0898581"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.9e-112",
+       "width": "0.194702"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.9e-112",
+       "width": "0.0898581"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.9e-112",
+       "width": "0.194702"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.9e-112",
+       "width": "0.194702"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.24529679035113577,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543629254,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.027
+  },
+  {
+   "case": "harm p53 o20 h=1/10 B=orth R=point(0)",
+   "prec": 53,
+   "order": 20,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/10",
+   "log10_wR_new_max": -15.30487500133434,
+   "log10_box_new_max": -15.05149978319906,
+   "ref_eps_log10": -111.62974209315007,
+   "frame_cond_inf": 1.866760428682082,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.14876056543960164,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.2824223390916795,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.022890265987257533,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 40,
+      "UNDECIDED": 10,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.35e-112",
+       "width": "0.0672891"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.35e-112",
+       "width": "0.141943"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.35e-112",
+       "width": "0.0672891"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.35e-112",
+       "width": "0.141943"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.35e-112",
+       "width": "0.0672891"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.24529679035113577,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543629254,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.026
+  },
+  {
+   "case": "harm p53 o20 h=1/10 B=orth R=sym(1/1048576)",
+   "prec": 53,
+   "order": 20,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/10",
+   "log10_wR_new_max": -5.882297215000959,
+   "log10_box_new_max": -5.835437707491732,
+   "ref_eps_log10": -111.6012351950738,
+   "frame_cond_inf": 1.5460231497202253,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 8.957148353069131e-11,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.666762666595604e-10,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 6.526347069360523e-11,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 46,
+      "UNDECIDED": 4,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.5e-112",
+       "width": "0.0870674"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.5e-112",
+       "width": "0.151564"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.5e-112",
+       "width": "0.151564"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.5e-112",
+       "width": "0.0870674"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.24529679035113577,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543629254,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.027
+  },
+  {
+   "case": "harm p53 o20 h=1/10 B=orth R=offset(1/1024)",
+   "prec": 53,
+   "order": 20,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/10",
+   "log10_wR_new_max": -2.7092699609757096,
+   "log10_box_new_max": -2.5896894344586285,
+   "ref_eps_log10": -111.70373600213958,
+   "frame_cond_inf": 1.7344470779401866,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 8.895169513288428e-14,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.3518521385928538e-13,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 3.076825243812292e-14,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 46,
+      "UNDECIDED": 4,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.98e-112",
+       "width": "0.108416"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "1.98e-112",
+       "width": "0.0649105"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "1.98e-112",
+       "width": "0.0649105"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.98e-112",
+       "width": "0.108416"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.24529679035113577,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543629254,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.027
+  },
+  {
+   "case": "harm p53 o20 h=1/10 B=illcond R=point(0)",
+   "prec": 53,
+   "order": 20,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/10",
+   "log10_wR_new_max": -15.306844435475783,
+   "log10_box_new_max": -15.05149978319906,
+   "ref_eps_log10": -111.60044250128531,
+   "frame_cond_inf": 1.6454873432475063,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.14088603849446774,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.2765432314790924,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.05308646295818478,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 40,
+      "UNDECIDED": 10,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.51e-112",
+       "width": "0.0857961"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.51e-112",
+       "width": "0.152004"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.51e-112",
+       "width": "0.0857961"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.51e-112",
+       "width": "0.152004"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.51e-112",
+       "width": "0.0857961"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.24529679035113577,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543629254,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.027
+  },
+  {
+   "case": "harm p53 o20 h=1/10 B=illcond R=sym(1/1048576)",
+   "prec": 53,
+   "order": 20,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/10",
+   "log10_wR_new_max": -5.695714680894199,
+   "log10_box_new_max": -5.8381845426711525,
+   "ref_eps_log10": -111.84956599635599,
+   "frame_cond_inf": 1.9992874379369505,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 2.483087310830357e-11,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 9.462663666918473e-11,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 5.374292303050323e-12,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 46,
+      "UNDECIDED": 4,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.41e-112",
+       "width": "0.014603"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "1.41e-112",
+       "width": "0.041579"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.41e-112",
+       "width": "0.014603"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "1.41e-112",
+       "width": "0.041579"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.24529679035113577,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543629254,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.027
+  },
+  {
+   "case": "harm p53 o20 h=1/10 B=illcond R=offset(1/1024)",
+   "prec": 53,
+   "order": 20,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/10",
+   "log10_wR_new_max": -2.672749862646401,
+   "log10_box_new_max": -2.6874696963859486,
+   "ref_eps_log10": -111.6095279987408,
+   "frame_cond_inf": 1.494955469551018,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.1388823183526347e-13,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 4.201867318745747e-13,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 7.514666112782411e-14,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 45,
+      "UNDECIDED": 5,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.46e-112",
+       "width": "0.0280629"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.46e-112",
+       "width": "0.146907"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.46e-112",
+       "width": "0.0280629"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.46e-112",
+       "width": "0.146907"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.46e-112",
+       "width": "0.146907"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.24529679035113577,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543629254,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.027
+  },
+  {
+   "case": "harm p53 o20 h=1/2 B=I R=point(0)",
+   "prec": 53,
+   "order": 20,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/2",
+   "log10_wR_new_max": -15.304361794866182,
+   "log10_box_new_max": -15.05149978319906,
+   "ref_eps_log10": -111.63350469224854,
+   "frame_cond_inf": 1.8414709848078967,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.3945967924752553,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.4110037200642315,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.1520231961739889,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 40,
+      "UNDECIDED": 10,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.33e-112",
+       "width": "0.642949"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.33e-112",
+       "width": "0.702304"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.33e-112",
+       "width": "0.642949"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.33e-112",
+       "width": "0.702304"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.33e-112",
+       "width": "0.642949"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.1919576018461282,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251341,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.026
+  },
+  {
+   "case": "harm p53 o20 h=1/2 B=I R=sym(1/1048576)",
+   "prec": 53,
+   "order": 20,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/2",
+   "log10_wR_new_max": -5.84450865383566,
+   "log10_box_new_max": -5.845622331686288,
+   "ref_eps_log10": -111.54930021654684,
+   "frame_cond_inf": 1.8414709848078967,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 3.079682453076437e-10,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 6.021522609802348e-10,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 4.685845505104986e-11,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 48,
+      "UNDECIDED": 2,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.82e-112",
+       "width": "1.25735"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.82e-112",
+       "width": "1.25735"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.1919576018461282,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251341,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.026
+  },
+  {
+   "case": "harm p53 o20 h=1/2 B=I R=offset(1/1024)",
+   "prec": 53,
+   "order": 20,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/2",
+   "log10_wR_new_max": -2.70926996097572,
+   "log10_box_new_max": -2.576687520840199,
+   "ref_eps_log10": -111.61966075034974,
+   "frame_cond_inf": 1.8414709848078967,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 5.3327732285644176e-14,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 9.826746068360473e-14,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 4.18005522017859e-14,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 45,
+      "UNDECIDED": 5,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.4e-112",
+       "width": "1.11071"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.4e-112",
+       "width": "0.771182"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.4e-112",
+       "width": "0.771182"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.4e-112",
+       "width": "1.11071"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.4e-112",
+       "width": "1.11071"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.1919576018461282,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251341,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.026
+  },
+  {
+   "case": "harm p53 o20 h=1/2 B=orth R=point(0)",
+   "prec": 53,
+   "order": 20,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/2",
+   "log10_wR_new_max": -15.204295648721713,
+   "log10_box_new_max": -15.05149978319906,
+   "ref_eps_log10": -111.58984331471824,
+   "frame_cond_inf": 1.9791023764214353,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.1655523858482975,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.27074727700968804,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.04149455401937611,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 40,
+      "UNDECIDED": 10,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.57e-112",
+       "width": "0.833223"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.57e-112",
+       "width": "0.772194"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.57e-112",
+       "width": "0.833223"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.57e-112",
+       "width": "0.772194"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.57e-112",
+       "width": "0.833223"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.1919576018461282,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251341,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.026
+  },
+  {
+   "case": "harm p53 o20 h=1/2 B=orth R=sym(1/1048576)",
+   "prec": 53,
+   "order": 20,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/2",
+   "log10_wR_new_max": -5.923689900158516,
+   "log10_box_new_max": -5.795305454742485,
+   "ref_eps_log10": -111.77912837989791,
+   "frame_cond_inf": 1.9807199183251416,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.1325334331140587e-10,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.3454589384257911e-10,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.1068205825106489e-11,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 48,
+      "UNDECIDED": 2,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.66e-112",
+       "width": "0.380812"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.66e-112",
+       "width": "0.380812"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.1919576018461282,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251341,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.026
+  },
+  {
+   "case": "harm p53 o20 h=1/2 B=orth R=offset(1/1024)",
+   "prec": 53,
+   "order": 20,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/2",
+   "log10_wR_new_max": -2.709269960975701,
+   "log10_box_new_max": -2.593877500683662,
+   "ref_eps_log10": -111.60813781769136,
+   "frame_cond_inf": 1.7013157424032748,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 4.959609144121294e-14,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.2997275524871413e-13,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 3.767881851317007e-14,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 46,
+      "UNDECIDED": 4,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.47e-112",
+       "width": "0.641886"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.47e-112",
+       "width": "0.777069"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.47e-112",
+       "width": "0.777069"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.47e-112",
+       "width": "0.641886"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.1919576018461282,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251341,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.026
+  },
+  {
+   "case": "harm p53 o20 h=1/2 B=illcond R=point(0)",
+   "prec": 53,
+   "order": 20,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/2",
+   "log10_wR_new_max": -15.473626160122754,
+   "log10_box_new_max": -15.255619765854984,
+   "ref_eps_log10": -111.7720276380825,
+   "frame_cond_inf": 1.0963780136779282,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.3550339594903194,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.4070752992344598,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.17277879984653804,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 45,
+      "UNDECIDED": 5,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.69e-112",
+       "width": "0.494042"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.69e-112",
+       "width": "0.494042"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.69e-112",
+       "width": "0.494042"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.69e-112",
+       "width": "0.494042"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.69e-112",
+       "width": "0.494042"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.1919576018461282,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251341,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.026
+  },
+  {
+   "case": "harm p53 o20 h=1/2 B=illcond R=sym(1/1048576)",
+   "prec": 53,
+   "order": 20,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/2",
+   "log10_wR_new_max": -6.133495174966039,
+   "log10_box_new_max": -6.168309529497861,
+   "ref_eps_log10": -111.5233373638345,
+   "frame_cond_inf": 1.7104655241633082,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 2.7624317113926363e-10,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 4.498652378129589e-10,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 9.361990329914422e-11,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 48,
+      "UNDECIDED": 2,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "3.0e-112",
+       "width": "1.09057"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "3.0e-112",
+       "width": "1.09057"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.1919576018461282,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251341,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.026
+  },
+  {
+   "case": "harm p53 o20 h=1/2 B=illcond R=offset(1/1024)",
+   "prec": 53,
+   "order": 20,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/2",
+   "log10_wR_new_max": -2.6745111213008963,
+   "log10_box_new_max": -2.6843596647873076,
+   "ref_eps_log10": -111.52397169191948,
+   "frame_cond_inf": 1.4117035908795343,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.2447990567613652e-13,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 5.482870315004934e-13,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 6.195787804445954e-14,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 48,
+      "UNDECIDED": 2,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.99e-112",
+       "width": "1.15051"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.99e-112",
+       "width": "1.15051"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.1919576018461282,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251341,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.026
+  },
+  {
+   "case": "harm p128 o4 h=1/10 B=I R=point(0)",
+   "prec": 128,
+   "order": 4,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/10",
+   "log10_wR_new_max": -7.852869980796824,
+   "log10_box_new_max": -7.845465033338483,
+   "ref_eps_log10": -111.57562047742776,
+   "frame_cond_inf": 1.1986693305670275,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.16961497978816853,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.173425750248342,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.05508842057237705,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 45,
+      "UNDECIDED": 5,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.66e-112",
+       "width": "0.167142"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.66e-112",
+       "width": "0.167142"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.66e-112",
+       "width": "0.167142"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.66e-112",
+       "width": "0.167142"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.66e-112",
+       "width": "0.167142"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.11904497378545836,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543627026,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.016
+  },
+  {
+   "case": "harm p128 o4 h=1/10 B=I R=sym(1/1048576)",
+   "prec": 128,
+   "order": 4,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/10",
+   "log10_wR_new_max": -5.918142755511954,
+   "log10_box_new_max": -5.899006905006424,
+   "ref_eps_log10": -111.57641808052429,
+   "frame_cond_inf": 1.1986693305670275,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0024082975659634846,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.002443922172508923,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 2.6051245974386513e-06,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 46,
+      "UNDECIDED": 4,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.65e-112",
+       "width": "0.0932075"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.65e-112",
+       "width": "0.0932075"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.65e-112",
+       "width": "0.175459"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.65e-112",
+       "width": "0.175459"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.11904497378545836,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543627026,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.015
+  },
+  {
+   "case": "harm p128 o4 h=1/10 B=I R=offset(1/1024)",
+   "prec": 128,
+   "order": 4,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/10",
+   "log10_wR_new_max": -2.7092658565602328,
+   "log10_box_new_max": -2.6699161655168417,
+   "ref_eps_log10": -111.52756951855886,
+   "frame_cond_inf": 1.1986693305670275,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.5154047741888948e-06,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 2.0346988913667548e-06,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.855387502367856e-09,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 45,
+      "UNDECIDED": 5,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.97e-112",
+       "width": "0.198704"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.97e-112",
+       "width": "0.202481"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.97e-112",
+       "width": "0.198704"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.97e-112",
+       "width": "0.202481"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.97e-112",
+       "width": "0.202481"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.11904497378545836,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543627026,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.015
+  },
+  {
+   "case": "harm p128 o4 h=1/10 B=orth R=point(0)",
+   "prec": 128,
+   "order": 4,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/10",
+   "log10_wR_new_max": -7.863168974620969,
+   "log10_box_new_max": -7.715309647675184,
+   "ref_eps_log10": -111.6573840402291,
+   "frame_cond_inf": 1.9966089623955634,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.1571976205648397,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.30376769401567905,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.05104900353289472,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 40,
+      "UNDECIDED": 10,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.2e-112",
+       "width": "0.100269"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.2e-112",
+       "width": "0.131209"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.2e-112",
+       "width": "0.100269"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.2e-112",
+       "width": "0.131209"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.2e-112",
+       "width": "0.100269"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.11904497378545836,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543627026,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.015
+  },
+  {
+   "case": "harm p128 o4 h=1/10 B=orth R=sym(1/1048576)",
+   "prec": 128,
+   "order": 4,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/10",
+   "log10_wR_new_max": -6.077380172812318,
+   "log10_box_new_max": -6.016431541577714,
+   "ref_eps_log10": -111.78937263897404,
+   "frame_cond_inf": 1.387935571649505,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0004323533256923983,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0012767731609854276,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 3.0049674115602385e-07,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 46,
+      "UNDECIDED": 4,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.62e-112",
+       "width": "0.0156046"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.62e-112",
+       "width": "0.0156046"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "1.62e-112",
+       "width": "0.064084"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "1.62e-112",
+       "width": "0.064084"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.11904497378545836,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543627026,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.015
+  },
+  {
+   "case": "harm p128 o4 h=1/10 B=orth R=offset(1/1024)",
+   "prec": 128,
+   "order": 4,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/10",
+   "log10_wR_new_max": -2.709266668668742,
+   "log10_box_new_max": -2.6070763896830615,
+   "ref_eps_log10": -111.63499013074782,
+   "frame_cond_inf": 1.60096037150898,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.2007243619211693e-06,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 2.1677868841418777e-06,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.0561187352368143e-09,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 45,
+      "UNDECIDED": 5,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.32e-112",
+       "width": "0.141188"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.32e-112",
+       "width": "0.137091"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.32e-112",
+       "width": "0.137091"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.32e-112",
+       "width": "0.141188"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.32e-112",
+       "width": "0.137091"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.11904497378545836,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543627026,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.015
+  },
+  {
+   "case": "harm p128 o4 h=1/10 B=illcond R=point(0)",
+   "prec": 128,
+   "order": 4,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/10",
+   "log10_wR_new_max": -8.115388360115142,
+   "log10_box_new_max": -7.967253547175627,
+   "ref_eps_log10": -111.77507980370524,
+   "frame_cond_inf": 1.991690678678453,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.15555700812275416,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.32125920267250985,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.048860523577021094,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 40,
+      "UNDECIDED": 10,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.68e-112",
+       "width": "0.0612926"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "1.68e-112",
+       "width": "0.0686148"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.68e-112",
+       "width": "0.0612926"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "1.68e-112",
+       "width": "0.0686148"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.68e-112",
+       "width": "0.0612926"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.11904497378545836,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543627026,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.015
+  },
+  {
+   "case": "harm p128 o4 h=1/10 B=illcond R=sym(1/1048576)",
+   "prec": 128,
+   "order": 4,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/10",
+   "log10_wR_new_max": -5.844002150881575,
+   "log10_box_new_max": -5.953022473496056,
+   "ref_eps_log10": -111.55972047124565,
+   "frame_cond_inf": 1.9830258900265176,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0020999541646439814,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.008690740981611988,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 2.258959048407126e-06,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 46,
+      "UNDECIDED": 4,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.76e-112",
+       "width": "0.190966"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.76e-112",
+       "width": "0.138768"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.76e-112",
+       "width": "0.190966"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.76e-112",
+       "width": "0.138768"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.11904497378545836,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543627026,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.015
+  },
+  {
+   "case": "harm p128 o4 h=1/10 B=illcond R=offset(1/1024)",
+   "prec": 128,
+   "order": 4,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/10",
+   "log10_wR_new_max": -2.5771943260230903,
+   "log10_box_new_max": -2.6095636986497013,
+   "ref_eps_log10": -111.63472004557038,
+   "frame_cond_inf": 1.6908298030100528,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.2245498289915207e-06,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.8270353373771323e-06,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 2.9104287261032096e-10,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 44,
+      "UNDECIDED": 6,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.32e-112",
+       "width": "0.038488"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.32e-112",
+       "width": "0.038488"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.32e-112",
+       "width": "0.139548"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.32e-112",
+       "width": "0.139548"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.32e-112",
+       "width": "0.038488"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.11904497378545836,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543627026,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.015
+  },
+  {
+   "case": "harm p128 o4 h=1/2 B=I R=point(0)",
+   "prec": 128,
+   "order": 4,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/2",
+   "log10_wR_new_max": -3.4483223625502473,
+   "log10_box_new_max": -3.331082062919401,
+   "ref_eps_log10": -111.61234141998138,
+   "frame_cond_inf": 1.841466486874181,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.12749791322217957,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.25478234993231963,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.035193139759954896,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 40,
+      "UNDECIDED": 10,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.44e-112",
+       "width": "1.12715"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.44e-112",
+       "width": "0.78967"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.44e-112",
+       "width": "1.12715"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.44e-112",
+       "width": "0.78967"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.44e-112",
+       "width": "1.12715"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.11898163155353264,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251118,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.015
+  },
+  {
+   "case": "harm p128 o4 h=1/2 B=I R=sym(1/1048576)",
+   "prec": 128,
+   "order": 4,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/2",
+   "log10_wR_new_max": -3.742292782672113,
+   "log10_box_new_max": -3.631397935666583,
+   "ref_eps_log10": -111.68725277069719,
+   "frame_cond_inf": 1.841466486874181,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.17604855012452247,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.26322453322419914,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.017518247074349406,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 48,
+      "UNDECIDED": 2,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.05e-112",
+       "width": "0.595774"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.05e-112",
+       "width": "0.595774"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.11898163155353264,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251118,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.016
+  },
+  {
+   "case": "harm p128 o4 h=1/2 B=I R=offset(1/1024)",
+   "prec": 128,
+   "order": 4,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/2",
+   "log10_wR_new_max": -2.6502258254093416,
+   "log10_box_new_max": -2.5185476088184298,
+   "ref_eps_log10": -111.63277428344644,
+   "frame_cond_inf": 1.841466486874181,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.015725455694046698,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.033577301655216926,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.3863460051263756e-05,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 45,
+      "UNDECIDED": 5,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.33e-112",
+       "width": "0.848009"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.33e-112",
+       "width": "0.721042"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.33e-112",
+       "width": "0.848009"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.33e-112",
+       "width": "0.721042"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.33e-112",
+       "width": "0.721042"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.11898163155353264,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251118,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.016
+  },
+  {
+   "case": "harm p128 o4 h=1/2 B=orth R=point(0)",
+   "prec": 128,
+   "order": 4,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/2",
+   "log10_wR_new_max": -3.7376497011371486,
+   "log10_box_new_max": -3.635169762138669,
+   "ref_eps_log10": -111.67288904754571,
+   "frame_cond_inf": 1.738092628507602,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.13246160401794319,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.2734954867555543,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.014053009269766487,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 40,
+      "UNDECIDED": 10,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.12e-112",
+       "width": "0.409492"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.12e-112",
+       "width": "0.587288"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.12e-112",
+       "width": "0.409492"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.12e-112",
+       "width": "0.587288"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.12e-112",
+       "width": "0.409492"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.11898163155353264,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251118,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.015
+  },
+  {
+   "case": "harm p128 o4 h=1/2 B=orth R=sym(1/1048576)",
+   "prec": 128,
+   "order": 4,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/2",
+   "log10_wR_new_max": -3.6429435695053125,
+   "log10_box_new_max": -3.5079079317724076,
+   "ref_eps_log10": -111.66651078189759,
+   "frame_cond_inf": 1.9640062423855982,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.25934323817779337,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.26791743762181763,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.012968585578940975,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 48,
+      "UNDECIDED": 2,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.16e-112",
+       "width": "0.742357"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.16e-112",
+       "width": "0.742357"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.11898163155353264,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251118,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.015
+  },
+  {
+   "case": "harm p128 o4 h=1/2 B=orth R=offset(1/1024)",
+   "prec": 128,
+   "order": 4,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/2",
+   "log10_wR_new_max": -2.6454215120981277,
+   "log10_box_new_max": -2.536609155460996,
+   "ref_eps_log10": -111.54102483597845,
+   "frame_cond_inf": 1.6658483490553044,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.011425918824385595,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.03380407029783144,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 5.159188810113524e-06,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 45,
+      "UNDECIDED": 5,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.88e-112",
+       "width": "0.736132"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.88e-112",
+       "width": "0.986937"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.88e-112",
+       "width": "0.736132"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.88e-112",
+       "width": "0.986937"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.88e-112",
+       "width": "0.736132"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.11898163155353264,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251118,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.015
+  },
+  {
+   "case": "harm p128 o4 h=1/2 B=illcond R=point(0)",
+   "prec": 128,
+   "order": 4,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/2",
+   "log10_wR_new_max": -3.8534892625659642,
+   "log10_box_new_max": -3.7513834516956788,
+   "ref_eps_log10": -111.73928749919766,
+   "frame_cond_inf": 1.6600381148291379,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.09819675744801576,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.2590738668207251,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.021840972227252797,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 40,
+      "UNDECIDED": 10,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.82e-112",
+       "width": "0.37319"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "1.82e-112",
+       "width": "0.434368"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.82e-112",
+       "width": "0.37319"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "1.82e-112",
+       "width": "0.434368"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.82e-112",
+       "width": "0.37319"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.11898163155353264,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251118,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.015
+  },
+  {
+   "case": "harm p128 o4 h=1/2 B=illcond R=sym(1/1048576)",
+   "prec": 128,
+   "order": 4,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/2",
+   "log10_wR_new_max": -3.4571813580426323,
+   "log10_box_new_max": -3.4284892998318504,
+   "ref_eps_log10": -111.54605140142871,
+   "frame_cond_inf": 1.173901235072571,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.14023062925636898,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.15106687161258808,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.029505468438480783,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 46,
+      "UNDECIDED": 4,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.84e-112",
+       "width": "1.25773"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.84e-112",
+       "width": "0.999102"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.84e-112",
+       "width": "1.25773"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.84e-112",
+       "width": "0.999102"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.11898163155353264,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251118,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.015
+  },
+  {
+   "case": "harm p128 o4 h=1/2 B=illcond R=offset(1/1024)",
+   "prec": 128,
+   "order": 4,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.002,
+   "h_used": "1/2",
+   "log10_wR_new_max": -2.5350951277785865,
+   "log10_box_new_max": -2.592127133458111,
+   "ref_eps_log10": -111.58051320017064,
+   "frame_cond_inf": 1.9282324159361899,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.030207118439016245,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.040020616340805275,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 3.220569931716259e-05,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 48,
+      "UNDECIDED": 2,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.63e-112",
+       "width": "0.923402"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.63e-112",
+       "width": "0.923402"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.11898163155353264,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251118,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.015
+  },
+  {
+   "case": "harm p128 o20 h=1/10 B=I R=point(0)",
+   "prec": 128,
+   "order": 20,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/10",
+   "log10_wR_new_max": -37.72774374031564,
+   "log10_box_new_max": -37.53183944498959,
+   "ref_eps_log10": -111.52850021043724,
+   "frame_cond_inf": 1.1986693307950613,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.2999263957030445,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.37290146941784474,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0638579179410051,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 40,
+      "UNDECIDED": 10,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.96e-112",
+       "width": "0.177085"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.96e-112",
+       "width": "0.198353"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.96e-112",
+       "width": "0.177085"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.96e-112",
+       "width": "0.198353"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.96e-112",
+       "width": "0.177085"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0611383079442276,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543627026,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.027
+  },
+  {
+   "case": "harm p128 o20 h=1/10 B=I R=sym(1/1048576)",
+   "prec": 128,
+   "order": 20,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/10",
+   "log10_wR_new_max": -5.844508654223943,
+   "log10_box_new_max": -5.825425249383898,
+   "ref_eps_log10": -111.83072689978601,
+   "frame_cond_inf": 1.1986693307950613,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 4.592079186982455e-34,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.2607429824670884e-33,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 2.777377971401921e-34,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 46,
+      "UNDECIDED": 4,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.48e-112",
+       "width": "0.0527446"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "1.48e-112",
+       "width": "0.0482566"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "1.48e-112",
+       "width": "0.0482566"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.48e-112",
+       "width": "0.0527446"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0611383079442276,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543627026,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.027
+  },
+  {
+   "case": "harm p128 o20 h=1/10 B=I R=offset(1/1024)",
+   "prec": 128,
+   "order": 20,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/10",
+   "log10_wR_new_max": -2.709269960975831,
+   "log10_box_new_max": -2.6699202641792423,
+   "ref_eps_log10": -111.77604574445691,
+   "frame_cond_inf": 1.1986693307950613,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 4.579829714621921e-37,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 9.527364126550193e-37,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 3.7392025434716247e-37,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 45,
+      "UNDECIDED": 5,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.67e-112",
+       "width": "0.0352561"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "1.67e-112",
+       "width": "0.0711395"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.67e-112",
+       "width": "0.0352561"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "1.67e-112",
+       "width": "0.0711395"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "1.67e-112",
+       "width": "0.0711395"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0611383079442276,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543627026,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.027
+  },
+  {
+   "case": "harm p128 o20 h=1/10 B=orth R=point(0)",
+   "prec": 128,
+   "order": 20,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/10",
+   "log10_wR_new_max": -38.145791906001094,
+   "log10_box_new_max": -37.92977945366163,
+   "ref_eps_log10": -111.70227458030442,
+   "frame_cond_inf": 1.479227890154741,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.2116216225504758,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.30029262880282037,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.06169253929089148,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 40,
+      "UNDECIDED": 10,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.98e-112",
+       "width": "0.0623678"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "1.98e-112",
+       "width": "0.0992627"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.98e-112",
+       "width": "0.0623678"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "1.98e-112",
+       "width": "0.0992627"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.98e-112",
+       "width": "0.0623678"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0611383079442276,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543627026,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.028
+  },
+  {
+   "case": "harm p128 o20 h=1/10 B=orth R=sym(1/1048576)",
+   "prec": 128,
+   "order": 20,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/10",
+   "log10_wR_new_max": -6.078591860257311,
+   "log10_box_new_max": -5.959249821096071,
+   "ref_eps_log10": -111.5770206349391,
+   "frame_cond_inf": 1.9965485206532463,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 7.32880915008646e-33,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 2.410811795127872e-17,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.4254279505124374e-33,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 46,
+      "UNDECIDED": 4,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.65e-112",
+       "width": "0.176219"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.65e-112",
+       "width": "0.103221"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.65e-112",
+       "width": "0.103221"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.65e-112",
+       "width": "0.176219"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0611383079442276,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543627026,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.028
+  },
+  {
+   "case": "harm p128 o20 h=1/10 B=orth R=offset(1/1024)",
+   "prec": 128,
+   "order": 20,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/10",
+   "log10_wR_new_max": -2.709269960975831,
+   "log10_box_new_max": -2.5587755154838883,
+   "ref_eps_log10": -111.56272823328082,
+   "frame_cond_inf": 1.9998107149104916,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 2.834824629318852e-36,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 3.549202244634617e-17,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 2.7625266658473346e-37,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 45,
+      "UNDECIDED": 5,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.74e-112",
+       "width": "0.109653"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.74e-112",
+       "width": "0.177813"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.74e-112",
+       "width": "0.109653"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.74e-112",
+       "width": "0.177813"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.74e-112",
+       "width": "0.109653"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0611383079442276,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543627026,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.028
+  },
+  {
+   "case": "harm p128 o20 h=1/10 B=illcond R=point(0)",
+   "prec": 128,
+   "order": 20,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/10",
+   "log10_wR_new_max": -37.92101773202054,
+   "log10_box_new_max": -37.62874945799765,
+   "ref_eps_log10": -111.6432504224552,
+   "frame_cond_inf": 1.0850672059275612,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10971310720492997,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.30155033903140416,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10310067806280832,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 40,
+      "UNDECIDED": 10,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.27e-112",
+       "width": "0.136478"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.27e-112",
+       "width": "0.0824764"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.27e-112",
+       "width": "0.136478"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.27e-112",
+       "width": "0.0824764"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.27e-112",
+       "width": "0.136478"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0611383079442276,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543627026,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.028
+  },
+  {
+   "case": "harm p128 o20 h=1/10 B=illcond R=sym(1/1048576)",
+   "prec": 128,
+   "order": 20,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/10",
+   "log10_wR_new_max": -5.753078580099124,
+   "log10_box_new_max": -5.756714792865603,
+   "ref_eps_log10": -111.62119706525725,
+   "frame_cond_inf": 1.255579330002798,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.7626156565843695e-33,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.413270862050698e-16,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.287660831091921e-33,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 46,
+      "UNDECIDED": 4,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.39e-112",
+       "width": "0.140441"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.39e-112",
+       "width": "0.140441"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.39e-112",
+       "width": "0.0974181"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.39e-112",
+       "width": "0.0974181"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0611383079442276,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543627026,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.028
+  },
+  {
+   "case": "harm p128 o20 h=1/10 B=illcond R=offset(1/1024)",
+   "prec": 128,
+   "order": 20,
+   "h": "1/10",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/10",
+   "log10_wR_new_max": -2.6975847423296293,
+   "log10_box_new_max": -2.7158408779002103,
+   "ref_eps_log10": -111.53452642175411,
+   "frame_cond_inf": 1.544549071088466,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.8428060844261193e-36,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 2.1678115078568184e-35,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.0751361219243938e-36,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 45,
+      "UNDECIDED": 5,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.92e-112",
+       "width": "0.193663"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.92e-112",
+       "width": "0.197275"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.92e-112",
+       "width": "0.193663"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.92e-112",
+       "width": "0.197275"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.92e-112",
+       "width": "0.197275"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0611383079442276,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004465773543627026,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.028
+  },
+  {
+   "case": "harm p128 o20 h=1/2 B=I R=point(0)",
+   "prec": 128,
+   "order": 20,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/2",
+   "log10_wR_new_max": -26.09452247243067,
+   "log10_box_new_max": -25.978691839106528,
+   "ref_eps_log10": -111.71994722357978,
+   "frame_cond_inf": 1.8414709848078967,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.035447223455096176,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.20007792322646906,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.014505384318885726,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 40,
+      "UNDECIDED": 10,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.91e-112",
+       "width": "0.717047"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "1.91e-112",
+       "width": "0.485208"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.91e-112",
+       "width": "0.717047"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "1.91e-112",
+       "width": "0.485208"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.91e-112",
+       "width": "0.717047"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.042449253906866595,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251118,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.027
+  },
+  {
+   "case": "harm p128 o20 h=1/2 B=I R=sym(1/1048576)",
+   "prec": 128,
+   "order": 20,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/2",
+   "log10_wR_new_max": -5.882297215113343,
+   "log10_box_new_max": -5.8257401667394415,
+   "ref_eps_log10": -111.53693492231288,
+   "frame_cond_inf": 1.8414709848078967,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 7.259405727836297e-22,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.896899167166271e-18,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.691338125808612e-32,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 46,
+      "UNDECIDED": 4,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.9e-112",
+       "width": "1.3876"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.9e-112",
+       "width": "1.03715"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.9e-112",
+       "width": "1.03715"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.9e-112",
+       "width": "1.3876"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.042449253906866595,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251118,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.027
+  },
+  {
+   "case": "harm p128 o20 h=1/2 B=I R=offset(1/1024)",
+   "prec": 128,
+   "order": 20,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/2",
+   "log10_wR_new_max": -2.709269960975831,
+   "log10_box_new_max": -2.576687520840342,
+   "ref_eps_log10": -111.58204705009555,
+   "frame_cond_inf": 1.8414709848078967,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 2.1684050713363893e-25,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 2.4493512097166975e-18,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 9.440094733256773e-36,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 45,
+      "UNDECIDED": 5,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.62e-112",
+       "width": "1.00409"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.62e-112",
+       "width": "0.874937"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.62e-112",
+       "width": "1.00409"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.62e-112",
+       "width": "0.874937"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.62e-112",
+       "width": "0.874937"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.042449253906866595,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251118,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.027
+  },
+  {
+   "case": "harm p128 o20 h=1/2 B=orth R=point(0)",
+   "prec": 128,
+   "order": 20,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/2",
+   "log10_wR_new_max": -25.866796833768568,
+   "log10_box_new_max": -25.71655878704445,
+   "ref_eps_log10": -111.59183521411403,
+   "frame_cond_inf": 1.9999789776016497,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.03382973200660006,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.2186323958150728,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.014554417287825071,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 40,
+      "UNDECIDED": 10,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.56e-112",
+       "width": "1.23037"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.56e-112",
+       "width": "0.827502"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.56e-112",
+       "width": "1.23037"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.56e-112",
+       "width": "0.827502"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.56e-112",
+       "width": "1.23037"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.042449253906866595,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251118,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.027
+  },
+  {
+   "case": "harm p128 o20 h=1/2 B=orth R=sym(1/1048576)",
+   "prec": 128,
+   "order": 20,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/2",
+   "log10_wR_new_max": -6.145538649887924,
+   "log10_box_new_max": -6.133026274970532,
+   "ref_eps_log10": -111.53994708616625,
+   "frame_cond_inf": 1.0593140922848978,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 8.031951368746546e-22,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 8.526268189467516e-22,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 3.7254179904720955e-32,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 48,
+      "UNDECIDED": 2,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.88e-112",
+       "width": "1.30937"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.88e-112",
+       "width": "1.30937"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.042449253906866595,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251118,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.027
+  },
+  {
+   "case": "harm p128 o20 h=1/2 B=orth R=offset(1/1024)",
+   "prec": 128,
+   "order": 20,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/2",
+   "log10_wR_new_max": -2.7092699609758304,
+   "log10_box_new_max": -2.5624478172016314,
+   "ref_eps_log10": -111.61514439603377,
+   "frame_cond_inf": 1.9662751362316149,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 8.286473393430237e-25,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.2456214098902976e-17,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.0235746904364567e-35,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 48,
+      "UNDECIDED": 2,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.43e-112",
+       "width": "0.839981"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.43e-112",
+       "width": "0.839981"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.042449253906866595,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251118,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.027
+  },
+  {
+   "case": "harm p128 o20 h=1/2 B=illcond R=point(0)",
+   "prec": 128,
+   "order": 20,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/2",
+   "log10_wR_new_max": -25.963717190307438,
+   "log10_box_new_max": -25.849248855939972,
+   "ref_eps_log10": -111.59103682922955,
+   "frame_cond_inf": 1.8557805131360658,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.14368925103802563,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.19656117260450745,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.01782662016073951,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 45,
+      "UNDECIDED": 5,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.56e-112",
+       "width": "0.991718"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.56e-112",
+       "width": "0.991718"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.56e-112",
+       "width": "0.991718"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.56e-112",
+       "width": "0.991718"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[1]",
+       "out_by": "0.0",
+       "err": "2.56e-112",
+       "width": "0.991718"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.042449253906866595,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251118,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.027
+  },
+  {
+   "case": "harm p128 o20 h=1/2 B=illcond R=sym(1/1048576)",
+   "prec": 128,
+   "order": 20,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/2",
+   "log10_wR_new_max": -5.680954710114571,
+   "log10_box_new_max": -5.684641773915826,
+   "ref_eps_log10": -111.5801089967271,
+   "frame_cond_inf": 1.2573150637292756,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 2.0845227973923204e-22,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 3.853879337963122e-16,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 9.29522588053681e-33,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 48,
+      "UNDECIDED": 2,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.63e-112",
+       "width": "0.884236"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "2.63e-112",
+       "width": "0.884236"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.042449253906866595,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251118,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.027
+  },
+  {
+   "case": "harm p128 o20 h=1/2 B=illcond R=offset(1/1024)",
+   "prec": 128,
+   "order": 20,
+   "h": "1/2",
+   "pivot": "colnorm",
+   "step_wall_s": 0.003,
+   "h_used": "1/2",
+   "log10_wR_new_max": -2.559007250181244,
+   "log10_box_new_max": -2.572323874820061,
+   "ref_eps_log10": -111.79931772917735,
+   "frame_cond_inf": 1.473052150959129,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.5359064160348697e-25,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 14,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 5.561224662596181e-18,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 42,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 3.924098674670132e-36,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 48,
+      "UNDECIDED": 2,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.59e-112",
+       "width": "0.356146"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "P/tau=0[0]",
+       "out_by": "0.0",
+       "err": "1.59e-112",
+       "width": "0.356146"
+      }
+     ]
+    },
+    "J": {
+     "counts": {
+      "PASS": 16,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.042449253906866595,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.10413913954251118,
+     "examples": []
+    }
+   },
+   "case_wall_s": 0.027
+  }
+ ],
+ "wall_s": 1.5
+}

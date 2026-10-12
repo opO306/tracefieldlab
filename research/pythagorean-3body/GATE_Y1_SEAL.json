@@ -1,0 +1,11 @@
+{
+ "gate": "Y1",
+ "sealed_at": "2026-10-12",
+ "files": {
+  "GATE_Y1_PLAN_KO.md": "416b408ee41c63044b90122b1fee790ed14d826a01435c4870e85a706195cab5",
+  "YOSHIDA_REDERIVATION_KO.md": "fab037d1c5ad124402fea6c9f6a7f733818de63d4af7b181625cc0f83c7f04a5",
+  "results_r4/r4_boxes_128w.jsonl": "f65101c194b6f9d4a67573773a9c517c49ccde8f59924954bd6598f6301d59f5",
+  "results_r4/r3c_final_128w.json": "7241e8c9788617ed882d0ec6ab23b173e4b2a1e93c2fa18a5e1965883827c1f4",
+  "GATE_R4_SEAL.json": "bbfd40f4c163ad2684a14422b73c7491a6380c16891526f691978596fa672960"
+ }
+}

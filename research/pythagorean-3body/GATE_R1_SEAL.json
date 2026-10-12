@@ -1,0 +1,11 @@
+{
+ "sealed_at_local": "2026-10-11T12:45:48",
+ "note": "Gate R1 plan sealed before implementation; dyad.py pinned as R0 artifact",
+ "files": {
+  "GATE_R1_PLAN_KO.md": "edc5d648531a57d7165870d4ca9b4ce397703a3255ca042cd15f0fc8fc5e611f",
+  "ROADMAP_AMENDMENT_1_KO.md": "44e98d3c4badb65e2b0478284b5a365b96f342bc92d19940958f167faf0290ce",
+  "ROADMAP_AMENDMENT_2_KO.md": "6a83bb20d7cd5fe2f9885fec1b8359dae277b069e89ec177d4e5a42bd547e83b",
+  "rigorous/R0_DECISION_KO.md": "cdad96efd3a0ae414050c5b7c28c54bf2b9ceeaa75c919540a9958e1ffe03cf2",
+  "rigorous/dyad.py": "4d49cf8f707061d128fce3ed44b59ccb3a6bda14937e32dcd469cd201fbabaab"
+ }
+}

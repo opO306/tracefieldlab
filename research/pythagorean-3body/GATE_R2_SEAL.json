@@ -1,0 +1,12 @@
+{
+ "sealed_at_local": "2026-10-11T13:57:32",
+ "note": "Gate R2 plan sealed before implementation; R0/R1 artifacts and reference grid pinned",
+ "files": {
+  "GATE_R2_PLAN_KO.md": "79ed3d4ebfdf8f503cea4b215c1fa447de478282fea09f5a71a5ba0ce76b02c5",
+  "ROADMAP_AMENDMENT_3_KO.md": "9e080c99858635c2012c5112a0b9f0bda72fb8dcfeca68fd48eaa1ae80e5bef3",
+  "rigorous/dyad.py": "4d49cf8f707061d128fce3ed44b59ccb3a6bda14937e32dcd469cd201fbabaab",
+  "rigorous/taylor_step.py": "0183f0f8dc76dcf9c1a9933d8f16a636ac011bc15e9a95e0749fb2459be01c31",
+  "results/ref_B_grid.json": "3bfe3e44024d90bfe495c365bebb6c3c2ea7a92c18869d177bd5e6beaf8d3478",
+  "rigorous/R1_FINAL_RUN_KO.md": "7a0732b21287ecdba5090457fa200aedcbaeecc5d8373511b431569e95a1ddcc"
+ }
+}

@@ -1,0 +1,3 @@
+39386825 batch1.tgz
+268481622 r3cp_out.tgz
+119743991 r4_out.tgz

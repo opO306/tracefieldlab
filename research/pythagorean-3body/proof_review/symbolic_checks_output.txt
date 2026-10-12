@@ -1,0 +1,50 @@
+[PASS] S1a 운동에너지 = 1/2 M Vcm^2 + 1/2 m |rdot_vec|^2 + 1/2 mu |rhodot_vec|^2 (벡터)
+[PASS] S1b x0 - x2 = rho_vec - nu r_vec  (r1 = |m2 m0|)
+[PASS] S1c x0 - x1 = rho_vec + lam r_vec (r2 = |m1 m0|)
+[PASS] S1d x2 - G = nu r_vec, x1 - G = -lam r_vec
+[PASS] S2a 야코비 운동방정식 rho_ddot (뉴턴 직교좌표에서 유도와 일치)
+[PASS] S2b mu*M*lam = m0*m2, mu*M*nu = m0*m1
+[PASS] S3 (2D) rho_ddot = (rho.rho_ddot)/rho + |rho x rho_dot|^2/rho^3
+[PASS] S3 (3D) rho_ddot = (rho.rho_ddot)/rho + |rho x rho_dot|^2/rho^3
+[PASS] S4a F := lam(rho-nu r c)/r1^3 + nu(rho+lam r c)/r2^3 = -dP/drho
+[PASS] S4b (rho_vec.rho_ddot_vec)/rho = -M F  (rho_vec.r_vec = rho r c)
+[PASS] S5a g(a,c) = G + a dG/da  (G = 생성함수)
+[PASS] S5b 생성함수 계수 = P_n (n<=14)
+[PASS] S5c g 계수 = (n+1) P_n (n<=14)
+[PASS] S5d rho^2 F(rho,r,c) = 정규화식 (r=s rho)
+[PASS] S5e rho P(rho,r,c) = 정규화식 (r=s rho)
+[PASS] S5f rho^2 F 의 s^n 계수 = (n+1)(lam nu^n + nu(-lam)^n) P_n(c), n<=10
+[PASS] S5g rho P 의 s^n 계수 = (lam nu^n + nu(-lam)^n) P_n(c), n<=10
+[PASS] S5h 홀수 n<30: (-1)^n B_n = lam nu (lam^(n-1) - nu^(n-1))
+[PASS] S6a dW/drho = -(lam/(rho+nu d)^2 + nu/(rho-lam d)^2)
+[PASS] S6b1 c=-1: r1^2 = (rho+nu r)^2
+[PASS] S6b2 c=-1: r2^2 = (rho-lam r)^2
+[PASS] S6c F(r,c=-1) = lam/(rho+nu r)^2 + nu/(rho-lam r)^2 = Fbound(d=r)
+[PASS] S6d P(r,c=-1) = W(rho,r)
+[PASS] S6e dW/dd = lam nu [ (rho-lam d)^-2 - (rho+nu d)^-2 ]
+[PASS] S6f dFbound/dd = 2 lam nu [ (rho-lam d)^-3 - (rho+nu d)^-3 ]
+[PASS] S6g (rho+nu d) - (rho-lam d) = d
+[PASS] S7 Fbound - F(c=+1) = 4 rho d lam nu [ (rho^2-lam^2 d^2)^-2 - (rho^2-nu^2 d^2)^-2 ]
+[PASS] S9a dP/dc = lam nu rho r (r1^-3 - r2^-3)
+[PASS] S9b r2^2 - r1^2 = r((lam-nu) r + 2 rho c)
+[PASS] S9c P(r,-1) - P(r,+1) = 2 lam nu r [ (rho^2-lam^2 r^2)^-1 - (rho^2-nu^2 r^2)^-1 ]
+[PASS] S9d sum (n+1)s^n|beta_n| = lam/(1+nu s)^2 + nu/(1-lam s)^2, sum s^n|beta_n| = lam/(1+nu s)+nu/(1-lam s) (s^11 까지)
+
+S8 피타고라스 상수(정확):
+  H = -769/60 = -12.8166666667,  K = 769/60
+  d1 = m1 m2 / K = 1200/769 = 1.560468140442
+  lam = 5/9, nu = 4/9, lam*d1 = 2000/2307 = 0.866926744690
+  mu = 9/4, m(binary) = 20/9, M = 12
+  W(rho,d1) = (5/9)/(rho + 1600/2307) + (4/9)/(rho - 2000/2307)
+            = (5/9)/(rho + 0.693541395752) + (4/9)/(rho - 0.866926744690)
+[PASS] S8 K=769/60, d1=1200/769
+[PASS] S8b 초기 거리 3-4=5, 3-5=4, 4-5=3, 무게중심 (0,0)
+
+요약: 33 / 33 PASS
+
+음성 대조(아래는 일부러 틀린 식이다. 모두 'FAIL'이어야 점검기가 민감하다는 뜻):
+  [잡음(FAIL)] N1 lam<->nu 바꾼 W 가 P(r=d,c=-1)과 같다
+  [잡음(FAIL)] N2 운동방정식에서 lam nu 항 부호를 뒤집음
+  [잡음(FAIL)] N3 g 의 계수를 n P_n 으로 둠(n=3)
+  [잡음(FAIL)] N4 rho_ddot 분해에서 각운동량 항 누락(3D)
+음성 대조: 4 / 4 잡음

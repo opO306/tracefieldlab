@@ -1,0 +1,2 @@
+C* (d=d1): first time ~ 59.722342  (rho,rhodot,r)=(np.float64(1.68104), np.float64(4.32633), np.float64(0.43707))
+Theorem1 d-opt: first time ~ 59.722153  (rho,rhodot,r)=(np.float64(1.68022), np.float64(4.32711), np.float64(0.438))

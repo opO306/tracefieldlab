@@ -1,0 +1,14 @@
+{
+ "gate": "R4R",
+ "sealed_at": "2026-10-12",
+ "files": {
+  "GATE_R4R_PLAN_KO.md": "d7e14e80b16a856aaaa15df3f5cecfe1e2b499fc8ddf7363dec983aaf4e9cfd0",
+  "GATE_R4_SEAL.json": "bbfd40f4c163ad2684a14422b73c7491a6380c16891526f691978596fa672960",
+  "GATE_FC1_SEAL.json": "f7006be638f8b11fc1ffb1044215fbb103ce610dfc8460ac4952115f71ba02f5",
+  "results_r4/r4_boxes_128w.jsonl": "f65101c194b6f9d4a67573773a9c517c49ccde8f59924954bd6598f6301d59f5"
+ },
+ "fc_build": {
+  "fastcore.cpp": "dda936dacd8b6799cc15544f205e25f3bb2c12a81ab477332282a153c7675b8b",
+  "module": "3c142f0c4f80ad897c1c05e33efe4ed4099eaaab47123d701c74c951d4162b09"
+ }
+}

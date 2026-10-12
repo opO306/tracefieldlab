@@ -1,0 +1,38 @@
+C:\Users\zun24\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\integrate\_ivp\rk.py:668: UserWarning: At least one element of `rtol` is too small. Setting `rtol = np.maximum(rtol, 2.220446049250313e-14)`.
+  super().__init__(fun, t0, y0, t_bound, max_step, rtol, atol,
+E exact = -769/60 = -12.816666666666666
+lam, nu, M, mu, K, d1 = 0.5555555555555556 0.4444444444444444 12.0 2.25 12.816666666666666 1.5604681404421328
+lemma grid worst rel. excess: S1 sup 3.24e-15, F2 inf 7.74e-15 (<=~0 이면 OK)
+rtol=1e-12: steps=6734, status=0, max|dE|=5.87e-08
+rtol=1e-13: steps=8930, status=0, max|dE|=4.78e-08
+rtol=1e-14: steps=10791, status=0, max|dE|=4.64e-08
+min dist 3-4 in [15.5,16.2]: 2.712e+00 at t=15.82991
+min dist 3-5 in [15.5,16.2]: 2.049e+00 at t=16.20000
+min dist 4-5 in [15.5,16.2]: 4.158e-04 at t=15.82992
+t=16.0: |y(1e-13)-y(1e-14)|=3.06e-10  |y(1e-12)-y(1e-14)|=7.28e-09
+t=30.0: |y(1e-13)-y(1e-14)|=6.68e-08  |y(1e-12)-y(1e-14)|=5.38e-08
+t=50.0: |y(1e-13)-y(1e-14)|=4.16e-04  |y(1e-12)-y(1e-14)|=4.72e-04
+t=59.72: |y(1e-13)-y(1e-14)|=6.31e-02  |y(1e-12)-y(1e-14)|=7.20e-02
+t=59.99: |y(1e-13)-y(1e-14)|=3.04e-02  |y(1e-12)-y(1e-14)|=3.45e-02
+t=70.0: |y(1e-13)-y(1e-14)|=3.78e-01  |y(1e-12)-y(1e-14)|=4.32e-01
+t=59.72 state (x,y per body): [ 0.46545  1.13541  0.10097 -0.49611 -0.36005 -0.28436] v: [ 1.07457  3.06926 -2.73285 -0.38468  1.54154 -1.53381]
+   jacobi rho,rhodot,r = [np.float64(1.63615), np.float64(4.32999), np.float64(0.50732)]
+t=59.99 state (x,y per body): [ 0.72444  1.88585  0.25206 -0.70636 -0.63631 -0.56642] v: [ 0.88035  2.57155  0.75938 -1.25123 -1.13572 -0.54195]
+   jacobi rho,rhodot,r = [np.float64(2.69361), np.float64(3.62162), np.float64(0.89932)]
+[Corollary d=d1] rtol=1e-12: first t = 17.117560; info at t0=17.118: {'rho': np.float64(1.86405), 'rhodot': np.float64(4.3349), 'r': np.float64(3.35143), 'need': 3.98883, 'a_room': np.float64(0.55619), 'vel_margin': np.float64(0.34607), 'a_margin': np.float64(0.00064)}
+   corollary 미성립 시각 수(이후 0.01 간격): 4252, 마지막 59.73
+[Corollary d=d1] rtol=1e-13: first t = 17.117560; info at t0=17.118: {'rho': np.float64(1.86405), 'rhodot': np.float64(4.3349), 'r': np.float64(3.35143), 'need': 3.98883, 'a_room': np.float64(0.55619), 'vel_margin': np.float64(0.34607), 'a_margin': np.float64(0.00064)}
+   corollary 미성립 시각 수(이후 0.01 간격): 4252, 마지막 59.73
+[Corollary d=d1] rtol=1e-14: first t = 17.117560; info at t0=17.118: {'rho': np.float64(1.86405), 'rhodot': np.float64(4.3349), 'r': np.float64(3.35143), 'need': 3.98883, 'a_room': np.float64(0.55619), 'vel_margin': np.float64(0.34607), 'a_margin': np.float64(0.00064)}
+   corollary 미성립 시각 수(이후 0.01 간격): 4253, 마지막 59.74
+t=55: corollary ok=False {'rho': np.float64(6.8092), 'rhodot': np.float64(-0.4654), 'r': np.float64(1.674), 'need': 1.89, 'a_room': np.float64(4.0676), 'vel_margin': np.float64(-2.3555), 'a_margin': np.float64(3.5121)}
+t=58: corollary ok=False {'rho': np.float64(3.9817), 'rhodot': np.float64(-1.6106), 'r': np.float64(2.1566), 'need': 2.5053, 'a_room': np.float64(1.8463), 'vel_margin': np.float64(-4.1159), 'a_margin': np.float64(1.2907)}
+t=59: corollary ok=False {'rho': np.float64(1.8792), 'rhodot': np.float64(-2.9103), 'r': np.float64(1.0653), 'need': 3.9648, 'a_room': np.float64(1.2043), 'vel_margin': np.float64(-6.8751), 'a_margin': np.float64(0.6487)}
+t=59.5: corollary ok=False {}
+t=59.72: corollary ok=False {'rho': np.float64(1.6362), 'rhodot': np.float64(4.33), 'r': np.float64(0.5073), 'need': 4.4261, 'a_room': np.float64(1.0485), 'vel_margin': np.float64(-0.0961), 'a_margin': np.float64(0.4929)}
+t=60: corollary ok=True {'rho': np.float64(2.7297), 'rhodot': np.float64(3.606), 'r': np.float64(0.9186), 'need': 3.1018, 'a_room': np.float64(1.7493), 'vel_margin': np.float64(0.5042), 'a_margin': np.float64(1.1938)}
+t=61: corollary ok=True {'rho': np.float64(5.8972), 'rhodot': np.float64(2.9006), 'r': np.float64(1.0742), 'need': 2.0356, 'a_room': np.float64(3.7791), 'vel_margin': np.float64(0.8651), 'a_margin': np.float64(3.2236)}
+t=62: corollary ok=True {'rho': np.float64(8.6675), 'rhodot': np.float64(2.669), 'r': np.float64(1.1217), 'need': 1.6709, 'a_room': np.float64(5.5544), 'vel_margin': np.float64(0.9981), 'a_margin': np.float64(4.9988)}
+t=65: corollary ok=True {'rho': np.float64(16.2175), 'rhodot': np.float64(2.4163), 'r': np.float64(0.6593), 'need': 1.2179, 'a_room': np.float64(10.3927), 'vel_margin': np.float64(1.1984), 'a_margin': np.float64(9.8371)}
+t=70: corollary ok=True {'rho': np.float64(27.9106), 'rhodot': np.float64(2.2845), 'r': np.float64(1.1217), 'need': 0.9277, 'a_room': np.float64(17.886), 'vel_margin': np.float64(1.3569), 'a_margin': np.float64(17.3305)}
+[Theorem 1, d 최적화(격자)] first t = (np.float64(59.739000000000004), (np.float64(0.006679906893307219), np.float64(1.5513513513513515), np.float64(0.008667881019060353), np.float64(0.006679906893307219)))

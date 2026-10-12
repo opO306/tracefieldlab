@@ -1,0 +1,10 @@
+== check_r3c: fake_r3c_pivot_qr.py ==
+sealed criteria verdict: UNRESOLVED | incl. supplementary: UNRESOLVED | elapsed 203.0s
+  R3-S1   UNRESOLVED {'PASS': 108, 'VIOLATION': 0, 'REFUSED': 2, 'UNDECIDED': 0, 'NOT_RUN': 50}
+  R3-S2   PASS       {'PASS': 2356, 'VIOLATION': 0, 'REFUSED': 0, 'UNDECIDED': 0, 'NOT_RUN': 0}
+  R3-C    PASS       {'PASS': 2806, 'VIOLATION': 0, 'REFUSED': 0, 'UNDECIDED': 0, 'NOT_RUN': 0}
+  R3-S1e  PASS       {'PASS': 56, 'VIOLATION': 0, 'REFUSED': 0, 'UNDECIDED': 0, 'NOT_RUN': 0}
+  R3-X1   PASS       {'PASS': 112, 'VIOLATION': 0, 'REFUSED': 0, 'UNDECIDED': 0, 'NOT_RUN': 0}
+  R3-X2   PASS       {'PASS': 8, 'VIOLATION': 0, 'REFUSED': 0, 'UNDECIDED': 0, 'NOT_RUN': 0}
+  R3-X4   PASS       {'PASS': 732, 'VIOLATION': 0, 'REFUSED': 0, 'UNDECIDED': 0, 'NOT_RUN': 0}
+  R3-X3   PASS       {'PASS': 8, 'VIOLATION': 0, 'REFUSED': 0, 'UNDECIDED': 0, 'NOT_RUN': 0}

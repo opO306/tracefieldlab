@@ -1,0 +1,4 @@
+started_utc=2026-10-11T16:31:15Z fc=/home/zun24/fastcore_dev/fc4_v2_fc orig=/home/zun24/fastcore_dev/fc5_v2_orig_timing
+fc4 rc=0 end_utc=2026-10-11T16:46:22Z
+fc5_orig rc=0 end_utc=2026-10-11T16:47:23Z
+all_done_utc=2026-10-11T16:47:23Z

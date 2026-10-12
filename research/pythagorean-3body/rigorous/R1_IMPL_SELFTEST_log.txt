@@ -1,0 +1,28 @@
+test_harmonic_order2_structure (__main__.TestHandComputed.test_harmonic_order2_structure) ... ok
+test_info_fields (__main__.TestHandComputed.test_info_fields) ... ok
+test_width_bookkeeping_consistent (__main__.TestHandComputed.test_width_bookkeeping_consistent) ... ok
+test_low_precision (__main__.TestHarmonicGrid.test_low_precision) ... ok
+test_point_starts_grid (__main__.TestHarmonicGrid.test_point_starts_grid) ... ok
+test_wide_boxes (__main__.TestHarmonicGrid.test_wide_boxes) ... ok
+test_eccentric_vs_reference_and_invariants (__main__.TestKepler.test_eccentric_vs_reference_and_invariants) ... ok
+test_non_dyadic_mu (__main__.TestKepler.test_non_dyadic_mu) ... ok
+test_unit_circle_grid (__main__.TestKepler.test_unit_circle_grid) ... ok
+test_wide_box_contains_circular_family (__main__.TestKepler.test_wide_box_contains_circular_family) ... ok
+test_energy_invariant_moving_state (__main__.TestNBody.test_energy_invariant_moving_state) ... ok
+test_pythagorean_moving_state (__main__.TestNBody.test_pythagorean_moving_state) ... ok
+test_pythagorean_vs_mpmath_reference (__main__.TestNBody.test_pythagorean_vs_mpmath_reference) ... ok
+test_two_body_circular (__main__.TestNBody.test_two_body_circular) ... ok
+test_detects_missing_remainder (__main__.TestSensitivity.test_detects_missing_remainder) ... ok
+test_detects_skipped_apriori (__main__.TestSensitivity.test_detects_skipped_apriori) ... ok
+test_real_implementation_clean (__main__.TestSensitivity.test_real_implementation_clean) ... ok
+test_bad_inputs (__main__.TestStepReductionAndInputs.test_bad_inputs) ... ok
+test_collision_rejected (__main__.TestStepReductionAndInputs.test_collision_rejected) ... ok
+test_forced_reduction_harmonic (__main__.TestStepReductionAndInputs.test_forced_reduction_harmonic) ... ok
+test_forced_reduction_kepler (__main__.TestStepReductionAndInputs.test_forced_reduction_kepler) ... ok
+test_no_needless_reduction (__main__.TestStepReductionAndInputs.test_no_needless_reduction) ... ok
+test_precision_violation_rejected (__main__.TestStepReductionAndInputs.test_precision_violation_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 57.550s
+
+OK

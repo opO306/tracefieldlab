@@ -1,0 +1,7 @@
+[    1.5s] mutant VALID_frame_random harmonic viol={'set': 0, 'box': 0, 'aux': 0, 'P': 0, 'J': 0, 'W': 0} step_errors=0
+[  103.7s] mutant VALID_frame_random kepler   viol={'set': 0, 'box': 0, 'aux': 0, 'P': 0, 'J': 0, 'W': 0} step_errors=0
+[  155.5s] mutant VALID_frame_random nbody    viol={'set': 0, 'box': 0, 'aux': 0, 'P': 0, 'J': 0} step_errors=0
+[  157.0s] mutant VALID_frame_identity harmonic viol={'set': 0, 'box': 0, 'aux': 0, 'P': 0, 'J': 0, 'W': 0} step_errors=0
+[  256.9s] mutant VALID_frame_identity kepler   viol={'set': 0, 'box': 0, 'aux': 0, 'P': 0, 'J': 0, 'W': 0} step_errors=0
+[  308.2s] mutant VALID_frame_identity nbody    viol={'set': 0, 'box': 0, 'aux': 0, 'P': 0, 'J': 0} step_errors=0
+[  308.2s] caught: {'VALID_frame_random': False, 'VALID_frame_identity': False}

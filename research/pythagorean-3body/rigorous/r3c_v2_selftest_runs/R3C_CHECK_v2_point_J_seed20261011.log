@@ -1,0 +1,11 @@
+== check_r3c_v2: strict_fake_r3c_point_J.py ==
+sealed criteria verdict: FAIL | incl. supplementary: FAIL | elapsed 429.4s
+  R3-S1   PASS       {'PASS': 160, 'VIOLATION': 0, 'REFUSED': 0, 'UNDECIDED': 0, 'NOT_RUN': 0}
+  R3-S2   FAIL       {'PASS': 2109, 'VIOLATION': 247, 'REFUSED': 0, 'UNDECIDED': 0, 'NOT_RUN': 0}
+  R3-C    PASS       {'PASS': 4098, 'VIOLATION': 0, 'REFUSED': 0, 'UNDECIDED': 0, 'NOT_RUN': 0}
+  R3-S1e  PASS       {'PASS': 56, 'VIOLATION': 0, 'REFUSED': 0, 'UNDECIDED': 0, 'NOT_RUN': 0}
+  R3-X1   PASS       {'PASS': 138, 'VIOLATION': 0, 'REFUSED': 0, 'UNDECIDED': 0, 'NOT_RUN': 0}
+  R3-X2   PASS       {'PASS': 8, 'VIOLATION': 0, 'REFUSED': 0, 'UNDECIDED': 0, 'NOT_RUN': 0}
+  R3-X4   FAIL       {'PASS': 667, 'VIOLATION': 65, 'REFUSED': 0, 'UNDECIDED': 0, 'NOT_RUN': 0}
+  R3-X3   PASS       {'PASS': 8, 'VIOLATION': 0, 'REFUSED': 0, 'UNDECIDED': 0, 'NOT_RUN': 0}
+min counterexample: {"test": "set", "box": "box07 kepler p=8 h=1/16 prec=256 w=1e-04 rot", "point": 8, "r_index_kind": "vertex/axis/interior", "r": ["0.0", "0.0", "0.0", "5.8e-5"], "component": 3, "overshoot": "7.8046671e-11", "detail": "0.00006114267701674716614677048", "r_lo": "-0.00009487644614718050519578147", "r_hi": "0.00006114259897007625049141248", "e_ref": "6.541e-119", "crit": "R3-S2"}

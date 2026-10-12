@@ -1,0 +1,2420 @@
+{
+ "summary": {
+  "starts": 50,
+  "fakes_total": 19,
+  "caught_by_sealed_criteria": 17,
+  "caught_by_any_including_supplementary": 19,
+  "caught_only_by_supplementary": [
+   "fake_r1_drop_x0_width",
+   "fake_r1_kepler_exp2"
+  ],
+  "missed": [],
+  "correct_runs": 3,
+  "false_positives(FAIL)": [],
+  "correct_runs_not_all_PASS": []
+ },
+ "rows": [
+  {
+   "tag": "correct_seed20261011",
+   "module": "fake_r1_correct.py",
+   "returncode": 0,
+   "elapsed_sec": 121.3,
+   "verdict_sealed": "PASS",
+   "verdict_all": "PASS",
+   "criteria": {
+    "R1-S1": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S2": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S3": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S4": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 3200,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-A": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 52,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-C": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 4313,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X1": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 960,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X2": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 144,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X3": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 4313,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X4": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    }
+   },
+   "min_counterexample": null,
+   "tail": null
+  },
+  {
+   "tag": "correct_seed424242",
+   "module": "fake_r1_correct.py",
+   "returncode": 0,
+   "elapsed_sec": 109.9,
+   "verdict_sealed": "PASS",
+   "verdict_all": "PASS",
+   "criteria": {
+    "R1-S1": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S2": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S3": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S4": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 3200,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-A": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 52,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-C": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 4313,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X1": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 960,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X2": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 144,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X3": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 4313,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X4": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    }
+   },
+   "min_counterexample": null,
+   "tail": null
+  },
+  {
+   "tag": "correct_seed7",
+   "module": "fake_r1_correct.py",
+   "returncode": 0,
+   "elapsed_sec": 111.3,
+   "verdict_sealed": "PASS",
+   "verdict_all": "PASS",
+   "criteria": {
+    "R1-S1": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S2": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S3": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S4": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 3200,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-A": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 52,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-C": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 4313,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X1": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 960,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X2": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 144,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X3": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 4313,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X4": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    }
+   },
+   "min_counterexample": null,
+   "tail": null
+  },
+  {
+   "tag": "fake_r1_b_is_x1",
+   "module": "fake_r1_b_is_x1.py",
+   "returncode": 1,
+   "elapsed_sec": 73.8,
+   "verdict_sealed": "FAIL",
+   "verdict_all": "FAIL",
+   "criteria": {
+    "R1-S1": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S2": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S3": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S4": {
+     "verdict": "FAIL",
+     "violations": 3200,
+     "total": 3200,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-A": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 52,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-C": {
+     "verdict": "FAIL",
+     "violations": 4313,
+     "total": 4313,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X1": {
+     "verdict": "FAIL",
+     "violations": 960,
+     "total": 960,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X2": {
+     "verdict": "FAIL",
+     "violations": 144,
+     "total": 144,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X3": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 3209,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X4": {
+     "verdict": "FAIL",
+     "violations": 9,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    }
+   },
+   "min_counterexample": {
+    "test": "R1-S4",
+    "family": "harmonic",
+    "start_index": 0,
+    "start": [
+     "1.0",
+     "0.0"
+    ],
+    "h": "1/1000",
+    "order": 4,
+    "prec": 64,
+    "h_used": "1/1000",
+    "component": 0,
+    "t": "0",
+    "lo": "0.999999500000041666582066557378",
+    "hi": "0.999999500000041666798906991875",
+    "truth": "1.0",
+    "overshoot": "4.9999996e-7",
+    "where": "B at sample time j=0",
+    "crit": "R1-S4"
+   },
+   "tail": null
+  },
+  {
+   "tag": "fake_r1_coef_index_off",
+   "module": "fake_r1_coef_index_off.py",
+   "returncode": 1,
+   "elapsed_sec": 95.5,
+   "verdict_sealed": "FAIL",
+   "verdict_all": "FAIL",
+   "criteria": {
+    "R1-S1": {
+     "verdict": "FAIL",
+     "violations": 1600,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S2": {
+     "verdict": "FAIL",
+     "violations": 1538,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S3": {
+     "verdict": "FAIL",
+     "violations": 9,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S4": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 3200,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-A": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 52,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-C": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 4313,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X1": {
+     "verdict": "FAIL",
+     "violations": 679,
+     "total": 960,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X2": {
+     "verdict": "FAIL",
+     "violations": 128,
+     "total": 144,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X3": {
+     "verdict": "FAIL",
+     "violations": 2901,
+     "total": 3506,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X4": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    }
+   },
+   "min_counterexample": {
+    "test": "R1-S1",
+    "family": "harmonic",
+    "start_index": 0,
+    "start": [
+     "1.0",
+     "0.0"
+    ],
+    "h": "1/1000",
+    "order": 4,
+    "prec": 64,
+    "h_used": "1/1000",
+    "component": 0,
+    "lo": "0.999999500000062499906281626716",
+    "hi": "0.999999500000062500123122061213",
+    "truth": "0.999999500000041666665277777803",
+    "overshoot": "2.0833241e-14",
+    "where": "X1 at t=h_used",
+    "crit": "R1-S1"
+   },
+   "tail": null
+  },
+  {
+   "tag": "fake_r1_drop_x0_width",
+   "module": "fake_r1_drop_x0_width.py",
+   "returncode": 0,
+   "elapsed_sec": 107.0,
+   "verdict_sealed": "PASS",
+   "verdict_all": "FAIL",
+   "criteria": {
+    "R1-S1": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S2": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S3": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S4": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 3200,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-A": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 52,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-C": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 4313,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X1": {
+     "verdict": "FAIL",
+     "violations": 592,
+     "total": 960,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X2": {
+     "verdict": "FAIL",
+     "violations": 38,
+     "total": 144,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X3": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 3683,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X4": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    }
+   },
+   "min_counterexample": {
+    "test": "R1-X1",
+    "family": "harmonic-box",
+    "base_index": 0,
+    "delta": "1/1000",
+    "h": "1/100",
+    "order": 1,
+    "prec": 24,
+    "start": [
+     "1.0",
+     "0.0"
+    ],
+    "h_used": "1/100",
+    "sample_index": 1,
+    "component": 0,
+    "t": "1/100",
+    "where": "X1 at time t",
+    "lo": "0.999949932098388671875",
+    "hi": "0.999950110912322998046875",
+    "truth": "0.99894005058291444583779513338",
+    "overshoot": "0.0010098815",
+    "crit": "R1-X1"
+   },
+   "tail": null
+  },
+  {
+   "tag": "fake_r1_float_poly",
+   "module": "fake_r1_float_poly.py",
+   "returncode": 1,
+   "elapsed_sec": 106.0,
+   "verdict_sealed": "FAIL",
+   "verdict_all": "FAIL",
+   "criteria": {
+    "R1-S1": {
+     "verdict": "FAIL",
+     "violations": 1162,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S2": {
+     "verdict": "FAIL",
+     "violations": 896,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S3": {
+     "verdict": "FAIL",
+     "violations": 8,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S4": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 3200,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-A": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 52,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-C": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 4313,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X1": {
+     "verdict": "FAIL",
+     "violations": 602,
+     "total": 960,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X2": {
+     "verdict": "FAIL",
+     "violations": 58,
+     "total": 144,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X3": {
+     "verdict": "FAIL",
+     "violations": 1968,
+     "total": 3653,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X4": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    }
+   },
+   "min_counterexample": {
+    "test": "R1-S1",
+    "family": "harmonic",
+    "start_index": 0,
+    "start": [
+     "1.0",
+     "0.0"
+    ],
+    "h": "1/1000",
+    "order": 4,
+    "prec": 64,
+    "h_used": "1/1000",
+    "component": 0,
+    "lo": "0.999999500000041674442532307898",
+    "hi": "0.999999500000041674550952525147",
+    "truth": "0.999999500000041666665277777803",
+    "overshoot": "7.7772545e-18",
+    "where": "X1 at t=h_used",
+    "crit": "R1-S1"
+   },
+   "tail": null
+  },
+  {
+   "tag": "fake_r1_half_remainder",
+   "module": "fake_r1_half_remainder.py",
+   "returncode": 1,
+   "elapsed_sec": 110.5,
+   "verdict_sealed": "FAIL",
+   "verdict_all": "FAIL",
+   "criteria": {
+    "R1-S1": {
+     "verdict": "FAIL",
+     "violations": 850,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S2": {
+     "verdict": "FAIL",
+     "violations": 203,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S3": {
+     "verdict": "FAIL",
+     "violations": 4,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S4": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 3200,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-A": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 52,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-C": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 4313,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X1": {
+     "verdict": "FAIL",
+     "violations": 508,
+     "total": 960,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X2": {
+     "verdict": "FAIL",
+     "violations": 49,
+     "total": 144,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X3": {
+     "verdict": "FAIL",
+     "violations": 802,
+     "total": 3756,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X4": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    }
+   },
+   "min_counterexample": {
+    "test": "R1-S1",
+    "family": "harmonic",
+    "start_index": 0,
+    "start": [
+     "1.0",
+     "0.0"
+    ],
+    "h": "1/1000",
+    "order": 4,
+    "prec": 64,
+    "h_used": "1/1000",
+    "component": 1,
+    "lo": "-0.000999999833333337500222598209949",
+    "hi": "-0.000999999833333337499904960854729",
+    "truth": "-0.000999999833333341666666468253971",
+    "overshoot": "4.1664439e-18",
+    "where": "X1 at t=h_used",
+    "crit": "R1-S1"
+   },
+   "tail": null
+  },
+  {
+   "tag": "fake_r1_hused_bigger",
+   "module": "fake_r1_hused_bigger.py",
+   "returncode": 1,
+   "elapsed_sec": 196.7,
+   "verdict_sealed": "FAIL",
+   "verdict_all": "FAIL",
+   "criteria": {
+    "R1-S1": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S2": {
+     "verdict": "FAIL",
+     "violations": 400,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S3": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S4": {
+     "verdict": "FAIL",
+     "violations": 400,
+     "total": 3200,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-A": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 52,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-C": {
+     "verdict": "FAIL",
+     "violations": 4313,
+     "total": 4313,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X1": {
+     "verdict": "FAIL",
+     "violations": 240,
+     "total": 960,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X2": {
+     "verdict": "FAIL",
+     "violations": 42,
+     "total": 144,
+     "refused": 0,
+     "undecided": 6,
+     "not_run": 0
+    },
+    "R1-X3": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 4031,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X4": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    }
+   },
+   "min_counterexample": {
+    "test": "R1-X1",
+    "family": "harmonic-box",
+    "base_index": 0,
+    "delta": "1/1000",
+    "h": "2",
+    "order": 1,
+    "prec": 24,
+    "start": [
+     "1.0",
+     "0.0"
+    ],
+    "h_used": "2",
+    "sample_index": 0,
+    "component": 0,
+    "t": "4/5",
+    "where": "B at time t",
+    "lo": "0.72176587581634521484375",
+    "hi": "1.027984142303466796875",
+    "truth": "0.696706709347165420920749981642",
+    "overshoot": "0.025059166",
+    "crit": "R1-X1"
+   },
+   "tail": null
+  },
+  {
+   "tag": "fake_r1_hused_hidden",
+   "module": "fake_r1_hused_hidden.py",
+   "returncode": 1,
+   "elapsed_sec": 175.0,
+   "verdict_sealed": "FAIL",
+   "verdict_all": "FAIL",
+   "criteria": {
+    "R1-S1": {
+     "verdict": "FAIL",
+     "violations": 1600,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S2": {
+     "verdict": "FAIL",
+     "violations": 1600,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S3": {
+     "verdict": "FAIL",
+     "violations": 9,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S4": {
+     "verdict": "FAIL",
+     "violations": 3200,
+     "total": 3200,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-A": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 52,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-C": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 4313,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X1": {
+     "verdict": "FAIL",
+     "violations": 960,
+     "total": 960,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X2": {
+     "verdict": "FAIL",
+     "violations": 138,
+     "total": 144,
+     "refused": 0,
+     "undecided": 6,
+     "not_run": 0
+    },
+    "R1-X3": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 3215,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X4": {
+     "verdict": "FAIL",
+     "violations": 9,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    }
+   },
+   "min_counterexample": {
+    "test": "R1-S1",
+    "family": "harmonic",
+    "start_index": 0,
+    "start": [
+     "1.0",
+     "0.0"
+    ],
+    "h": "1/1000",
+    "order": 4,
+    "prec": 64,
+    "h_used": "1/1000",
+    "component": 0,
+    "lo": "0.999999875000002604074397088985",
+    "hi": "0.999999875000002604291237523482",
+    "truth": "0.999999500000041666665277777803",
+    "overshoot": "3.7499996e-7",
+    "where": "X1 at t=h_used",
+    "crit": "R1-S1"
+   },
+   "tail": null
+  },
+  {
+   "tag": "fake_r1_hused_missing",
+   "module": "fake_r1_hused_missing.py",
+   "returncode": 1,
+   "elapsed_sec": 175.3,
+   "verdict_sealed": "FAIL",
+   "verdict_all": "FAIL",
+   "criteria": {
+    "R1-S1": {
+     "verdict": "FAIL",
+     "violations": 1600,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S2": {
+     "verdict": "FAIL",
+     "violations": 1600,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S3": {
+     "verdict": "FAIL",
+     "violations": 9,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S4": {
+     "verdict": "FAIL",
+     "violations": 3200,
+     "total": 3200,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-A": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 52,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-C": {
+     "verdict": "FAIL",
+     "violations": 4313,
+     "total": 4313,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X1": {
+     "verdict": "FAIL",
+     "violations": 960,
+     "total": 960,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X2": {
+     "verdict": "FAIL",
+     "violations": 138,
+     "total": 144,
+     "refused": 0,
+     "undecided": 6,
+     "not_run": 0
+    },
+    "R1-X3": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 3215,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X4": {
+     "verdict": "FAIL",
+     "violations": 9,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    }
+   },
+   "min_counterexample": {
+    "test": "R1-S1",
+    "family": "harmonic",
+    "start_index": 0,
+    "start": [
+     "1.0",
+     "0.0"
+    ],
+    "h": "1/1000",
+    "order": 4,
+    "prec": 64,
+    "h_used": "1/1000",
+    "component": 0,
+    "lo": "0.999999875000002604074397088985",
+    "hi": "0.999999875000002604291237523482",
+    "truth": "0.999999500000041666665277777803",
+    "overshoot": "3.7499996e-7",
+    "where": "X1 at t=h_used",
+    "crit": "R1-S1"
+   },
+   "tail": null
+  },
+  {
+   "tag": "fake_r1_kepler_exp2",
+   "module": "fake_r1_kepler_exp2.py",
+   "returncode": 0,
+   "elapsed_sec": 84.2,
+   "verdict_sealed": "PASS",
+   "verdict_all": "FAIL",
+   "criteria": {
+    "R1-S1": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S2": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S3": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S4": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 3200,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-A": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 52,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-C": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 4313,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X1": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 960,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X2": {
+     "verdict": "FAIL",
+     "violations": 138,
+     "total": 144,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X3": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 4175,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X4": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    }
+   },
+   "min_counterexample": {
+    "test": "R1-X2",
+    "family": "kepler-ecc_a",
+    "mu": "1",
+    "delta": "0",
+    "h": "1/100",
+    "order": 2,
+    "prec": 64,
+    "start": [
+     "1.0",
+     "0.0",
+     "0.0",
+     "0.5"
+    ],
+    "h_used": "1/100",
+    "sample_index": 0,
+    "component": 2,
+    "t": "1/100",
+    "where": "X1 at time t",
+    "lo": "-0.0100000837619362307103282262906",
+    "hi": "-0.010000082958544088821639065235",
+    "truth": "-0.0100002083402606716675355953362",
+    "overshoot": "1.2457832e-7",
+    "crit": "R1-X2"
+   },
+   "tail": null
+  },
+  {
+   "tag": "fake_r1_nbody_exp2",
+   "module": "fake_r1_nbody_exp2.py",
+   "returncode": 1,
+   "elapsed_sec": 108.2,
+   "verdict_sealed": "FAIL",
+   "verdict_all": "FAIL",
+   "criteria": {
+    "R1-S1": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S2": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S3": {
+     "verdict": "FAIL",
+     "violations": 9,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S4": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 3200,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-A": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 52,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-C": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 4313,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X1": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 960,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X2": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 144,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X3": {
+     "verdict": "FAIL",
+     "violations": 9,
+     "total": 4313,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X4": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    }
+   },
+   "min_counterexample": {
+    "test": "R1-S3",
+    "family": "pythagorean",
+    "start_index": 0,
+    "start": [
+     "1.0",
+     "3.0",
+     "-2.0",
+     "-1.0",
+     "1.0",
+     "-1.0",
+     "0.0",
+     "0.0",
+     "0.0",
+     "0.0",
+     "0.0",
+     "0.0"
+    ],
+    "h": "1/1000",
+    "order": 8,
+    "prec": 128,
+    "h_used": "1/1000",
+    "component": 0,
+    "lo": "0.999999759999978399995532798848",
+    "hi": "0.999999759999978399995532798848",
+    "truth": "0.999999951999997758481293247273",
+    "overshoot": "1.9200002e-7",
+    "e_ref": "1.0e-120",
+    "crit": "R1-S3"
+   },
+   "tail": null
+  },
+  {
+   "tag": "fake_r1_no_apriori",
+   "module": "fake_r1_no_apriori.py",
+   "returncode": 1,
+   "elapsed_sec": 169.2,
+   "verdict_sealed": "FAIL",
+   "verdict_all": "FAIL",
+   "criteria": {
+    "R1-S1": {
+     "verdict": "FAIL",
+     "violations": 800,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S2": {
+     "verdict": "FAIL",
+     "violations": 800,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S3": {
+     "verdict": "FAIL",
+     "violations": 5,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S4": {
+     "verdict": "FAIL",
+     "violations": 3200,
+     "total": 3200,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-A": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 52,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-C": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 4313,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X1": {
+     "verdict": "FAIL",
+     "violations": 960,
+     "total": 960,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X2": {
+     "verdict": "FAIL",
+     "violations": 138,
+     "total": 144,
+     "refused": 0,
+     "undecided": 6,
+     "not_run": 0
+    },
+    "R1-X3": {
+     "verdict": "FAIL",
+     "violations": 1611,
+     "total": 3215,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X4": {
+     "verdict": "FAIL",
+     "violations": 9,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    }
+   },
+   "min_counterexample": {
+    "test": "R1-S4",
+    "family": "harmonic",
+    "start_index": 0,
+    "start": [
+     "1.0",
+     "0.0"
+    ],
+    "h": "1/1000",
+    "order": 4,
+    "prec": 64,
+    "h_used": "1/1000",
+    "component": 0,
+    "t": "1/19000",
+    "lo": "1.0",
+    "hi": "1.0",
+    "truth": "0.999999998614958449073185953628",
+    "overshoot": "1.3850416e-9",
+    "where": "B at sample time j=1",
+    "crit": "R1-S4"
+   },
+   "tail": null
+  },
+  {
+   "tag": "fake_r1_no_remainder",
+   "module": "fake_r1_no_remainder.py",
+   "returncode": 1,
+   "elapsed_sec": 106.0,
+   "verdict_sealed": "FAIL",
+   "verdict_all": "FAIL",
+   "criteria": {
+    "R1-S1": {
+     "verdict": "FAIL",
+     "violations": 850,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S2": {
+     "verdict": "FAIL",
+     "violations": 800,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S3": {
+     "verdict": "FAIL",
+     "violations": 6,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S4": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 3200,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-A": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 52,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-C": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 4313,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X1": {
+     "verdict": "FAIL",
+     "violations": 533,
+     "total": 960,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X2": {
+     "verdict": "FAIL",
+     "violations": 97,
+     "total": 144,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X3": {
+     "verdict": "FAIL",
+     "violations": 1555,
+     "total": 3683,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X4": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    }
+   },
+   "min_counterexample": {
+    "test": "R1-S1",
+    "family": "harmonic",
+    "start_index": 0,
+    "start": [
+     "1.0",
+     "0.0"
+    ],
+    "h": "1/1000",
+    "order": 4,
+    "prec": 64,
+    "h_used": "1/1000",
+    "component": 1,
+    "lo": "-0.000999999833333333333455772429232",
+    "hi": "-0.000999999833333333333244014192419",
+    "truth": "-0.000999999833333341666666468253971",
+    "overshoot": "8.3332107e-18",
+    "where": "X1 at t=h_used",
+    "crit": "R1-S1"
+   },
+   "tail": null
+  },
+  {
+   "tag": "fake_r1_no_valueerror",
+   "module": "fake_r1_no_valueerror.py",
+   "returncode": 1,
+   "elapsed_sec": 108.8,
+   "verdict_sealed": "FAIL",
+   "verdict_all": "FAIL",
+   "criteria": {
+    "R1-S1": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S2": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S3": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S4": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 3200,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-A": {
+     "verdict": "FAIL",
+     "violations": 48,
+     "total": 52,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-C": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 4313,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X1": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 960,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X2": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 144,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X3": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 4313,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X4": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    }
+   },
+   "min_counterexample": {
+    "test": "R1-A",
+    "system": "harmonic",
+    "component": 0,
+    "side": "lo",
+    "build_prec": 128,
+    "call_prec": 64,
+    "mantissa_bits": 127,
+    "got": "no exception",
+    "note": "no ValueError: oversized mantissa accepted",
+    "crit": "R1-A"
+   },
+   "tail": null
+  },
+  {
+   "tag": "fake_r1_picard_half_interval",
+   "module": "fake_r1_picard_half_interval.py",
+   "returncode": 1,
+   "elapsed_sec": 76.3,
+   "verdict_sealed": "FAIL",
+   "verdict_all": "FAIL",
+   "criteria": {
+    "R1-S1": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S2": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S3": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S4": {
+     "verdict": "FAIL",
+     "violations": 3200,
+     "total": 3200,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-A": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 52,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-C": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 4313,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X1": {
+     "verdict": "FAIL",
+     "violations": 960,
+     "total": 960,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X2": {
+     "verdict": "FAIL",
+     "violations": 144,
+     "total": 144,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X3": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 3209,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X4": {
+     "verdict": "FAIL",
+     "violations": 9,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    }
+   },
+   "min_counterexample": {
+    "test": "R1-S4",
+    "family": "harmonic",
+    "start_index": 0,
+    "start": [
+     "1.0",
+     "0.0"
+    ],
+    "h": "1/1000",
+    "order": 4,
+    "prec": 64,
+    "h_used": "1/1000",
+    "component": 1,
+    "t": "1/1900",
+    "lo": "-0.000525000000000000868803726877809",
+    "hi": "0.0000250000000000008678434429785291",
+    "truth": "-0.000526315765174709963804622178059",
+    "overshoot": "1.3157652e-6",
+    "where": "B at sample time j=10",
+    "crit": "R1-S4"
+   },
+   "tail": null
+  },
+  {
+   "tag": "fake_r1_picard_unverified",
+   "module": "fake_r1_picard_unverified.py",
+   "returncode": 1,
+   "elapsed_sec": 161.9,
+   "verdict_sealed": "FAIL",
+   "verdict_all": "FAIL",
+   "criteria": {
+    "R1-S1": {
+     "verdict": "FAIL",
+     "violations": 39,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S2": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S3": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S4": {
+     "verdict": "FAIL",
+     "violations": 3200,
+     "total": 3200,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-A": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 52,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-C": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 4313,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X1": {
+     "verdict": "FAIL",
+     "violations": 960,
+     "total": 960,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X2": {
+     "verdict": "FAIL",
+     "violations": 138,
+     "total": 144,
+     "refused": 0,
+     "undecided": 6,
+     "not_run": 0
+    },
+    "R1-X3": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 3215,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X4": {
+     "verdict": "FAIL",
+     "violations": 9,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    }
+   },
+   "min_counterexample": {
+    "test": "R1-S4",
+    "family": "harmonic",
+    "start_index": 0,
+    "start": [
+     "1.0",
+     "0.0"
+    ],
+    "h": "1/1000",
+    "order": 4,
+    "prec": 64,
+    "h_used": "1/1000",
+    "component": 0,
+    "t": "1/19000",
+    "lo": "1.0",
+    "hi": "1.0",
+    "truth": "0.999999998614958449073185953628",
+    "overshoot": "1.3850416e-9",
+    "where": "B at sample time j=1",
+    "crit": "R1-S4"
+   },
+   "tail": null
+  },
+  {
+   "tag": "fake_r1_poly_drops_last_term",
+   "module": "fake_r1_poly_drops_last_term.py",
+   "returncode": 1,
+   "elapsed_sec": 107.1,
+   "verdict_sealed": "FAIL",
+   "verdict_all": "FAIL",
+   "criteria": {
+    "R1-S1": {
+     "verdict": "FAIL",
+     "violations": 895,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S2": {
+     "verdict": "FAIL",
+     "violations": 388,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S3": {
+     "verdict": "FAIL",
+     "violations": 4,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S4": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 3200,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-A": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 52,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-C": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 4313,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X1": {
+     "verdict": "FAIL",
+     "violations": 566,
+     "total": 960,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X2": {
+     "verdict": "FAIL",
+     "violations": 62,
+     "total": 144,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X3": {
+     "verdict": "FAIL",
+     "violations": 1178,
+     "total": 3685,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X4": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    }
+   },
+   "min_counterexample": {
+    "test": "R1-S1",
+    "family": "harmonic",
+    "start_index": 0,
+    "start": [
+     "1.0",
+     "0.0"
+    ],
+    "h": "1/1000",
+    "order": 4,
+    "prec": 64,
+    "h_used": "1/1000",
+    "component": 0,
+    "lo": "0.999999499999999999933636418703",
+    "hi": "0.999999500000000000096266744576",
+    "truth": "0.999999500000041666665277777803",
+    "overshoot": "4.1666569e-14",
+    "where": "X1 at t=h_used",
+    "crit": "R1-S1"
+   },
+   "tail": null
+  },
+  {
+   "tag": "fake_r1_remainder_hpower_off",
+   "module": "fake_r1_remainder_hpower_off.py",
+   "returncode": 1,
+   "elapsed_sec": 106.3,
+   "verdict_sealed": "FAIL",
+   "verdict_all": "FAIL",
+   "criteria": {
+    "R1-S1": {
+     "verdict": "FAIL",
+     "violations": 850,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S2": {
+     "verdict": "FAIL",
+     "violations": 299,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S3": {
+     "verdict": "FAIL",
+     "violations": 4,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S4": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 3200,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-A": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 52,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-C": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 4313,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X1": {
+     "verdict": "FAIL",
+     "violations": 524,
+     "total": 960,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X2": {
+     "verdict": "FAIL",
+     "violations": 62,
+     "total": 144,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X3": {
+     "verdict": "FAIL",
+     "violations": 862,
+     "total": 3727,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X4": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    }
+   },
+   "min_counterexample": {
+    "test": "R1-S1",
+    "family": "harmonic",
+    "start_index": 0,
+    "start": [
+     "1.0",
+     "0.0"
+    ],
+    "h": "1/1000",
+    "order": 4,
+    "prec": 64,
+    "h_used": "1/1000",
+    "component": 1,
+    "lo": "-0.000999999833333333341820222783369",
+    "hi": "-0.000999999833333333341502585428148",
+    "truth": "-0.000999999833333341666666468253971",
+    "overshoot": "8.3248462e-18",
+    "where": "X1 at t=h_used",
+    "crit": "R1-S1"
+   },
+   "tail": null
+  },
+  {
+   "tag": "fake_r1_remainder_midpoint",
+   "module": "fake_r1_remainder_midpoint.py",
+   "returncode": 1,
+   "elapsed_sec": 94.1,
+   "verdict_sealed": "FAIL",
+   "verdict_all": "FAIL",
+   "criteria": {
+    "R1-S1": {
+     "verdict": "FAIL",
+     "violations": 800,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S2": {
+     "verdict": "FAIL",
+     "violations": 844,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S3": {
+     "verdict": "FAIL",
+     "violations": 5,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S4": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 3200,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-A": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 52,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-C": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 4313,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X1": {
+     "verdict": "FAIL",
+     "violations": 447,
+     "total": 960,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X2": {
+     "verdict": "FAIL",
+     "violations": 97,
+     "total": 144,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X3": {
+     "verdict": "FAIL",
+     "violations": 1637,
+     "total": 3769,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X4": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    }
+   },
+   "min_counterexample": {
+    "test": "R1-S1",
+    "family": "harmonic",
+    "start_index": 0,
+    "start": [
+     "1.0",
+     "0.0"
+    ],
+    "h": "1/1000",
+    "order": 4,
+    "prec": 128,
+    "h_used": "1/1000",
+    "component": 0,
+    "lo": "0.9999995000000416666625",
+    "hi": "0.9999995000000416666625",
+    "truth": "0.999999500000041666665277777803",
+    "overshoot": "2.7777778e-21",
+    "where": "X1 at t=h_used",
+    "crit": "R1-S1"
+   },
+   "tail": null
+  },
+  {
+   "tag": "fake_r1_remainder_over_x0",
+   "module": "fake_r1_remainder_over_x0.py",
+   "returncode": 1,
+   "elapsed_sec": 89.8,
+   "verdict_sealed": "FAIL",
+   "verdict_all": "FAIL",
+   "criteria": {
+    "R1-S1": {
+     "verdict": "FAIL",
+     "violations": 800,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S2": {
+     "verdict": "FAIL",
+     "violations": 750,
+     "total": 1600,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S3": {
+     "verdict": "FAIL",
+     "violations": 5,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-S4": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 3200,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-A": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 52,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-C": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 4313,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X1": {
+     "verdict": "FAIL",
+     "violations": 430,
+     "total": 960,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X2": {
+     "verdict": "FAIL",
+     "violations": 91,
+     "total": 144,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X3": {
+     "verdict": "FAIL",
+     "violations": 1555,
+     "total": 3792,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    },
+    "R1-X4": {
+     "verdict": "PASS",
+     "violations": 0,
+     "total": 9,
+     "refused": 0,
+     "undecided": 0,
+     "not_run": 0
+    }
+   },
+   "min_counterexample": {
+    "test": "R1-S1",
+    "family": "harmonic",
+    "start_index": 0,
+    "start": [
+     "1.0",
+     "0.0"
+    ],
+    "h": "1/1000",
+    "order": 4,
+    "prec": 128,
+    "h_used": "1/1000",
+    "component": 0,
+    "lo": "0.999999500000041666666666666667",
+    "hi": "0.999999500000041666666666666667",
+    "truth": "0.999999500000041666665277777803",
+    "overshoot": "1.3888889e-21",
+    "where": "X1 at t=h_used",
+    "crit": "R1-S1"
+   },
+   "tail": null
+  }
+ ]
+}

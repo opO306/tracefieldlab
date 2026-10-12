@@ -1,0 +1,42 @@
+{
+ "setup": "A precision, positions perturbed by relative eps (random direction, fixed seed), velocities 0",
+ "gap_to_1967": "1967 15.8299236 minus ours = 3.32842e-6",
+ "runs": [
+  {
+   "eps": 0,
+   "t10": "15.82992027158090264625",
+   "dmin": "0.0004138248363",
+   "vrel": "208.5523553",
+   "shift_vs_unperturbed": "-4.4433e-16"
+  },
+  {
+   "eps": "1e-12",
+   "t10": "15.82992027156882311298",
+   "dmin": "0.0004138248364",
+   "vrel": "208.5523553",
+   "shift_vs_unperturbed": "-1.208e-11"
+  },
+  {
+   "eps": "1e-10",
+   "t10": "15.82992027037294931725",
+   "dmin": "0.0004138248499",
+   "vrel": "208.5523519",
+   "shift_vs_unperturbed": "-1.20795e-9"
+  },
+  {
+   "eps": "1e-9",
+   "t10": "15.82992025950136917191",
+   "dmin": "0.0004138249723",
+   "vrel": "208.5523211",
+   "shift_vs_unperturbed": "-1.20795e-8"
+  },
+  {
+   "eps": "1e-8",
+   "t10": "15.82992015078554947095",
+   "dmin": "0.0004138261962",
+   "vrel": "208.5520126",
+   "shift_vs_unperturbed": "-1.20795e-7"
+  }
+ ],
+ "wall_s": 31.5
+}

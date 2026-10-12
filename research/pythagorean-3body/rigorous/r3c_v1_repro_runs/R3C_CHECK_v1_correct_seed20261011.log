@@ -1,0 +1,6 @@
+== check_r3c: strict_fake_r3c_correct.py ==
+sealed criteria verdict: UNRESOLVED | incl. supplementary: UNRESOLVED | elapsed 53.4s
+  R3-S2   UNRESOLVED {'PASS': 504, 'VIOLATION': 0, 'REFUSED': 8, 'UNDECIDED': 0, 'NOT_RUN': 0}
+  R3-C    PASS       {'PASS': 16, 'VIOLATION': 0, 'REFUSED': 0, 'UNDECIDED': 0, 'NOT_RUN': 0}
+  R3-X1   PASS       {'PASS': 16, 'VIOLATION': 0, 'REFUSED': 0, 'UNDECIDED': 0, 'NOT_RUN': 0}
+  R3-X4   UNRESOLVED {'PASS': 200, 'VIOLATION': 0, 'REFUSED': 2, 'UNDECIDED': 0, 'NOT_RUN': 0}

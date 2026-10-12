@@ -1,0 +1,401 @@
+{
+ "kind": "FC1_CHECK_RESULT",
+ "when": "2026-10-11 17:05:29",
+ "python": "3.13.5",
+ "platform": "Linux-6.12.111+deb13-cloud-amd64-x86_64-with-glibc2.41",
+ "profile": "plan",
+ "seed": 20261012,
+ "workers": 2,
+ "cases_total": 23452,
+ "cases_by_tier": {
+  "plan": 22192,
+  "extra": 812,
+  "overprec": 448
+ },
+ "cases_not_run": 13644,
+ "wall_seconds": 2702.5340967178345,
+ "oracle_seal_before": {
+  "GATE_FC1_PLAN_KO.md": {
+   "match": true,
+   "sha256": "37276492d6855c2e9598d3ad69869e4650b8db2802db0b9c224f3c26670552ed"
+  },
+  "rigorous/dyad.py": {
+   "match": true,
+   "sha256": "4d49cf8f707061d128fce3ed44b59ccb3a6bda14937e32dcd469cd201fbabaab"
+  },
+  "rigorous/taylor_step.py": {
+   "match": true,
+   "sha256": "0183f0f8dc76dcf9c1a9933d8f16a636ac011bc15e9a95e0749fb2459be01c31"
+  },
+  "rigorous/lohner_step.py": {
+   "match": true,
+   "sha256": "936138ea73b878c811df8db7b582ddb6883590be0f47cc7ece76d5ffc2db6b62"
+  }
+ },
+ "oracle_seal_after": {
+  "GATE_FC1_PLAN_KO.md": {
+   "match": true,
+   "sha256": "37276492d6855c2e9598d3ad69869e4650b8db2802db0b9c224f3c26670552ed"
+  },
+  "rigorous/dyad.py": {
+   "match": true,
+   "sha256": "4d49cf8f707061d128fce3ed44b59ccb3a6bda14937e32dcd469cd201fbabaab"
+  },
+  "rigorous/taylor_step.py": {
+   "match": true,
+   "sha256": "0183f0f8dc76dcf9c1a9933d8f16a636ac011bc15e9a95e0749fb2459be01c31"
+  },
+  "rigorous/lohner_step.py": {
+   "match": true,
+   "sha256": "936138ea73b878c811df8db7b582ddb6883590be0f47cc7ece76d5ffc2db6b62"
+  }
+ },
+ "checker_sha256": {
+  "check_fc1.py": "c0126d78e1af7abcf5cc971b6eb02956b52574dee1430c3a71ff3c4fb3a680f3",
+  "fc1_cases.py": "bc1ffaad933263375492ebc405a51ffdeb5918c96db4dee81a48c9910f8d5a85"
+ },
+ "oracle_time_total_s": 2214.2529931858917,
+ "oracle_outcomes": {
+  "ok": 9050,
+  "exc:_Singular": 758
+ },
+ "oracle_outcome_by_cat": {
+  "extra/coll_full": {
+   "exc:_Singular": 41,
+   "ok": 12
+  },
+  "extra/fullrand": {
+   "ok": 65
+  },
+  "extra/gd_generic": {
+   "ok": 24
+  },
+  "extra/sparse": {
+   "ok": 51
+  },
+  "extra/tie_sub": {
+   "ok": 49
+  },
+  "extra/w10": {
+   "ok": 49
+  },
+  "extra/zs": {
+   "ok": 51
+  },
+  "overprec/overprec": {
+   "ok": 181
+  },
+  "plan/allones": {
+   "ok": 202
+  },
+  "plan/coll_full": {
+   "exc:_Singular": 184,
+   "ok": 40
+  },
+  "plan/coll_point": {
+   "exc:_Singular": 166,
+   "ok": 39
+  },
+  "plan/exp_mixed": {
+   "ok": 222
+  },
+  "plan/exp_scaled": {
+   "ok": 222
+  },
+  "plan/fullrand": {
+   "ok": 584
+  },
+  "plan/hugep": {
+   "ok": 214
+  },
+  "plan/hugev": {
+   "ok": 562
+  },
+  "plan/identical": {
+   "exc:_Singular": 185,
+   "ok": 42
+  },
+  "plan/mixw": {
+   "ok": 613
+  },
+  "plan/near_coll": {
+   "ok": 203
+  },
+  "plan/pow2p1": {
+   "ok": 232
+  },
+  "plan/pt": {
+   "ok": 578
+  },
+  "plan/pyth": {
+   "ok": 216
+  },
+  "plan/sgn": {
+   "ok": 605
+  },
+  "plan/sparse": {
+   "ok": 200
+  },
+  "plan/tie_sub": {
+   "ok": 222
+  },
+  "plan/touch_coll": {
+   "exc:_Singular": 182,
+   "ok": 45
+  },
+  "plan/touch_x": {
+   "ok": 210
+  },
+  "plan/w01": {
+   "ok": 575
+  },
+  "plan/w10": {
+   "ok": 564
+  },
+  "plan/w3": {
+   "ok": 559
+  },
+  "plan/w30": {
+   "ok": 600
+  },
+  "plan/zero_end": {
+   "ok": 231
+  },
+  "plan/zero_vel": {
+   "ok": 207
+  },
+  "plan/zs": {
+   "ok": 581
+  }
+ },
+ "crashes": [],
+ "worker_peak_rss_kb": [
+  178808,
+  172896
+ ],
+ "targets": [
+  {
+   "name": "ref_rebuilt",
+   "path": "/home/zun24/fastcore_check_dev/pythagorean-3body/fastcore_check/ref/ref_rebuilt.py",
+   "sha256": "a73abc751a0a1567114fc63e77328edf6b5090f49c93ff35fc2fb644bdf21122",
+   "expect": "clean",
+   "cases_run": 9808,
+   "ok": 9808,
+   "mismatch": 0,
+   "crash": 0,
+   "skipped": 0,
+   "invalid_oracle_failed": 0,
+   "mismatch_form_only": 0,
+   "verdict": "UNRESOLVED",
+   "kinds": {},
+   "by_tier": {
+    "plan": {
+     "ok": 9285
+    },
+    "extra": {
+     "ok": 342
+    },
+    "overprec": {
+     "ok": 181
+    }
+   },
+   "by_path": {
+    "DI": {
+     "ok": 4908
+    },
+    "GD": {
+     "ok": 4900
+    }
+   },
+   "by_cat": {
+    "extra/coll_full": {
+     "ok": 53
+    },
+    "extra/fullrand": {
+     "ok": 65
+    },
+    "extra/gd_generic": {
+     "ok": 24
+    },
+    "extra/sparse": {
+     "ok": 51
+    },
+    "extra/tie_sub": {
+     "ok": 49
+    },
+    "extra/w10": {
+     "ok": 49
+    },
+    "extra/zs": {
+     "ok": 51
+    },
+    "overprec/overprec": {
+     "ok": 181
+    },
+    "plan/allones": {
+     "ok": 202
+    },
+    "plan/coll_full": {
+     "ok": 224
+    },
+    "plan/coll_point": {
+     "ok": 205
+    },
+    "plan/exp_mixed": {
+     "ok": 222
+    },
+    "plan/exp_scaled": {
+     "ok": 222
+    },
+    "plan/fullrand": {
+     "ok": 584
+    },
+    "plan/hugep": {
+     "ok": 214
+    },
+    "plan/hugev": {
+     "ok": 562
+    },
+    "plan/identical": {
+     "ok": 227
+    },
+    "plan/mixw": {
+     "ok": 613
+    },
+    "plan/near_coll": {
+     "ok": 203
+    },
+    "plan/pow2p1": {
+     "ok": 232
+    },
+    "plan/pt": {
+     "ok": 578
+    },
+    "plan/pyth": {
+     "ok": 216
+    },
+    "plan/sgn": {
+     "ok": 605
+    },
+    "plan/sparse": {
+     "ok": 200
+    },
+    "plan/tie_sub": {
+     "ok": 222
+    },
+    "plan/touch_coll": {
+     "ok": 227
+    },
+    "plan/touch_x": {
+     "ok": 210
+    },
+    "plan/w01": {
+     "ok": 575
+    },
+    "plan/w10": {
+     "ok": 564
+    },
+    "plan/w3": {
+     "ok": 559
+    },
+    "plan/w30": {
+     "ok": 600
+    },
+    "plan/zero_end": {
+     "ok": 231
+    },
+    "plan/zero_vel": {
+     "ok": 207
+    },
+    "plan/zs": {
+     "ok": 581
+    }
+   },
+   "target_call_seconds": 2238.444235824052,
+   "first_mismatch": null,
+   "examples": []
+  }
+ ],
+ "api_checks": {
+  "ref_rebuilt": [
+   [
+    "empty",
+    true,
+    "exc(ValueError)",
+    "exc(ValueError)"
+   ],
+   [
+    "float",
+    true,
+    "exc(TypeError)",
+    "exc(TypeError)"
+   ],
+   [
+    "bool",
+    true,
+    "exc(TypeError)",
+    "exc(TypeError)"
+   ],
+   [
+    "str",
+    true,
+    "exc(TypeError)",
+    "exc(TypeError)"
+   ],
+   [
+    "none",
+    true,
+    "exc(TypeError)",
+    "exc(TypeError)"
+   ],
+   [
+    "float_second",
+    true,
+    "exc(TypeError)",
+    "exc(TypeError)"
+   ],
+   [
+    "single_body",
+    true,
+    "ok(dim=4,name=nbody(1),coeffs=True)",
+    "ok(dim=4,name=nbody(1),coeffs=True)"
+   ],
+   [
+    "zero_mass",
+    true,
+    "ok(dim=8,name=nbody(2),coeffs=True)",
+    "ok(dim=8,name=nbody(2),coeffs=True)"
+   ],
+   [
+    "negative_mass",
+    true,
+    "ok(dim=8,name=nbody(2),coeffs=True)",
+    "ok(dim=8,name=nbody(2),coeffs=True)"
+   ],
+   [
+    "tuple",
+    true,
+    "ok(dim=12,name=nbody(3),coeffs=True)",
+    "ok(dim=12,name=nbody(3),coeffs=True)"
+   ],
+   [
+    "generator",
+    true,
+    "ok(dim=12,name=nbody(3),coeffs=True)",
+    "ok(dim=12,name=nbody(3),coeffs=True)"
+   ],
+   [
+    "fractions",
+    true,
+    "ok(dim=8,name=nbody(2),coeffs=True)",
+    "ok(dim=8,name=nbody(2),coeffs=True)"
+   ],
+   [
+    "five_bodies",
+    true,
+    "ok(dim=20,name=nbody(5),coeffs=True)",
+    "ok(dim=20,name=nbody(5),coeffs=True)"
+   ]
+  ]
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "sealed_at_local": "2026-10-11T14:20:25",
+ "note": "Gate R3c plan sealed before implementation; inputs pinned",
+ "files": {
+  "GATE_R3C_PLAN_KO.md": "26a6d98727320d718b646f6693c95aea3c4c950a4080a2a61d5774bcb83d560a",
+  "PRIOR_ART_R3_METHODS_KO.md": "09babb30c1c49cede86fad12994e53b5fb752df931dc7e8f2d96abe6057f6fb4",
+  "rigorous/R2_RESULT_KO.md": "fed6dfc29d082cab3180d9050c3f440a9de7e880a15928f068469f73503b9c77",
+  "rigorous/dyad.py": "4d49cf8f707061d128fce3ed44b59ccb3a6bda14937e32dcd469cd201fbabaab",
+  "rigorous/taylor_step.py": "0183f0f8dc76dcf9c1a9933d8f16a636ac011bc15e9a95e0749fb2459be01c31",
+  "results/ref_B_grid.json": "3bfe3e44024d90bfe495c365bebb6c3c2ea7a92c18869d177bd5e6beaf8d3478"
+ }
+}

@@ -1,0 +1,30 @@
+[     0.0s] start prec=128 order=24 started_local=2026-10-11T14:03:53 python=3.12.7 args={'prec': 128, 'outdir': 'C:\\numerical-audit-lab-recovered-2026-10-01\\research\\pythagorean-3body\\rigorous\\r2_results', 'wall_limit': 3600.0, 'max_steps': None, 'debug_undecided_exp': None, 'debug_perturb_ref': None, 'force': False}
+[     0.0s] seal ok: {'GATE_R2_PLAN_KO.md': '79ed3d4ebfdf', 'ROADMAP_AMENDMENT_3_KO.md': '9e080c998586', 'rigorous/dyad.py': '4d49cf8f7070', 'rigorous/taylor_step.py': '0183f0f8dc76', 'results/ref_B_grid.json': '3bfe3e44024d', 'rigorous/R1_FINAL_RUN_KO.md': '7a0732b21287'}
+[     0.0s] r2_run.py sha256=763f475c3eb2c1ee456522359a4f334c26be64c514126897c121bce4c00766fa
+[     2.7s] step 25 t=0.921875 h=2^-5 logW=-32.534 (pos -32.832 vel -32.534) logPoly=-32.54 logRem=-35.06 disc_total=18
+[     5.7s] step 50 t=1.406250 h=2^-6 logW=-31.825 (pos -32.242 vel -31.825) logPoly=-31.83 logRem=-34.66 disc_total=44
+[     8.8s] step 75 t=1.656250 h=2^-7 logW=-31.001 (pos -31.709 vel -31.001) logPoly=-31.00 logRem=-33.39 disc_total=70
+[    11.8s] step 100 t=1.773438 h=2^-8 logW=-30.333 (pos -31.286 vel -30.333) logPoly=-30.34 logRem=-32.22 disc_total=96
+[    14.7s] step 125 t=1.830078 h=2^-9 logW=-29.605 (pos -30.880 vel -29.605) logPoly=-29.62 logRem=-30.97 disc_total=122
+[    17.8s] step 150 t=1.857422 h=2^-10 logW=-28.624 (pos -30.415 vel -28.624) logPoly=-28.76 logRem=-29.19 disc_total=148
+[    21.1s] step 175 t=1.869629 h=2^-12 logW=-27.579 (pos -29.895 vel -27.579) logPoly=-27.58 logRem=-35.35 disc_total=175
+[    24.1s] step 200 t=1.875000 h=2^-13 logW=-26.918 (pos -29.421 vel -26.918) logPoly=-26.92 logRem=-33.48 disc_total=201
+[    27.1s] step 225 t=1.877441 h=2^-14 logW=-26.193 (pos -28.982 vel -26.193) logPoly=-26.19 logRem=-31.31 disc_total=227
+[    30.1s] step 250 t=1.878540 h=2^-15 logW=-25.343 (pos -28.544 vel -25.343) logPoly=-25.34 logRem=-29.02 disc_total=253
+[    33.3s] step 275 t=1.879044 h=2^-16 logW=-24.426 (pos -27.981 vel -24.426) logPoly=-24.43 logRem=-28.52 disc_total=279
+[    36.4s] step 300 t=1.879425 h=2^-16 logW=-23.532 (pos -27.277 vel -23.532) logPoly=-23.53 logRem=-27.73 disc_total=304
+[    39.4s] step 325 t=1.879822 h=2^-15 logW=-22.602 (pos -26.457 vel -22.602) logPoly=-22.90 logRem=-22.91 disc_total=328
+[    42.4s] step 350 t=1.880890 h=2^-14 logW=-21.927 (pos -25.096 vel -21.927) logPoly=-21.93 logRem=-28.21 disc_total=352
+[    45.2s] step 375 t=1.884979 h=2^-12 logW=-21.085 (pos -23.648 vel -21.085) logPoly=-21.08 logRem=-28.16 disc_total=375
+[    48.1s] step 400 t=1.906219 h=2^-9 logW=-20.047 (pos -22.014 vel -20.047) logPoly=-20.05 logRem=-22.68 disc_total=397
+[    51.0s] step 425 t=2.025360 h=2^-7 logW=-19.299 (pos -20.426 vel -19.299) logPoly=-19.30 logRem=-27.46 disc_total=420
+[    54.0s] step 450 t=2.681610 h=2^-5 logW=-18.449 (pos -18.870 vel -18.449) logPoly=-18.45 logRem=-19.24 disc_total=443
+[    57.1s] step 475 t=3.072235 h=2^-6 logW=-16.127 (pos -17.706 vel -16.127) logPoly=-16.35 logRem=-16.47 disc_total=469
+[    60.1s] step 500 t=3.619110 h=2^-6 logW=-14.868 (pos -15.408 vel -14.868) logPoly=-14.87 logRem=-21.69 disc_total=494
+[    63.4s] step 525 t=3.783173 h=2^-9 logW=-13.181 (pos -14.953 vel -13.181) logPoly=-13.18 logRem=-16.24 disc_total=522
+[    66.6s] step 550 t=3.801727 h=2^-11 logW=-11.093 (pos -13.633 vel -11.093) logPoly=-11.09 logRem=-19.68 disc_total=548
+[    69.6s] step 575 t=3.852997 h=2^-7 logW=-8.802 (pos -10.592 vel -8.802) logPoly=-8.80 logRem=-11.85 disc_total=569
+[    71.6s] step 600 t=4.993622 h=2^-4 logW=-7.203 (pos -7.476 vel -7.203) logPoly=-7.20 logRem=-28.74 disc_total=577
+[    73.2s] step 625 t=6.556122 h=2^-4 logW=-5.996 (pos -6.472 vel -5.996) logPoly=-6.00 logRem=-12.60 disc_total=577
+[    75.4s] step 650 t=6.895966 h=2^-9 logW=-2.320 (pos -4.515 vel -2.320) logPoly=-2.32 logRem=-8.69 disc_total=589
+[    76.7s] STOP A_EXPLODE t_final=6.968231201 steps=664 attempts=1261 discarded=597 wall=76.7s detail=None

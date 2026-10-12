@@ -1,0 +1,2 @@
+correct: PASS {'R3-S1': 0, 'R3-S2': 0, 'R3-C': 0, 'R3-S1e': 0, 'R3-X1': 0, 'R3-X2': 0, 'R3-X4': 0, 'R3-X3': 0} {} 849s
+required detected 0/0 (sealed-only 0); extra detected 0/0 (sealed-only 0); reference violations=0; undetected=[]; valid variants flagged=[]

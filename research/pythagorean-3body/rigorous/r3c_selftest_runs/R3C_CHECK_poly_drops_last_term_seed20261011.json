@@ -1,0 +1,2638 @@
+{
+ "checker": "check_r3c.py",
+ "checker_sha256": "031f11e28f63a2767b01c6e8a532983ee9882e8b82b7e02192eb8bbc7cbe45b3",
+ "module_under_test": "C:\\numerical-audit-lab-recovered-2026-10-01\\research\\pythagorean-3body\\rigorous\\fake_r3c_poly_drops_last_term.py",
+ "module_sha256": "ce9b98e90044ee3f56100bcb11a1febf09fb291b94d4c0f5d12154c605166b3a",
+ "python": "3.12.7",
+ "platform": "Windows-11-10.0.26200-SP0",
+ "mpmath": "1.3.0",
+ "seed": 20261011,
+ "s1_steps": 1000,
+ "s2_boxes": 20,
+ "time_limit_sec": 3300.0,
+ "mp_dps": 130,
+ "margin": "1e-90",
+ "started_local": "2026-10-11T15:56:33",
+ "seal_check": {
+  "dyad.py": {
+   "expected": "4d49cf8f707061d128fce3ed44b59ccb3a6bda14937e32dcd469cd201fbabaab",
+   "actual": "4d49cf8f707061d128fce3ed44b59ccb3a6bda14937e32dcd469cd201fbabaab",
+   "match": true
+  },
+  "taylor_step.py": {
+   "expected": "0183f0f8dc76dcf9c1a9933d8f16a636ac011bc15e9a95e0749fb2459be01c31",
+   "actual": "0183f0f8dc76dcf9c1a9933d8f16a636ac011bc15e9a95e0749fb2459be01c31",
+   "match": true
+  }
+ },
+ "dyad_path": "C:\\numerical-audit-lab-recovered-2026-10-01\\research\\pythagorean-3body\\rigorous\\dyad.py",
+ "reference_selfcheck": {
+  "circle_vs_cos_sin_maxerr": "3.3812e-131",
+  "pythagorean_conservation_maxerr_t=1/4": "1.8033e-130",
+  "split_step_invariance_maxdiff": "4.5083e-131",
+  "cos_sin_t=100_mpmath_vs_doubling_series": "4.1563e-132"
+ },
+ "verdict_sealed_criteria": "FAIL",
+ "verdict_all_including_supplementary": "FAIL",
+ "criteria": {
+  "R3-S1": {
+   "desc": "\uc9c4\ub3d9\uc790\u00b7\ucf00\ud50c\ub7ec \uc6d0 \uada4\ub3c4 h=1/10 x 1000\uac78\uc74c, \ub9e4 50\uac78\uc74c: \uc815\ub2f5\uc774 enclosure_box \uc640 \uc9d1\ud569 c+B\u00b7R \uc5d0 \ud3ec\ud568",
+   "sealed": true,
+   "verdict": "FAIL",
+   "counts": {
+    "PASS": 120,
+    "VIOLATION": 40,
+    "REFUSED": 0,
+    "UNDECIDED": 0,
+    "NOT_RUN": 0
+   },
+   "total": 160,
+   "violations_sample": [
+    {
+     "test": "box",
+     "case": "harmonic|prec=256",
+     "step": 50,
+     "t": "5",
+     "component": 0,
+     "overshoot": "1.2968518e-37",
+     "lo": "0.6922087764289889327965566",
+     "hi": "0.6922087764289889327965566",
+     "truth": "0.6922087764289889327965566"
+    },
+    {
+     "test": "set",
+     "case": "harmonic|prec=256",
+     "step": 50,
+     "t": "5",
+     "component": 0,
+     "overshoot": "1.6361614e-37",
+     "detail": "1.63661052852992425345572e-37",
+     "r_lo": "-4.491363426379997277931713e-41",
+     "r_hi": "4.491363426379997277931713e-41"
+    },
+    {
+     "test": "box",
+     "case": "harmonic|prec=256",
+     "step": 100,
+     "t": "10",
+     "component": 0,
+     "overshoot": "1.800032e-37",
+     "lo": "-0.3572930913626544324917741",
+     "hi": "-0.3572930913626544324917741",
+     "truth": "-0.3572930913626544324917741"
+    },
+    {
+     "test": "set",
+     "case": "harmonic|prec=256",
+     "step": 100,
+     "t": "10",
+     "component": 0,
+     "overshoot": "3.2723228e-37",
+     "detail": "3.273221291573948728245444e-37",
+     "r_lo": "-8.985185433703178179179609e-41",
+     "r_hi": "8.985185433703178179179609e-41"
+    },
+    {
+     "test": "box",
+     "case": "harmonic|prec=256",
+     "step": 150,
+     "t": "15",
+     "component": 0,
+     "overshoot": "5.4230498e-37",
+     "lo": "-0.8949098547226743883009799",
+     "hi": "-0.8949098547226743883009799",
+     "truth": "-0.8949098547226743883009799"
+    },
+    {
+     "test": "set",
+     "case": "harmonic|prec=256",
+     "step": 150,
+     "t": "15",
+     "component": 0,
+     "overshoot": "4.9084843e-37",
+     "detail": "4.909831379494670892913161e-37",
+     "r_lo": "-1.347076842907356240166545e-40",
+     "r_hi": "1.347076842907356240166545e-40"
+    },
+    {
+     "test": "box",
+     "case": "harmonic|prec=256",
+     "step": 200,
+     "t": "20",
+     "component": 0,
+     "overshoot": "4.9900355e-38",
+     "lo": "-0.1504110790037698376413491",
+     "hi": "-0.1504110790037698376413491",
+     "truth": "-0.1504110790037698376413491"
+    },
+    {
+     "test": "set",
+     "case": "harmonic|prec=256",
+     "step": 200,
+     "t": "20",
+     "component": 0,
+     "overshoot": "6.5446438e-37",
+     "detail": "6.546440744631804629880968e-37",
+     "r_lo": "-1.796915013311666501612207e-40",
+     "r_hi": "1.796915013311666501612207e-40"
+    },
+    {
+     "test": "box",
+     "case": "harmonic|prec=256",
+     "step": 250,
+     "t": "25",
+     "component": 0,
+     "overshoot": "8.6835085e-37",
+     "lo": "0.8095779839464917130134736",
+     "hi": "0.8095779839464917130134736",
+     "truth": "0.8095779839464917130134736"
+    },
+    {
+     "test": "set",
+     "case": "harmonic|prec=256",
+     "step": 250,
+     "t": "25",
+     "component": 0,
+     "overshoot": "8.1808013e-37",
+     "detail": "8.183050347929399435650946e-37",
+     "r_lo": "-2.249089542594725818671248e-40",
+     "r_hi": "2.249089542594725818671248e-40"
+    },
+    {
+     "test": "box",
+     "case": "harmonic|prec=256",
+     "step": 300,
+     "t": "30",
+     "component": 0,
+     "overshoot": "6.6623601e-37",
+     "lo": "0.6097043994621189330328711",
+     "hi": "0.6097043994621189330328711",
+     "truth": "0.6097043994621189330328711"
+    },
+    {
+     "test": "set",
+     "case": "harmonic|prec=256",
+     "step": 300,
+     "t": "30",
+     "component": 0,
+     "overshoot": "9.8169624e-37",
+     "detail": "9.819660614679700529177974e-37",
+     "r_lo": "-2.698184141273261154156028e-40",
+     "r_hi": "2.698184141273261154156028e-40"
+    },
+    {
+     "test": "box",
+     "case": "harmonic|prec=256",
+     "step": 350,
+     "t": "35",
+     "component": 0,
+     "overshoot": "7.7450011e-37",
+     "lo": "-0.463677819070554567682102",
+     "hi": "-0.463677819070554567682102",
+     "truth": "-0.463677819070554567682102"
+    },
+    {
+     "test": "set",
+     "case": "harmonic|prec=256",
+     "step": 350,
+     "t": "35",
+     "component": 0,
+     "overshoot": "1.1453124e-36",
+     "detail": "1.145627130783582404279186e-36",
+     "r_lo": "-3.147401255767890024844878e-40",
+     "r_hi": "3.147401255767890024844878e-40"
+    },
+    {
+     "test": "box",
+     "case": "harmonic|prec=256",
+     "step": 400,
+     "t": "40",
+     "component": 0,
+     "overshoot": "1.3906223e-36",
+     "lo": "-0.8727601264788707767819243",
+     "hi": "-0.8727601264788707767819243",
+     "truth": "-0.8727601264788707767819243"
+    },
+    {
+     "test": "set",
+     "case": "harmonic|prec=256",
+     "step": 400,
+     "t": "40",
+     "component": 0,
+     "overshoot": "1.3089285e-36",
+     "detail": "1.309288167866819457851747e-36",
+     "r_lo": "-3.596226525969389492734416e-40",
+     "r_hi": "3.596226525969389492734416e-40"
+    },
+    {
+     "test": "box",
+     "case": "harmonic|prec=256",
+     "step": 450,
+     "t": "45",
+     "component": 0,
+     "overshoot": "1.0795021e-37",
+     "lo": "-0.03146027065376194039559154",
+     "hi": "-0.03146027065376194039559154",
+     "truth": "-0.03146027065376194039559154"
+    },
+    {
+     "test": "set",
+     "case": "harmonic|prec=256",
+     "step": 450,
+     "t": "45",
+     "component": 0,
+     "overshoot": "1.4725447e-36",
+     "detail": "1.4729491583322392367579e-36",
+     "r_lo": "-4.044997223665546709391833e-40",
+     "r_hi": "4.044997223665546709391833e-40"
+    },
+    {
+     "test": "box",
+     "case": "harmonic|prec=256",
+     "step": 500,
+     "t": "50",
+     "component": 0,
+     "overshoot": "1.8066871e-36",
+     "lo": "0.8549119482210493485089146",
+     "hi": "0.8549119482210493485089146",
+     "truth": "0.8549119482210493485089146"
+    },
+    {
+     "test": "set",
+     "case": "harmonic|prec=256",
+     "step": 500,
+     "t": "50",
+     "component": 0,
+     "overshoot": "1.6361604e-36",
+     "detail": "1.636610055858880863821677e-36",
+     "r_lo": "-4.496529420136513929081057e-40",
+     "r_hi": "4.496529420136513929081057e-40"
+    },
+    {
+     "test": "box",
+     "case": "harmonic|prec=256",
+     "step": 550,
+     "t": "55",
+     "component": 0,
+     "overshoot": "9.9483663e-37",
+     "lo": "0.516472653875776719221989",
+     "hi": "0.516472653875776719221989",
+     "truth": "0.516472653875776719221989"
+    },
+    {
+     "test": "set",
+     "case": "harmonic|prec=256",
+     "step": 550,
+     "t": "55",
+     "component": 0,
+     "overshoot": "1.7997764e-36",
+     "detail": "1.800271050398341752518773e-36",
+     "r_lo": "-4.946903061668326441622547e-40",
+     "r_hi": "4.946903061668326441622547e-40"
+    },
+    {
+     "test": "box",
+     "case": "harmonic|prec=256",
+     "step": 600,
+     "t": "60",
+     "component": 0,
+     "overshoot": "1.5520478e-36",
+     "lo": "-0.5619044247602588667075377",
+     "hi": "-0.5619044247602588667075377",
+     "truth": "-0.5619044247602588667075377"
+    },
+    {
+     "test": "set",
+     "case": "harmonic|prec=256",
+     "step": 600,
+     "t": "60",
+     "component": 0,
+     "overshoot": "1.9633925e-36",
+     "detail": "1.963932094456225497259306e-36",
+     "r_lo": "-5.395819408148408694842667e-40",
+     "r_hi": "5.395819408148408694842667e-40"
+    },
+    {
+     "test": "box",
+     "case": "harmonic|prec=256",
+     "step": 650,
+     "t": "65",
+     "component": 0,
+     "overshoot": "2.1297739e-36",
+     "lo": "-0.8352547281736807571516977",
+     "hi": "-0.8352547281736807571516977",
+     "truth": "-0.8352547281736807571516977"
+    },
+    {
+     "test": "set",
+     "case": "harmonic|prec=256",
+     "step": 650,
+     "t": "65",
+     "component": 0,
+     "overshoot": "2.1270087e-36",
+     "detail": "2.127593158111325366698989e-36",
+     "r_lo": "-5.845012818514505707277372e-40",
+     "r_hi": "5.845012818514505707277372e-40"
+    },
+    {
+     "test": "box",
+     "case": "harmonic|prec=256",
+     "step": 700,
+     "t": "70",
+     "component": 0,
+     "overshoot": "5.0901429e-37",
+     "lo": "0.08804406153578032535534331",
+     "hi": "0.08804406153578032535534331",
+     "truth": "0.08804406153578032535534331"
+    },
+    {
+     "test": "set",
+     "case": "harmonic|prec=256",
+     "step": 700,
+     "t": "70",
+     "component": 0,
+     "overshoot": "2.2906248e-36",
+     "detail": "2.291254159592665310585741e-36",
+     "r_lo": "-6.293590017691466322386475e-40",
+     "r_hi": "6.293590017691466322386475e-40"
+    },
+    {
+     "test": "box",
+     "case": "harmonic|prec=256",
+     "step": 750,
+     "t": "75",
+     "component": 0,
+     "overshoot": "2.7673273e-36",
+     "lo": "0.8852042699982772061596937",
+     "hi": "0.8852042699982772061596937",
+     "truth": "0.8852042699982772061596937"
+    },
+    {
+     "test": "set",
+     "case": "harmonic|prec=256",
+     "step": 750,
+     "t": "75",
+     "component": 0,
+     "overshoot": "2.4542407e-36",
+     "detail": "2.454915082207524394434361e-36",
+     "r_lo": "-6.74360655805031976316903e-40",
+     "r_hi": "6.74360655805031976316903e-40"
+    },
+    {
+     "test": "box",
+     "case": "harmonic|prec=256",
+     "step": 800,
+     "t": "80",
+     "component": 0,
+     "overshoot": "1.0918221e-36",
+     "lo": "0.4141538940824019262770055",
+     "hi": "0.4141538940824019262770055",
+     "truth": "0.4141538940824019262770055"
+    },
+    {
+     "test": "set",
+     "case": "harmonic|prec=256",
+     "step": 800,
+     "t": "80",
+     "component": 0,
+     "overshoot": "2.6178565e-36",
+     "detail": "2.618576041206206046150192e-36",
+     "r_lo": "-7.195638368723800303105282e-40",
+     "r_hi": "7.195638368723800303105282e-40"
+    },
+    {
+     "test": "box",
+     "case": "harmonic|prec=256",
+     "step": 850,
+     "t": "85",
+     "component": 0,
+     "overshoot": "2.4778543e-36",
+     "lo": "-0.6502446725712378827075988",
+     "hi": "-0.6502446725712378827075988",
+     "truth": "-0.6502446725712378827075988"
+    },
+    {
+     "test": "set",
+     "case": "harmonic|prec=256",
+     "step": 850,
+     "t": "85",
+     "component": 0,
+     "overshoot": "2.7814726e-36",
+     "detail": "2.782237065561469562662023e-36",
+     "r_lo": "-7.644570936578194261632447e-40",
+     "r_hi": "7.644570936578194261632447e-40"
+    },
+    {
+     "test": "box",
+     "case": "harmonic|prec=256",
+     "step": 900,
+     "t": "90",
+     "component": 0,
+     "overshoot": "2.7170507e-36",
+     "lo": "-0.7830535438971565595332427",
+     "hi": "-0.7830535438971565595332427",
+     "truth": "-0.7830535438971565595332427"
+    },
+    {
+     "test": "set",
+     "case": "harmonic|prec=256",
+     "step": 900,
+     "t": "90",
+     "component": 0,
+     "overshoot": "2.9450888e-36",
+     "detail": "2.945898149299727550827854e-36",
+     "r_lo": "-8.09395668659199871684269e-40",
+     "r_hi": "8.09395668659199871684269e-40"
+    },
+    {
+     "test": "box",
+     "case": "harmonic|prec=256",
+     "step": 950,
+     "t": "95",
+     "component": 0,
+     "overshoot": "1.1415609e-36",
+     "lo": "0.2059993133780542567453478",
+     "hi": "0.2059993133780542567453478",
+     "truth": "0.2059993133780542567453478"
+    },
+    {
+     "test": "set",
+     "case": "harmonic|prec=256",
+     "step": 950,
+     "t": "95",
+     "component": 0,
+     "overshoot": "3.1087049e-36",
+     "detail": "3.109559179194530230003381e-36",
+     "r_lo": "-8.542754424264244141144462e-40",
+     "r_hi": "8.542754424264244141144462e-40"
+    },
+    {
+     "test": "box",
+     "case": "harmonic|prec=256",
+     "step": 1000,
+     "t": "100",
+     "component": 0,
+     "overshoot": "3.7012461e-36",
+     "lo": "0.8999219747706423474047327",
+     "hi": "0.8999219747706423474047327",
+     "truth": "0.8999219747706423474047327"
+    },
+    {
+     "test": "set",
+     "case": "harmonic|prec=256",
+     "step": 1000,
+     "t": "100",
+     "component": 0,
+     "overshoot": "3.272321e-36",
+     "detail": "3.273220145793840412029134e-36",
+     "r_lo": "-8.991400542405797896626242e-40",
+     "r_hi": "8.991400542405797896626242e-40"
+    }
+   ],
+   "refused_sample": [],
+   "undecided_sample": [],
+   "extra": {
+    "planned_cases_per_run_incl_early_and_init": 54
+   }
+  },
+  "R3-S2": {
+   "desc": "\ud55c \uac78\uc74c \uc0ac\uc0c1: \ubb34\uc791\uc704 \uc2dc\uc791 \ud3c9\ud589\uc721\uba74\uccb4 20\uac1c\uc758 \uaf2d\uc9d3\uc810\u00b7\ucd95 \uadf9\uc810\u00b7\ub0b4\ubd80 \uc810\uc758 \uc815\ub2f5 \uc0c1\uc774 \uc0c8 \uc0c1\uc790\uc640 \uc0c8 \uc9d1\ud569\uc5d0 \ud3ec\ud568",
+   "sealed": true,
+   "verdict": "FAIL",
+   "counts": {
+    "PASS": 1421,
+    "VIOLATION": 935,
+    "REFUSED": 0,
+    "UNDECIDED": 0,
+    "NOT_RUN": 0
+   },
+   "total": 2356,
+   "violations_sample": [
+    {
+     "test": "box",
+     "box": "box00 harmonic p=4 h=1/8 prec=128 w=1e-05 rot",
+     "point": 1,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-8.1e-6",
+      "0.0"
+     ],
+     "component": 0,
+     "overshoot": "1.3179203e-6",
+     "lo": "0.4273183098800436951029731",
+     "hi": "0.4273306508859544196104315",
+     "truth": "0.4273319688062269339602271",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box00 harmonic p=4 h=1/8 prec=128 w=1e-05 rot",
+     "point": 1,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-8.1e-6",
+      "0.0"
+     ],
+     "component": 0,
+     "overshoot": "5.1368705e-6",
+     "detail": "-0.00001324618172349984160021454",
+     "r_lo": "-0.000008109311221542400465507793",
+     "r_hi": "0.000003309311180040220427273151",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box00 harmonic p=4 h=1/8 prec=128 w=1e-05 rot",
+     "point": 3,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "0.0",
+      "-3.1e-6"
+     ],
+     "component": 1,
+     "overshoot": "1.3541055e-6",
+     "detail": "-0.000004463824522744738942090604",
+     "r_lo": "-0.000003109718998848527062998372",
+     "r_hi": "0.000004209719008359443321761218",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box00 harmonic p=4 h=1/8 prec=128 w=1e-05 rot",
+     "point": 5,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-8.1e-6",
+      "-3.1e-6"
+     ],
+     "component": 0,
+     "overshoot": "3.9227907e-6",
+     "lo": "0.4273183098800436951029731",
+     "hi": "0.4273306508859544196104315",
+     "truth": "0.4273345736766523377958571",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box00 harmonic p=4 h=1/8 prec=128 w=1e-05 rot",
+     "point": 5,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-8.1e-6",
+      "-3.1e-6"
+     ],
+     "component": 0,
+     "overshoot": "5.1368705e-6",
+     "detail": "-0.00001324618172177567623932652",
+     "r_lo": "-0.000008109311221542400465507793",
+     "r_hi": "0.000003309311180040220427273151",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box00 harmonic p=4 h=1/8 prec=128 w=1e-05 rot",
+     "point": 6,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "3.3e-6",
+      "-3.1e-6"
+     ],
+     "component": 1,
+     "overshoot": "1.3541055e-6",
+     "detail": "-0.000004463824520909337106306583",
+     "r_lo": "-0.000003109718998848527062998372",
+     "r_hi": "0.000004209719008359443321761218",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box00 harmonic p=4 h=1/8 prec=128 w=1e-05 rot",
+     "point": 7,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-8.1e-6",
+      "4.2e-6"
+     ],
+     "component": 1,
+     "overshoot": "3.5717449e-6",
+     "lo": "0.3010940799394133276831059",
+     "hi": "0.3011076430323886254256929",
+     "truth": "0.3011112147773225069193932",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box00 harmonic p=4 h=1/8 prec=128 w=1e-05 rot",
+     "point": 7,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-8.1e-6",
+      "4.2e-6"
+     ],
+     "component": 0,
+     "overshoot": "5.1368705e-6",
+     "detail": "-0.00001324618172583580757303056",
+     "r_lo": "-0.000008109311221542400465507793",
+     "r_hi": "0.000003309311180040220427273151",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box00 harmonic p=4 h=1/8 prec=128 w=1e-05 rot",
+     "point": 10,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-7.932842589e-6",
+      "2.399486387e-6"
+     ],
+     "component": 1,
+     "overshoot": "2.4551347e-6",
+     "lo": "0.3010940799394133276831059",
+     "hi": "0.3011076430323886254256929",
+     "truth": "0.3011100981670761557081643",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box00 harmonic p=4 h=1/8 prec=128 w=1e-05 rot",
+     "point": 10,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-7.932842589e-6",
+      "2.399486387e-6"
+     ],
+     "component": 0,
+     "overshoot": "4.9697131e-6",
+     "detail": "-0.00001307902431349245703511204",
+     "r_lo": "-0.000008109311221542400465507793",
+     "r_hi": "0.000003309311180040220427273151",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box00 harmonic p=4 h=1/8 prec=128 w=1e-05 rot",
+     "point": 12,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-7.100640982e-6",
+      "-2.88272199e-6"
+     ],
+     "component": 0,
+     "overshoot": "3.1984122e-6",
+     "lo": "0.4273183098800436951029731",
+     "hi": "0.4273306508859544196104315",
+     "truth": "0.4273338492981640903808922",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box00 harmonic p=4 h=1/8 prec=128 w=1e-05 rot",
+     "point": 12,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-7.100640982e-6",
+      "-2.88272199e-6"
+     ],
+     "component": 0,
+     "overshoot": "4.1375115e-6",
+     "detail": "-0.00001224682270373844648814765",
+     "r_lo": "-0.000008109311221542400465507793",
+     "r_hi": "0.000003309311180040220427273151",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box00 harmonic p=4 h=1/8 prec=128 w=1e-05 rot",
+     "point": 14,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-3.519555118e-6",
+      "2.624475679e-6"
+     ],
+     "component": 0,
+     "overshoot": "5.5642562e-7",
+     "detail": "-0.000008665736842493102757603825",
+     "r_lo": "-0.000008109311221542400465507793",
+     "r_hi": "0.000003309311180040220427273151",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box01 harmonic p=8 h=1/8 prec=256 w=1e-03 rot",
+     "point": 2,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "0.00052",
+      "0.0"
+     ],
+     "component": 0,
+     "overshoot": "7.4336268e-13",
+     "detail": "0.0005200000007441134220493134",
+     "r_lo": "-0.0003300000000007506628907666",
+     "r_hi": "0.0005200000000007507405385127",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box01 harmonic p=8 h=1/8 prec=256 w=1e-03 rot",
+     "point": 4,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "0.0",
+      "0.00072"
+     ],
+     "component": 1,
+     "overshoot": "5.8849188e-14",
+     "detail": "0.0007200000000592622273038858",
+     "r_lo": "-0.000970000000000413141724743",
+     "r_hi": "0.0007200000000004130395569172",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box01 harmonic p=8 h=1/8 prec=256 w=1e-03 rot",
+     "point": 6,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "0.00052",
+      "-0.00097"
+     ],
+     "component": 1,
+     "overshoot": "7.1991809e-13",
+     "lo": "-0.4677224842103007344423742",
+     "hi": "-0.4665777942091630953347171",
+     "truth": "-0.4677224842110206525324777",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box01 harmonic p=8 h=1/8 prec=256 w=1e-03 rot",
+     "point": 6,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "0.00052",
+      "-0.00097"
+     ],
+     "component": 0,
+     "overshoot": "7.4336271e-13",
+     "detail": "0.0005200000007441134494674642",
+     "r_lo": "-0.0003300000000007506628907666",
+     "r_hi": "0.0005200000000007507405385127",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box01 harmonic p=8 h=1/8 prec=256 w=1e-03 rot",
+     "point": 7,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-0.00033",
+      "0.00072"
+     ],
+     "component": 1,
+     "overshoot": "5.8849178e-14",
+     "detail": "0.0007200000000592622179760613",
+     "r_lo": "-0.000970000000000413141724743",
+     "r_hi": "0.0007200000000004130395569172",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box01 harmonic p=8 h=1/8 prec=256 w=1e-03 rot",
+     "point": 8,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "0.00052",
+      "0.00072"
+     ],
+     "component": 0,
+     "overshoot": "1.9378273e-13",
+     "lo": "-0.1918289096284622977035222",
+     "hi": "-0.1900119778084912277755892",
+     "truth": "-0.1918289096286560804370668",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box01 harmonic p=8 h=1/8 prec=256 w=1e-03 rot",
+     "point": 8,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "0.00052",
+      "0.00072"
+     ],
+     "component": 0,
+     "overshoot": "7.4336266e-13",
+     "detail": "0.0005200000007441134016976963",
+     "r_lo": "-0.0003300000000007506628907666",
+     "r_hi": "0.0005200000000007507405385127",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box02 harmonic p=3 h=1/16 prec=128 w=1e-07 skew",
+     "point": 0,
+     "r_index_kind": "center",
+     "r": [
+      "0.0",
+      "0.0"
+     ],
+     "component": 0,
+     "overshoot": "3.3283616e-5",
+     "lo": "0.5332938939858970084629111",
+     "hi": "0.5332939645099807904755587",
+     "truth": "0.5332606103698419705281914",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box02 harmonic p=3 h=1/16 prec=128 w=1e-07 skew",
+     "point": 0,
+     "r_index_kind": "center",
+     "r": [
+      "0.0",
+      "0.0"
+     ],
+     "component": 0,
+     "overshoot": "2.4638081e-5",
+     "detail": "-0.00002475077914211498529722907",
+     "r_lo": "-0.0000001126982909860512708746852",
+     "r_hi": "8.590392900913971206548077e-8",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box02 harmonic p=3 h=1/16 prec=128 w=1e-07 skew",
+     "point": 1,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-4.6e-8",
+      "0.0"
+     ],
+     "component": 0,
+     "overshoot": "3.3290934e-5",
+     "lo": "0.5332938939858970084629111",
+     "hi": "0.5332939645099807904755587",
+     "truth": "0.5332606030514248210398607",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box02 harmonic p=3 h=1/16 prec=128 w=1e-07 skew",
+     "point": 1,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-4.6e-8",
+      "0.0"
+     ],
+     "component": 0,
+     "overshoot": "2.4683729e-5",
+     "detail": "-0.0000247964268223213480706424",
+     "r_lo": "-0.0000001126982909860512708746852",
+     "r_hi": "8.590392900913971206548077e-8",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box02 harmonic p=3 h=1/16 prec=128 w=1e-07 skew",
+     "point": 2,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "4.1e-8",
+      "0.0"
+     ],
+     "component": 0,
+     "overshoot": "3.3277093e-5",
+     "lo": "0.5332938939858970084629111",
+     "hi": "0.5332939645099807904755587",
+     "truth": "0.5332606168927789950721383",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box02 harmonic p=3 h=1/16 prec=128 w=1e-07 skew",
+     "point": 2,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "4.1e-8",
+      "0.0"
+     ],
+     "component": 0,
+     "overshoot": "2.4597395e-5",
+     "detail": "-0.00002471009316627887934701284",
+     "r_lo": "-0.0000001126982909860512708746852",
+     "r_hi": "8.590392900913971206548077e-8",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box02 harmonic p=3 h=1/16 prec=128 w=1e-07 skew",
+     "point": 3,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "0.0",
+      "-5.3e-8"
+     ],
+     "component": 0,
+     "overshoot": "3.3292022e-5",
+     "lo": "0.5332938939858970084629111",
+     "hi": "0.5332939645099807904755587",
+     "truth": "0.5332606019639538584743519",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box02 harmonic p=3 h=1/16 prec=128 w=1e-07 skew",
+     "point": 3,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "0.0",
+      "-5.3e-8"
+     ],
+     "component": 0,
+     "overshoot": "2.4690678e-5",
+     "detail": "-0.00002480337599847792808023397",
+     "r_lo": "-0.0000001126982909860512708746852",
+     "r_hi": "8.590392900913971206548077e-8",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box02 harmonic p=3 h=1/16 prec=128 w=1e-07 skew",
+     "point": 4,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "0.0",
+      "3.1e-8"
+     ],
+     "component": 0,
+     "overshoot": "3.3278699e-5",
+     "lo": "0.5332938939858970084629111",
+     "hi": "0.5332939645099807904755587",
+     "truth": "0.5332606152864935077672296",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box02 harmonic p=3 h=1/16 prec=128 w=1e-07 skew",
+     "point": 4,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "0.0",
+      "3.1e-8"
+     ],
+     "component": 0,
+     "overshoot": "2.4607317e-5",
+     "detail": "-0.00002472001494311024517886772",
+     "r_lo": "-0.0000001126982909860512708746852",
+     "r_hi": "8.590392900913971206548077e-8",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box02 harmonic p=3 h=1/16 prec=128 w=1e-07 skew",
+     "point": 5,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-4.6e-8",
+      "-5.3e-8"
+     ],
+     "component": 0,
+     "overshoot": "3.329934e-5",
+     "lo": "0.5332938939858970084629111",
+     "hi": "0.5332939645099807904755587",
+     "truth": "0.5332605946455367089860213",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box02 harmonic p=3 h=1/16 prec=128 w=1e-07 skew",
+     "point": 5,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-4.6e-8",
+      "-5.3e-8"
+     ],
+     "component": 0,
+     "overshoot": "2.4736325e-5",
+     "detail": "-0.0000248490236786842908536473",
+     "r_lo": "-0.0000001126982909860512708746852",
+     "r_hi": "8.590392900913971206548077e-8",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box02 harmonic p=3 h=1/16 prec=128 w=1e-07 skew",
+     "point": 6,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "4.1e-8",
+      "-5.3e-8"
+     ],
+     "component": 0,
+     "overshoot": "3.3285499e-5",
+     "lo": "0.5332938939858970084629111",
+     "hi": "0.5332939645099807904755587",
+     "truth": "0.5332606084868908830182988",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box02 harmonic p=3 h=1/16 prec=128 w=1e-07 skew",
+     "point": 6,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "4.1e-8",
+      "-5.3e-8"
+     ],
+     "component": 0,
+     "overshoot": "2.4649992e-5",
+     "detail": "-0.00002476269002264182213001774",
+     "r_lo": "-0.0000001126982909860512708746852",
+     "r_hi": "8.590392900913971206548077e-8",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box02 harmonic p=3 h=1/16 prec=128 w=1e-07 skew",
+     "point": 7,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-4.6e-8",
+      "3.1e-8"
+     ],
+     "component": 0,
+     "overshoot": "3.3286018e-5",
+     "lo": "0.5332938939858970084629111",
+     "hi": "0.5332939645099807904755587",
+     "truth": "0.5332606079680763582788989",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box02 harmonic p=3 h=1/16 prec=128 w=1e-07 skew",
+     "point": 7,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-4.6e-8",
+      "3.1e-8"
+     ],
+     "component": 0,
+     "overshoot": "2.4652964e-5",
+     "detail": "-0.00002476566262331660795228106",
+     "r_lo": "-0.0000001126982909860512708746852",
+     "r_hi": "8.590392900913971206548077e-8",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box02 harmonic p=3 h=1/16 prec=128 w=1e-07 skew",
+     "point": 8,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "4.1e-8",
+      "3.1e-8"
+     ],
+     "component": 0,
+     "overshoot": "3.3272176e-5",
+     "lo": "0.5332938939858970084629111",
+     "hi": "0.5332939645099807904755587",
+     "truth": "0.5332606218094305323111765",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box02 harmonic p=3 h=1/16 prec=128 w=1e-07 skew",
+     "point": 8,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "4.1e-8",
+      "3.1e-8"
+     ],
+     "component": 0,
+     "overshoot": "2.4566631e-5",
+     "detail": "-0.00002467932896727413922865149",
+     "r_lo": "-0.0000001126982909860512708746852",
+     "r_hi": "8.590392900913971206548077e-8",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box02 harmonic p=3 h=1/16 prec=128 w=1e-07 skew",
+     "point": 9,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-3.904028898e-8",
+      "-1.959038747e-8"
+     ],
+     "component": 0,
+     "overshoot": "3.3292934e-5",
+     "lo": "0.5332938939858970084629111",
+     "hi": "0.5332939645099807904755587",
+     "truth": "0.5332606010516191576045976",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box02 harmonic p=3 h=1/16 prec=128 w=1e-07 skew",
+     "point": 9,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-3.904028898e-8",
+      "-1.959038747e-8"
+     ],
+     "component": 0,
+     "overshoot": "2.4696263e-5",
+     "detail": "-0.00002480896179011248731682671",
+     "r_lo": "-0.0000001126982909860512708746852",
+     "r_hi": "8.590392900913971206548077e-8",
+     "e_ref": "1.0e-120"
+    }
+   ],
+   "refused_sample": [],
+   "undecided_sample": [],
+   "extra": {
+    "boxes_planned": 20,
+    "boxes": [
+     {
+      "box": "box00 harmonic p=4 h=1/8 prec=128 w=1e-05 rot",
+      "h_used": "1/8",
+      "points": 17,
+      "e_ref": "1.0e-120",
+      "min_new_box_width": "1.234e-5",
+      "max_new_box_width": "1.356e-5",
+      "start_box_halfwidth_class": "1/100000",
+      "sensitive": true,
+      "step_seconds": 0.002
+     },
+     {
+      "box": "box01 harmonic p=8 h=1/8 prec=256 w=1e-03 rot",
+      "h_used": "1/8",
+      "points": 17,
+      "e_ref": "1.0e-120",
+      "min_new_box_width": "0.001145",
+      "max_new_box_width": "0.001817",
+      "start_box_halfwidth_class": "1/1000",
+      "sensitive": true,
+      "step_seconds": 0.003
+     },
+     {
+      "box": "box02 harmonic p=3 h=1/16 prec=128 w=1e-07 skew",
+      "h_used": "1/16",
+      "points": 17,
+      "e_ref": "1.0e-120",
+      "min_new_box_width": "7.052e-8",
+      "max_new_box_width": "2.023e-7",
+      "start_box_halfwidth_class": "1/10000000",
+      "sensitive": true,
+      "step_seconds": 0.003
+     },
+     {
+      "box": "box03 harmonic p=20 h=1/8 prec=128 w=1e-04 rot",
+      "h_used": "1/8",
+      "points": 17,
+      "e_ref": "1.0e-120",
+      "min_new_box_width": "0.0001991",
+      "max_new_box_width": "0.0001995",
+      "start_box_halfwidth_class": "1/10000",
+      "sensitive": true,
+      "step_seconds": 0.004
+     },
+     {
+      "box": "box04 harmonic p=6 h=1/8 prec=128 w=1e-45 rot",
+      "h_used": "1/8",
+      "points": 17,
+      "e_ref": "1.0e-120",
+      "min_new_box_width": "1.349e-11",
+      "max_new_box_width": "1.423e-11",
+      "start_box_halfwidth_class": "1/1000000000000000000000000000000000000000000000",
+      "sensitive": true,
+      "step_seconds": 0.003
+     },
+     {
+      "box": "box05 harmonic p=5 h=1/8 prec=128 w=0 rot",
+      "h_used": "1/8",
+      "points": 1,
+      "e_ref": "1.0e-120",
+      "min_new_box_width": "7.633e-10",
+      "max_new_box_width": "7.72e-10",
+      "start_box_halfwidth_class": "0",
+      "sensitive": true,
+      "step_seconds": 0.003
+     },
+     {
+      "box": "box06 kepler p=4 h=1/8 prec=128 w=1e-06 rot",
+      "h_used": "1/8",
+      "points": 33,
+      "e_ref": "1.043e-118",
+      "min_new_box_width": "3.718e-6",
+      "max_new_box_width": "4.583e-6",
+      "start_box_halfwidth_class": "1/1000000",
+      "sensitive": true,
+      "step_seconds": 0.02
+     },
+     {
+      "box": "box07 kepler p=8 h=1/16 prec=256 w=1e-04 rot",
+      "h_used": "1/16",
+      "points": 33,
+      "e_ref": "6.541e-119",
+      "min_new_box_width": "0.000194",
+      "max_new_box_width": "0.0002341",
+      "start_box_halfwidth_class": "1/10000",
+      "sensitive": true,
+      "step_seconds": 0.05
+     },
+     {
+      "box": "box08 kepler p=3 h=1/8 prec=128 w=1e-08 skew",
+      "h_used": "1/8",
+      "points": 33,
+      "e_ref": "1.002e-118",
+      "min_new_box_width": "4.265e-5",
+      "max_new_box_width": "5.669e-5",
+      "start_box_halfwidth_class": "1/100000000",
+      "sensitive": true,
+      "step_seconds": 0.018
+     },
+     {
+      "box": "box09 kepler p=20 h=1/8 prec=128 w=1e-05 rot",
+      "h_used": "1/8",
+      "points": 33,
+      "e_ref": "1.974e-118",
+      "min_new_box_width": "2.103e-5",
+      "max_new_box_width": "3.341e-5",
+      "start_box_halfwidth_class": "1/100000",
+      "sensitive": true,
+      "step_seconds": 0.191
+     },
+     {
+      "box": "box10 kepler p=6 h=1/8 prec=128 w=1e-45 rot",
+      "h_used": "1/8",
+      "points": 33,
+      "e_ref": "1.171e-118",
+      "min_new_box_width": "2.236e-8",
+      "max_new_box_width": "3.272e-8",
+      "start_box_halfwidth_class": "1/1000000000000000000000000000000000000000000000",
+      "sensitive": true,
+      "step_seconds": 0.035
+     },
+     {
+      "box": "box11 kepler p=5 h=1/8 prec=128 w=0 rot",
+      "h_used": "1/8",
+      "points": 1,
+      "e_ref": "1.008e-118",
+      "min_new_box_width": "1.482e-5",
+      "max_new_box_width": "2.131e-5",
+      "start_box_halfwidth_class": "0",
+      "sensitive": true,
+      "step_seconds": 0.029
+     },
+     {
+      "box": "box12 nbody p=4 h=1/16 prec=128 w=1e-06 rot",
+      "h_used": "1/16",
+      "points": 133,
+      "e_ref": "8.737e-119",
+      "min_new_box_width": "3.333e-6",
+      "max_new_box_width": "4.225e-6",
+      "start_box_halfwidth_class": "1/1000000",
+      "sensitive": true,
+      "step_seconds": 0.313
+     },
+     {
+      "box": "box13 nbody p=8 h=1/16 prec=128 w=1e-04 rot",
+      "h_used": "1/16",
+      "points": 132,
+      "e_ref": "8.736e-119",
+      "min_new_box_width": "0.0003714",
+      "max_new_box_width": "0.0004442",
+      "start_box_halfwidth_class": "1/10000",
+      "sensitive": true,
+      "step_seconds": 0.439
+     },
+     {
+      "box": "box14 nbody p=3 h=1/32 prec=256 w=1e-07 eye",
+      "h_used": "1/32",
+      "points": 132,
+      "e_ref": "4.334e-119",
+      "min_new_box_width": "7.217e-8",
+      "max_new_box_width": "1.984e-7",
+      "start_box_halfwidth_class": "1/10000000",
+      "sensitive": true,
+      "step_seconds": 0.363
+     },
+     {
+      "box": "box15 nbody p=6 h=1/16 prec=128 w=1e-05 skew",
+      "h_used": "1/16",
+      "points": 131,
+      "e_ref": "8.734e-119",
+      "min_new_box_width": "0.0001403",
+      "max_new_box_width": "0.0002134",
+      "start_box_halfwidth_class": "1/100000",
+      "sensitive": true,
+      "step_seconds": 0.489
+     },
+     {
+      "box": "box16 nbody p=20 h=1/16 prec=128 w=1e-06 rot",
+      "h_used": "1/16",
+      "points": 131,
+      "e_ref": "8.736e-119",
+      "min_new_box_width": "3.772e-6",
+      "max_new_box_width": "4.748e-6",
+      "start_box_halfwidth_class": "1/1000000",
+      "sensitive": true,
+      "step_seconds": 1.68
+     },
+     {
+      "box": "box17 nbody p=10 h=1/32 prec=128 w=1e-05 rot",
+      "h_used": "1/32",
+      "points": 133,
+      "e_ref": "4.333e-119",
+      "min_new_box_width": "3.062e-5",
+      "max_new_box_width": "3.936e-5",
+      "start_box_halfwidth_class": "1/100000",
+      "sensitive": true,
+      "step_seconds": 0.672
+     },
+     {
+      "box": "box18 nbody p=5 h=1/16 prec=128 w=1e-45 rot",
+      "h_used": "1/16",
+      "points": 133,
+      "e_ref": "8.732e-119",
+      "min_new_box_width": "8.425e-10",
+      "max_new_box_width": "1.112e-9",
+      "start_box_halfwidth_class": "1/1000000000000000000000000000000000000000000000",
+      "sensitive": true,
+      "step_seconds": 0.341
+     },
+     {
+      "box": "box19 nbody p=4 h=1/32 prec=128 w=0 rot",
+      "h_used": "1/32",
+      "points": 1,
+      "e_ref": "4.334e-119",
+      "min_new_box_width": "9.417e-11",
+      "max_new_box_width": "1.324e-10",
+      "start_box_halfwidth_class": "0",
+      "sensitive": true,
+      "step_seconds": 0.3
+     }
+    ]
+   }
+  },
+  "R3-C": {
+   "desc": "\uacc4\uc57d \ud615\uc2dd(7\uc808): \ubc18\ud658 \uad6c\uc870\u00b7info \ud0a4\u00b7h_used \ubc94\uc704\u00b7state.t \uc77c\uad00\u00b7B/c \uc774\uc9c4 \ubd84\uc218",
+   "sealed": true,
+   "verdict": "PASS",
+   "counts": {
+    "PASS": 4098,
+    "VIOLATION": 0,
+    "REFUSED": 0,
+    "UNDECIDED": 0,
+    "NOT_RUN": 0
+   },
+   "total": 4098,
+   "violations_sample": [],
+   "refused_sample": [],
+   "undecided_sample": []
+  },
+  "R3-S1e": {
+   "desc": "[\ubcf4\ucda9] S1 \uc758 \ucd08\uae30 \uac78\uc74c(0,1,2,3,5,10,20)\uc5d0\uc11c\ub3c4 \uac19\uc740 \ud3ec\ud568 \ud310\uc815",
+   "sealed": false,
+   "verdict": "FAIL",
+   "counts": {
+    "PASS": 44,
+    "VIOLATION": 12,
+    "REFUSED": 0,
+    "UNDECIDED": 0,
+    "NOT_RUN": 0
+   },
+   "total": 56,
+   "violations_sample": [
+    {
+     "test": "box",
+     "case": "harmonic|prec=256",
+     "step": 1,
+     "t": "1/10",
+     "component": 0,
+     "overshoot": "3.0824743e-39",
+     "lo": "0.6963364156351052484182644",
+     "hi": "0.6963364156351052484182644",
+     "truth": "0.6963364156351052484182644"
+    },
+    {
+     "test": "set",
+     "case": "harmonic|prec=256",
+     "step": 1,
+     "t": "1/10",
+     "component": 0,
+     "overshoot": "3.2723613e-39",
+     "detail": "3.273229521630752198202198e-39",
+     "r_lo": "-8.682274283570812709141633e-43",
+     "r_hi": "8.682274283570812709141633e-43"
+    },
+    {
+     "test": "box",
+     "case": "harmonic|prec=256",
+     "step": 2,
+     "t": "1/5",
+     "component": 0,
+     "overshoot": "5.7235513e-39",
+     "lo": "0.6357152679834006156134411",
+     "hi": "0.6357152679834006156134411",
+     "truth": "0.6357152679834006156134411"
+    },
+    {
+     "test": "set",
+     "case": "harmonic|prec=256",
+     "step": 2,
+     "t": "1/5",
+     "component": 0,
+     "overshoot": "6.5447219e-39",
+     "detail": "6.546465875410900314923795e-39",
+     "r_lo": "-1.743970221049672913168067e-42",
+     "r_hi": "1.743970221049672913168067e-42"
+    },
+    {
+     "test": "box",
+     "case": "harmonic|prec=256",
+     "step": 3,
+     "t": "3/10",
+     "component": 0,
+     "overshoot": "7.8374229e-39",
+     "lo": "0.5687422635135347271790723",
+     "hi": "0.5687422635135347271790723",
+     "truth": "0.5687422635135347271790723"
+    },
+    {
+     "test": "set",
+     "case": "harmonic|prec=256",
+     "step": 3,
+     "t": "3/10",
+     "component": 0,
+     "overshoot": "9.817082e-39",
+     "detail": "9.819707560725085683009796e-39",
+     "r_lo": "-2.625577701183241056266319e-42",
+     "r_hi": "2.625577701183241056266319e-42"
+    },
+    {
+     "test": "box",
+     "case": "harmonic|prec=256",
+     "step": 5,
+     "t": "1/2",
+     "component": 0,
+     "overshoot": "1.0191517e-38",
+     "lo": "0.4184741521156780369505672",
+     "hi": "0.4184741521156780369505672",
+     "truth": "0.4184741521156780369505672"
+    },
+    {
+     "test": "set",
+     "case": "harmonic|prec=256",
+     "step": 5,
+     "t": "1/2",
+     "component": 0,
+     "overshoot": "1.6361801e-38",
+     "detail": "1.636619992903550027165589e-38",
+     "r_lo": "-4.398690111698615063959368e-42",
+     "r_hi": "4.398690111698615063959368e-42"
+    },
+    {
+     "test": "box",
+     "case": "harmonic|prec=256",
+     "step": 10,
+     "t": "1",
+     "component": 0,
+     "overshoot": "3.0524876e-39",
+     "lo": "-0.01550876300284346527554871",
+     "hi": "-0.01550876300284346527554871",
+     "truth": "-0.01550876300284346527554871"
+    },
+    {
+     "test": "set",
+     "case": "harmonic|prec=256",
+     "step": 10,
+     "t": "1",
+     "component": 0,
+     "overshoot": "3.2723587e-38",
+     "detail": "3.273232276286031447864097e-38",
+     "r_lo": "-8.735582327901969893604569e-42",
+     "r_hi": "8.735582327901969893604569e-42"
+    },
+    {
+     "test": "box",
+     "case": "harmonic|prec=256",
+     "step": 20,
+     "t": "2",
+     "component": 0,
+     "overshoot": "5.8820528e-38",
+     "lo": "-0.7667588408231976379461861",
+     "hi": "-0.7667588408231976379461861",
+     "truth": "-0.7667588408231976379461861"
+    },
+    {
+     "test": "set",
+     "case": "harmonic|prec=256",
+     "step": 20,
+     "t": "2",
+     "component": 0,
+     "overshoot": "6.544658e-38",
+     "detail": "6.54644864471672924830693e-38",
+     "r_lo": "-1.790600502612453450237746e-41",
+     "r_hi": "1.790600502612453450237746e-41"
+    }
+   ],
+   "refused_sample": [],
+   "undecided_sample": []
+  },
+  "R3-X1": {
+   "desc": "[\ubcf4\ucda9] \uc9d1\ud569 c+B\u00b7R \uc758 \uc815\ud655\ud55c \uc810(\uaf2d\uc9d3\uc810\u00b7\ucd95 \uadf9\uc810)\uc774 enclosure_box \uc548\uc5d0 \uc788\ub294\uac00(\uc790\uae30 \uc77c\uad00\uc131)",
+   "sealed": false,
+   "verdict": "PASS",
+   "counts": {
+    "PASS": 138,
+    "VIOLATION": 0,
+    "REFUSED": 0,
+    "UNDECIDED": 0,
+    "NOT_RUN": 0
+   },
+   "total": 138,
+   "violations_sample": [],
+   "refused_sample": [],
+   "undecided_sample": []
+  },
+  "R3-X2": {
+   "desc": "[\ubcf4\ucda9] \ube44\uc6d0\ud615 \ucf00\ud50c\ub7ec \uc5ec\ub7ec \uac78\uc74c(\ub3c5\ub9bd \uae30\uc900 \uc801\ubd84\uacfc \ub300\uc870)",
+   "sealed": false,
+   "verdict": "PASS",
+   "counts": {
+    "PASS": 8,
+    "VIOLATION": 0,
+    "REFUSED": 0,
+    "UNDECIDED": 0,
+    "NOT_RUN": 0
+   },
+   "total": 8,
+   "violations_sample": [],
+   "refused_sample": [],
+   "undecided_sample": []
+  },
+  "R3-X4": {
+   "desc": "[\ubcf4\ucda9] \ub113\uc740 \uc2dc\uc791 \ud3c9\ud589\uc721\uba74\uccb4(\ubc18\ud3ed 1e-2~5e-2) \ud55c \uac78\uc74c \uc0ac\uc0c1: \ub098\uba38\uc9c0 \ubbf8\ubd84 \ubaab\u00b7\ube44\uc120\ud615 2\ucc28\ud56d \ubbfc\uac10\ub3c4",
+   "sealed": false,
+   "verdict": "FAIL",
+   "counts": {
+    "PASS": 601,
+    "VIOLATION": 131,
+    "REFUSED": 0,
+    "UNDECIDED": 0,
+    "NOT_RUN": 0
+   },
+   "total": 732,
+   "violations_sample": [
+    {
+     "test": "set",
+     "box": "box00 harmonic p=2 h=1/16 prec=128 w=5e-02 rot",
+     "point": 1,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-0.0275",
+      "0.0"
+     ],
+     "component": 0,
+     "overshoot": "0.0024461139",
+     "detail": "-0.02995120975177846661636663",
+     "r_lo": "-0.02750509588904825247024036",
+     "r_hi": "0.04850514062259090469775813",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box00 harmonic p=2 h=1/16 prec=128 w=5e-02 rot",
+     "point": 3,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "0.0",
+      "-0.015"
+     ],
+     "component": 1,
+     "overshoot": "2.0184291e-5",
+     "detail": "-0.01502522522555935718330262",
+     "r_lo": "-0.01500504093496459220519",
+     "r_hi": "0.04850511229561596599670266",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box00 harmonic p=2 h=1/16 prec=128 w=5e-02 rot",
+     "point": 5,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-0.0275",
+      "-0.015"
+     ],
+     "component": 1,
+     "overshoot": "0.0015524068",
+     "lo": "-0.8059714271465319966847214",
+     "hi": "-0.7088070592710067717305106",
+     "truth": "-0.7072546524979201885561674",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box00 harmonic p=2 h=1/16 prec=128 w=5e-02 rot",
+     "point": 5,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-0.0275",
+      "-0.015"
+     ],
+     "component": 0,
+     "overshoot": "0.0024461134",
+     "detail": "-0.02995120927671491985590119",
+     "r_lo": "-0.02750509588904825247024036",
+     "r_hi": "0.04850514062259090469775813",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box00 harmonic p=2 h=1/16 prec=128 w=5e-02 rot",
+     "point": 6,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "0.0485",
+      "-0.015"
+     ],
+     "component": 1,
+     "overshoot": "2.0182755e-5",
+     "detail": "-0.01502522368952055599113102",
+     "r_lo": "-0.01500504093496459220519",
+     "r_hi": "0.04850511229561596599670266",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box00 harmonic p=2 h=1/16 prec=128 w=5e-02 rot",
+     "point": 7,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-0.0275",
+      "0.0485"
+     ],
+     "component": 0,
+     "overshoot": "0.0018841022",
+     "lo": "-1.065420998863837692990381",
+     "hi": "-0.9663839647851412388148615",
+     "truth": "-0.9644998625681269137445538",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box00 harmonic p=2 h=1/16 prec=128 w=5e-02 rot",
+     "point": 7,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-0.0275",
+      "0.0485"
+     ],
+     "component": 0,
+     "overshoot": "0.0024461154",
+     "detail": "-0.02995121128781726780853824",
+     "r_lo": "-0.02750509588904825247024036",
+     "r_hi": "0.04850514062259090469775813",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box00 harmonic p=2 h=1/16 prec=128 w=5e-02 rot",
+     "point": 13,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-0.02623012577",
+      "0.01407975979"
+     ],
+     "component": 0,
+     "overshoot": "0.0011762401",
+     "detail": "-0.02868133596837181034896866",
+     "r_lo": "-0.02750509588904825247024036",
+     "r_hi": "0.04850514062259090469775813",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 0,
+     "r_index_kind": "center",
+     "r": [
+      "0.0",
+      "0.0"
+     ],
+     "component": 1,
+     "overshoot": "0.037864711",
+     "lo": "-0.3482123711362106790828867",
+     "hi": "-0.2685818901339515351837302",
+     "truth": "-0.3860770823989403363788256",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 0,
+     "r_index_kind": "center",
+     "r": [
+      "0.0",
+      "0.0"
+     ],
+     "component": 0,
+     "overshoot": "0.026412054",
+     "detail": "-0.04534472750571939086790509",
+     "r_lo": "-0.01893267395144818216148823",
+     "r_hi": "0.0299390495912194890639029",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 1,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-0.018",
+      "0.0"
+     ],
+     "component": 1,
+     "overshoot": "0.053811353",
+     "lo": "-0.3482123711362106790828867",
+     "hi": "-0.2685818901339515351837302",
+     "truth": "-0.4020237238145355573984972",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 1,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-0.018",
+      "0.0"
+     ],
+     "component": 0,
+     "overshoot": "0.044412053",
+     "detail": "-0.06334472725146257169292627",
+     "r_lo": "-0.01893267395144818216148823",
+     "r_hi": "0.0299390495912194890639029",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 2,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "0.029",
+      "0.0"
+     ],
+     "component": 0,
+     "overshoot": "0.0061433125",
+     "lo": "0.5240182006865749913378739",
+     "hi": "0.6160709286370829443019107",
+     "truth": "0.5178748882352159075700121",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 2,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "0.029",
+      "0.0"
+     ],
+     "component": 1,
+     "overshoot": "0.031176937",
+     "detail": "0.06858468416134198840118284",
+     "r_lo": "-0.04090977567791841649083888",
+     "r_hi": "0.03740774706526390974914584",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 3,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "0.0",
+      "-0.04"
+     ],
+     "component": 1,
+     "overshoot": "0.019311534",
+     "lo": "-0.3482123711362106790828867",
+     "hi": "-0.2685818901339515351837302",
+     "truth": "-0.3675239052310180636417192",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 3,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "0.0",
+      "-0.04"
+     ],
+     "component": 0,
+     "overshoot": "0.026418777",
+     "detail": "-0.04535145069037996639028524",
+     "r_lo": "-0.01893267395144818216148823",
+     "r_hi": "0.0299390495912194890639029",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 4,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "0.0",
+      "0.0365"
+     ],
+     "component": 0,
+     "overshoot": "0.025028504",
+     "lo": "0.5240182006865749913378739",
+     "hi": "0.6160709286370829443019107",
+     "truth": "0.498989696589224801570099",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 4,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "0.0",
+      "0.0365"
+     ],
+     "component": 0,
+     "overshoot": "0.026405919",
+     "detail": "-0.04533859259971661570373321",
+     "r_lo": "-0.01893267395144818216148823",
+     "r_hi": "0.0299390495912194890639029",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 5,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-0.018",
+      "-0.04"
+     ],
+     "component": 1,
+     "overshoot": "0.035258176",
+     "lo": "-0.3482123711362106790828867",
+     "hi": "-0.2685818901339515351837302",
+     "truth": "-0.3834705466466132846613908",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 5,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-0.018",
+      "-0.04"
+     ],
+     "component": 0,
+     "overshoot": "0.044418776",
+     "detail": "-0.06335145043612314721530641",
+     "r_lo": "-0.01893267395144818216148823",
+     "r_hi": "0.0299390495912194890639029",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 7,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-0.018",
+      "0.0365"
+     ],
+     "component": 0,
+     "overshoot": "0.016679574",
+     "lo": "0.5240182006865749913378739",
+     "hi": "0.6160709286370829443019107",
+     "truth": "0.5073386263147898243017981",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 7,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-0.018",
+      "0.0365"
+     ],
+     "component": 0,
+     "overshoot": "0.044405918",
+     "detail": "-0.06333859234545979652875439",
+     "r_lo": "-0.01893267395144818216148823",
+     "r_hi": "0.0299390495912194890639029",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 8,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "0.029",
+      "0.0365"
+     ],
+     "component": 0,
+     "overshoot": "0.038479558",
+     "lo": "0.5240182006865749913378739",
+     "hi": "0.6160709286370829443019107",
+     "truth": "0.4855386431424811538356963",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 8,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "0.029",
+      "0.0365"
+     ],
+     "component": 1,
+     "overshoot": "0.067676937",
+     "detail": "0.1050846836457656606296774",
+     "r_lo": "-0.04090977567791841649083888",
+     "r_hi": "0.03740774706526390974914584",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 9,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "0.01973268186",
+      "-0.02235385964"
+     ],
+     "component": 1,
+     "overshoot": "0.010014667",
+     "lo": "-0.3482123711362106790828867",
+     "hi": "-0.2685818901339515351837302",
+     "truth": "-0.3582270376770739090803282",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 9,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "0.01973268186",
+      "-0.02235385964"
+     ],
+     "component": 0,
+     "overshoot": "0.0066831292",
+     "detail": "-0.02561580315183994408707655",
+     "r_lo": "-0.01893267395144818216148823",
+     "r_hi": "0.0299390495912194890639029",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 10,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "0.001131987682",
+      "-0.01164635539"
+     ],
+     "component": 1,
+     "overshoot": "0.031459933",
+     "lo": "-0.3482123711362106790828867",
+     "hi": "-0.2685818901339515351837302",
+     "truth": "-0.3796723043788694234847665",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 10,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "0.001131987682",
+      "-0.01164635539"
+     ],
+     "component": 0,
+     "overshoot": "0.025282023",
+     "detail": "-0.04421469735515687204585763",
+     "r_lo": "-0.01893267395144818216148823",
+     "r_hi": "0.0299390495912194890639029",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 11,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-0.004455509681",
+      "0.03055179353"
+     ],
+     "component": 0,
+     "overshoot": "0.017692246",
+     "lo": "0.5240182006865749913378739",
+     "hi": "0.6160709286370829443019107",
+     "truth": "0.5063259550816040569861187",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 11,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-0.004455509681",
+      "0.03055179353"
+     ],
+     "component": 0,
+     "overshoot": "0.030862428",
+     "detail": "-0.04979510198998195042940724",
+     "r_lo": "-0.01893267395144818216148823",
+     "r_hi": "0.0299390495912194890639029",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 12,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "0.003281315928",
+      "0.01614956442"
+     ],
+     "component": 0,
+     "overshoot": "0.0085215251",
+     "lo": "0.5240182006865749913378739",
+     "hi": "0.6160709286370829443019107",
+     "truth": "0.5154966756332315807636733",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 12,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "0.003281315928",
+      "0.01614956442"
+     ],
+     "component": 0,
+     "overshoot": "0.023128023",
+     "detail": "-0.04206069721116912273465014",
+     "r_lo": "-0.01893267395144818216148823",
+     "r_hi": "0.0299390495912194890639029",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 13,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "0.02290722165",
+      "0.0189577945"
+     ],
+     "component": 0,
+     "overshoot": "0.020112478",
+     "lo": "0.5240182006865749913378739",
+     "hi": "0.6160709286370829443019107",
+     "truth": "0.5039057230857471756491113",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 13,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "0.02290722165",
+      "0.0189577945"
+     ],
+     "component": 0,
+     "overshoot": "0.0035016458",
+     "detail": "-0.0224343197632767454003388",
+     "r_lo": "-0.01893267395144818216148823",
+     "r_hi": "0.0299390495912194890639029",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 14,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-0.008590809767",
+      "-0.02229025751"
+     ],
+     "component": 1,
+     "overshoot": "0.035136643",
+     "lo": "-0.3482123711362106790828867",
+     "hi": "-0.2685818901339515351837302",
+     "truth": "-0.3833490140277821539383043",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 14,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-0.008590809767",
+      "-0.02229025751"
+     ],
+     "component": 0,
+     "overshoot": "0.03500661",
+     "detail": "-0.05393928368968223185788864",
+     "r_lo": "-0.01893267395144818216148823",
+     "r_hi": "0.0299390495912194890639029",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 15,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-0.006195618508",
+      "-0.003617126898"
+     ],
+     "component": 1,
+     "overshoot": "0.041675832",
+     "lo": "-0.3482123711362106790828867",
+     "hi": "-0.2685818901339515351837302",
+     "truth": "-0.3898882028666583208361052",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 15,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-0.006195618508",
+      "-0.003617126898"
+     ],
+     "component": 0,
+     "overshoot": "0.03260828",
+     "detail": "-0.05154095389186844313687842",
+     "r_lo": "-0.01893267395144818216148823",
+     "r_hi": "0.0299390495912194890639029",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "box",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 16,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-0.00258167817",
+      "0.0008872678507"
+     ],
+     "component": 1,
+     "overshoot": "0.040563424",
+     "lo": "-0.3482123711362106790828867",
+     "hi": "-0.2685818901339515351837302",
+     "truth": "-0.388775795341077916138432",
+     "e_ref": "1.0e-120"
+    },
+    {
+     "test": "set",
+     "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+     "point": 16,
+     "r_index_kind": "vertex/axis/interior",
+     "r": [
+      "-0.00258167817",
+      "0.0008872678507"
+     ],
+     "component": 0,
+     "overshoot": "0.028993583",
+     "detail": "-0.04792625650747987737138514",
+     "r_lo": "-0.01893267395144818216148823",
+     "r_hi": "0.0299390495912194890639029",
+     "e_ref": "1.0e-120"
+    }
+   ],
+   "refused_sample": [],
+   "undecided_sample": [],
+   "extra": {
+    "boxes_planned": 6,
+    "boxes": [
+     {
+      "box": "box00 harmonic p=2 h=1/16 prec=128 w=5e-02 rot",
+      "h_used": "1/16",
+      "points": 17,
+      "e_ref": "1.0e-120",
+      "min_new_box_width": "0.09716",
+      "max_new_box_width": "0.09904",
+      "start_box_halfwidth_class": "1/20",
+      "sensitive": true,
+      "step_seconds": 0.002
+     },
+     {
+      "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+      "h_used": "1/8",
+      "points": 17,
+      "e_ref": "1.0e-120",
+      "min_new_box_width": "0.07963",
+      "max_new_box_width": "0.09205",
+      "start_box_halfwidth_class": "1/20",
+      "sensitive": true,
+      "step_seconds": 0.002
+     },
+     {
+      "box": "box02 kepler p=2 h=1/16 prec=128 w=2e-02 rot",
+      "h_used": "1/16",
+      "points": 33,
+      "e_ref": "1.106e-118",
+      "min_new_box_width": "0.04874",
+      "max_new_box_width": "0.05645",
+      "start_box_halfwidth_class": "1/50",
+      "sensitive": true,
+      "step_seconds": 0.012
+     },
+     {
+      "box": "box03 kepler p=3 h=1/16 prec=256 w=2e-02 rot",
+      "h_used": "1/16",
+      "points": 33,
+      "e_ref": "1.187e-118",
+      "min_new_box_width": "0.05596",
+      "max_new_box_width": "0.06289",
+      "start_box_halfwidth_class": "1/50",
+      "sensitive": true,
+      "step_seconds": 0.021
+     },
+     {
+      "box": "box04 nbody p=2 h=1/32 prec=128 w=1e-02 rot",
+      "h_used": "1/32",
+      "points": 133,
+      "e_ref": "4.336e-119",
+      "min_new_box_width": "0.03679",
+      "max_new_box_width": "0.04397",
+      "start_box_halfwidth_class": "1/100",
+      "sensitive": true,
+      "step_seconds": 0.254
+     },
+     {
+      "box": "box05 nbody p=3 h=1/32 prec=128 w=1e-02 rot",
+      "h_used": "1/32",
+      "points": 133,
+      "e_ref": "4.336e-119",
+      "min_new_box_width": "0.02974",
+      "max_new_box_width": "0.03982",
+      "start_box_halfwidth_class": "1/100",
+      "sensitive": true,
+      "step_seconds": 0.23
+     }
+    ]
+   }
+  },
+  "R3-X3": {
+   "desc": "[\ubcf4\ucda9] \ud53c\ud0c0\uace0\ub77c\uc2a4 t=0 \uc5d0\uc11c \uc9e7\uc740 \uc5ec\ub7ec \uac78\uc74c(12\ucc28\uc6d0 \uccb4\uc778)",
+   "sealed": false,
+   "verdict": "FAIL",
+   "counts": {
+    "PASS": 0,
+    "VIOLATION": 8,
+    "REFUSED": 0,
+    "UNDECIDED": 0,
+    "NOT_RUN": 0
+   },
+   "total": 8,
+   "violations_sample": [
+    {
+     "test": "box",
+     "case": "pythagorean-t0|prec=128",
+     "step": 1,
+     "t": "1/32",
+     "component": 0,
+     "overshoot": "1.4246771e-25",
+     "lo": "0.9999531228621460359118177",
+     "hi": "0.9999531228621460359118177",
+     "truth": "0.9999531228621460359118175",
+     "e_ref": "4.334e-119"
+    },
+    {
+     "test": "set",
+     "case": "pythagorean-t0|prec=128",
+     "step": 1,
+     "t": "1/32",
+     "component": 0,
+     "overshoot": "1.4468646e-25",
+     "detail": "-1.529440034918005628586317e-25",
+     "r_lo": "-8.257547940933647988277978e-27",
+     "r_hi": "8.257547940930709209733978e-27",
+     "e_ref": "4.334e-119"
+    },
+    {
+     "test": "box",
+     "case": "pythagorean-t0|prec=128",
+     "step": 4,
+     "t": "1/8",
+     "component": 0,
+     "overshoot": "4.3993575e-25",
+     "lo": "0.9992494520351300650385523",
+     "hi": "0.9992494520351300650385528",
+     "truth": "0.9992494520351300650385519",
+     "e_ref": "1.878e-118"
+    },
+    {
+     "test": "set",
+     "case": "pythagorean-t0|prec=128",
+     "step": 4,
+     "t": "1/8",
+     "component": 0,
+     "overshoot": "1.0563535e-24",
+     "detail": "-1.174186451409997734739469e-24",
+     "r_lo": "-1.178329197992079632953456e-25",
+     "r_hi": "1.178329197991991350127342e-25",
+     "e_ref": "1.878e-118"
+    },
+    {
+     "test": "box",
+     "case": "pythagorean-t0|prec=128",
+     "step": 8,
+     "t": "1/4",
+     "component": 2,
+     "overshoot": "1.2033447e-22",
+     "lo": "-1.980320485954311942475888",
+     "hi": "-1.980320485954311942475805",
+     "truth": "-1.980320485954311942475684",
+     "e_ref": "3.915e-118"
+    },
+    {
+     "test": "set",
+     "case": "pythagorean-t0|prec=128",
+     "step": 8,
+     "t": "1/4",
+     "component": 0,
+     "overshoot": "6.6448473e-24",
+     "detail": "-7.705947633049562989104774e-24",
+     "r_lo": "-1.061100295642837564267765e-24",
+     "r_hi": "1.061100295642822784399344e-24",
+     "e_ref": "3.915e-118"
+    },
+    {
+     "test": "box",
+     "case": "pythagorean-t0|prec=128",
+     "step": 12,
+     "t": "3/8",
+     "component": 2,
+     "overshoot": "2.3464646e-22",
+     "lo": "-1.955525230611559097757874",
+     "hi": "-1.955525230611559097757443",
+     "truth": "-1.955525230611559097757208",
+     "e_ref": "6.225e-118"
+    },
+    {
+     "test": "set",
+     "case": "pythagorean-t0|prec=128",
+     "step": 12,
+     "t": "3/8",
+     "component": 0,
+     "overshoot": "2.8210343e-23",
+     "detail": "-3.45411177461099068354577e-23",
+     "r_lo": "-6.330774344771204841190073e-24",
+     "r_hi": "6.330774344771186919452659e-24",
+     "e_ref": "6.225e-118"
+    }
+   ],
+   "refused_sample": [],
+   "undecided_sample": []
+  }
+ },
+ "violation_total": 1126,
+ "sealed_violation_total": 975,
+ "min_counterexample": {
+  "test": "box",
+  "box": "box01 harmonic p=1 h=1/8 prec=128 w=5e-02 rot",
+  "point": 0,
+  "r_index_kind": "center",
+  "r": [
+   "0.0",
+   "0.0"
+  ],
+  "component": 1,
+  "overshoot": "0.037864711",
+  "lo": "-0.3482123711362106790828867",
+  "hi": "-0.2685818901339515351837302",
+  "truth": "-0.3860770823989403363788256",
+  "e_ref": "1.0e-120",
+  "crit": "R3-X4"
+ },
+ "system_source": {
+  "make_harmonic": "module",
+  "make_kepler": "module",
+  "make_nbody": "module"
+ },
+ "state_injection_mode_for_S2": "setattr on lohner_init result",
+ "advisories_not_counted_as_violations": {},
+ "log10_max_box_width_at_checkpoints": {
+  "harmonic|prec=128": {
+   "1": -37.11686609701877,
+   "2": -36.78365141798339,
+   "3": -36.57759693555027,
+   "5": -36.34431872415313,
+   "10": -36.086235241716,
+   "20": -35.802674655296826,
+   "50": -35.43806766349086,
+   "100": -35.100395263372384,
+   "150": -34.92149873353743,
+   "200": -34.817174452127055,
+   "250": -34.78009857117869,
+   "300": -34.69469310108053,
+   "350": -34.57115466485921,
+   "400": -34.49630965047886,
+   "450": -34.451501621742025,
+   "500": -34.4464061475726,
+   "550": -34.47360327604682,
+   "600": -34.357721463735324,
+   "650": -34.289124134950484,
+   "700": -34.25409274496223,
+   "750": -34.2468450582666,
+   "800": -34.28188326303091,
+   "850": -34.236690348410676,
+   "900": -34.1589090401008,
+   "950": -34.12145029847636,
+   "1000": -34.10674561102415
+  },
+  "harmonic|prec=256": {
+   "1": -41.72869181813977,
+   "2": -41.395031160791575,
+   "3": -41.18903830680278,
+   "5": -40.918462743741294,
+   "10": -40.620089770044174,
+   "20": -40.34243164605549,
+   "50": -39.9688370475152,
+   "100": -39.63251132204697,
+   "150": -39.453421555956886,
+   "200": -39.34613916900684,
+   "250": -39.30508576257225,
+   "300": -39.22018862171372,
+   "350": -39.10061671019744,
+   "400": -39.02873637669141,
+   "450": -38.9818871378839,
+   "500": -38.973061528936846,
+   "550": -38.99683565155103,
+   "600": -38.88569343210285,
+   "650": -38.81997388396427,
+   "700": -38.78574497395231,
+   "750": -38.77517751034027,
+   "800": -38.80624587313985,
+   "850": -38.76231977176762,
+   "900": -38.68823943708753,
+   "950": -38.65391951890959,
+   "1000": -38.6367744284074
+  },
+  "kepler-circle|prec=128": {
+   "1": -20.96826503889631,
+   "2": -20.042267354409617,
+   "3": -19.239498540557616,
+   "5": -17.94496459371466,
+   "10": -16.57629241202093,
+   "20": -16.029257585490896,
+   "50": -14.97743845924172,
+   "100": -13.997381252758966,
+   "150": -13.447897706705694,
+   "200": -12.972743350576458,
+   "250": -12.545319116103798,
+   "300": -12.261796680025922,
+   "350": -12.049059617553162,
+   "400": -11.915642490083002,
+   "450": -11.683834084903504,
+   "500": -11.432122871629245,
+   "550": -11.271310615686176,
+   "600": -11.145145148688284,
+   "650": -11.072081821577708,
+   "700": -10.986520816527724,
+   "750": -10.777248768433402,
+   "800": -10.648227985187647,
+   "850": -10.548696405786393,
+   "900": -10.494488436010865,
+   "950": -10.487796923132532,
+   "1000": -10.321880573123158
+  },
+  "kepler-circle|prec=256": {
+   "1": -20.96826503889631,
+   "2": -20.042267354409617,
+   "3": -19.239498540557616,
+   "5": -17.94496459371466,
+   "10": -16.57629241202093,
+   "20": -16.029257585490896,
+   "50": -14.97743845924172,
+   "100": -13.997381252758966,
+   "150": -13.447897706705694,
+   "200": -12.972743350576458,
+   "250": -12.545319116103798,
+   "300": -12.261796680025922,
+   "350": -12.049059617553162,
+   "400": -11.915642490083002,
+   "450": -11.683834084903504,
+   "500": -11.432122871629245,
+   "550": -11.271310615686176,
+   "600": -11.145145148688284,
+   "650": -11.072081821577708,
+   "700": -10.986520816527724,
+   "750": -10.777248768433402,
+   "800": -10.648227985187647,
+   "850": -10.548696405786393,
+   "900": -10.494488436010865,
+   "950": -10.487796923132532,
+   "1000": -10.321880573123158
+  },
+  "kepler-eccentric|prec=128": {
+   "10": -15.704792670814042,
+   "20": -13.964899403386601,
+   "40": -10.136519711211912,
+   "60": -9.513756590296124
+  },
+  "pythagorean-t0|prec=128": {
+   "1": -23.51950795672038,
+   "4": -22.482114350968466,
+   "8": -21.742575709985164,
+   "12": -21.122833333909377
+  }
+ },
+ "step_time": {
+  "harmonic|prec=128": {
+   "calls": 1000,
+   "median_ms": 5.806,
+   "max_ms": 33.681,
+   "total_s": 5.75
+  },
+  "harmonic|prec=256": {
+   "calls": 1000,
+   "median_ms": 6.239,
+   "max_ms": 12.186,
+   "total_s": 6.15
+  },
+  "kepler-circle|prec=128": {
+   "calls": 1000,
+   "median_ms": 191.473,
+   "max_ms": 330.12,
+   "total_s": 194.63
+  },
+  "kepler-circle|prec=256": {
+   "calls": 1000,
+   "median_ms": 206.201,
+   "max_ms": 370.325,
+   "total_s": 211.69
+  },
+  "S2|harmonic": {
+   "calls": 8,
+   "median_ms": 2.697,
+   "max_ms": 4.472,
+   "total_s": 0.02
+  },
+  "S2|kepler": {
+   "calls": 8,
+   "median_ms": 28.943,
+   "max_ms": 191.265,
+   "total_s": 0.38
+  },
+  "S2|nbody": {
+   "calls": 10,
+   "median_ms": 363.003,
+   "max_ms": 1679.673,
+   "total_s": 5.08
+  },
+  "kepler-eccentric|prec=128": {
+   "calls": 60,
+   "median_ms": 109.849,
+   "max_ms": 139.662,
+   "total_s": 6.63
+  },
+  "pythagorean-t0|prec=128": {
+   "calls": 12,
+   "median_ms": 826.495,
+   "max_ms": 1130.492,
+   "total_s": 10.32
+  }
+ },
+ "reference_cache": {
+  "hits": 1552,
+  "misses": 0,
+  "path": "C:\\numerical-audit-lab-recovered-2026-10-01\\research\\pythagorean-3body\\rigorous\\r3c_selftest_runs\\ref_cache.pkl"
+ },
+ "stats": {
+  "steps": 4098
+ },
+ "elapsed_sec": 521.4,
+ "evidence_level": "see criteria; NOT a formal proof",
+ "verdict": "FAIL"
+}

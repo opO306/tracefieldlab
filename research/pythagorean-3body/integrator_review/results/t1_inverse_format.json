@@ -1,0 +1,262 @@
+{
+ "sources": {
+  "dyad.py": {
+   "path": "/home/zun24/integrator_review_dev/src/dyad.py",
+   "sha256": "4d49cf8f707061d128fce3ed44b59ccb3a6bda14937e32dcd469cd201fbabaab",
+   "match_seal": true
+  },
+  "taylor_step.py": {
+   "path": "/home/zun24/integrator_review_dev/src/taylor_step.py",
+   "sha256": "0183f0f8dc76dcf9c1a9933d8f16a636ac011bc15e9a95e0749fb2459be01c31",
+   "match_seal": true
+  },
+  "lohner_step.py": {
+   "path": "/home/zun24/integrator_review_dev/src/lohner_step.py",
+   "sha256": "936138ea73b878c811df8db7b582ddb6883590be0f47cc7ece76d5ffc2db6b62",
+   "match_seal": true
+  }
+ },
+ "summary": {
+  "n_tests": 47,
+  "n_ok": 47,
+  "n_fail": 0,
+  "wall_s": 1.8
+ },
+ "results": [
+  {
+   "test": "A1 n=1 t=0",
+   "ok": true,
+   "detail": "M·inv == I and inv·M == I exactly"
+  },
+  {
+   "test": "A1 n=2 t=0",
+   "ok": true,
+   "detail": "M·inv == I and inv·M == I exactly"
+  },
+  {
+   "test": "A1 n=4 t=0",
+   "ok": true,
+   "detail": "M·inv == I and inv·M == I exactly"
+  },
+  {
+   "test": "A1 n=12 t=0",
+   "ok": true,
+   "detail": "M·inv == I and inv·M == I exactly"
+  },
+  {
+   "test": "A2 QR-Q n=2 t=0",
+   "ok": true,
+   "detail": "exact inverse; max|inv - Q^T| = 7.351e-16 (Q^T 가 역행렬과 다른 크기, 참고)"
+  },
+  {
+   "test": "A2 QR-Q n=2 t=1",
+   "ok": true,
+   "detail": "exact inverse; max|inv - Q^T| = 2.234e-16 (Q^T 가 역행렬과 다른 크기, 참고)"
+  },
+  {
+   "test": "A2 QR-Q n=2 t=2",
+   "ok": true,
+   "detail": "exact inverse; max|inv - Q^T| = 6.153e-18 (Q^T 가 역행렬과 다른 크기, 참고)"
+  },
+  {
+   "test": "A2 QR-Q n=4 t=0",
+   "ok": true,
+   "detail": "exact inverse; max|inv - Q^T| = 6.987e-16 (Q^T 가 역행렬과 다른 크기, 참고)"
+  },
+  {
+   "test": "A2 QR-Q n=4 t=1",
+   "ok": true,
+   "detail": "exact inverse; max|inv - Q^T| = 6.575e-16 (Q^T 가 역행렬과 다른 크기, 참고)"
+  },
+  {
+   "test": "A2 QR-Q n=4 t=2",
+   "ok": true,
+   "detail": "exact inverse; max|inv - Q^T| = 4.141e-16 (Q^T 가 역행렬과 다른 크기, 참고)"
+  },
+  {
+   "test": "A2 QR-Q n=12 t=0",
+   "ok": true,
+   "detail": "exact inverse; max|inv - Q^T| = 9.600e-16 (Q^T 가 역행렬과 다른 크기, 참고)"
+  },
+  {
+   "test": "A2 QR-Q n=12 t=1",
+   "ok": true,
+   "detail": "exact inverse; max|inv - Q^T| = 6.163e-16 (Q^T 가 역행렬과 다른 크기, 참고)"
+  },
+  {
+   "test": "A2 QR-Q n=12 t=2",
+   "ok": true,
+   "detail": "exact inverse; max|inv - Q^T| = 8.952e-16 (Q^T 가 역행렬과 다른 크기, 참고)"
+  },
+  {
+   "test": "A3 near-singular 2x2 (cond~2^100)",
+   "ok": true,
+   "detail": "exact"
+  },
+  {
+   "test": "A3 zero pivot needs row swap",
+   "ok": true,
+   "detail": "exact"
+  },
+  {
+   "test": "A3 permutation 4x4",
+   "ok": true,
+   "detail": "exact"
+  },
+  {
+   "test": "A3 1x1 tiny",
+   "ok": true,
+   "detail": "exact"
+  },
+  {
+   "test": "A3 1x1 negative",
+   "ok": true,
+   "detail": "exact"
+  },
+  {
+   "test": "A4 singular dup columns",
+   "ok": true,
+   "detail": "returns None"
+  },
+  {
+   "test": "A4 singular zero row",
+   "ok": true,
+   "detail": "returns None"
+  },
+  {
+   "test": "A4 singular rank1 4x4",
+   "ok": true,
+   "detail": "returns None"
+  },
+  {
+   "test": "A4 singular zero 1x1",
+   "ok": true,
+   "detail": "returns None"
+  },
+  {
+   "test": "A5 DI(q) wrap prec=24",
+   "ok": true,
+   "detail": "2000 random rationals, bad=0"
+  },
+  {
+   "test": "A5 DI(q) wrap prec=53",
+   "ok": true,
+   "detail": "2000 random rationals, bad=0"
+  },
+  {
+   "test": "A5 DI(q) wrap prec=128",
+   "ok": true,
+   "detail": "2000 random rationals, bad=0"
+  },
+  {
+   "test": "A5 DI(q) wrap prec=256",
+   "ok": true,
+   "detail": "2000 random rationals, bad=0"
+  },
+  {
+   "test": "A6 harmonic step 1: B_new·Binv == I exactly",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "test": "H7 harmonic step 1: state_new dyadic <= 128 bits",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "test": "A6 harmonic step 2: B_new·Binv == I exactly",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "test": "H7 harmonic step 2: state_new dyadic <= 128 bits",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "test": "A6 kepler step 1: B_new·Binv == I exactly",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "test": "H7 kepler step 1: state_new dyadic <= 128 bits",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "test": "A6 kepler step 2: B_new·Binv == I exactly",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "test": "H7 kepler step 2: state_new dyadic <= 128 bits",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "test": "A6 nbody step 1: B_new·Binv == I exactly",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "test": "H7 nbody step 1: state_new dyadic <= 128 bits",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "test": "A6 nbody step 2: B_new·Binv == I exactly",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "test": "H7 nbody step 2: state_new dyadic <= 128 bits",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "test": "H1 R endpoints at 256 bits while prec=128",
+   "ok": true,
+   "detail": "ValueError: state entry 38597363079105398474523661669562635951089994888546854679819194669304376546645/115792089237316195423570985008"
+  },
+  {
+   "test": "H2 non-dyadic c",
+   "ok": true,
+   "detail": "ValueError: state entry 1/3 is not a dyadic with <= 128 mantissa bits (R0 decision A: one precision per run)"
+  },
+  {
+   "test": "H2b non-dyadic B",
+   "ok": true,
+   "detail": "ValueError: state entry 1/3 is not a dyadic with <= 128 mantissa bits (R0 decision A: one precision per run)"
+  },
+  {
+   "test": "H3 prep made at 128, step at 64",
+   "ok": true,
+   "detail": "ValueError: prep does not belong to this (system, state, order, precision)"
+  },
+  {
+   "test": "H4 prep from another state object",
+   "ok": true,
+   "detail": "ValueError: prep does not belong to this (system, state, order, precision)"
+  },
+  {
+   "test": "H4b prep with other order",
+   "ok": true,
+   "detail": "ValueError: prep does not belong to this (system, state, order, precision)"
+  },
+  {
+   "test": "H5 float h",
+   "ok": true,
+   "detail": "TypeError: h must be int or Fraction"
+  },
+  {
+   "test": "H5b float c",
+   "ok": true,
+   "detail": "TypeError: state.c entry must be int or Fraction"
+  },
+  {
+   "test": "H6 prec=24 frame bits",
+   "ok": true,
+   "detail": "max mantissa bits of B' = 24, B'·Binv == I"
+  }
+ ]
+}

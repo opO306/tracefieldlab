@@ -1,0 +1,725 @@
+{
+ "selftest": true,
+ "seed": 20261011,
+ "summary": {
+  "buggy_total": 25,
+  "buggy_caught": 25,
+  "buggy_expected_id_hit": 25,
+  "correct_total": 1,
+  "correct_false_positives": 0,
+  "errors": []
+ },
+ "rows": [
+  {
+   "fake": "fake_dyad_add_no_round.py",
+   "kind": "buggy",
+   "bug": "덧셈 결과를 반올림하지 않음",
+   "trials": 20000,
+   "verdict": "FAIL",
+   "elapsed_s": 78.0,
+   "ids_with_violations": [
+    "R0-S4"
+   ],
+   "expected_ids": [
+    "R0-S4"
+   ],
+   "caught": true,
+   "expected_id_hit": true,
+   "false_positive": null,
+   "violation_counts": {
+    "R0-API": 0,
+    "R0-S1": 0,
+    "R0-S2": 0,
+    "R0-S3": 0,
+    "R0-S4": 39846
+   },
+   "warnings": {},
+   "module_sha256": "10eab4d8fdcdb5d1cb16ce277b3238e5e2eb02cf6bd665d71b0711345d67bd5b"
+  },
+  {
+   "fake": "fake_dyad_carry_bug.py",
+   "kind": "buggy",
+   "bug": "올림 시 자릿수가 올라가는 경우(가수 전부 1)에 올림수를 잃고 내림값 반환",
+   "trials": 20000,
+   "verdict": "FAIL",
+   "elapsed_s": 65.4,
+   "ids_with_violations": [
+    "R0-S1",
+    "R0-S2"
+   ],
+   "expected_ids": [
+    "R0-S1",
+    "R0-S2"
+   ],
+   "caught": true,
+   "expected_id_hit": true,
+   "false_positive": null,
+   "violation_counts": {
+    "R0-API": 0,
+    "R0-S1": 743,
+    "R0-S2": 3726,
+    "R0-S3": 0,
+    "R0-S4": 0
+   },
+   "warnings": {},
+   "module_sha256": "75f06635ad769a6ade2e69141b474648fae7a229f664ec4a8a9622fa7a318872"
+  },
+  {
+   "fake": "fake_dyad_contains_open.py",
+   "kind": "buggy",
+   "bug": "contains가 상한 끝점을 포함하지 않음(반열린 구간)",
+   "trials": 20000,
+   "verdict": "FAIL",
+   "elapsed_s": 71.5,
+   "ids_with_violations": [
+    "R0-API"
+   ],
+   "expected_ids": [
+    "R0-API"
+   ],
+   "caught": true,
+   "expected_id_hit": true,
+   "false_positive": null,
+   "violation_counts": {
+    "R0-API": 1003,
+    "R0-S1": 0,
+    "R0-S2": 0,
+    "R0-S3": 0,
+    "R0-S4": 0
+   },
+   "warnings": {},
+   "module_sha256": "3b49ca5e61b8856fc0bc3086a90f958362c5509d85793742cb73fe1a8492a548"
+  },
+  {
+   "fake": "fake_dyad_correct.py",
+   "kind": "correct",
+   "bug": "정답 구현: 모든 끝점을 정확한 Fraction으로 계산 후 prec 비트로 바깥쪽 반올림 (결함 없음)",
+   "trials": 200000,
+   "verdict": "PASS",
+   "elapsed_s": 109.9,
+   "ids_with_violations": [],
+   "expected_ids": [],
+   "caught": null,
+   "expected_id_hit": null,
+   "false_positive": false,
+   "violation_counts": {
+    "R0-API": 0,
+    "R0-S1": 0,
+    "R0-S2": 0,
+    "R0-S3": 0,
+    "R0-S4": 0
+   },
+   "warnings": {},
+   "module_sha256": "a7dfe76dea287e1b419e29f7c799edbc181e5c8316fee2402a447566f7a9205a"
+  },
+  {
+   "fake": "fake_dyad_ctor_no_round.py",
+   "kind": "buggy",
+   "bug": "생성자에서 반올림 누락(끝점 그대로 저장)",
+   "trials": 20000,
+   "verdict": "FAIL",
+   "elapsed_s": 56.0,
+   "ids_with_violations": [
+    "R0-S4"
+   ],
+   "expected_ids": [
+    "R0-S4",
+    "R0-S1",
+    "R0-S2"
+   ],
+   "caught": true,
+   "expected_id_hit": true,
+   "false_positive": null,
+   "violation_counts": {
+    "R0-API": 0,
+    "R0-S1": 0,
+    "R0-S2": 0,
+    "R0-S3": 0,
+    "R0-S4": 54623
+   },
+   "warnings": {},
+   "module_sha256": "ea7c5042cb452c5d4496d4e53c31dd903b4088b52e7c65a21f9c823beceaab1e"
+  },
+  {
+   "fake": "fake_dyad_ctor_no_validate.py",
+   "kind": "buggy",
+   "bug": "lo>hi 입력에서 ValueError 대신 조용히 맞바꿈",
+   "trials": 20000,
+   "verdict": "FAIL",
+   "elapsed_s": 62.6,
+   "ids_with_violations": [
+    "R0-API"
+   ],
+   "expected_ids": [
+    "R0-API"
+   ],
+   "caught": true,
+   "expected_id_hit": true,
+   "false_positive": null,
+   "violation_counts": {
+    "R0-API": 64,
+    "R0-S1": 0,
+    "R0-S2": 0,
+    "R0-S3": 0,
+    "R0-S4": 0
+   },
+   "warnings": {},
+   "module_sha256": "90b0540894c5b908d23886f8b40aa0fd3f4632e0a200f07a10506d37a01560e0"
+  },
+  {
+   "fake": "fake_dyad_div_neg_divisor_bug.py",
+   "kind": "buggy",
+   "bug": "음수 제수 구간에서 부호를 빠뜨림",
+   "trials": 20000,
+   "verdict": "FAIL",
+   "elapsed_s": 75.6,
+   "ids_with_violations": [
+    "R0-S1",
+    "R0-S2"
+   ],
+   "expected_ids": [
+    "R0-S1",
+    "R0-S2"
+   ],
+   "caught": true,
+   "expected_id_hit": true,
+   "false_positive": null,
+   "violation_counts": {
+    "R0-API": 0,
+    "R0-S1": 1008,
+    "R0-S2": 5232,
+    "R0-S3": 0,
+    "R0-S4": 0
+   },
+   "warnings": {},
+   "module_sha256": "c56940bd1fa198c4a2de6b57ea31baece45845042462c6e60a86137a5f339c72"
+  },
+  {
+   "fake": "fake_dyad_div_two_endpoints.py",
+   "kind": "buggy",
+   "bug": "나눗셈에서 끝점 몫 4개 대신 두 개만 사용",
+   "trials": 20000,
+   "verdict": "FAIL",
+   "elapsed_s": 63.9,
+   "ids_with_violations": [
+    "R0-S1",
+    "R0-S2"
+   ],
+   "expected_ids": [
+    "R0-S1",
+    "R0-S2"
+   ],
+   "caught": true,
+   "expected_id_hit": true,
+   "false_positive": null,
+   "violation_counts": {
+    "R0-API": 0,
+    "R0-S1": 994,
+    "R0-S2": 6166,
+    "R0-S3": 0,
+    "R0-S4": 0
+   },
+   "warnings": {},
+   "module_sha256": "4bc9a67722214e413c780912f8e5c03feb3bb3237a854303b9c203b33e4d8e28"
+  },
+  {
+   "fake": "fake_dyad_div_zero_allowed.py",
+   "kind": "buggy",
+   "bug": "0을 걸친 제수 구간에서 ZeroDivisionError 대신 값을 돌려줌",
+   "trials": 20000,
+   "verdict": "FAIL",
+   "elapsed_s": 70.6,
+   "ids_with_violations": [
+    "R0-API"
+   ],
+   "expected_ids": [
+    "R0-API"
+   ],
+   "caught": true,
+   "expected_id_hit": true,
+   "false_positive": null,
+   "violation_counts": {
+    "R0-API": 6129,
+    "R0-S1": 0,
+    "R0-S2": 0,
+    "R0-S3": 0,
+    "R0-S4": 0
+   },
+   "warnings": {},
+   "module_sha256": "6678e63804af396ebcb84eb8632fae5278f5ff80ff6898265680ec11d5185379"
+  },
+  {
+   "fake": "fake_dyad_exp_overflow.py",
+   "kind": "buggy",
+   "bug": "2^1000 초과 상한을 2^1000으로 포화(부동소수점식 오버플로)",
+   "trials": 20000,
+   "verdict": "FAIL",
+   "elapsed_s": 74.9,
+   "ids_with_violations": [
+    "R0-API",
+    "R0-S1",
+    "R0-S2"
+   ],
+   "expected_ids": [
+    "R0-S1",
+    "R0-S2"
+   ],
+   "caught": true,
+   "expected_id_hit": true,
+   "false_positive": null,
+   "violation_counts": {
+    "R0-API": 12091,
+    "R0-S1": 2323,
+    "R0-S2": 22401,
+    "R0-S3": 0,
+    "R0-S4": 0
+   },
+   "warnings": {},
+   "module_sha256": "fb1f6938faab0dac5d20d5f6f8445bf988a39a0876e7c8cabf0e2dc9fdc57494"
+  },
+  {
+   "fake": "fake_dyad_exp_underflow.py",
+   "kind": "buggy",
+   "bug": "2^-1000 미만 양수 상한을 0으로 플러시(부동소수점식 언더플로)",
+   "trials": 20000,
+   "verdict": "FAIL",
+   "elapsed_s": 73.0,
+   "ids_with_violations": [
+    "R0-API",
+    "R0-S1",
+    "R0-S2"
+   ],
+   "expected_ids": [
+    "R0-S1",
+    "R0-S2"
+   ],
+   "caught": true,
+   "expected_id_hit": true,
+   "false_positive": null,
+   "violation_counts": {
+    "R0-API": 4018,
+    "R0-S1": 934,
+    "R0-S2": 13688,
+    "R0-S3": 0,
+    "R0-S4": 0
+   },
+   "warnings": {},
+   "module_sha256": "b2d9b994249c32f931b38f53c584cde9c009896228d1273e05a182134633b00f"
+  },
+  {
+   "fake": "fake_dyad_hull_first_only.py",
+   "kind": "buggy",
+   "bug": "hull의 하한을 첫 번째 구간 것만 사용",
+   "trials": 20000,
+   "verdict": "FAIL",
+   "elapsed_s": 69.0,
+   "ids_with_violations": [
+    "R0-S1",
+    "R0-S2"
+   ],
+   "expected_ids": [
+    "R0-S1",
+    "R0-S2"
+   ],
+   "caught": true,
+   "expected_id_hit": true,
+   "false_positive": null,
+   "violation_counts": {
+    "R0-API": 0,
+    "R0-S1": 407,
+    "R0-S2": 11038,
+    "R0-S3": 0,
+    "R0-S4": 0
+   },
+   "warnings": {
+    "hull_not_exact": 11445
+   },
+   "module_sha256": "d6e9137491e8e138b6afb7c25af49dc9e1c00856ecda7cb41e071ce5cb240b10"
+  },
+  {
+   "fake": "fake_dyad_intersect_empty_not_none.py",
+   "kind": "buggy",
+   "bug": "교집합이 비어도 None 대신 뒤집힌 구간을 반환",
+   "trials": 20000,
+   "verdict": "FAIL",
+   "elapsed_s": 50.9,
+   "ids_with_violations": [
+    "R0-API"
+   ],
+   "expected_ids": [
+    "R0-API"
+   ],
+   "caught": true,
+   "expected_id_hit": true,
+   "false_positive": null,
+   "violation_counts": {
+    "R0-API": 17927,
+    "R0-S1": 0,
+    "R0-S2": 0,
+    "R0-S3": 0,
+    "R0-S4": 0
+   },
+   "warnings": {},
+   "module_sha256": "36dba261e8f71bf8e2fae936c054c7933f7c8afebc5bc005da133bb5058ce523"
+  },
+  {
+   "fake": "fake_dyad_mant_plus1.py",
+   "kind": "buggy",
+   "bug": "가수 비트 초과: prec+1 비트까지 유지",
+   "trials": 20000,
+   "verdict": "FAIL",
+   "elapsed_s": 80.3,
+   "ids_with_violations": [
+    "R0-S4"
+   ],
+   "expected_ids": [
+    "R0-S4"
+   ],
+   "caught": true,
+   "expected_id_hit": true,
+   "false_positive": null,
+   "violation_counts": {
+    "R0-API": 0,
+    "R0-S1": 0,
+    "R0-S2": 0,
+    "R0-S3": 0,
+    "R0-S4": 130105
+   },
+   "warnings": {},
+   "module_sha256": "34f909fd9d543552377e271501c8bb161253a20e3293747f2161c00557d2eed1"
+  },
+  {
+   "fake": "fake_dyad_mul_two_endpoints.py",
+   "kind": "buggy",
+   "bug": "곱셈에서 끝점 곱 4개 대신 lo*lo, hi*hi 두 개만 사용",
+   "trials": 20000,
+   "verdict": "FAIL",
+   "elapsed_s": 54.2,
+   "ids_with_violations": [
+    "R0-S1",
+    "R0-S2"
+   ],
+   "expected_ids": [
+    "R0-S1",
+    "R0-S2"
+   ],
+   "caught": true,
+   "expected_id_hit": true,
+   "false_positive": null,
+   "violation_counts": {
+    "R0-API": 0,
+    "R0-S1": 1250,
+    "R0-S2": 6832,
+    "R0-S3": 0,
+    "R0-S4": 0
+   },
+   "warnings": {},
+   "module_sha256": "796865e840f8beb624c3ed2a76cdb1199eddc66dc0b5b94291cdb05d18cbc37f"
+  },
+  {
+   "fake": "fake_dyad_pow_even_monotone.py",
+   "kind": "buggy",
+   "bug": "짝수 거듭제곱을 단조로 취급: 0을 걸친 구간의 하한이 0이 아님(불포함)",
+   "trials": 20000,
+   "verdict": "FAIL",
+   "elapsed_s": 72.0,
+   "ids_with_violations": [
+    "R0-S1",
+    "R0-S2"
+   ],
+   "expected_ids": [
+    "R0-S1",
+    "R0-S2"
+   ],
+   "caught": true,
+   "expected_id_hit": true,
+   "false_positive": null,
+   "violation_counts": {
+    "R0-API": 0,
+    "R0-S1": 256,
+    "R0-S2": 60,
+    "R0-S3": 0,
+    "R0-S4": 0
+   },
+   "warnings": {},
+   "module_sha256": "8517941777df8e696a1c952711a4f16e899680339c538d0d0046d20addfda295"
+  },
+  {
+   "fake": "fake_dyad_prec_stale.py",
+   "kind": "buggy",
+   "bug": "연산이 현재 정밀도 대신 생성 당시 정밀도로 반올림(정밀도 변경 후 가수 비트 위반)",
+   "trials": 20000,
+   "verdict": "FAIL",
+   "elapsed_s": 67.4,
+   "ids_with_violations": [
+    "R0-S4"
+   ],
+   "expected_ids": [
+    "R0-S4"
+   ],
+   "caught": true,
+   "expected_id_hit": true,
+   "false_positive": null,
+   "violation_counts": {
+    "R0-API": 0,
+    "R0-S1": 0,
+    "R0-S2": 0,
+    "R0-S3": 0,
+    "R0-S4": 4499
+   },
+   "warnings": {},
+   "module_sha256": "4c6e295a6b72d7e1346ff684f161e4343725c65f14ec109f2f2dc29b1a5309f6"
+  },
+  {
+   "fake": "fake_dyad_rnd_nearest.py",
+   "kind": "buggy",
+   "bug": "바깥쪽 대신 가장 가까운 값으로 반올림",
+   "trials": 20000,
+   "verdict": "FAIL",
+   "elapsed_s": 60.5,
+   "ids_with_violations": [
+    "R0-S1",
+    "R0-S2"
+   ],
+   "expected_ids": [
+    "R0-S1",
+    "R0-S2"
+   ],
+   "caught": true,
+   "expected_id_hit": true,
+   "false_positive": null,
+   "violation_counts": {
+    "R0-API": 0,
+    "R0-S1": 20101,
+    "R0-S2": 53350,
+    "R0-S3": 0,
+    "R0-S4": 0
+   },
+   "warnings": {},
+   "module_sha256": "bedbd5384e0c770aef6b23fcf6c6df68782ef3b2749aa5892a9ade89dffeb3af"
+  },
+  {
+   "fake": "fake_dyad_round_reversed.py",
+   "kind": "buggy",
+   "bug": "반올림 방향 반대: lo를 올림, hi를 내림",
+   "trials": 20000,
+   "verdict": "FAIL",
+   "elapsed_s": 79.3,
+   "ids_with_violations": [
+    "R0-API",
+    "R0-S1",
+    "R0-S2"
+   ],
+   "expected_ids": [
+    "R0-S1",
+    "R0-S2"
+   ],
+   "caught": true,
+   "expected_id_hit": true,
+   "false_positive": null,
+   "violation_counts": {
+    "R0-API": 34679,
+    "R0-S1": 29607,
+    "R0-S2": 81994,
+    "R0-S3": 0,
+    "R0-S4": 0
+   },
+   "warnings": {},
+   "module_sha256": "1218bee14ff0b964e142879b7367cd6b6b5477f402c626b2512303b216fa8279"
+  },
+  {
+   "fake": "fake_dyad_sqr_naive.py",
+   "kind": "buggy",
+   "bug": "sqr를 x*x로 구현: 0을 걸치면 하한이 음수(계약: 하한 0)",
+   "trials": 20000,
+   "verdict": "FAIL",
+   "elapsed_s": 70.8,
+   "ids_with_violations": [
+    "R0-API"
+   ],
+   "expected_ids": [
+    "R0-API"
+   ],
+   "caught": true,
+   "expected_id_hit": true,
+   "false_positive": null,
+   "violation_counts": {
+    "R0-API": 326,
+    "R0-S1": 0,
+    "R0-S2": 0,
+    "R0-S3": 0,
+    "R0-S4": 0
+   },
+   "warnings": {},
+   "module_sha256": "d0b289d8105ef4c014d355309f04cec28841057c763ccc067c163832b1712bb4"
+  },
+  {
+   "fake": "fake_dyad_sqrt_hi_floor.py",
+   "kind": "buggy",
+   "bug": "sqrt 상한을 올림 대신 내림",
+   "trials": 20000,
+   "verdict": "FAIL",
+   "elapsed_s": 57.3,
+   "ids_with_violations": [
+    "R0-S1",
+    "R0-S2",
+    "R0-S3"
+   ],
+   "expected_ids": [
+    "R0-S3",
+    "R0-S1",
+    "R0-S2"
+   ],
+   "caught": true,
+   "expected_id_hit": true,
+   "false_positive": null,
+   "violation_counts": {
+    "R0-API": 0,
+    "R0-S1": 1422,
+    "R0-S2": 217,
+    "R0-S3": 1639,
+    "R0-S4": 0
+   },
+   "warnings": {},
+   "module_sha256": "de4c8fe16958ce88d0a152cbb606ef48a61f76c9b8a78e798ce94ac03f3df785"
+  },
+  {
+   "fake": "fake_dyad_sqrt_lo_ceil.py",
+   "kind": "buggy",
+   "bug": "sqrt 하한을 내림 대신 올림",
+   "trials": 20000,
+   "verdict": "FAIL",
+   "elapsed_s": 63.6,
+   "ids_with_violations": [
+    "R0-S1",
+    "R0-S2",
+    "R0-S3"
+   ],
+   "expected_ids": [
+    "R0-S3",
+    "R0-S1",
+    "R0-S2"
+   ],
+   "caught": true,
+   "expected_id_hit": true,
+   "false_positive": null,
+   "violation_counts": {
+    "R0-API": 0,
+    "R0-S1": 1271,
+    "R0-S2": 170,
+    "R0-S3": 1441,
+    "R0-S4": 0
+   },
+   "warnings": {},
+   "module_sha256": "c7afcf3e1d2d266796b154f380d23df0247bcd73825400e0e46583fcd974aeaa"
+  },
+  {
+   "fake": "fake_dyad_sqrt_neg_clamp.py",
+   "kind": "buggy",
+   "bug": "음수 하한 sqrt에서 ValueError 대신 하한을 0으로 잘라 계산",
+   "trials": 20000,
+   "verdict": "FAIL",
+   "elapsed_s": 64.9,
+   "ids_with_violations": [
+    "R0-API"
+   ],
+   "expected_ids": [
+    "R0-API"
+   ],
+   "caught": true,
+   "expected_id_hit": true,
+   "false_positive": null,
+   "violation_counts": {
+    "R0-API": 143,
+    "R0-S1": 0,
+    "R0-S2": 0,
+    "R0-S3": 0,
+    "R0-S4": 0
+   },
+   "warnings": {},
+   "module_sha256": "387c8db58bdeba91044e3c9aecf3bcd0cdfe6fc573aaa809cb8db853f0fedb60"
+  },
+  {
+   "fake": "fake_dyad_sub_cross_missing.py",
+   "kind": "buggy",
+   "bug": "뺄셈을 [a.lo-b.lo, a.hi-b.hi]로 구현(교차 끝점 누락)",
+   "trials": 20000,
+   "verdict": "FAIL",
+   "elapsed_s": 49.1,
+   "ids_with_violations": [
+    "R0-S1",
+    "R0-S2"
+   ],
+   "expected_ids": [
+    "R0-S1",
+    "R0-S2"
+   ],
+   "caught": true,
+   "expected_id_hit": true,
+   "false_positive": null,
+   "violation_counts": {
+    "R0-API": 0,
+    "R0-S1": 1515,
+    "R0-S2": 7610,
+    "R0-S3": 0,
+    "R0-S4": 0
+   },
+   "warnings": {},
+   "module_sha256": "9a63fd0f5de125d4dc4706ad975eeee75f277ba3671415a2ddab68235879125d"
+  },
+  {
+   "fake": "fake_dyad_trunc_toward_zero.py",
+   "kind": "buggy",
+   "bug": "바깥쪽 대신 0 쪽으로 자름(음수 hi/양수 lo는 맞고 반대는 틀림)",
+   "trials": 20000,
+   "verdict": "FAIL",
+   "elapsed_s": 72.2,
+   "ids_with_violations": [
+    "R0-S1",
+    "R0-S2"
+   ],
+   "expected_ids": [
+    "R0-S1",
+    "R0-S2"
+   ],
+   "caught": true,
+   "expected_id_hit": true,
+   "false_positive": null,
+   "violation_counts": {
+    "R0-API": 0,
+    "R0-S1": 25301,
+    "R0-S2": 54089,
+    "R0-S3": 0,
+    "R0-S4": 0
+   },
+   "warnings": {},
+   "module_sha256": "f9573e77dc05273d4115a455d578ab2e5ae8efbe457956bdf943326bc317451c"
+  },
+  {
+   "fake": "fake_dyad_width_wrong.py",
+   "kind": "buggy",
+   "bug": "width_q가 폭의 절반을 반환",
+   "trials": 20000,
+   "verdict": "FAIL",
+   "elapsed_s": 66.5,
+   "ids_with_violations": [
+    "R0-API"
+   ],
+   "expected_ids": [
+    "R0-API"
+   ],
+   "caught": true,
+   "expected_id_hit": true,
+   "false_positive": null,
+   "violation_counts": {
+    "R0-API": 623,
+    "R0-S1": 0,
+    "R0-S2": 0,
+    "R0-S3": 0,
+    "R0-S4": 0
+   },
+   "warnings": {},
+   "module_sha256": "c3695a42bb40e98f6b2f71576d2dd5c90150eecab15f26c2470a75a5e68429d5"
+  }
+ ]
+}

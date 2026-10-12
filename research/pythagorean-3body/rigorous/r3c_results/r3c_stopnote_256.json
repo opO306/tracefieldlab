@@ -1,0 +1,55 @@
+{
+ "tag": "256",
+ "prec": 256,
+ "pivot": "colnorm",
+ "order": 20,
+ "NOTE": "계획 실행. 계획 중단 조건 (a)-(d)가 아니라 설계자 지시로 조율 쪽이 중단했다(위 stop_detail). 처음에 구현자는 원인을 몰라 EXTERNAL_TERMINATION_UNKNOWN으로 기록했다가 조율 세션의 통지를 받고 이 값으로 바꿨다. r3c_final_256.json은 프로세스가 쓰지 못해 없다. 값은 줄 단위로 flush된 걸음·격자 기록에서 구현자가 만든 것이다.",
+ "stop_reason": "STOPPED_BY_DESIGNER_LOCAL_CPU",
+ "stop_detail": "조율 세션 통지(2026-10-11, 크로스 세션 메시지): 설계자 지시로 조율 쪽이 PID 68620을 약 17:01 KST에 중단, 목적 = 로컬 CPU 확보. 다시 실행하지 않음(무거운 실행은 GCP로 이전 예정). 기록상 마지막 걸음 쓰기 17:01:31.79, 셸 종료 기록 17:01:32.79(exit=127). 조율 쪽이 적은 '마지막 기록 t=1.388184, step 7300, wall 7856s'는 진행 로그(25걸음마다)의 마지막 줄이고, 줄 단위 걸음 기록은 그 뒤 4걸음 더 있다(7,304걸음, t=711/512=1.388671875, 7,860s).",
+ "t_final": "711/512",
+ "t_final_f": 1.388671875,
+ "t_last_ok_f": 1.388671875,
+ "steps_accepted": 7304,
+ "attempts_total": 7304,
+ "discarded": 0,
+ "wall_s": 7860.027,
+ "cpu_s": null,
+ "wmax_final_log10": -71.975273,
+ "h_hist_log2": {
+  "-13": 3546,
+  "-12": 3601,
+  "-11": 157
+ },
+ "grid_counts": {
+  "X1": {
+   "PASS": 0,
+   "UNDECIDED": 5,
+   "VIOLATION": 0,
+   "UND_ref_inside": 0,
+   "UND_ref_outside": 5
+  },
+  "P": {
+   "PASS": 138,
+   "UNDECIDED": 0,
+   "VIOLATION": 0,
+   "UND_ref_inside": 0,
+   "UND_ref_outside": 0
+  },
+  "AUX": {
+   "PASS": 0,
+   "UNDECIDED": 133,
+   "VIOLATION": 0,
+   "UND_ref_inside": 0,
+   "UND_ref_outside": 133
+  }
+ },
+ "violation_file": null,
+ "sha256_from_progress_log": [
+  "[     0.0s] r3c_run.py sha256=ce113414f17053d41d03a147a8298b3813e11f07cb8a5b1b1a711306f86dbe5b lohner_step.py sha256=936138ea73b878c811df8db7b582ddb6883590be0f47cc7ece76d5ffc2db6b62"
+ ],
+ "synthesized_from": [
+  "r3c_steps_256.jsonl",
+  "r3c_grid_256.jsonl",
+  "r3c_progress_256.log"
+ ]
+}

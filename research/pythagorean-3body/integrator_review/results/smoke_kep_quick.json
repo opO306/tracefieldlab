@@ -1,0 +1,982 @@
+{
+ "suite": "kepler",
+ "quick": true,
+ "seed": 20261012,
+ "sources": {
+  "dyad.py": {
+   "path": "/home/zun24/integrator_review_dev/src/dyad.py",
+   "sha256": "4d49cf8f707061d128fce3ed44b59ccb3a6bda14937e32dcd469cd201fbabaab",
+   "match_seal": true
+  },
+  "taylor_step.py": {
+   "path": "/home/zun24/integrator_review_dev/src/taylor_step.py",
+   "sha256": "0183f0f8dc76dcf9c1a9933d8f16a636ac011bc15e9a95e0749fb2459be01c31",
+   "match_seal": true
+  },
+  "lohner_step.py": {
+   "path": "/home/zun24/integrator_review_dev/src/lohner_step.py",
+   "sha256": "936138ea73b878c811df8db7b582ddb6883590be0f47cc7ece76d5ffc2db6b62",
+   "match_seal": true
+  }
+ },
+ "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+ "mpmath": "1.3.0",
+ "summary": {
+  "by_check": {
+   "set": {
+    "PASS": 864,
+    "UNDECIDED": 0,
+    "VIOLATION": 0,
+    "min_rel_slack": 5.125663443525738e-12
+   },
+   "box": {
+    "PASS": 864,
+    "UNDECIDED": 0,
+    "VIOLATION": 0,
+    "min_rel_slack": 0.000424360464020436
+   },
+   "aux": {
+    "PASS": 2592,
+    "UNDECIDED": 0,
+    "VIOLATION": 0,
+    "min_rel_slack": 3.8102517101050846e-15
+   },
+   "P": {
+    "PASS": 1200,
+    "UNDECIDED": 0,
+    "VIOLATION": 0,
+    "min_rel_slack": 0.0
+   },
+   "J": {
+    "PASS": 320,
+    "UNDECIDED": 64,
+    "VIOLATION": 0,
+    "min_rel_slack": -3578006650.369793
+   },
+   "W": {
+    "PASS": 384,
+    "UNDECIDED": 0,
+    "VIOLATION": 0,
+    "min_rel_slack": 1.5944334914743977e-05
+   }
+  },
+  "n_cases": 12,
+  "n_step_errors": 0,
+  "step_errors": []
+ },
+ "results": [
+  {
+   "case": "kep circ p128 o20 h=1/64 B=orth R=point(0)",
+   "prec": 128,
+   "order": 20,
+   "h": "1/64",
+   "pivot": "colnorm",
+   "step_wall_s": 0.093,
+   "h_used": "1/64",
+   "log10_wR_new_max": -37.9493040447214,
+   "log10_box_new_max": -37.686741404975336,
+   "ref_eps_log10": -44.69899651183723,
+   "frame_cond_inf": 3.696960499087246,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 72,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.35576650520198966,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 72,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.43766963573543,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 216,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.34623418343734735,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 100,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 0,
+      "UNDECIDED": 32,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": -6558.133544886953,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "J[0][0]",
+       "out_by": "1.95735e-38",
+       "err": "1.0e-33",
+       "width": "1.76324e-38"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "J[0][1]",
+       "out_by": "1.76044e-39",
+       "err": "1.0e-33",
+       "width": "2.58399e-42"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "J[0][2]",
+       "out_by": "2.84689e-38",
+       "err": "1.0e-33",
+       "width": "2.75506e-40"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "J[0][3]",
+       "out_by": "1.29305e-38",
+       "err": "1.0e-33",
+       "width": "1.97167e-42"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "J[1][0]",
+       "out_by": "9.77141e-41",
+       "err": "1.0e-33",
+       "width": "2.88107e-42"
+      }
+     ]
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.00010939430909652842,
+     "examples": []
+    }
+   },
+   "case_wall_s": 1.056
+  },
+  {
+   "case": "kep circ p128 o20 h=1/64 B=orth R=sym(1/1000000000)",
+   "prec": 128,
+   "order": 20,
+   "h": "1/64",
+   "pivot": "colnorm",
+   "step_wall_s": 0.108,
+   "h_used": "1/64",
+   "log10_wR_new_max": -8.787860237756625,
+   "log10_box_new_max": -8.613872522375335,
+   "ref_eps_log10": -44.69899651183723,
+   "frame_cond_inf": 3.258960002427387,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 72,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 3.5079208160246597e-11,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 72,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0004441717745221074,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 216,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 3.645214168491882e-14,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 100,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.004648297048540228,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.00010939430934150917,
+     "examples": []
+    }
+   },
+   "case_wall_s": 1.299
+  },
+  {
+   "case": "kep circ p128 o20 h=1/64 B=orth R=sym(1/1000)",
+   "prec": 128,
+   "order": 20,
+   "h": "1/64",
+   "pivot": "colnorm",
+   "step_wall_s": 0.106,
+   "h_used": "1/64",
+   "log10_wR_new_max": -2.6987171160134182,
+   "log10_box_new_max": -2.6417438190537004,
+   "ref_eps_log10": -44.69899651183723,
+   "frame_cond_inf": 3.044219163817539,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 72,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 3.926053720330527e-05,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 72,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0008149372329004941,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 216,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 3.5588301317216586e-08,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 100,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.00995469818697501,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.00010958730290707797,
+     "examples": []
+    }
+   },
+   "case_wall_s": 1.298
+  },
+  {
+   "case": "kep circ p128 o20 h=1/64 B=orth R=offset(1/1000000)",
+   "prec": 128,
+   "order": 20,
+   "h": "1/64",
+   "pivot": "colnorm",
+   "step_wall_s": 0.107,
+   "h_used": "1/64",
+   "log10_wR_new_max": -5.673067605655874,
+   "log10_box_new_max": -5.475543177779076,
+   "ref_eps_log10": -44.69899651183723,
+   "frame_cond_inf": 2.7595856117483737,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 72,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.7436982382640342e-07,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 72,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.00044697339805783277,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 216,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.402469944419397e-10,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 100,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.00028600768505582865,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.00010939432811592568,
+     "examples": []
+    }
+   },
+   "case_wall_s": 1.297
+  },
+  {
+   "case": "kep ecc0.9-peri p128 o20 h=1/64 B=orth R=point(0)",
+   "prec": 128,
+   "order": 20,
+   "h": "1/64",
+   "pivot": "colnorm",
+   "step_wall_s": 0.099,
+   "h_used": "1/128",
+   "log10_wR_new_max": -4.512583211967262,
+   "log10_box_new_max": -4.438847241004749,
+   "ref_eps_log10": -44.2813546597572,
+   "frame_cond_inf": 1.8813608922479361,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 72,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.49997258120639027,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 72,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.49997660295566354,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 216,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.49996805798517574,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 100,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.499976622261146,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.06932061252075672,
+     "examples": []
+    }
+   },
+   "case_wall_s": 7.4
+  },
+  {
+   "case": "kep ecc0.9-peri p128 o20 h=1/64 B=orth R=sym(1/1000000000)",
+   "prec": 128,
+   "order": 20,
+   "h": "1/64",
+   "pivot": "colnorm",
+   "step_wall_s": 0.111,
+   "h_used": "1/128",
+   "log10_wR_new_max": -4.523229696806234,
+   "log10_box_new_max": -4.464497539685208,
+   "ref_eps_log10": -44.2813546597572,
+   "frame_cond_inf": 2.182768934849179,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 72,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.49962217648907703,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 72,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.4996662395200548,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 216,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 3.505288925331851e-10,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 100,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.4998977828408127,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.06932062592981295,
+     "examples": []
+    }
+   },
+   "case_wall_s": 7.582
+  },
+  {
+   "case": "kep ecc0.9-peri p128 o20 h=1/64 B=orth R=sym(1/1000)",
+   "prec": 128,
+   "order": 20,
+   "h": "1/64",
+   "pivot": "colnorm",
+   "step_wall_s": 0.112,
+   "h_used": "1/128",
+   "log10_wR_new_max": -1.495092882326433,
+   "log10_box_new_max": -1.4730907885845264,
+   "ref_eps_log10": -44.2813546597572,
+   "frame_cond_inf": 1.5691710298574342,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 72,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.06394941840234747,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 72,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.09652791601724701,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 216,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 9.847889295274663e-05,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 100,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.13997660003974383,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0832399666584206,
+     "examples": []
+    }
+   },
+   "case_wall_s": 7.619
+  },
+  {
+   "case": "kep ecc0.9-peri p128 o20 h=1/64 B=orth R=offset(1/1000000)",
+   "prec": 128,
+   "order": 20,
+   "h": "1/64",
+   "pivot": "colnorm",
+   "step_wall_s": 0.113,
+   "h_used": "1/128",
+   "log10_wR_new_max": -4.0850361580661065,
+   "log10_box_new_max": -4.008720593480985,
+   "ref_eps_log10": -44.2813546597572,
+   "frame_cond_inf": 2.2486969745873786,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 72,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.2000840180948449,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 72,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.2227668112143497,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 216,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 2.356426661421183e-07,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 100,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.35291330902727025,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0693350358274122,
+     "examples": []
+    }
+   },
+   "case_wall_s": 7.514
+  },
+  {
+   "case": "kep ecc0.9-apo p128 o20 h=1/64 B=orth R=point(0)",
+   "prec": 128,
+   "order": 20,
+   "h": "1/64",
+   "pivot": "colnorm",
+   "step_wall_s": 0.093,
+   "h_used": "1/64",
+   "log10_wR_new_max": -37.78586578975393,
+   "log10_box_new_max": -37.53183944498959,
+   "ref_eps_log10": -44.53760706610329,
+   "frame_cond_inf": 3.2503754681222334,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 72,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.44906281323526737,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 72,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.48187367907424467,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 216,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.14969750600431395,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 100,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 0,
+      "UNDECIDED": 32,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": -3578006650.369793,
+     "examples": [
+      {
+       "verdict": "UNDECIDED",
+       "where": "J[0][0]",
+       "out_by": "-4.72861e-39",
+       "err": "1.0e-33",
+       "width": "1.76324e-38"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "J[0][1]",
+       "out_by": "1.9908e-39",
+       "err": "1.0e-33",
+       "width": "1.57646e-45"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "J[0][2]",
+       "out_by": "1.22344e-38",
+       "err": "1.0e-33",
+       "width": "2.75506e-40"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "J[0][3]",
+       "out_by": "4.40671e-38",
+       "err": "1.0e-33",
+       "width": "1.23161e-47"
+      },
+      {
+       "verdict": "UNDECIDED",
+       "where": "J[1][0]",
+       "out_by": "9.03553e-42",
+       "err": "1.0e-33",
+       "width": "2.45227e-45"
+      }
+     ]
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.5944334914743977e-05,
+     "examples": []
+    }
+   },
+   "case_wall_s": 1.046
+  },
+  {
+   "case": "kep ecc0.9-apo p128 o20 h=1/64 B=orth R=sym(1/1000000000)",
+   "prec": 128,
+   "order": 20,
+   "h": "1/64",
+   "pivot": "colnorm",
+   "step_wall_s": 0.107,
+   "h_used": "1/64",
+   "log10_wR_new_max": -8.690678299134422,
+   "log10_box_new_max": -8.552012121196917,
+   "ref_eps_log10": -44.53760706610329,
+   "frame_cond_inf": 3.0493955579244347,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 72,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 5.125663443525738e-12,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 72,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0008714849258601451,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 216,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 3.8102517101050846e-15,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 100,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.4856688151896314e-05,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.594433493249131e-05,
+     "examples": []
+    }
+   },
+   "case_wall_s": 1.289
+  },
+  {
+   "case": "kep ecc0.9-apo p128 o20 h=1/64 B=orth R=sym(1/1000)",
+   "prec": 128,
+   "order": 20,
+   "h": "1/64",
+   "pivot": "colnorm",
+   "step_wall_s": 0.106,
+   "h_used": "1/64",
+   "log10_wR_new_max": -2.7842406722360766,
+   "log10_box_new_max": -2.651985431069188,
+   "ref_eps_log10": -44.53760706610329,
+   "frame_cond_inf": 3.562615830762966,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 72,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 3.7768329334134964e-06,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 72,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0008700493134205778,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 216,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 2.119981727066941e-09,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 100,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0026926106536585333,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.5959078643785285e-05,
+     "examples": []
+    }
+   },
+   "case_wall_s": 1.278
+  },
+  {
+   "case": "kep ecc0.9-apo p128 o20 h=1/64 B=orth R=offset(1/1000000)",
+   "prec": 128,
+   "order": 20,
+   "h": "1/64",
+   "pivot": "colnorm",
+   "step_wall_s": 0.106,
+   "h_used": "1/64",
+   "log10_wR_new_max": -5.686606172371898,
+   "log10_box_new_max": -5.4294672113428355,
+   "ref_eps_log10": -44.53760706610329,
+   "frame_cond_inf": 3.436420658396269,
+   "tallies": {
+    "set": {
+     "counts": {
+      "PASS": 72,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.1744489828696556e-08,
+     "examples": []
+    },
+    "box": {
+     "counts": {
+      "PASS": 72,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.000424360464020436,
+     "examples": []
+    },
+    "aux": {
+     "counts": {
+      "PASS": 216,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 8.221579711119475e-12,
+     "examples": []
+    },
+    "P": {
+     "counts": {
+      "PASS": 100,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 0.0,
+     "examples": []
+    },
+    "J": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.4854727345521811e-05,
+     "examples": []
+    },
+    "W": {
+     "counts": {
+      "PASS": 32,
+      "UNDECIDED": 0,
+      "VIOLATION": 0
+     },
+     "min_rel_slack": 1.5944395728225063e-05,
+     "examples": []
+    }
+   },
+   "case_wall_s": 1.285
+  }
+ ],
+ "wall_s": 40.0
+}

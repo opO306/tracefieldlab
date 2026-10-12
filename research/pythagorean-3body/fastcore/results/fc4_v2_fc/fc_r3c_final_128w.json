@@ -1,0 +1,96 @@
+{
+ "prec": 128,
+ "order": 20,
+ "pivot": "width",
+ "tag": "128w",
+ "started_local": "2026-10-11T16:31:15",
+ "stop_reason": "SMOKE_MAX_STEPS",
+ "stop_detail": null,
+ "exception": null,
+ "t_final": "495463/131072",
+ "t_final_f": 3.7800827026367188,
+ "t_last_ok": "495463/131072",
+ "t_last_ok_f": 3.7800827026367188,
+ "t_explode": null,
+ "steps_accepted": 2000,
+ "attempts_total": 2583,
+ "discarded": 583,
+ "wmax_final_log10": -26.192972,
+ "wall_s": 906.818,
+ "cpu_s": 905.597,
+ "h_hist_log2": {
+  "-18": 212,
+  "-17": 141,
+  "-16": 118,
+  "-15": 111,
+  "-14": 109,
+  "-13": 106,
+  "-12": 142,
+  "-11": 158,
+  "-10": 153,
+  "-9": 360,
+  "-8": 248,
+  "-7": 83,
+  "-6": 43,
+  "-5": 16
+ },
+ "grid_counts": {
+  "X1": {
+   "PASS": 0,
+   "UNDECIDED": 7,
+   "VIOLATION": 0,
+   "UND_ref_inside": 7,
+   "UND_ref_outside": 0
+  },
+  "P": {
+   "PASS": 378,
+   "UNDECIDED": 0,
+   "VIOLATION": 0,
+   "UND_ref_inside": 0,
+   "UND_ref_outside": 0
+  },
+  "AUX": {
+   "PASS": 0,
+   "UNDECIDED": 371,
+   "VIOLATION": 0,
+   "UND_ref_inside": 371,
+   "UND_ref_outside": 0
+  }
+ },
+ "violation_file": null,
+ "undecided_width": "1/1000000000000000",
+ "interpretations": "see r3c_run.py header J1-J8",
+ "sha256": {
+  "r3c_run.py": "ce113414f17053d41d03a147a8298b3813e11f07cb8a5b1b1a711306f86dbe5b",
+  "lohner_step.py": "936138ea73b878c811df8db7b582ddb6883590be0f47cc7ece76d5ffc2db6b62",
+  "GATE_R3C_PLAN_KO.md": "26a6d98727320d718b646f6693c95aea3c4c950a4080a2a61d5774bcb83d560a",
+  "PRIOR_ART_R3_METHODS_KO.md": "09babb30c1c49cede86fad12994e53b5fb752df931dc7e8f2d96abe6057f6fb4",
+  "rigorous/R2_RESULT_KO.md": "fed6dfc29d082cab3180d9050c3f440a9de7e880a15928f068469f73503b9c77",
+  "rigorous/dyad.py": "4d49cf8f707061d128fce3ed44b59ccb3a6bda14937e32dcd469cd201fbabaab",
+  "rigorous/taylor_step.py": "0183f0f8dc76dcf9c1a9933d8f16a636ac011bc15e9a95e0749fb2459be01c31",
+  "results/ref_B_grid.json": "3bfe3e44024d90bfe495c365bebb6c3c2ea7a92c18869d177bd5e6beaf8d3478"
+ },
+ "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+ "argv": [
+  "/home/zun24/fastcore_dev/p3b/rigorous/r3c_run.py",
+  "--outdir",
+  "/home/zun24/fastcore_dev/fc4_v2_fc",
+  "--prec",
+  "128",
+  "--pivot",
+  "width",
+  "--max-steps",
+  "2000"
+ ],
+ "args": {
+  "prec": 128,
+  "pivot": "width",
+  "outdir": "/home/zun24/fastcore_dev/fc4_v2_fc",
+  "wall_limit": 10800.0,
+  "max_steps": 2000,
+  "debug_undecided_exp": null,
+  "debug_perturb_ref": null,
+  "force": false
+ },
+ "wall_limit_s": 10800.0
+}

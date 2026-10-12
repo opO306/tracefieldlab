@@ -1,0 +1,33 @@
+PASS test_info_and_state_fields                           0.0s
+PASS test_harmonic_one_step_exact                         0.2s
+PASS test_harmonic_order2_hand_check                      0.0s
+PASS test_harmonic_jacobian_contains_exact                0.0s
+PASS test_harmonic_1000_steps_point                       3.3s
+PASS test_harmonic_rotation_width_preserved               3.6s
+PASS test_one_step_vertices_random_parallelepiped         0.1s
+    kepler circle 200 steps (t=20): box width 4.781e-09
+PASS test_kepler_circle_multistep                        24.7s
+PASS test_kepler_wide_family                              8.7s
+PASS test_pythagorean_steps_vs_mpmath                   131.5s
+PASS test_dense_enclosure_inside_step                     0.0s
+PASS test_pythagorean_dense_and_path_box_vs_mpmath       40.7s
+PASS test_gd_derivatives_vs_finite_difference             0.1s
+PASS test_gd_wide_box_contains_point_derivatives          0.2s
+PASS test_exact_inverse_rigor                             0.2s
+PASS test_precision_violation_rejected                    0.0s
+PASS test_bad_inputs                                      0.0s
+PASS test_prep_cache_same_result                          2.4s
+PASS test_forced_h_reduction                              0.0s
+PASS test_collision_rejected                              0.0s
+PASS test_two_body_circular_exact                        12.6s
+    mutants: {'no_remainder_Z': 'KILLED by test_harmonic_one_step_exact (AssertionError)', 'no_injected_E': 'KILLED by test_harmonic_one_step_exact (AssertionError)', 'no_RemJ_in_J': 'KILLED by test_harmonic_jacobian_contains_exact (AssertionError)', 'point_J': 'SURVIVED', 'no_frame_update_R': 'KILLED by test_one_step_vertices_random_parallelepiped (AssertionError)', 'W_identity': 'KILLED by test_harmonic_jacobian_contains_exact (AssertionError)'}
+FAIL test_mutants_killed                                  9.0s
+Traceback (most recent call last):
+  File "C:\numerical-audit-lab-recovered-2026-10-01\research\pythagorean-3body\rigorous\test_lohner_impl.py", line 777, in main
+    fn()
+  File "C:\numerical-audit-lab-recovered-2026-10-01\research\pythagorean-3body\rigorous\test_lohner_impl.py", line 764, in test_mutants_killed
+    assert not survived, survived
+           ^^^^^^^^^^^^
+AssertionError: ['point_J']
+TOTAL 22 tests: 21 passed, 1 failed  (237.3s)
+exit=1

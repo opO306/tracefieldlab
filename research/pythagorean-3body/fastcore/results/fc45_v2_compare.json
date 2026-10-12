@@ -1,0 +1,43 @@
+{
+ "orig_steps_file": "/home/zun24/p3b_r3cp/out/r3c_steps_128w.jsonl",
+ "fc_steps_file": "/home/zun24/fastcore_dev/fc4_v2_fc/fc_r3c_steps_128w.jsonl",
+ "orig_steps": 10148,
+ "fc_steps": 2000,
+ "fc4_required_mismatch_steps": 0,
+ "fc4_first_required_mismatches": [],
+ "extra_all_fields_mismatch_steps": 0,
+ "extra_first_mismatches": [],
+ "fc_t_last": "495463/131072",
+ "fc_t_last_f": 3.7800827026367188,
+ "passes_1_88": true,
+ "sum_n_discard_fc": 583,
+ "extra_grid_lines_compared": 756,
+ "extra_grid_mismatch": 0,
+ "extra_jac_lines_compared": 2000,
+ "extra_jac_mismatch": 0,
+ "fc5_timing": {
+  "fc_mean_step_wall_s": {
+   "1-300": 0.4069,
+   "1-500": 0.4244,
+   "1-1000": 0.4542,
+   "1-2000": 0.4385,
+   "887-1309": 0.4342
+  },
+  "orig_record_mean_step_wall_s": {
+   "1-300": 1.1687,
+   "1-500": 1.1272,
+   "1-1000": 1.3125,
+   "1-2000": 1.1777,
+   "887-1309": 1.0549
+  },
+  "fc_elapsed_s_at_last": 906.763,
+  "orig_record_elapsed_s_at_same_step": 2372.427,
+  "orig_now_steps": 500,
+  "orig_now_vs_record_mismatch_steps": 0,
+  "orig_now_mean_step_wall_s": {
+   "1-500": 1.9104
+  },
+  "speedup_now_same_steps": 4.502,
+  "speedup_vs_record_all_fc_steps": 2.686
+ }
+}

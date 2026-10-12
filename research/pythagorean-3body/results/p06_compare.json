@@ -1,0 +1,104 @@
+{
+ "criterion": "|ours-indep| <= 1e-8*max(1,|ours|) for all 12 components at all 2001 times",
+ "ours": "C:\\numerical-audit-lab-recovered-2026-10-01\\research\\pythagorean-3body\\results\\ref_states_t0_20.csv",
+ "indep": "C:\\numerical-audit-lab-recovered-2026-10-01\\research\\pythagorean-3body\\independent\\indep_states_t0_20.csv",
+ "status": "PASS",
+ "n_component_violations": 0,
+ "first_violation": null,
+ "max_abs_err": "1.07648e-26",
+ "max_abs_err_at": {
+  "t": "15.83",
+  "component": "vx2"
+ },
+ "max_err_over_allowed": "2.03692e-19",
+ "max_ratio_at": {
+  "t": "15.83",
+  "component": "vy3"
+ },
+ "max_err_every_1": [
+  {
+   "t": "0.00",
+   "max_abs_err": "0.0"
+  },
+  {
+   "t": "1.00",
+   "max_abs_err": "6.3e-39"
+  },
+  {
+   "t": "2.00",
+   "max_abs_err": "1.3227e-33"
+  },
+  {
+   "t": "3.00",
+   "max_abs_err": "1.1416e-32"
+  },
+  {
+   "t": "4.00",
+   "max_abs_err": "2.0823e-32"
+  },
+  {
+   "t": "5.00",
+   "max_abs_err": "1.6506e-32"
+  },
+  {
+   "t": "6.00",
+   "max_abs_err": "2.9169e-32"
+  },
+  {
+   "t": "7.00",
+   "max_abs_err": "5.763e-31"
+  },
+  {
+   "t": "8.00",
+   "max_abs_err": "3.2734e-32"
+  },
+  {
+   "t": "9.00",
+   "max_abs_err": "5.7053e-32"
+  },
+  {
+   "t": "10.00",
+   "max_abs_err": "2.4975e-31"
+  },
+  {
+   "t": "11.00",
+   "max_abs_err": "9.5789e-32"
+  },
+  {
+   "t": "12.00",
+   "max_abs_err": "1.5364e-31"
+  },
+  {
+   "t": "13.00",
+   "max_abs_err": "5.6738e-32"
+  },
+  {
+   "t": "14.00",
+   "max_abs_err": "1.1481e-31"
+  },
+  {
+   "t": "15.00",
+   "max_abs_err": "2.0513e-31"
+  },
+  {
+   "t": "16.00",
+   "max_abs_err": "4.5101e-31"
+  },
+  {
+   "t": "17.00",
+   "max_abs_err": "6.4167e-30"
+  },
+  {
+   "t": "18.00",
+   "max_abs_err": "2.6862e-31"
+  },
+  {
+   "t": "19.00",
+   "max_abs_err": "6.5897e-31"
+  },
+  {
+   "t": "20.00",
+   "max_abs_err": "3.6609e-30"
+  }
+ ]
+}
