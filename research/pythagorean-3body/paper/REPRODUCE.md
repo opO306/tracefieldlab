@@ -124,6 +124,7 @@ python3 -I -B rigorous/r4_run.py --prec 128 --pivot width --wall-limit 172800 --
 - 걸린 시간(실측): 128비트 37,015초(약 10.3시간). 144비트 55,633초(약 15.5시간). 112비트는 21,613초에 t ≈ 54.498에서 터짐, 96비트는 9,110초에 t ≈ 27.789에서 멈춤. 네 실행은 같은 서버에서 동시에 돌았다(시작 2026-10-11T14:23:54Z).
 - 기록된 `argv`에는 `r3c_run.py` 경로가 찍힌다. `r4_run.py`가 `r3c_run`을 import해 그 `main`을 부르기 때문으로 보인다(추론, 코드 머리말 기준).
 - 다른 정밀도는 `--prec 144`, `112`, `96`만 바꾼다(`GATE_R4_ADDENDUM_1_KO.md`).
+- **R4R(전 구간 비트 재현, 2026-10-12 실행됨):** 테일러 계수 부분을 C++/GMP 모듈(`fastcore/`)로 바꿔 같은 계산을 다시 돌렸다. 31,811걸음 불일치 0, `r4_boxes_128w.jsonl`과 격자 파일의 SHA-256이 원래와 같음, 7,974초(2.2시간). 명령과 빌드 절차는 `GATE_R4R_PLAN_KO.md`와 `fastcore/README_KO.md`를 따른다(이 문서에서는 다시 확인하지 않음). 결과는 `batch3.tgz`의 `r4r_fc/`.
 
 <!-- src: GATE_R4_PLAN_KO.md §4; results_r4/r3c_final_128w.json; r4_out.tgz → r3c_final_{144,112,96}w.json, started_utc.txt -->
 
@@ -192,12 +193,17 @@ python -I -X utf8 lemma_adversarial.py 20261012
 
 ## 5. 서버 결과 보관본 `server_archive_20261012/`
 
-| 파일 | 크기(바이트) | SHA-256 (`SHA256SUMS_part1`) | 재계산 |
-|---|---|---|---|
-| `r4_out.tgz` | 119,743,991 | `9592c1ba3621567425e2ca54f0a541142ce0b4b9eeac4f3660cacc755144dea5` | 일치 |
-| `batch1.tgz` | 39,386,825 | `61a8f0d6a53ea0ab0bae86139a59a85c8b945c5d6b2d883c045dff6b12835a16` | 일치 |
+| 파일 | 크기(바이트) | SHA-256 | 기록 | 재계산(2026-10-12) |
+|---|---|---|---|---|
+| `r4_out.tgz` | 119,743,991 | `9592c1ba3621567425e2ca54f0a541142ce0b4b9eeac4f3660cacc755144dea5` | `SHA256SUMS_part1` | 일치 |
+| `batch1.tgz` | 39,386,825 | `61a8f0d6a53ea0ab0bae86139a59a85c8b945c5d6b2d883c045dff6b12835a16` | `SHA256SUMS_part1` | 일치 |
+| `r3cp_out.tgz` | 268,481,622 | `f3c47881b9e877b0c4d3f8193da96fce3c9d150092011fb3a58c2804c274fb4e` | `SHA256SUMS_part2` | 일치 |
+| `batch3.tgz` | 38,170,732 | `648b6acaf4be2bbed748984d153f306056bdb8ffc567577be204393a1ab33f78` | `SHA256SUMS_part3`, `R4R_FINAL_JUDGMENT_KO.md` | 일치 |
 
-- 파일 이름이 `SHA256SUMS_part1`이다. **part2 이후가 있는지, 아직 내려받지 않은 보관본이 있는지는 모른다 [UNKNOWN].**
+- 폴더에는 `MANIFEST_SHA256.txt`(네 파일), `MANIFEST_SIZES.txt`, `README.txt`, `.gitignore`(`*.tgz`)도 있다. README에 따르면 tgz는 GitHub 파일 크기 한도 때문에 Git 밖에 두고 따로 백업한다. 검증: `sha256sum -c MANIFEST_SHA256.txt`.
+- `r3cp_out.tgz`: 서버 `~/p3b_r3cp/out/` — R3c′ 실행(128·144·160·176·192·224비트, t=0~20)과 검사기 v1 실행 결과(`C0a`~`C0d.json`). 목록만 확인함.
+- `batch3.tgz`: `r4r_fc/`(R4R 재실행 기록: `fc_r4_boxes_128w.jsonl`, `fc_r3c_grid_128w.jsonl`, 걸음 기록 등), `integrator_review_dev/`(코드 검토 시험 결과), `fc4v/fc_out` 등. 목록만 확인함.
+- part3 뒤에 더 있는지는 확인하지 않았다(2026-10-12 기준 폴더에 있는 것은 위 넷).
 
 ### 5.1 `r4_out.tgz` — 서버 `~/p3b_r3cp/out_r4/` 전체 (R4 네 실행)
 
@@ -224,7 +230,7 @@ python -I -X utf8 lemma_adversarial.py 20261012
 | `fastcore_dev/`, `fastcore_check_dev/`, `fc1_final/`, `fc4v/` | C++ 이식판(FC1) 개발·검사·최종 실행. 증명 기록에는 쓰지 않음 |
 | `archive_20261012/tmp_ord` | **측정 부록(증명에 불필요).** 조율 세션이 서버 /tmp에서 돌린 측정 실험 기록(26개 항목). `ord20`·`ord30`·`ord40`: 테일러 차수 비교(128비트 width, t=0→1.8): 20차 387초·216걸음, 30차 375초·77걸음, 40차 342초·45걸음. `pp`: PyPy 7.3.19로 300걸음, CPython 기록과 걸음마다 일치, 1.35배. `prof.out`: CPython cProfile 120걸음, 테일러 계수 계산 85%. 출처: 조율 세션 설명(2026-10-12) + `GATE_FC1_PLAN_KO.md` §1(숫자 대조함), 폴더 목록은 tgz에서 확인 |
 
-- 코드 검토 세션의 서버 폴더(`~/integrator_review_dev/`)와 R3c′ 검사기 v1 실행 결과(`~/p3b_r3cp/out/C0a.json`, `C0b.json`)는 이 보관본 목록에서 보이지 않았다 **[확인 필요]**.
+- 코드 검토 세션의 서버 폴더(`~/integrator_review_dev/`)는 `batch3.tgz`에, R3c′ 검사기 v1 실행 결과(`~/p3b_r3cp/out/C0a.json` 등)는 `r3cp_out.tgz`에 들어 있다(뒤에 받은 보관본, 목록으로 확인).
 
 ---
 

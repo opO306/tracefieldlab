@@ -1,22 +1,13 @@
 # A computer-assisted proof of the final evolution of the Pythagorean three-body problem
 
-> **DRAFT — internal, not for circulation.** Written 2026-10-12 from the project's internal reports.
-> Status: internal review stage 1 finished; **no external review; no formal (machine-checked) verification.**
-> The word "proof" in the title is the target claim. Section 8 lists every point on which the argument
-> still relies on something other than a checked proof. Do not cite or circulate before those are settled.
+> **Preprint (version 1, 2026-10-12).** Internally reviewed; not yet externally peer reviewed and not
+> formally (machine-)verified. Section 8 lists the remaining assumptions. Released on Zenodo (DOI in
+> Section 9); not yet submitted to a journal.
 >
-> Author: **Jeomseon** (pen name; one word — do not split into "Jeom Seon")
-> Affiliation: Independent researcher
-> Contact: **[사용자 결정]**
-> AI-tool disclosure: stated in the section "Use of AI tools" (decided by the author, 2026-10-12). AI is not
-> listed as an author.
-> Target venue / release: **[사용자 결정]** (no arXiv endorser at present; the reproduction package is
-> planned for a public release on Zenodo (DOI) and/or GitHub. Service rules checked 2026-10-12, see
-> `REPRODUCE.md` §7.)
+> Jeomseon (Independent researcher), jeomseon@proton.me
 >
-> Source convention: every number carries an HTML comment `<!-- src: ... -->` naming the internal report or
-> result file it was copied from (paths relative to `research/pythagorean-3body/`). Items marked **[CHECK]**
-> are bibliographic details or claims that no project session has verified against the primary source.
+> The use of AI tools is described in the section "Use of AI tools". Every number is traceable to a file in
+> the reproduction package (Section 9).
 
 ---
 
@@ -70,10 +61,17 @@ he attributes to Yuasa (1971, private communication; Yoshida 1972, p. 406 — no
 found in Crossref or a web search). Later studies are numerical: Aarseth et al. (1994) on the chaotic
 neighbourhood of the initial condition; Hirayama, Nishikawa and Shiraishi (2006) and Hirayama (2019) with
 high-order Taylor series methods, the latter in quadruple precision (title and bibliographic record checked;
-text not read); and Boekholt and Portegies Zwart (2015) and later papers with arbitrary-precision Bulirsch–Stoer
-integration (Brutus), who obtained a solution converged to a stated number of digits and reported an escape
-time near t ≈ 63.4 under their own escape definition. These authors state that their solution is not exact;
-no interval or error-bound guarantee is given. <!-- src: LITERATURE_RECHECK_KO.md §5 table -->
+text not read); and the arbitrary-precision Bulirsch–Stoer code Brutus. Boekholt and Portegies Zwart (2015)
+needed a tolerance of 10⁻¹⁴ and an 88-bit word length for a solution converged to three decimal places and
+report dissolution at about t = 60. Portegies Zwart and Boekholt (2018) used a word length of 136 bits and a
+tolerance of at most 10⁻²⁴ so that the time-reversed solution returns to the initial condition, and report a
+dissolution time t ≃ 63.4 defined as the time at which the linear behaviour of the phase-space separation
+overtakes its exponential behaviour (a fitted model); they note that other escape criteria give different
+times. This time is therefore not comparable with the first time t ≈ 59.73 at which our sufficient condition
+(★) holds. These are converged numerical solutions, not error-bounded ones. <!-- src: LITERATURE_RECHECK_KO.md §5
+     table (which had attributed the 136-bit / 1e-24 / 63.4 values to the group's papers jointly); corrected
+     2026-10-12 after an external review comment, by reading arXiv:1411.6671 §3.1 and arXiv:1802.00970 via
+     https://ar5iv.labs.arxiv.org/html/1411.6671 and /html/1802.00970 -->
 
 ### 1.2 Prior rigorous work
 
@@ -104,7 +102,7 @@ p. 369, Note, calling the 1972 conditions (25), (26) "incorrect" and replacing t
 We did not discover this gap; it was corrected by the author. Our project first noticed the gap
 independently (a state at t ≈ 17.118 on the Pythagorean trajectory satisfies the uncorrected hypotheses while
 violating the conclusion), and only afterwards found the author's corrections (the 1973 erratum was found
-last, while checking the references of this draft). Yoshida's own Pythagorean
+last, while checking the references of this paper). Yoshida's own Pythagorean
 application (t = 59.72, r = 0.42 < d₁) satisfies the corrected conditions, so his 1972 numerical conclusion is
 not affected; it rests, however, on 1971 floating-point data without error bounds. We use only the corrected
 form (★) below, which requires r < d₁ explicitly.
@@ -180,8 +178,7 @@ With the textbook pivoting (largest remaining column norm of A) the run failed a
 (Section 6). We instead choose, at each QR stage, the remaining column maximising
 (remaining column 2-norm) × w(R_j), the column norm weighted by the width of the corresponding label
 component. Lohner recommends a *pivoted* QR factorisation for this purpose (as reported by Revol 2023,
-citing Lohner 2001); whether his pivot uses the same width weighting **[CHECK: not verified against Lohner's
-text; the implementation report's statement to that effect is from memory]**. Since correctness only needs B′ invertible (step 5),
+citing Lohner 2001). We have not verified whether Lohner's original pivot uses the same width weighting. Since correctness only needs B′ invertible (step 5),
 the pivot rule affects tightness only.
 <!-- src: rigorous/lohner_step.py _qr_colpivot and lines 674–678; rigorous/R3C_RESULT_KO.md line 40;
      GATE_R3CP_PLAN_KO.md §0 -->
@@ -201,8 +198,9 @@ Pure Python 3 (integers, `fractions.Fraction`, `math.isqrt`), no external numeri
 integrator. Files `dyad.py` (interval layer), `taylor_step.py` (Taylor coefficients, Picard enclosure),
 `lohner_step.py` (one Lohner step), `r3c_run.py` (driver), `r4_run.py` (thin wrapper: sets T_end = 61 and
 writes the enclosures at t = 59.50, …, 61.00 as exact fractions). A C++/GMP port of the Taylor core exists
-and was found bit-identical to the Python code on 23,452 test cases, but **it was not used for the results
-reported here**. <!-- src: GATE_R4_PLAN_KO.md §3; FC1_FINAL_JUDGMENT_KO.md -->
+and was found bit-identical to the Python code on 23,452 test cases. **The results reported here come from the
+Python code**; the C++ core was used only for the full re-run R4R (Section 4.1), which reproduced them bit for
+bit. <!-- src: GATE_R4_PLAN_KO.md §3; FC1_FINAL_JUDGMENT_KO.md -->
 
 ---
 
@@ -253,9 +251,7 @@ The multipole expansion is a standard technique; we claim no novelty for the lem
 
 ### 3.4 Proof of (★)
 
-The full proof is Appendix A (inserted verbatim from `proof_review/PROOF_STAR_FINAL_EN.md`,
-SHA-256 `f561bef74f63dbcd64328cc177db0e2b0f5579b2c9a2e67a9b7c29be9d60f295` at the time of insertion,
-2026-10-12). Outline: a bootstrap argument on the closed set
+The full proof is given in Appendix A. Outline: a bootstrap argument on the closed set
 𝒢 = {t : r ≤ d₁ and ρ̇ ≥ 0 on [t₀, t]}. Lemma B and integration against ρ̇ ≥ 0 give
 ½ρ̇² − MW(ρ, d₁) ≥ ½C²; Lemma A and the (vector) energy identity give r ≤ m₁m₂/(K + ½μC²) < d₁; continuity
 then contradicts sup 𝒢 < T*. On 𝒢 the escaper stays at distance ≥ δ = ρ₀ − λd₁ > 0 from both binary
@@ -288,14 +284,13 @@ t = 40. These are numerical tests, not proofs; they serve to detect sign or fact
 | Accepted steps / attempts / rejected | 31,811 / 41,140 / 9,329 |
 | Step sizes | 2⁻²⁵ … 2⁻⁵ |
 | Largest component width of final enclosure | 10^−9.545 |
-| Wall-clock time | 37,015 s ≈ 10.3 h (one core, GCP n2 instance, Python 3.13.5) |
+| Wall-clock time | 37,015 s ≈ 10.3 h (one core of a Google Cloud n2-custom-12-12288 instance: 12 vCPU, 12 GiB memory, Debian; Python 3.13.5) |
 | Containment cross-checks vs. a 60-digit reference trajectory, grid t = k/100, k = 1…6100 | path boxes P: 6,100 PASS; in-step boxes: 1,138 PASS, 4,955 not decidable (box narrower than 10⁻¹⁵; reference inside); step-end boxes: 7 not decidable (reference inside). **Violations: 0** |
 
 <!-- src: results_r4/r3c_final_128w.json (prec, order, pivot, stop_reason C_T_REACHED, t_final, steps_accepted,
      attempts_total, discarded, h_hist_log2, wmax_final_log10, wall_s, grid_counts, python);
      rigorous/r3c_run.py header J5–J6 (meaning of UNDECIDED); GATE_R3CP_PLAN_KO.md §3 (reference grid 60 digits);
-     machine type: project memory note says n2-custom-12-12288 (12 vCPU, 12 GiB); not re-queried from GCP
-     [CHECK machine type before stating it in the paper] -->
+     machine type: coordinator message 2026-10-12 (n2-custom-12-12288, 12 vCPU, 12 GiB, Debian) -->
 
 The reference trajectory is a non-rigorous high-precision Taylor integration; the grid comparison is a
 consistency check that can expose bugs, not part of the proof. The closest encounter on the trajectory is
@@ -317,6 +312,17 @@ encounters); **this explanation has not been checked**.
 <!-- src: server_archive_20261012/r4_out.tgz → p3b_r3cp/out_r4/r3c_final_144w.json, r3c_grid_144w.jsonl
      (counts computed for this draft from the grid file: 800 UNDECIDED with ref outside, max wmax_log10 −28.875,
      t range 0.01–8.13); integrator_review/INTEGRATOR_REVIEW_KO.md §1-1 (ref_B_grid tolerance 1e-35) -->
+
+**Bit-for-bit reproduction of the whole computation (R4R).** The 128-bit computation on [0, 61] was re-run
+from the start with the Taylor-coefficient core replaced by the C++/GMP implementation of Section 2.6
+(checked bit-identical to the Python core in 23,452 cases). All 31,811 steps agree in t, step size, number of
+rejected attempts and enclosure width (0 mismatches); the stored-box file and the grid-check file have the
+same SHA-256 as in the original run (`f65101c1…`, `fe53ded8…`); stop reason, final time and grid counts are
+identical. Wall-clock time was 7,974 s (2.2 h) instead of 37,015 s. **Limitation:** this is a second
+implementation of the same algorithm — the step rule, the QR frame update, the exact inverse and the
+containment checks are the same Python code — not an independent algorithm.
+<!-- src: R4R_FINAL_JUDGMENT_KO.md; GATE_R4R_PLAN_KO.md (sealed, not re-read for this draft); archive
+     server_archive_20261012/batch3.tgz (SHA-256 648b6aca…, recomputed locally 2026-10-12) -->
 
 ### 4.2 Escape check (Y1)
 
@@ -366,9 +372,10 @@ teams.
 | Lohner step, checker v2 | Fixed input generation (dyadic grid) | Width-pivot rule (used for R4): **PASS, 0 violations, 0 refused** (S1 160, S2 2,356, C 4,098, X4 732 cases). Colnorm rule: 0 violations, unresolved (52 cases refused/not run because boxes grew to contain a collision configuration) | `rigorous/R3C_CHECK_V2_FINAL_KO.md` |
 | Code review | Line-by-line review of all five files against a stated contract, plus attack tests and mutation tests against independent mpmath references: 806 one-step cases (oscillator 480, Kepler 216, three-body 60, checker-gap class 50), 47 unit tests, 4 chains (incl. the Pythagorean problem with the R4 settings, t = 0 → 2.0005, 1,309 steps through the first close encounter, 219,912 set-membership checks) | **0 violations**; no path found by which an output box could miss the true solution; 3 issues unrelated to rigour (one robustness, two documentation). Exact inverse step confirmed. Of 12 mutants, 10 were detected; not detected: moving the exact inverse 1 ulp inward, and an exact-midpoint centre (which affects only tightness) | `integrator_review/INTEGRATOR_REVIEW_KO.md` §0, §3, §4-1, §4-2, §6 |
 | Determinism | Server run vs. earlier local diagnostic run | First 4,494 steps identical in time, step size, rejections and exact width | `GATE_R4_PLAN_KO.md` §2 |
-| C++ port (FC1) | Bit-identity check of a GMP port of the Taylor core | 23,452 cases identical; not used for the proof record | `FC1_FINAL_JUDGMENT_KO.md` |
+| Full re-run (R4R) | t = 0 → 61 re-run with the C++ Taylor core | 31,811/31,811 steps identical; box and grid files SHA-256 identical; 2.2 h vs 10.3 h | `R4R_FINAL_JUDGMENT_KO.md` |
+| C++ port (FC1) | Bit-identity check of a GMP port of the Taylor core | 23,452 cases identical; used only for the R4R re-run, not for the proof record | `FC1_FINAL_JUDGMENT_KO.md` |
 | (★) proof | Independent line-by-line review; new analytic proof of Lemmas A, B; sympy (33/33 identities, 4/4 negative controls); adversarial search of the lemmas (40,000 points, 50 digits); dynamic falsification (800 states) | Logic holds; three presentation fixes required (vector form of the energy identity, citation of (R), explicit definition of the bootstrap set) | `proof_review/PROOF_REVIEW_KO.md` |
-| Literature | Direct reading of Yoshida 1972 (pp. 391–407), 1973 Erratum (p. 285) and 1974 (pp. 367–369) scans; zbMATH Open API search | Corollary gap confirmed and found corrected by the author (1973, 1974) | `LITERATURE_RECHECK_KO.md`, `LITERATURE_RECHECK_ZBMATH_KO.md`, this draft |
+| Literature | Direct reading of Yoshida 1972 (pp. 391–407), 1973 Erratum (p. 285) and 1974 (pp. 367–369) scans; zbMATH Open API search | Corollary gap confirmed and found corrected by the author (1973, 1974) | `LITERATURE_RECHECK_KO.md`, `LITERATURE_RECHECK_ZBMATH_KO.md`, this paper |
 
 <!-- integrator_review §4-1/§4-2 (addendum, file dated 2026-10-12 17:17) now contains the test summary used above. -->
 
@@ -389,7 +396,7 @@ None of these runs produced a containment violation in its grid checks; they fai
 not by producing wrong boxes. <!-- src: grid_counts in r3c_final_112w.json, r3c_final_96w.json (VIOLATION 0) -->
 So 128 bits is, for this step rule and order, close to the minimum that reaches t = 61 (two data points
 below; not a proof of minimality). The width growth over [0, 61] is roughly exponential and dominated by
-close encounters; we have not quantified the contribution of each encounter in this draft.
+close encounters; we have not quantified the contribution of each encounter.
 
 ---
 
@@ -408,7 +415,7 @@ close encounters; we have not quantified the contribution of each encounter in t
 
 ---
 
-## 8. Limitations (what this draft does not establish)
+## 8. Limitations (what this paper does not establish)
 
 1. **One-ulp rounding faults.** The independent checkers detect containment errors larger than their
    resolution; a fault that rounds 1 ulp inward (2⁻¹²⁸ relative) is excluded only by code reading. Python
@@ -429,8 +436,10 @@ close encounters; we have not quantified the contribution of each encounter in t
    (2019) and Lohner's thesis (1988) were identified from bibliographic records; their texts were not read.
 6. **Reference trajectory.** The 144-bit grid anomaly in Section 4.1 is unexplained beyond a plausible
    inference.
-7. **Single implementation of the integrator.** The 128- and 144-bit runs share all code; independence lies in
-   the checkers and the review, not in a second integrator.
+7. **One integrator algorithm.** The 128- and 144-bit runs share all code. The R4R re-run reproduces the
+   128-bit computation bit for bit with a second implementation of the Taylor core, but the rest of the step
+   (step rule, QR frame, exact inverse, containment checks) is the same code. Independence lies in the
+   checkers and the review, not in a second integrator algorithm.
 
 ---
 
@@ -438,7 +447,7 @@ close encounters; we have not quantified the contribution of each encounter in t
 
 All code, plans (sealed by SHA-256 before each run), run records and the server archive are listed with
 hashes in `paper/REPRODUCE.md`. The main run needs about 10 h on one core; the escape check takes seconds.
-The package is to be released publicly with a DOI (e.g. Zenodo) or on GitHub: **[DOI / URL — to be added]**.
+The package is released on Zenodo: https://doi.org/10.5281/zenodo.23317644.
 
 The released files are redacted copies. The originals are kept unchanged, and all seal hashes refer to them.
 In the copies, only the operating-system user name, the cloud instance name and project ID, and any e-mail
@@ -458,23 +467,23 @@ the author. <!-- src: author decision 2026-10-12; paper/REPRODUCE.md §8 -->
 - The design decisions and all final judgments (what to compute, acceptance criteria, which results to accept,
   what to claim) were made by the author.
 - Code writing, the independent checkers, the code and proof reviews, the literature searches and the writing
-  of the documents (including this draft) were carried out by an AI tool (Anthropic Claude), in multiple
+  of the documents (including this paper) were carried out by an AI tool (Anthropic Claude), in multiple
   sessions kept separate from one another.
 - Verification structure: each computational step followed a written plan sealed by SHA-256 before it was run;
   implementation and checking were assigned to separate sessions (a checker session did not read the code it
-  checked, and vice versa); and the coordinating side independently re-ran key steps (e.g. the checker v2
+  checked, and vice versa); and a separate coordinating session, directed by the author, independently re-ran key steps (e.g. the checker v2
   final run, the FC1 checks and the Y1 escape check on freshly uploaded files).
 - No AI tool is listed as an author. Responsibility for the content rests with the author.
 <!-- Policy note (not for the paper text): COPE's position statement (first published 2023-02-13) says AI tools
      cannot be authors and their use should be disclosed. Seen only via search-result summaries; the official
      page https://publicationethics.org/cope-position-statements/ai-author returned HTTP 403 to automated access.
-     Venue-specific rules (AI disclosure, pen names) to be checked once a venue is chosen. -->
+     Venue-specific rules (AI disclosure, pen names) are to be checked when a journal is chosen. -->
 <!-- src: coordinator message 2026-10-12 (author's decision); Y1_FINAL_JUDGMENT_KO.md, FC1_FINAL_JUDGMENT_KO.md,
      rigorous/R3C_CHECK_V2_FINAL_KO.md (coordinator re-runs) -->
 
 ## Acknowledgements
 
-**[사용자 결정]** (computing resources: Google Cloud instance).
+Computations were run on Google Cloud (free trial credits).
 
 ---
 
@@ -482,8 +491,8 @@ the author. <!-- src: author decision 2026-10-12; paper/REPRODUCE.md §8 -->
 
 Checked 2026-10-12 against Crossref (`https://api.crossref.org/works/<DOI>`), zbMATH Open
 (`https://api.zbmath.org/v1/document/_search`), the IPSJ digital library or the ADS scan, as noted per entry.
-"Checked" means the bibliographic record; the depth of reading of the text is noted separately. Entries or
-claims still marked **[CHECK]** could not be confirmed.
+"Checked" refers to the bibliographic record; the extent to which the text was read is noted separately.
+Appendix A has its own reference list with bracketed keys.
 
 1. Aarseth, S. J., Anosova, J. P., Orlov, V. V., Szebehely, V. G. (1994). Global chaoticity in the Pythagorean
    three-body problem. *Celest. Mech. Dyn. Astron.* 58(1), 1–16. doi:10.1007/BF00692114. (Crossref; abstract
@@ -539,28 +548,23 @@ claims still marked **[CHECK]** could not be confirmed.
 20. Zgliczyński, P. (2002). C¹ Lohner algorithm. *Found. Comput. Math.* 2(4), 429–465.
     doi:10.1007/s102080010025. (Crossref; not read.)
 21. Collision and regularization literature used in (R): see the reference list of Appendix A ([P1897],
-    [Su1912], [LC1920], [KS1965], [SM1971], [DLMF]). Re-checked 2026-10-12: Painlevé 1897 (JFM 28.0262.01),
-    Sundman, Acta Math. 36, 105–179 (JFM 43.0826.01 gives 1912; Crossref doi:10.1007/BF02422379 gives 1913),
-    Levi-Civita, Acta Math. 42 (1920) 99–144 — **its DOI is 10.1007/BF02404404; the DOI printed in Appendix A
-    (BF02418577) belongs to a different Levi-Civita paper (Acta Math. 30, 1906)** —, Kustaanheimo–Stiefel,
-    J. Reine Angew. Math. 218 (1965) 204–219 (doi:10.1515/crll.1965.218.204), Siegel–Moser 1971 (zbMATH
-    0312.70017). **[CHECK: the wording of the cited statements in these works has not been verified]**.
+    [Su1912], [LC1920], [KS1965], [SM1971], [DLMF]). Bibliographic records checked 2026-10-12: Painlevé 1897
+    (JFM 28.0262.01); Sundman, Acta Math. 36, 105–179 (JFM 43.0826.01 dates it 1912, Crossref
+    doi:10.1007/BF02422379 dates it 1913); Levi-Civita, Acta Math. 42 (1920) 99–144, doi:10.1007/BF02404404;
+    Kustaanheimo–Stiefel, J. Reine Angew. Math. 218 (1965) 204–219, doi:10.1515/crll.1965.218.204;
+    Siegel–Moser 1971 (zbMATH 0312.70017). The wording of the cited statements was not checked against the
+    original texts.
 
-*Assembly note:* the main list is numbered and Appendix A uses bracket keys; merge into one style before
-submission. Items 3, 14, 16, 18 also appear in Appendix A ([Bu1913], [SP1967], [Y72], [Y74]). Appendix A
-should also cite the 1973 erratum (item 17) and correct the [LC1920] DOI; it is inserted verbatim, so the fix
-belongs in `proof_review/PROOF_STAR_FINAL_EN.md`.
+22. Portegies Zwart, S. F., Boekholt, T. C. N. (2018). Numerical verification of the microscopic time
+    reversibility of Newton's equations of motion: fighting exponential divergence. *Commun. Nonlinear Sci.
+    Numer. Simul.* 61, 160–166. doi:10.1016/j.cnsns.2018.02.002; arXiv:1802.00970. (Crossref; text read via
+    ar5iv for the Pythagorean values.)
 
 ---
 
 ## Appendix A. The escape criterion (★): statement and self-contained proof
 
-> **Inserted verbatim** from `proof_review/PROOF_STAR_FINAL_EN.md` (SHA-256 `f561bef74f63dbcd64328cc177db0e2b0f5579b2c9a2e67a9b7c29be9d60f295`, 2026-10-12). Only heading levels were changed. If that file is revised, re-insert it.
-> **Known issues in the inserted text (to be fixed in the source file):** (i) A.0 and A.4.2 cite only the
-> 1974 correction; the author's earlier Erratum (PASJ 25, 285, 1973) already replaced condition (26) by
-> d ≥ r(0). (ii) The DOI given for [LC1920] points to a different paper; the correct DOI is
-> 10.1007/BF02404404.
-
+<!-- Appendix A is inserted verbatim (heading levels only changed) from proof_review/PROOF_STAR_FINAL_EN.md, SHA-256 4dfaea735cf3a90fa07d610be0c46c57dbc95150400630feb215acfac411ce4f (2026-10-12). -->
 
 *Draft for a paper appendix, prepared 2026-10-12. It has not yet been reviewed externally or verified formally (e.g. in a proof assistant).*
 
@@ -568,7 +572,7 @@ belongs in `proof_review/PROOF_STAR_FINAL_EN.md`.
 
 The criterion proved here is the case $d = m_1m_2/K$ of **Theorem 1 of Yoshida (1972)** [Y72, p. 400]. It is also the case $d = m_1m_2/K$ of **criterion A′ of Yoshida (1974)** [Y74, p. 369]; see Remark A.4.2.
 
-The corollary to Theorem 1 in [Y72, p. 402] does not assume $r(0)\le d$. **Yoshida himself corrected this in [Y74, p. 369, Note].** There he calls conditions (25)–(26) of [Y72] "incorrect" and replaces them by $\rho(0)\ge ad\ge a\,r(0)$. The statement below assumes $r(t_0)<d_1$ explicitly, so that issue does not affect it.
+The corollary to Theorem 1 in [Y72, p. 402] does not assume $r(0)\le d$. **Yoshida himself corrected this, first in an erratum [Y73] and then in [Y74, p. 369, Note].** The erratum [Y73] replaces condition (26) of the corollary by $d\ge r(0)$; it also corrects inequality (40) on p. 405 of [Y72]. The later Note [Y74, p. 369] calls conditions (25)–(26) of [Y72] "incorrect" and replaces them by $\rho(0)\ge ad\ge a\,r(0)$. The statement below assumes $r(t_0)<d_1$ explicitly, so that issue does not affect it.
 
 Lemmas A and B below are the case $n=1$ of Lemma 1 of [Y72, p. 393] and Lemma 2 of [Y72, p. 396]. Yoshida proves them by induction on $n$ and by analysing the $\theta$-derivative, respectively. We give different, self-contained proofs based on the Legendre (multipole) expansion. This is a standard technique, and we do not claim originality for it.
 
@@ -827,7 +831,7 @@ $$
 
 **A.4.1 (angular momentum).** The only place where information is discarded is (RA), and the discarded term is nonnegative. The theorem therefore applies to $L=0$, which is the case of the Pythagorean problem.
 
-**A.4.2 (relation to Yoshida's statements).** These relations are based on the statements of [Y72] and [Y74] as transcribed from the original scans.
+**A.4.2 (relation to Yoshida's statements).** These relations are based on the statements of [Y72], [Y73] and [Y74] as transcribed from the original scans.
 
 *Theorem 1 of [Y72].* Its hypotheses are:
 - (13) $\rho(0)\ge ad>a\,r(0)$ for some $a>\lambda$;
@@ -842,7 +846,7 @@ So (★) is Theorem 1 of [Y72] with $d=m_1m_2/K$.
 
 *Criterion A′ of [Y74].* With $d=d_1$ it requires $\rho(0)\ge ad_1\ge a\,r(0)$, which allows the boundary case $r(0)=d_1$. That case cannot occur together with (C2) and (C3): Step 2(c) at $t=t_0$ would force $r(t_0)<d_1$.
 
-*Corollary of [Y72].* It has the gap described in A.0, which [Y74, p. 369] corrects. We do not use it.
+*Corollary of [Y72].* It has the gap described in A.0, which was corrected in [Y73] and again in [Y74, p. 369]. We do not use it.
 
 **A.4.3 (ordering of the masses).** If $m_1>m_2$, relabel the binary components. With $\lambda$ and $\nu$ interchanged in $W$, the function becomes smaller, and Lemmas A–B fail, for example at $(r,c)=(d,-1)$. The ordering is essential.
 
@@ -931,10 +935,11 @@ These checks look for errors in the proof above; they do not replace it.
 - **[Bu1913]** C. Burrau, *Numerische Berechnung eines Spezialfalles des Dreikörperproblems*, Astron. Nachr. **195** (1913) 113–118. doi:10.1002/asna.19131950602.
 - **[DLMF]** NIST Digital Library of Mathematical Functions, https://dlmf.nist.gov/, Eqs. 18.10.5 and 18.12.11 (accessed 2026-10-12).
 - **[KS1965]** P. Kustaanheimo, E. Stiefel, *Perturbation theory of Kepler motion based on spinor regularization*, J. Reine Angew. Math. **218** (1965) 204–219.
-- **[LC1920]** T. Levi-Civita, *Sur la régularisation du problème des trois corps*, Acta Math. **42** (1920) 99–144. doi:10.1007/BF02418577.
+- **[LC1920]** T. Levi-Civita, *Sur la régularisation du problème des trois corps*, Acta Math. **42** (1920) 99–144. doi:10.1007/BF02404404.
 - **[P1897]** P. Painlevé, *Leçons sur la théorie analytique des équations différentielles, professées à Stockholm (1895)*, Paris, 1897.
 - **[SM1971]** C. L. Siegel, J. K. Moser, *Lectures on Celestial Mechanics*, Grundlehren der mathematischen Wissenschaften **187**, Springer, Berlin, 1971 (reprinted in Classics in Mathematics, 1995).
 - **[Su1912]** K. F. Sundman, *Mémoire sur le problème des trois corps*, Acta Math. **36** (1912) 105–179. doi:10.1007/BF02422379.
 - **[SP1967]** V. Szebehely, C. F. Peters, *Complete solution of a general problem of three bodies*, Astron. J. **72** (1967) 876. doi:10.1086/110355.
 - **[Y72]** J. Yoshida, *Improved criteria for hyperbolic-elliptic motion in the general three-body problem*, Publ. Astron. Soc. Japan **24** (1972) 391–408. doi:10.1093/pasj/24.3.391.
+- **[Y73]** J. Yoshida, *Erratum: Improved criteria for hyperbolic-elliptic motion in the general three-body problem*, Publ. Astron. Soc. Japan **25** (1973) 285. doi:10.1093/pasj/25.2.285.
 - **[Y74]** J. Yoshida, *Improved criteria for hyperbolic-elliptic motion in the general three-body problem. II*, Publ. Astron. Soc. Japan **26** (1974) 367–377.

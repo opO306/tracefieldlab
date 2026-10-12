@@ -145,3 +145,4 @@ ADS 인용 22건(scite에는 16건이며 지지/반박 분류된 인용문 0건�
 본문은 고치지 않고 여기에 덧붙인다.
 1. **Corollary의 첫 정정은 1973년 Erratum이다.** Yoshida, J. 1973, "Erratum: Improved Criteria for Hyperbolic-Elliptic Motion in the General Three-Body Problem", PASJ 25(2), 285, doi:10.1093/pasj/25.2.285 (Crossref 확인). 논문 초안 세션의 ADS 스캔 판독에 따르면, 이 Erratum이 Corollary 조건 (26)을 d ≥ r(0)으로 바꾸고 p.405 부등식 (40)도 고쳤다. 본문 §0·§3의 "저자 본인이 1974년에 정정"은 "1973년 Erratum에서 정정, 1974년 후속 논문 p.369 Note에서 다시 언급"으로 읽어야 한다.
 2. zbMATH Open 보충 검색: `LITERATURE_RECHECK_ZBMATH_KO.md` (선행 엄밀 증명 찾지 못함, Hirayama 2019 수치 계산, MathSciNet 미검색).
+3. §5 표의 Boekholt·Portegies Zwart 행 정정: 136비트·허용오차 1e-24·이탈 시각 약 63.4는 **2015 논문(arXiv:1411.6671; 88비트, 1e-14, 해체 약 t=60)이 아니라 Portegies Zwart & Boekholt 2018**, CNSNS 61, 160–166, doi:10.1016/j.cnsns.2018.02.002 (arXiv:1802.00970, Crossref 확인)의 값이다. 63.4는 "간격의 선형 성장이 지수 성장을 앞지르는 시점"이라는 정의라서 우리 탈출 조건 시각 59.73과 직접 비교되지 않는다. (외부 AI 검토가 지적했고, 논문 초안 세션이 ar5iv 본문으로 확인했다.)
