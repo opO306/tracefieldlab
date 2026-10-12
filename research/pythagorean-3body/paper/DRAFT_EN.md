@@ -1,8 +1,10 @@
 # A computer-assisted proof of the final evolution of the Pythagorean three-body problem
 
-> **Preprint (version 1, 2026-10-12).** Internally reviewed; not yet externally peer reviewed and not
-> formally (machine-)verified. Section 8 lists the remaining assumptions. Released on Zenodo (DOI in
-> Section 9); not yet submitted to a journal.
+> **Preprint (version 1.2, 2026-10-13; version 1: 2026-10-12).** Internally reviewed; not yet externally
+> peer reviewed and not formally (machine-)verified. Section 8 lists the remaining assumptions. Released on
+> Zenodo (DOI in Section 9); not yet submitted to a journal. **Change in version 1.2:** the classical
+> collision facts that version 1 cited for global existence through binary collisions are replaced by a
+> self-contained proof for the planar case (Appendix A.2); see Section 8, item 2.
 >
 > Jeomseon (Independent researcher), jeomseon@proton.me
 >
@@ -25,10 +27,11 @@ the corrected form of his Corollary that Yoshida himself published (Erratum 1973
 checkers. Both certify (★) on every stored box from t = 59.73 to t = 61.00 and on none before. Together with a
 hand proof of (★) and of the two potential-bound lemmas it needs, this yields that the mass-3 body escapes
 with ρ(t) ≥ ρ₀ + C(t − t₀) for some C > 0 and the 4–5 separation stays below 1200/769 for all later times,
-where binary collisions (if any) are continued by standard regularization. We report failed attempts and
+where binary collisions (if any) are continued by Levi-Civita regularization. We report failed attempts and
 lower precisions (112 and 96 bits do not reach t = 61) and state the limits of the verification: one-ulp
-rounding faults in the interval layer are excluded only by code reading, the regularization result is cited
-rather than re-proved, and no formal verification or external review has yet been done. To our knowledge, no
+rounding faults in the interval layer are excluded only by code reading, and no formal verification or
+external review has yet been done. Global existence through binary collisions is proved in an appendix
+from standard ODE theory (planar case). To our knowledge, no
 rigorous proof of this final evolution has been published; our literature search (Section 1.2) cannot
 exclude one.
 
@@ -255,12 +258,12 @@ The full proof is given in Appendix A. Outline: a bootstrap argument on the clos
 𝒢 = {t : r ≤ d₁ and ρ̇ ≥ 0 on [t₀, t]}. Lemma B and integration against ρ̇ ≥ 0 give
 ½ρ̇² − MW(ρ, d₁) ≥ ½C²; Lemma A and the (vector) energy identity give r ≤ m₁m₂/(K + ½μC²) < d₁; continuity
 then contradicts sup 𝒢 < T*. On 𝒢 the escaper stays at distance ≥ δ = ρ₀ − λd₁ > 0 from both binary
-components, so by the classical facts (S1)–(S3) on collisions and regularization (Painlevé; Sundman;
-Levi-Civita; Kustaanheimo–Stiefel; Siegel–Moser), used only through the statement (R) of Appendix A.2, the
-continued solution exists for all time. **(S1)–(S3) are cited, not proved;** in particular a verbatim statement
-of the non-accumulation fact (S3) for zero angular momentum under such a separation bound was not found
-(Appendix A.2 caveat; Remark A.4.5 gives a sketch that is not part of the proof).
-<!-- src: proof_review/PROOF_STAR_FINAL_EN.md A.2, A.4; proof_review/PROOF_REVIEW_KO.md §5, §8 -->
+components. The statement (R) of Appendix A.2 then gives that the solution, continued through binary
+collisions by Levi-Civita regularization, exists for all time. (R) is **proved** in Appendix A.2 for the
+planar case from standard ODE theory: a separation bound keeps the regularized state in a compact set on
+finite time, and each unit of regularized time contributes a positive amount of physical time. (Version 1
+cited classical facts here instead; see Section 8, item 2.)
+<!-- src: proof_review/PROOF_STAR_FINAL_EN.md A.4; proof_review/s3/S3_REGULARIZATION_PROOF_EN.md (v1.2); proof_review/PROOF_REVIEW_KO.md §5, §8 -->
 
 ### 3.5 Why the hypothesis r < d₁ matters (sanity checks)
 
@@ -375,6 +378,7 @@ teams.
 | Full re-run (R4R) | t = 0 → 61 re-run with the C++ Taylor core | 31,811/31,811 steps identical; box and grid files SHA-256 identical; 2.2 h vs 10.3 h | `R4R_FINAL_JUDGMENT_KO.md` |
 | C++ port (FC1) | Bit-identity check of a GMP port of the Taylor core | 23,452 cases identical; used only for the R4R re-run, not for the proof record | `FC1_FINAL_JUDGMENT_KO.md` |
 | (★) proof | Independent line-by-line review; new analytic proof of Lemmas A, B; sympy (33/33 identities, 4/4 negative controls); adversarial search of the lemmas (40,000 points, 50 digits); dynamic falsification (800 states) | Logic holds; three presentation fixes required (vector form of the energy identity, citation of (R), explicit definition of the bootstrap set) | `proof_review/PROOF_REVIEW_KO.md` |
+| Global existence (R), v1.2 | sympy check of the 10 identities used in Appendix A.2 (conservation laws of the regularized system, recovery of Newton's equations and of (E)); 4 deliberately wrong variants; non-rigorous comparison of the regularized and the Cartesian integration of the Pythagorean problem to t = 30 | 10/10 identities hold; 4/4 wrong variants rejected; positions agree to 7.5 × 10⁻⁸ through a 4–5 approach of 0.0022 | `proof_review/s3/` |
 | Literature | Direct reading of Yoshida 1972 (pp. 391–407), 1973 Erratum (p. 285) and 1974 (pp. 367–369) scans; zbMATH Open API search | Corollary gap confirmed and found corrected by the author (1973, 1974) | `LITERATURE_RECHECK_KO.md`, `LITERATURE_RECHECK_ZBMATH_KO.md`, this paper |
 
 <!-- integrator_review §4-1/§4-2 (addendum, file dated 2026-10-12 17:17) now contains the test summary used above. -->
@@ -421,13 +425,14 @@ close encounters; we have not quantified the contribution of each encounter.
    resolution; a fault that rounds 1 ulp inward (2⁻¹²⁸ relative) is excluded only by code reading. Python
    integer, `Fraction`, `>>`, `math.isqrt` and `Fraction(float)` semantics are taken from the language
    specification. <!-- src: integrator_review §3-4, §6 -->
-2. **Regularization and global existence (R).** That binary collisions of bodies 4 and 5 (if any occur after
-   t = 61) can be continued by regularization and do not accumulate in finite time is cited from the
-   classical literature (Appendix A.2: Painlevé 1897, Sundman 1912, Levi-Civita 1920, Kustaanheimo–Stiefel
-   1965, Siegel–Moser 1971). The bibliographic data of these works were checked; **the wording of the cited
-   statements was not**. The non-accumulation fact (S3) for L = 0 under the separation bound (SEP) was **not
-   found stated verbatim**; only a sketch is given (Remark A.4.5).
-   <!-- src: proof_review/PROOF_STAR_FINAL_EN.md A.2 caveat, A.4.5; proof_review/PROOF_REVIEW_KO.md §7 item 2, §8 -->
+2. **Global existence (R) — proved in version 1.2, not reviewed.** Version 1 cited the classical collision
+   facts (Painlevé, Sundman, Levi-Civita, Kustaanheimo–Stiefel, Siegel–Moser) for the statement that binary
+   collisions of bodies 4 and 5 can be continued and do not accumulate in finite time, and a verbatim
+   statement for L = 0 under the separation bound (SEP) was not found. Version 1.2 replaces this by a
+   self-contained proof (Appendix A.2) that uses only the existence, uniqueness and extension theorems for
+   ODEs. It covers the planar problem, which is the case of the application; the spatial case is not
+   treated. This proof is internal and has not been externally reviewed.
+   <!-- src: proof_review/s3/S3_REGULARIZATION_PROOF_EN.md; proof_review/s3/s3_algebra_check.py -->
 3. **No formal verification.** Neither the integrator nor the proof of (★) has been machine-checked.
 4. **No external review.** All reviews so far were internal to the project.
 5. **Literature.** Absence of a prior rigorous proof is a result of a bounded search (Section 1.2);
@@ -447,7 +452,9 @@ close encounters; we have not quantified the contribution of each encounter.
 
 All code, plans (sealed by SHA-256 before each run), run records and the server archive are listed with
 hashes in `paper/REPRODUCE.md`. The main run needs about 10 h on one core; the escape check takes seconds.
-The package is released on Zenodo: https://doi.org/10.5281/zenodo.23317644.
+The package is released on Zenodo: https://doi.org/10.5281/zenodo.23317644 (version 1); all versions are
+listed under the concept DOI https://doi.org/10.5281/zenodo.23317643. Version 1.2 adds `proof_review/s3/`
+(the proof note for Appendix A.2 and its checks).
 
 The released files are redacted copies. The originals are kept unchanged, and all seal hashes refer to them.
 In the copies, only the operating-system user name, the cloud instance name and project ID, and any e-mail
@@ -547,13 +554,13 @@ Appendix A has its own reference list with bracketed keys.
     found in Crossref or a web search on 2026-10-12.)
 20. Zgliczyński, P. (2002). C¹ Lohner algorithm. *Found. Comput. Math.* 2(4), 429–465.
     doi:10.1007/s102080010025. (Crossref; not read.)
-21. Collision and regularization literature used in (R): see the reference list of Appendix A ([P1897],
-    [Su1912], [LC1920], [KS1965], [SM1971], [DLMF]). Bibliographic records checked 2026-10-12: Painlevé 1897
+21. Collision and regularization literature: see the reference list of Appendix A ([P1897], [Su1912],
+    [LC1920], [KS1965], [SM1971]). Since version 1.2 these are cited for attribution and context only; the
+    proof of (R) uses the ODE theorems of [Ha]. Bibliographic records checked 2026-10-12: Painlevé 1897
     (JFM 28.0262.01); Sundman, Acta Math. 36, 105–179 (JFM 43.0826.01 dates it 1912, Crossref
     doi:10.1007/BF02422379 dates it 1913); Levi-Civita, Acta Math. 42 (1920) 99–144, doi:10.1007/BF02404404;
     Kustaanheimo–Stiefel, J. Reine Angew. Math. 218 (1965) 204–219, doi:10.1515/crll.1965.218.204;
-    Siegel–Moser 1971 (zbMATH 0312.70017). The wording of the cited statements was not checked against the
-    original texts.
+    Siegel–Moser 1971 (zbMATH 0312.70017).
 
 22. Portegies Zwart, S. F., Boekholt, T. C. N. (2018). Numerical verification of the microscopic time
     reversibility of Newton's equations of motion: fighting exponential divergence. *Commun. Nonlinear Sci.
@@ -564,7 +571,7 @@ Appendix A has its own reference list with bracketed keys.
 
 ## Appendix A. The escape criterion (★): statement and self-contained proof
 
-<!-- Appendix A is inserted verbatim (heading levels only changed) from proof_review/PROOF_STAR_FINAL_EN.md, SHA-256 4dfaea735cf3a90fa07d610be0c46c57dbc95150400630feb215acfac411ce4f (2026-10-12). -->
+<!-- Appendix A is inserted verbatim (heading levels only changed) from proof_review/PROOF_STAR_FINAL_EN.md, SHA-256 4dfaea735cf3a90fa07d610be0c46c57dbc95150400630feb215acfac411ce4f (2026-10-12). Version 1.2 (2026-10-13) revises the last paragraph of A.0, A.2, A.4.5, A.6 and the reference list, from proof_review/s3/S3_REGULARIZATION_PROOF_EN.md; PROOF_STAR_FINAL_EN.md itself is unchanged. -->
 
 *Draft for a paper appendix, prepared 2026-10-12. It has not yet been reviewed externally or verified formally (e.g. in a proof assistant).*
 
@@ -576,7 +583,7 @@ The corollary to Theorem 1 in [Y72, p. 402] does not assume $r(0)\le d$. **Yoshi
 
 Lemmas A and B below are the case $n=1$ of Lemma 1 of [Y72, p. 393] and Lemma 2 of [Y72, p. 396]. Yoshida proves them by induction on $n$ and by analysing the $\theta$-derivative, respectively. We give different, self-contained proofs based on the Legendre (multipole) expansion. This is a standard technique, and we do not claim originality for it.
 
-Everything below is proved in full except the classical facts about collisions and their regularization. Section A.2 lists those facts and states exactly how we use them.
+Everything below is proved in full for the planar problem, using standard ODE theory and elementary analysis. Global existence through binary collisions is proved in A.2 (new in version 1.2; version 1 cited classical collision facts there). The spatial case of A.2 is not treated; A.1, A.3 and A.4 hold in $\mathbb R^2$ and $\mathbb R^3$.
 
 ---
 
@@ -643,39 +650,110 @@ Then $W(\rho,d)=P(\rho,d,-1)$ and $\hat F(\rho,d)=F(\rho,d,-1)$. Geometrically, 
 
 ---
 
-### A.2 Classical facts on collisions (cited, not proved here)
+### A.2 Continuation through binary collisions and global existence (planar case)
 
-**(S1) Painlevé** [P1897]. In the three-body problem every singularity is a collision. Precisely: if a solution on $[t_0,T)$ with $T<\infty$ cannot be continued beyond $T$, then the positions converge as $t\to T$, and at least two of them coincide in the limit.
+*Revised in version 1.2. Version 1 cited classical facts here (Painlevé, Sundman, Levi-Civita, Kustaanheimo–Stiefel, Siegel–Moser). This section proves what the proof of (★) needs. It uses only the existence, uniqueness and extension theorems for ODEs with a locally Lipschitz right-hand side [Ha, Ch. II]. The motion is planar. Plane vectors are identified with complex numbers, and $\langle a,b\rangle=\operatorname{Re}(\bar ab)$ is the dot product. The spatial case would need the Kustaanheimo–Stiefel analogue [KS1965]. It is not treated, and the application in A.5 does not need it.*
 
-**(S2) Regularization of binary collisions** [Su1912; LC1920 (planar); KS1965 (spatial)]. Suppose a solution tends to a collision of $m_1$ and $m_2$ at time $t_c$, while $r_1$ and $r_2$ stay bounded away from $0$ near $t_c$. Then:
-- it has a unique continuation beyond $t_c$ as a solution of the regularized equations (physically, an elastic bounce);
-- along this continuation, $\boldsymbol\rho$ and $\dot{\boldsymbol\rho}$ are continuous in $t$;
-- (EM) holds for $t\neq t_c$, and $H$ is conserved.
+**The regularized system.** Let $k=m_1+m_2$. The relative motion satisfies $\ddot{\mathbf r}=-k\mathbf r/r^3+\mathbf f$, where
+$$
+\mathbf f(\boldsymbol\rho,\mathbf r)=m_0\Big[\frac{\boldsymbol\rho-\nu\mathbf r}{r_1^3}-\frac{\boldsymbol\rho+\lambda\mathbf r}{r_2^3}\Big].
+$$
+Following Levi-Civita [LC1920], use the state $Y=(t,u,w,h,\boldsymbol\rho,\boldsymbol\sigma)\in\mathbb R\times\mathbb C^2\times\mathbb R\times\mathbb C^2$ and write $z=u^2$ in place of $\mathbf r$. Consider, on the open set
+$$
+D=\{Y:\ |\boldsymbol\rho-\nu z|>0,\ |\boldsymbol\rho+\lambda z|>0\},
+$$
+the system (with $'=d/ds$)
+$$
+\begin{aligned} t'&=|u|^2, & u'&=w, & w'&=\tfrac h2u+\tfrac12|u|^2\,\bar u\,\mathbf f(\boldsymbol\rho,z),\\ h'&=\langle 2uw,\mathbf f(\boldsymbol\rho,z)\rangle, & \boldsymbol\rho'&=|u|^2\boldsymbol\sigma, & \boldsymbol\sigma'&=|u|^2\,\Phi(\boldsymbol\rho,z). \end{aligned} \tag{LC}
+$$
+Its right-hand side is real-analytic on $D$; the only denominators are $r_1^3$ and $r_2^3$. A binary collision $u=0$ is an ordinary point of (LC).
 
-**(S3) Non-accumulation** [Su1912; SM1971, Ch. 1]. Binary collision times of a regularized solution cannot accumulate at a finite time, as long as $m_0$ stays at a distance bounded below by some $\delta>0$ from both $m_1$ and $m_2$.
+**Lemma A.2.1 (identities).** Along any solution of (LC) in $D$:
+1. $I:=2|w|^2-h|u|^2$ is constant.
+2. $\mathcal H:=m h+\tfrac12\mu|\boldsymbol\sigma|^2-\mu M P(\boldsymbol\rho,z)$ is constant.
 
-**Convention.** "Solution" means the solution continued through binary collisions of $m_1,m_2$ by (S2). Let $[t_0,T^*)$ be its maximal interval of existence.
+Suppose in addition that $I=k$ and $u\ne0$ on an $s$-interval. Let dots denote $d/dt=|u|^{-2}\,d/ds$. Then on that interval:
 
-**What we assume.** Facts (S1)–(S3) enter the proof only through the following statement:
+3. $\dot z=2w/\bar u$ and $\ddot z=-kz/|z|^3+\mathbf f$;
+4. $h=\tfrac12|\dot z|^2-k/|z|$;
+5. $\dot{\boldsymbol\rho}=\boldsymbol\sigma$ and $\ddot{\boldsymbol\rho}=\Phi$;
+6. $\mathcal H$ is the energy (E).
+
+The Jacobi forms of Newton's equations used here ($\ddot{\mathbf r}=-k\mathbf r/r^3+\mathbf f$ and (EM)) follow from the Cartesian equations.
+
+*Proof.* All items are polynomial or rational identities.
+
+Item 3 by hand:
+- $\dot z=2uw/|u|^2=2w/\bar u$.
+- $\frac{d}{ds}\dot z=2w'/\bar u-2|w|^2/\bar u^2$.
+- Using $2|w|^2=k+h|u|^2$,
+$$\ddot z=|u|^{-2}\big(hu/\bar u+|u|^2\mathbf f-(k+h|u|^2)/\bar u^2\big)=\mathbf f-k/(|u|^2\bar u^2)=\mathbf f-kz/|z|^3 .$$
+
+Item 1:
+- $\frac{d}{ds}2|w|^2=2h\langle w,u\rangle+2|u|^2\langle w,\bar u\mathbf f\rangle$.
+- $\frac{d}{ds}(h|u|^2)=|u|^2\langle 2uw,\mathbf f\rangle+2h\langle u,w\rangle$.
+- These are equal, since $\langle w,\bar u\mathbf f\rangle=\langle uw,\mathbf f\rangle$.
+
+All six items, and the Jacobi forms of Newton's equations, were also checked by computer algebra (A.6). $\square$
+
+**Definition (continued solution).** Let the classical solution be given near $t_0$, with $r(t_0)>0$. Choose $u_0$ with $u_0^2=\mathbf r(t_0)$. Put $w_0=\bar u_0\dot{\mathbf r}(t_0)/2$ and $h_0=\tfrac12|\dot{\mathbf r}(t_0)|^2-k/r(t_0)$; then $I=k$.
+
+The *continued solution* is the maximal solution $Y(s)$, $s\in[0,S^*)$, of (LC) in $D$ with $Y(0)=(t_0,u_0,w_0,h_0,\boldsymbol\rho(t_0),\dot{\boldsymbol\rho}(t_0))$. It is read in physical time through $t(s)$. Let
+$$T^*:=\lim_{s\to S^*}t(s)\in(t_0,\infty].$$
+Then $[t_0,T^*)$ is its maximal interval of existence.
+
+The choice $-u_0$ gives $(t,-u,-w,h,\boldsymbol\rho,\boldsymbol\sigma)$, which is the same motion. Physically, the solution passes a collision as an elastic bounce.
+
+**Lemma A.2.2 (properties).**
+- (i) $t(s)$ is $C^1$ and strictly increasing. The zeros of $u$, which are the binary collisions, are isolated in $s$. In particular, collision times do not accumulate in $[t_0,T^*)$.
+- (ii) Let $s(t)$ be the inverse function. Then $\boldsymbol\rho(t):=\boldsymbol\rho(s(t))$ is $C^2$ on $[t_0,T^*)$, with $\dot{\boldsymbol\rho}=\boldsymbol\sigma\circ s$ and $\ddot{\boldsymbol\rho}=\Phi(\boldsymbol\rho,\mathbf r)$, also at collision times. The function $\mathbf r(t)=u(s(t))^2$ is continuous.
+- (iii) Between collisions, $(\mathbf r,\boldsymbol\rho)$ solves Newton's equations, and (E) holds with the constant value $H$.
+
+*Proof.*
+- (i) $t'=|u|^2\ge0$. At a zero of $u$, item 1 of Lemma A.2.1 gives $|u'|^2=k/2>0$. So the zeros of $u$ are isolated, and $t'>0$ except on a discrete set.
+- (ii) The substitution rule for the increasing $C^1$ map $t(s)$ gives
+$$\boldsymbol\rho(s(t))-\boldsymbol\rho(t_0)=\int_{t_0}^{t}\boldsymbol\sigma(s(\tau))\,d\tau ,$$
+with a continuous integrand. The same argument applied to $\boldsymbol\sigma$ gives $\dot{\boldsymbol\sigma}=\Phi\circ s$.
+- (iii) This is items 3–6 of Lemma A.2.1, together with item 2. $\square$
+
+**Proposition A.2.3 (statement (R)).** If $\min(r_1,r_2)\ge\delta>0$ along the continued solution, then $T^*=\infty$.
+
+*Proof.* Suppose $T^*<\infty$, and put $\Delta=T^*-t_0$. The following bounds hold for all $s\in[0,S^*)$.
+
+- **(B1) Forces.** $|\mathbf f|\le m_0(r_1^{-2}+r_2^{-2})\le 2m_0/\delta^2=:F$, $P\le1/\delta$ and $|\Phi|\le M/\delta^2$. For the last bound: $\Phi=\tfrac Mk\ddot{\mathbf x}_0$ is an algebraic identity in $(\boldsymbol\rho,z)$, and $|\ddot{\mathbf x}_0|\le m_1/r_2^2+m_2/r_1^2\le k/\delta^2$.
+- **(B2) $\boldsymbol\sigma,\boldsymbol\rho$.** $|\boldsymbol\sigma(s)-\boldsymbol\sigma(0)|\le\int|u|^2|\Phi|\,ds\le M\Delta/\delta^2$. So $|\boldsymbol\sigma|\le\Sigma:=|\dot{\boldsymbol\rho}(t_0)|+M\Delta/\delta^2$, and $|\boldsymbol\rho-\boldsymbol\rho(t_0)|\le\Sigma\Delta$.
+- **(B3) $h$.** By item 2 of Lemma A.2.1, $mh=H-\tfrac12\mu|\boldsymbol\sigma|^2+\mu MP$. So $|h|\le A:=(|H|+\tfrac12\mu\Sigma^2+\mu M/\delta)/m$.
+- **(B4) $u,w$.** Write $R=|u|^2$, which is $r$.
+  - Where $R\ge1$ there is no collision. There $|dR/dt|\le|\dot z|=\sqrt{2h+2k/R}\le V:=\sqrt{2A+2k}$.
+  - Fix $s$. Look back from $s$ to the last point at which $R\le R_0:=\max(1,r(t_0))$, or to $s=0$ if there is none. In between, $R>R_0\ge1$, so the speed bound applies and $R(s)\le R_0+V\Delta=:U^2$.
+  - By item 1 of Lemma A.2.1, $|w|^2=\tfrac12(k+h|u|^2)\le\tfrac12(k+AU^2)=:W_b^2$.
+
+*Case $S^*<\infty$.*
+- By (B2)–(B4), $Y(s)$ stays in a closed and bounded set $\mathcal K$ with $r_1,r_2\ge\delta$.
+- $\mathcal K$ is compact and contained in $D$.
+- A maximal solution with $S^*<\infty$ must leave every compact subset of $D$ [Ha, Ch. II]. Contradiction.
+
+*Case $S^*=\infty$.* Then $\int_0^\infty|u|^2ds=\Delta<\infty$; we show that this integral diverges.
+- Choose $\eta\in(0,1]$ with $A\eta^2\le k/2$ and $2\eta+\varepsilon<\sqrt k/2$, where $\varepsilon:=\tfrac A2\eta+\tfrac F2\eta^3$.
+- *Every interval $[a,a+1]$ contains a point with $|u|>\eta$.* Suppose instead that $|u|\le\eta$ on all of $[a,a+1]$. Then:
+  - $|w'|\le\varepsilon$ there, so $|w-w(a)|\le\varepsilon$;
+  - $|w(a)|^2\ge\tfrac12(k-A\eta^2)\ge k/4$;
+  - hence $|u(a+1)-u(a)|\ge|w(a)|-\varepsilon\ge\sqrt k/2-\varepsilon>2\eta$.
+
+  This contradicts $|u(a)|,|u(a+1)|\le\eta$.
+- For $n\ge1$, take such a point $s^*\in[n,n+1]$.
+  - Since $|u'|\le W_b$, we have $|u|\ge\eta/2$ on $[s^*-\ell,s^*+\ell]\subset[n-1,n+2]$, where $\ell=\min(\eta/(2W_b),1)$.
+  - Hence $\int_{n-1}^{n+2}|u|^2ds\ge\eta^2\ell/2>0$.
+- Summing over $n=1,4,7,\dots$ gives $\int_0^\infty|u|^2ds=\infty$. Contradiction. $\square$
+
+**How A.4 uses this section.**
+- Step 1 and Step 3 use the continuity of $r$ and $\dot\rho$, which follows from Lemma A.2.2(ii).
+- Step 2 uses $\boldsymbol\rho\in C^2$ with $\ddot{\boldsymbol\rho}=\Phi$, and (E) at times with $r>0$. These are Lemma A.2.2(ii) and (iii).
+- Step 4 uses Proposition A.2.3, which is the statement
 
 > **(R)** If $\inf_{[t_0,T^*)}\min(r_1,r_2)>0$, then $T^*=\infty$.
 
-*(R) follows from (S1)–(S3).* Suppose $T^*<\infty$ and $\min(r_1,r_2)\ge\delta>0$ on $[t_0,T^*)$.
-- By (S3) there are only finitely many binary collisions in $[t_0,T^*)$. So the solution is classical on $[t_\ell,T^*)$ for some $t_\ell$.
-- By (S1) the solution ends in a collision at $T^*$. This collision must be between $m_1$ and $m_2$, because $r_1,r_2\ge\delta$.
-- By (S2) the solution continues beyond $T^*$. This contradicts maximality.
-
-**Regularity used below.** Let $I\subset[t_0,T^*)$ be an interval on which $\min(r_1,r_2)$ is bounded below by a positive constant. Then $t\mapsto\boldsymbol\rho(t)$ is $C^2$ on $I$, with $\ddot{\boldsymbol\rho}=\Phi(\boldsymbol\rho,\mathbf r)$. The reasons:
-- $\Phi$ is continuous on $\{r_1>0,\,r_2>0\}$, including the points with $\mathbf r=0$.
-- By (S2), $t\mapsto(\boldsymbol\rho(t),\mathbf r(t))$ is continuous. Hence $t\mapsto\Phi(\boldsymbol\rho(t),\mathbf r(t))$ is continuous.
-- $\dot{\boldsymbol\rho}$ is continuous, and on each collision-free interval it is a primitive of this function. Collision times are isolated by (S3), so it is a primitive everywhere.
-
-Consequently, wherever $\rho>0$, $\rho$ is $C^2$ and (RA) holds.
-
-**Caveat on the citations.** We checked the bibliographic data of [P1897, Su1912, LC1920, KS1965, SM1971]. We did **not** check the exact wording of the cited statements in these texts.
-- Sundman's global results assume a nonzero total angular momentum. As we read it, that assumption serves to exclude triple collision and to keep the third body away from a colliding pair.
-- In our application the total angular momentum is $L=0$. Separation is guaranteed instead by the a priori bound (SEP) proved in Step 2 of A.4.
-- We have not found a verbatim statement of (S3) for $L=0$ under such an a priori bound. Remark A.4.5 sketches why it holds; that sketch is not part of the proof.
+**Regularity used below.** Wherever $\rho>0$, $\rho=|\boldsymbol\rho|$ is $C^2$ and (RA) holds. This follows from Lemma A.2.2(ii).
 
 ---
 
@@ -852,29 +930,7 @@ So (★) is Theorem 1 of [Y72] with $d=m_1m_2/K$.
 
 **A.4.4 (checkability).** (C1)–(C3) are strict inequalities in $(r,\rho,\dot\rho)$ with exact constants. It suffices to check them for every state in a rigorous enclosure of the true state at a single time $t_0$. The value of $K$ must be the exact energy of the true solution, not the energy recomputed from an enclosure.
 
-**A.4.5 (why (S3) holds here — a sketch, not part of the proof).** Assume (SEP) holds on a finite interval.
-
-The perturbed binary.
-- The relative motion satisfies $\ddot{\mathbf r}=-k\,\mathbf r/r^3+\mathbf f$, with $k=m_1+m_2$ and $\mathbf f=m_0\big[(\boldsymbol\rho-\nu\mathbf r)/r_1^3-(\boldsymbol\rho+\lambda\mathbf r)/r_2^3\big]$.
-- By (SEP), $|\mathbf f|\le 2m_0/\delta^2$.
-- Also $|\ddot{\boldsymbol\rho}|\le M/\delta^2$. So $|\dot{\boldsymbol\rho}|$ is bounded on finite intervals.
-
-Bounds on the Kepler energy.
-- Let $h=\tfrac12|\dot{\mathbf r}|^2-k/r$ be the Kepler energy per unit reduced mass, so $mh=H-\tfrac12\mu|\dot{\boldsymbol\rho}|^2+\mu MP$.
-- Upper bound: $mh\le-K-\tfrac12\mu C^2$, by Step 2(b).
-- Lower bound: $mh\ge-K-\tfrac12\mu|\dot{\boldsymbol\rho}|^2$, which is bounded below on finite intervals.
-- So $h\in[-A,-a]$ with $0<a\le A<\infty$.
-
-Levi-Civita variables (planar case).
-- Write $\mathbf r\simeq z=u^2\in\mathbb C$ and $dt=|u|^2ds$.
-- A direct computation (checked by computer algebra) gives
-$$
-u''=\tfrac h2u+\tfrac12|u|^2\bar u f,\qquad |u'|^2=\tfrac12\big(k+h|u|^2\big).
-$$
-- So $u$ is a perturbed harmonic oscillator. Its frequency $\sqrt{-h/2}$ is bounded above and below, and $u$ passes through $0$ with $|u'|=\sqrt{k/2}$.
-- Each revolution therefore takes a fictitious time bounded above and contributes a physical time $\int|u|^2ds$ bounded below. Collisions cannot accumulate at finite $t$.
-
-Making this rigorous requires the standard perturbation estimates, which we do not reproduce.
+**A.4.5 (non-accumulation of collisions).** Version 1 gave here only a sketch of why binary collisions cannot accumulate under (SEP). In version 1.2 this is proved: collisions are isolated by Lemma A.2.2(i), and the solution exists for all time by Proposition A.2.3.
 
 ---
 
@@ -924,7 +980,8 @@ Verifying (C1)–(C3) for the actual trajectory is a separate, computer-assisted
 ### A.6 Independent cross-checks (not part of the proof)
 
 These checks look for errors in the proof above; they do not replace it.
-- **Computer algebra (SymPy).** We checked every algebraic identity used in A.1 and A.3: (E) and (EM) derived from the Cartesian Newton equations, (RA) in 2D and 3D, the expansions of Steps 1–3 up to finite order, the closed forms of Step 4, the second proof of Lemma A, and the Levi-Civita relations of A.4.5. Deliberately wrong variants were rejected.
+- **Computer algebra (SymPy).** We checked every algebraic identity used in A.1 and A.3: (E) and (EM) derived from the Cartesian Newton equations, (RA) in 2D and 3D, the expansions of Steps 1–3 up to finite order, the closed forms of Step 4, the second proof of Lemma A, and, in version 1.2, the 10 identities of Lemma A.2.1 (`proof_review/s3/s3_algebra_check.py`). Deliberately wrong variants were rejected.
+- **Regularized vs. Cartesian integration (A.2, non-rigorous).** For the Pythagorean data, the system (LC) integrated in $s$ and the Newton equations integrated in $t$ agree at $t=30$ to $7.5\times10^{-8}$ (binary separation) and $2.1\times10^{-8}$ ($\boldsymbol\rho$), through a 4–5 approach of $0.0022$; the invariant $I$ drifts by $2\times10^{-12}$ (`proof_review/s3/s3_numeric_sanity.py`).
 - **Adversarial numerical search** (50-digit arithmetic, 40 000 points concentrated near the boundaries $\rho\to\lambda d^+$, $r\in\{0,d\}$, $c=\pm1$, for several $\lambda\in[\tfrac12,1)$). We found no violation of Lemmas A–B. The maximum ratio was $1+O(10^{-50})$, attained at $(r,c)=(d,-1)$.
 - **Dynamical falsification test.** We took 800 states with masses $3,4,5$ and various energies satisfying (C1)–(C3), and integrated them to $t\le40$. No conclusion of Theorem (★) was violated. Variants with the factor $2$ in (C3) omitted, with (C1) dropped, or with $\lambda,\nu$ interchanged in $W$ did produce violations, including the escaper returning.
 
@@ -934,6 +991,7 @@ These checks look for errors in the proof above; they do not replace it.
 
 - **[Bu1913]** C. Burrau, *Numerische Berechnung eines Spezialfalles des Dreikörperproblems*, Astron. Nachr. **195** (1913) 113–118. doi:10.1002/asna.19131950602.
 - **[DLMF]** NIST Digital Library of Mathematical Functions, https://dlmf.nist.gov/, Eqs. 18.10.5 and 18.12.11 (accessed 2026-10-12).
+- **[Ha]** P. Hartman, *Ordinary Differential Equations*, 2nd ed., Classics in Applied Mathematics **38**, SIAM, Philadelphia, 2002. Chapter II (existence, uniqueness, extension of solutions). The exact theorem numbers were not checked against the text.
 - **[KS1965]** P. Kustaanheimo, E. Stiefel, *Perturbation theory of Kepler motion based on spinor regularization*, J. Reine Angew. Math. **218** (1965) 204–219.
 - **[LC1920]** T. Levi-Civita, *Sur la régularisation du problème des trois corps*, Acta Math. **42** (1920) 99–144. doi:10.1007/BF02404404.
 - **[P1897]** P. Painlevé, *Leçons sur la théorie analytique des équations différentielles, professées à Stockholm (1895)*, Paris, 1897.

@@ -1,12 +1,12 @@
 # Reviewer quick start (about 10 minutes)
 
-Paper: *A computer-assisted proof of the final evolution of the Pythagorean three-body problem*, Jeomseon, 2026, https://doi.org/10.5281/zenodo.23317644 (preprint; not externally reviewed; not formally verified).
+Paper: *A computer-assisted proof of the final evolution of the Pythagorean three-body problem*, Jeomseon, 2026, version 1.2 (all versions: https://doi.org/10.5281/zenodo.23317643; preprint; not externally reviewed; not formally verified).
 
 **Claim.** For the Pythagorean (Burrau) problem (masses 3, 4, 5 at rest at the vertices of a 3-4-5 triangle, G = 1), mass 3 escapes for t ≥ 59.73 while masses 4 and 5 remain bound.
 
 **How the claim is split (paper §2, §8):**
 1. **Enclosure (R4).** A 128-bit interval Lohner–Taylor integrator encloses the solution on t ∈ [0, 61.0055]. The stored output is `results_r4/r4_boxes_128w.jsonl`: 302 boxes, exact fractions.
-2. **Escape criterion (★).** A corrected form of Yoshida's 1972 condition (Yoshida's own 1973 erratum) is proved by hand in `proof_review/PROOF_STAR_FINAL_EN.md`.
+2. **Escape criterion (★).** A corrected form of Yoshida's 1972 condition (Yoshida's own 1973 erratum) is proved by hand in Appendix A of the paper (`paper/DRAFT_EN.md`; version 1 text in `proof_review/PROOF_STAR_FINAL_EN.md`). Since version 1.2, global existence through binary collisions (Appendix A.2) is proved there too, from standard ODE theory (`proof_review/s3/`).
 3. **Check (Y1).** Two independent judges evaluate (★) on the stored boxes. One uses exact rationals, the other interval arithmetic in mpmath.
 
 ## Step 1: run the quick verifier (about 2–3 minutes)
@@ -14,7 +14,7 @@ Paper: *A computer-assisted proof of the final evolution of the Pythagorean thre
 From the root of bundle A:
 
 ```
-pip install mpmath
+pip install mpmath sympy
 python -I -X utf8 verify_quick.py
 ```
 
@@ -25,23 +25,24 @@ python -I -X utf8 verify_quick.py
 | 3 | Both judges on the 302 stored boxes | 256/256 PASS for both judges. First PASS at k = 5973 (t = 59.73). No PASS at k ≤ 5972. 0 disagreements. Input hash matches the seal. |
 | 4 | R0 interval-arithmetic checker (`dyad.py`) | Inclusion checks R0-S1..S4 have 0 violations. The auxiliary item R0-API reports 126 mixed-precision `intersect` cases, so the checker's overall word is "FAIL". These cases are outside the one-precision contract (see `paper/REPRODUCE.md` §4.3) and are the same as the published `rigorous/R0_CHECK_RESULT_dyad.json`. |
 | 5 | R1 Taylor-step checker (`taylor_step.py`) | PASS |
+| 6 | Identities of the regularized system used in Appendix A.2 (`proof_review/s3/s3_algebra_check.py`, sympy) | ALL OK. Shown as SKIP if sympy is not installed. |
 
-Use `--no-checkers` to run steps 1–3 only (a few seconds).
+Use `--no-checkers` to skip steps 4–5 (then it takes a few seconds).
 
 ## Step 2: read one thing
 
-`proof_review/PROOF_STAR_FINAL_EN.md` contains the hand proof of (★), Lemmas A and B. This is the part a computer cannot check for you here.
+Appendix A of `paper/DRAFT_EN.md` (or the PDF) contains the hand proof of (★), Lemmas A and B, and of global existence through binary collisions (A.2). This is the part a computer cannot check for you here.
 
 ## What this quick path does **not** cover
 
 - **Re-running the R4 integration.** It takes about 10 hours of pure Python, or 2.2 hours with the C++ core. See `paper/REPRODUCE.md` §4.1. Steps 1, 4 and 5 check that the integrator code is the sealed version and that its arithmetic and Taylor layers pass independent tests. They do not re-derive the boxes.
 - **The R3c v2 Lohner-step checker**, which is long (`paper/REPRODUCE.md` §4.3).
-- **Collision regularization.** The paper cites it rather than implementing it (§8).
+- **The proof of A.2 itself.** Step 6 checks its algebraic identities, not its analysis (compactness and time estimates). It is new in version 1.2 and has not been externally reviewed.
 - **The one-ulp rounding argument**, which was checked by code reading only (§8).
 - **Formal verification.** None has been done.
 
 ## The most useful question for a reviewer
 
-If you have limited time: **is the corrected escape criterion (★) and its hand proof correct, and is (★) a sufficient condition for the stated final evolution?** Every computational step above is mechanical. (★) is where human judgment matters most.
+If you have limited time: **is the corrected escape criterion (★) and its hand proof correct, including global existence through binary collisions (Appendix A.2), and is (★) a sufficient condition for the stated final evolution?** Every computational step above is mechanical. (★) is where human judgment matters most.
 
 AI assistance (Anthropic Claude) was used for code, checking and writing. Design decisions and final judgments are the author's.

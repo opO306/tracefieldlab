@@ -1,6 +1,6 @@
 {
  "format": "redaction-map-1",
- "note": "Copies differ from originals only by exact string replacement of the listed rules. Secrets are not recorded here. Seal hashes in GATE_*_SEAL.json refer to orig_sha256. | 2026-10-13: A/paper/DRAFT_EN.md and the PDF updated for DOI 10.5281/zenodo.23317644 (no redaction in these files).",
+ "note": "Copies differ from originals only by exact string replacement of the listed rules. Secrets are not recorded here. Seal hashes in GATE_*_SEAL.json refer to orig_sha256. | 2026-10-13: A/paper/DRAFT_EN.md and the PDF updated for DOI 10.5281/zenodo.23317644 (no redaction in these files). | 2026-10-13 (v1.2): paper/DRAFT_EN.md revised (Appendix A.2 proved), PDF replaced by Jeomseon_2026_Pythagorean_three-body_v1.2.pdf, proof_review/s3/ added (no redaction in these files).",
  "rules": [
   {
    "id": "gcp_project",
@@ -357,15 +357,15 @@
   {
    "path": "A/paper/DRAFT_EN.md",
    "kind": "text",
-   "orig_sha256": "ec6825989095650ab6f445c63229bb0060b1f49f64c4983e3e094c947e4a1c56",
-   "copy_sha256": "ec6825989095650ab6f445c63229bb0060b1f49f64c4983e3e094c947e4a1c56",
+   "orig_sha256": "91da67b6f1b86bec29f1932ccdeafe5dfc70e44d4f67b6856c2b55f475efc41d",
+   "copy_sha256": "91da67b6f1b86bec29f1932ccdeafe5dfc70e44d4f67b6856c2b55f475efc41d",
    "replacements": {}
   },
   {
-   "path": "A/paper/Jeomseon_2026_Pythagorean_three-body_v1.pdf",
+   "path": "A/paper/Jeomseon_2026_Pythagorean_three-body_v1.2.pdf",
    "kind": "binary",
-   "orig_sha256": "d7b6b7e528ee5f2a26c95c2f5087b17a1488582ba92aa5f7dc1dbbd7501cf7fa",
-   "copy_sha256": "d7b6b7e528ee5f2a26c95c2f5087b17a1488582ba92aa5f7dc1dbbd7501cf7fa",
+   "orig_sha256": "1607efef239b817676f281d7e0b28fdc5781b8dd91bed1e3825d771b579fb4fe",
+   "copy_sha256": "1607efef239b817676f281d7e0b28fdc5781b8dd91bed1e3825d771b579fb4fe",
    "replacements": {}
   },
   {
@@ -410,6 +410,34 @@
    "kind": "text",
    "orig_sha256": "be533c373df4764a8168d4feac886ca6bebea4bc3570d3e172c4372661cdb5a8",
    "copy_sha256": "be533c373df4764a8168d4feac886ca6bebea4bc3570d3e172c4372661cdb5a8",
+   "replacements": {}
+  },
+  {
+   "path": "A/proof_review/s3/S3_REGULARIZATION_PROOF_EN.md",
+   "kind": "text",
+   "orig_sha256": "b53674303b5499a0b71230227e7ece4073af9a606c7d9afc0a54ebf787033231",
+   "copy_sha256": "b53674303b5499a0b71230227e7ece4073af9a606c7d9afc0a54ebf787033231",
+   "replacements": {}
+  },
+  {
+   "path": "A/proof_review/s3/S3_REGULARIZATION_PROOF_KO.md",
+   "kind": "text",
+   "orig_sha256": "9cf127571a65388ed6d0a951a6af9a4b0cf9a67825d6f39bdf244491efb6afd4",
+   "copy_sha256": "9cf127571a65388ed6d0a951a6af9a4b0cf9a67825d6f39bdf244491efb6afd4",
+   "replacements": {}
+  },
+  {
+   "path": "A/proof_review/s3/s3_algebra_check.py",
+   "kind": "text",
+   "orig_sha256": "86e44b961be6585f3ccd53b8f9e4862c57d005c1564f8d81632c807e76670faf",
+   "copy_sha256": "86e44b961be6585f3ccd53b8f9e4862c57d005c1564f8d81632c807e76670faf",
+   "replacements": {}
+  },
+  {
+   "path": "A/proof_review/s3/s3_numeric_sanity.py",
+   "kind": "text",
+   "orig_sha256": "88b45c5dbfee43458ddc3d9ab6c90239da193357adc5cc68c2b7cd1abd7d164a",
+   "copy_sha256": "88b45c5dbfee43458ddc3d9ab6c90239da193357adc5cc68c2b7cd1abd7d164a",
    "replacements": {}
   },
   {

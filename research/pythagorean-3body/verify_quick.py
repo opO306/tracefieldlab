@@ -5,6 +5,7 @@ Run from the bundle root (the folder that contains this file):
     python -I -X utf8 verify_quick.py --no-checkers   # Y1 only, a few seconds
 
 Needs Python 3.10+ and mpmath (pip install mpmath; used by the second judge and the R1 checker).
+Optional: sympy (pip install sympy) for step 6, the identities of Appendix A.2; skipped if absent.
 It does NOT re-run the 10-hour R4 integration; it re-checks the stored R4 enclosures and the
 integrity/independent tests behind them. See REVIEWER_QUICKSTART_EN.md for what each step shows.
 Writes nothing inside the bundle; outputs go to a temporary folder that is printed at the end.
@@ -124,6 +125,18 @@ def step_checkers(out):
     record("5 R1 Taylor-step checker", rc == 0 and v == "PASS", "%.0fs, verdict %s" % (dt, v))
 
 
+def step_s3():
+    """Appendix A.2 (version 1.2): identities of the regularized system, checked with sympy if installed."""
+    try:
+        import sympy  # noqa: F401
+    except ImportError:
+        print("[SKIP] 6 A.2 regularization identities — sympy not installed (pip install sympy)", flush=True)
+        return
+    rc, txt, dt = run(["s3_algebra_check.py"], os.path.join(ROOT, "proof_review", "s3"))
+    last = txt.strip().splitlines()[-1] if txt.strip() else ""
+    record("6 A.2 regularization identities", rc == 0 and last == "ALL OK", "%.0fs, %s" % (dt, last))
+
+
 def main():
     out = tempfile.mkdtemp(prefix="p3b_verify_")
     t0 = time.time()
@@ -131,6 +144,7 @@ def main():
     step_y1(out)
     if "--no-checkers" not in sys.argv:
         step_checkers(out)
+    step_s3()
     n_fail = sum(1 for _, ok, _ in results if not ok)
     print("\n%d steps, %d failed, %.0fs. Outputs: %s" % (len(results), n_fail, time.time() - t0, out))
     print("Not covered here: the 10-hour R4 integration itself (see paper/REPRODUCE.md §4.1) and the "
